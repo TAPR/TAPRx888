@@ -1,0 +1,225 @@
+(footprint "4D02"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 2.65 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5eedfa6b-4302-421a-bc34-f29b74f69987")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "R-22 0402x4"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "378a1fb0-0244-4500-acf3-9b41ee323c53")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "27a56a89-b0eb-4df2-b22f-7134cc9db4ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8d8e2c4a-e488-4c0a-8d4a-eaf60e32c704")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part #" "C25499"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13170265-2cf1-4f49-882a-6a88a2dfee00")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.24 -1)
+		(end 1.27 -1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4167ccfd-664e-48d6-8aa0-b3d97a7b9ade")
+	)
+	(fp_line
+		(start -1.23 0.57)
+		(end -1.24 -1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9f29b6b2-7a54-45c4-b3f3-57e21c3a710f")
+	)
+	(fp_line
+		(start -0.76 1)
+		(end -1.23 0.57)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "956eb832-ba2c-48b1-8113-9e73741d3ba1")
+	)
+	(fp_line
+		(start 1.24 1)
+		(end -0.76 1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "03ea8ae4-302b-4601-8233-fc0e5ed73cf5")
+	)
+	(fp_line
+		(start 1.27 -1)
+		(end 1.27 1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6476ba65-0816-45ed-a477-518520eeb0d9")
+	)
+	(fp_line
+		(start -1.15 -0.9)
+		(end 1.15 -0.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "6f023c48-e06e-46c7-83d1-e392af52f8d1")
+	)
+	(fp_line
+		(start -1.15 0.9)
+		(end -1.15 -0.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "1744136f-7472-4f07-81b2-9304fe0c9908")
+	)
+	(fp_line
+		(start 1.15 -0.9)
+		(end 1.15 0.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "1acd4fee-7a24-4390-b5ef-3c49bab4bd6e")
+	)
+	(fp_line
+		(start 1.15 0.9)
+		(end -1.15 0.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "fbaa3b10-d568-4077-b1c5-a7fcd8a2471a")
+	)
+	(pad "1" smd rect
+		(at -0.75 0.4)
+		(size 0.3 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "30b3fa68-2bea-456c-b64a-20a374415d61")
+	)
+	(pad "2" smd rect
+		(at -0.25 0.4)
+		(size 0.3 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "8106e612-fc85-4881-a633-a4a3557150ab")
+	)
+	(pad "3" smd rect
+		(at 0.25 0.4)
+		(size 0.3 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "ac5b0db1-8f7d-44e5-a912-ea5d2197a66c")
+	)
+	(pad "4" smd rect
+		(at 0.75 0.4)
+		(size 0.3 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "7cc40408-ec24-4cc2-8b91-a736ea65026e")
+	)
+	(pad "5" smd rect
+		(at 0.75 -0.4)
+		(size 0.3 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "12ed67ec-d8f7-421f-8fc9-de3fb723cdd2")
+	)
+	(pad "6" smd rect
+		(at 0.25 -0.4)
+		(size 0.3 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "a1c8669e-5bf2-4d74-9569-4661c78beca7")
+	)
+	(pad "7" smd rect
+		(at -0.25 -0.4)
+		(size 0.3 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "0f671c77-8944-4de2-8460-adcc7a813344")
+	)
+	(pad "8" smd rect
+		(at -0.75 -0.4)
+		(size 0.3 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "f2db9d89-5912-4d60-bc66-cfe6f114dc9e")
+	)
+	(embedded_fonts no)
+	(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-08 0.65p 3mm Pad.iges"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.7 0.2 0.2)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

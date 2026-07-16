@@ -1,0 +1,34 @@
+
+# USB3 SuperSpeed differential pairs: SSRX+/-, SSTX+/-
+# Skew and coupling constraints for 5 Gbps signaling
+(rule "USB3_SS diff pair skew"
+    (condition "A.NetClass == 'USB3_SS'")
+    (constraint skew (max 0.1mm))
+)
+
+(rule "USB3_SS diff pair coupling"
+    (condition "A.NetClass == 'USB3_SS'")
+    (constraint diff_pair_uncoupled (max 2mm))
+)
+
+(rule "USB3_SS via limit"
+    (condition "A.NetClass == 'USB3_SS'")
+    (constraint via_count (max 2))
+)
+
+# USB3 TX-RX isolation: keep SSTX and SSRX pairs separated
+(rule "USB3 TX-RX isolation"
+    (condition "(A.NetName == '/SSTX+' || A.NetName == '/SSTX-') && (B.NetName == '/SSRX+' || B.NetName == '/SSRX-')")
+    (constraint clearance (min 0.5mm))
+)
+
+# USB2 High-Speed (480 Mbps): USB+/USB- differential pair
+(rule "USB2 diff pair skew"
+    (condition "A.NetClass == 'USB2'")
+    (constraint skew (max 0.5mm))
+)
+
+(rule "USB2 diff pair coupling"
+    (condition "A.NetClass == 'USB2'")
+    (constraint diff_pair_uncoupled (max 5mm))
+)

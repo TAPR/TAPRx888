@@ -1,0 +1,148 @@
+(footprint "TCXO-3225"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -3 -0.9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6e9790be-8da4-4074-aa1f-c41276bed26d")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TCXO-27M"
+		(at -0.15 -4.95 0)
+		(layer "F.Fab")
+		(uuid "6f2003f1-f763-4b0c-b310-b3e2643709f1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a4a465b-1d48-448f-9da6-57645bb8a1d6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "YXC Crystal Oscillators OT2EL4C4JI-111OLP-27M"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7690502f-235e-47c3-9d5a-a8c669b0b51e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part #" "C5203549"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "65d5b96e-e73a-4e47-bf62-e8abdd71ac17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Comment" "alternate: C46598427  ±2ppm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c55dcef0-424e-42aa-99e3-da682cb75bd8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.79 1.93)
+		(end -2.23 1.5)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f3a9784c-1049-4ca7-884e-375da3a42c9b")
+	)
+	(fp_rect
+		(start -2.25 -1.85)
+		(end 2.25 1.95)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b9448bf8-a972-447b-8015-d523fe679bed")
+	)
+	(fp_rect
+		(start -1.6 -1.25)
+		(end 1.6 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f5fda62b-93d1-4ead-8a5b-2b2bfa30b58e")
+	)
+	(pad "1" smd rect
+		(at -1.2 0.95)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6edd951f-3924-48e6-b844-34efbeeac980")
+	)
+	(pad "2" smd rect
+		(at 1.2 0.95)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d784bc1d-5ddb-4603-a614-ff3e481a18ed")
+	)
+	(pad "3" smd rect
+		(at 1.2 -0.95)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "36b33559-115b-4b63-bb6f-36f3d1252eb7")
+	)
+	(pad "4" smd rect
+		(at -1.2 -0.95)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "96a04a98-6fd0-494a-a1cd-2c3b3081ed9b")
+	)
+	(embedded_fonts no)
+	(model "${TIS}/TIS_3D/ASTX-H12-10_000MHZ-T_ABR.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1.5 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+)

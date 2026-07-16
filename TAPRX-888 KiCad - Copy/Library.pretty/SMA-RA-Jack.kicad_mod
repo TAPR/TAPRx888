@@ -1,0 +1,166 @@
+(footprint "SMA-RA-Jack"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(locked yes)
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -8.6 -0.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "37ae034d-4b74-4cb1-aa83-8dd24ff44fcd")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "CONN_SMA_JACK_RA"
+		(at 0 -6.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "96f6e840-c669-4349-9410-03aa2209d7e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c7c42e4-acf8-41ae-8cb4-b89c30d5f2be")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9862c3b9-76c2-4d01-825f-4bcc911719a3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part #" "C91455"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "abcfa30b-9d5e-40d9-a08e-c544721336b1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -3.5 -3.5)
+		(end 3.5 3.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cea92744-fbd8-448a-9f18-57de9c534b72")
+	)
+	(fp_rect
+		(start -13.5 -3.1)
+		(end -3.8 2.9)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "User.1")
+		(uuid "eb0738b5-cd9e-4c86-ac78-60f4f82e18e0")
+	)
+	(fp_rect
+		(start -3.8 3.8)
+		(end 3.8 -3.8)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "User.1")
+		(uuid "90c4e77b-c5c5-4d32-9045-cbf4347a310e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -5.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "63818e81-3b4a-4785-a04d-a2b349fbc76d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.2 2.2)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "54b24892-783a-4854-84a9-5dd04f0f9c5b")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 -2.54)
+		(size 2.2 2.2)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "abb1f118-31a4-4c3d-96d4-6450f5412804")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 2.54)
+		(size 2.2 2.2)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9d73c475-22b7-4e3c-b9f7-410d6e478079")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 -2.54)
+		(size 2.2 2.2)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bd095b04-4bbc-44d1-b2e7-a920268acd7a")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 2.54)
+		(size 2.2 2.2)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8cd9dbc4-9d40-424f-9474-fd05c90cdc58")
+	)
+	(embedded_fonts no)
+	(model ":TIS:TIS_3D/SMA-angled.STEP"
+		(offset
+			(xyz 0 0 -4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

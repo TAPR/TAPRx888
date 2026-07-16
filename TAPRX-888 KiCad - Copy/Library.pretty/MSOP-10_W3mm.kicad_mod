@@ -1,0 +1,330 @@
+(footprint "MSOP-10_W3mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -2 0 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "16608b99-5749-4376-8c6f-16c8ca2cb1b8")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Si5351A"
+		(at 0 4.8 0)
+		(layer "F.Fab")
+		(uuid "41010189-365e-478f-a9c6-7b93bec5c0d5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "14b1bf90-e533-4cb4-90f3-6309702cc857")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d55e94e6-ce56-4321-9cb4-bbd7307bf82e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part #" "C504891"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e2b1b387-a7ac-4556-9110-91fa9215a628")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.6 -1.6)
+		(end -1.3 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9c6689e9-37f4-4550-9f61-7bbc88f36143")
+	)
+	(fp_line
+		(start -1.6 -1.3)
+		(end -1.6 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "13de92f6-5d92-4314-87c2-ad4840498e48")
+	)
+	(fp_line
+		(start -1.6 1.3)
+		(end -1.3 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "19b1b1d1-9a74-4e74-8f88-8b9fd2e3239e")
+	)
+	(fp_line
+		(start -1.3 1.6)
+		(end -1.3 2.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ef1ba76d-4b55-4daf-b553-bcc150700288")
+	)
+	(fp_line
+		(start 1.3 -1.6)
+		(end 1.6 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a6d31ce9-fa5e-4e3d-a48d-3d31131fd901")
+	)
+	(fp_line
+		(start 1.6 -1.6)
+		(end 1.6 -1.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b4656132-aa7f-4ba0-8bbe-b0be3a1d9cca")
+	)
+	(fp_line
+		(start 1.6 1.3)
+		(end 1.6 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "89b81988-8a2a-4faf-a805-fff22f09d1a8")
+	)
+	(fp_line
+		(start 1.6 1.6)
+		(end 1.3 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5043f9ce-fd87-46e4-b96e-7d7faa01f20c")
+	)
+	(fp_line
+		(start -1.75 -3.18)
+		(end 1.75 -3.18)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7cdaa24e-8148-473a-afa1-f3e984578dd6")
+	)
+	(fp_line
+		(start -1.75 3.18)
+		(end -1.75 -3.18)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "caa9db8d-69a1-47cc-89ab-f5724a3e475f")
+	)
+	(fp_line
+		(start -1.75 3.18)
+		(end 1.75 3.18)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d47a6b40-fc9f-4ec4-badf-aa1221271c90")
+	)
+	(fp_line
+		(start 1.75 -3.18)
+		(end 1.75 3.18)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "deddf613-66e4-48bc-9455-dd29aa4b6229")
+	)
+	(fp_line
+		(start -1.45 -1.45)
+		(end -1.45 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6db14080-f625-45b8-aa59-e2052ed653f8")
+	)
+	(fp_line
+		(start -1.45 -1.45)
+		(end 1.45 -1.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0d657364-a1a3-46fa-befa-cd2cd97a6ab4")
+	)
+	(fp_line
+		(start -1.45 1.1)
+		(end -1.1 1.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1a27e044-a6b0-4808-9256-75a66306bab1")
+	)
+	(fp_line
+		(start -1.1 1.45)
+		(end 1.45 1.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fe18cbde-60b0-43cc-9c05-ddfa2d679199")
+	)
+	(fp_line
+		(start 1.45 -1.45)
+		(end 1.45 1.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "76121160-83fc-4637-a6ab-8bdb64a25c3d")
+	)
+	(fp_text user "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "006efb62-be12-4990-b8e6-afa68cded638")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.05)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1 2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "7177db74-2ecc-4ed0-b043-486c7ebf6ab2")
+	)
+	(pad "2" smd rect
+		(at -0.5 2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "b6d13243-a83c-444e-bf59-67c98234256b")
+	)
+	(pad "3" smd rect
+		(at 0 2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "63db4748-3183-45af-a911-10ae3bcebb47")
+	)
+	(pad "4" smd rect
+		(at 0.5 2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "887382f0-40c6-4f4c-9059-0fc22b822ab5")
+	)
+	(pad "5" smd rect
+		(at 1 2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "12b6d570-a549-4bad-808f-222d4844babd")
+	)
+	(pad "6" smd rect
+		(at 1 -2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "2e36ab39-d7d4-4cac-97f2-b3fa5680ae2d")
+	)
+	(pad "7" smd rect
+		(at 0.5 -2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "db2056d4-aa37-4525-8adb-f0ca80bf7d77")
+	)
+	(pad "8" smd rect
+		(at 0 -2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "dbf4ac2f-e355-401b-8541-a76c4c23c69d")
+	)
+	(pad "9" smd rect
+		(at -0.5 -2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "f53c7e7e-5222-47d8-8c55-d3a820787476")
+	)
+	(pad "10" smd rect
+		(at -1 -2.2)
+		(size 0.3 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "5f042ef0-d231-4ee0-8e9e-49777affb798")
+	)
+	(embedded_fonts no)
+	(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-10 0.50p 3mm Pad.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

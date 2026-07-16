@@ -8040,9 +8040,9 @@
 	)
 	(symbol "Hole-M2.5"
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "H"
 			(at 0 2.54 0)
@@ -16682,7 +16682,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "TP"
 			(at 1.778 0 0)
@@ -16788,9 +16788,9 @@
 			(hide yes)
 		)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "TP"
 			(at 1.778 0 0)

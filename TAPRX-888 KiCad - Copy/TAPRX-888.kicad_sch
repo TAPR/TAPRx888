@@ -1866,6 +1866,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Library:CONN_SMA_JACK_RA"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CONN_SMA_JACK_RA"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "TIS_Footprints:SMA-RA-Jack"
+				(at -1.27 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" "C91455"
+				(at 0.254 11.176 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CONN_SMA_JACK_RA_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.222 1.8083)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.808)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CONN_SMA_JACK_RA_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Library:CYUSB3014-BZXCT"
 			(pin_names
 				(offset 1.016)
@@ -5464,9 +5650,9 @@
 		)
 		(symbol "Library:Hole-M2.5"
 			(exclude_from_sim no)
-			(in_bom no)
+			(in_bom yes)
 			(on_board yes)
-			(in_pos_files no)
+			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
 				(at 0 2.54 0)
@@ -10182,7 +10368,7 @@
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
-			(in_pos_files no)
+			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TP"
 				(at 1.778 0 0)
@@ -10288,9 +10474,9 @@
 				(hide yes)
 			)
 			(exclude_from_sim no)
-			(in_bom no)
+			(in_bom yes)
 			(on_board yes)
-			(in_pos_files no)
+			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TP"
 				(at 1.778 0 0)
@@ -11855,192 +12041,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0.254 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "CONN_SMA_JACK_EDGE_JLC_With_Nut"
-				(at 2.921 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
-				(at -0.508 13.208 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C2874826"
-				(at -4.826 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "CONN_SMA_JACK_EDGE_JLC_with_nut_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.778 0.508)
-					(mid 0.222 1.8083)
-					(end 1.778 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.778 0)
-					(mid 0.222 -1.808)
-					(end -1.778 -0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.508)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CONN_SMA_JACK_EDGE_JLC_with_nut_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "In"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "Ext"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "3.3V"
 		(exclude_from_sim no)
@@ -12421,12 +12421,6 @@
 		(uuid "018cadef-bd89-40be-97d6-fe1ab6255938")
 	)
 	(junction
-		(at 134.62 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "020a07fa-74ce-4ffc-abd4-3c0a66ca39e1")
-	)
-	(junction
 		(at 313.69 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12637,12 +12631,6 @@
 		(uuid "3244c59f-c8ca-4857-a0d2-dfd14df44c5a")
 	)
 	(junction
-		(at 152.4 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32a0ea52-ad0a-4651-821b-8b9f84e5c1d0")
-	)
-	(junction
 		(at 346.71 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12673,10 +12661,10 @@
 		(uuid "3ac22b46-ca2c-493c-92a3-8e45b60f76e6")
 	)
 	(junction
-		(at 134.62 44.45)
+		(at 165.1 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3b352de2-39fd-42b9-a70e-e86954074581")
+		(uuid "3b9b8df9-4117-4240-b1e5-163f516d43f6")
 	)
 	(junction
 		(at 345.44 63.5)
@@ -12689,6 +12677,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e51d565-4345-4987-9eb9-9974dae3cde3")
+	)
+	(junction
+		(at 146.05 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f3228e0-7530-4be1-bf02-f2f4e941eded")
 	)
 	(junction
 		(at 313.69 63.5)
@@ -12725,6 +12719,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42fcff23-85cb-4457-8b27-d9c40b2b59ed")
+	)
+	(junction
+		(at 25.4 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44174669-8f4f-451e-85cd-6f25717c3b3b")
 	)
 	(junction
 		(at 153.67 266.7)
@@ -12997,6 +12997,12 @@
 		(uuid "86293db6-496e-49f7-a8a4-9ff4133e4cd9")
 	)
 	(junction
+		(at 146.05 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "872b0aaa-3adb-4304-b544-7c0c8fbaecd5")
+	)
+	(junction
 		(at 57.15 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13007,12 +13013,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8bb6d8c2-c45a-4c52-8652-e969f59bb0fd")
-	)
-	(junction
-		(at 152.4 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8c1dedf3-06cb-4dcb-8f54-e29cbc551f65")
 	)
 	(junction
 		(at 38.1 265.43)
@@ -13055,6 +13055,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3a6bdeb-9b38-46e7-a04a-69c319b41a3e")
+	)
+	(junction
+		(at 146.05 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a565f297-d442-4c6f-aa9c-b79d9377f688")
 	)
 	(junction
 		(at 38.1 233.68)
@@ -13267,12 +13273,6 @@
 		(uuid "d4ec1d03-3936-4860-afa7-409bc3936584")
 	)
 	(junction
-		(at 134.62 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d50f011b-ea7f-4f70-ac6a-c834eacbff63")
-	)
-	(junction
 		(at 335.28 222.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13283,12 +13283,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d67d494c-d642-4f28-8d9a-ceb57f769868")
-	)
-	(junction
-		(at 25.4 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d8ae6fc0-7c8b-4ed9-b1ea-d0b096bf543d")
 	)
 	(junction
 		(at 314.96 223.52)
@@ -13463,6 +13457,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "faff7e75-53c4-4b63-9ce9-3b4a7a6a0474")
+	)
+	(junction
+		(at 165.1 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe9f50c7-805b-4d8a-ac12-f299e78a6deb")
 	)
 	(no_connect
 		(at 71.12 135.89)
@@ -13966,7 +13966,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 66.04) (xy 152.4 66.04)
+			(xy 146.05 66.04) (xy 151.13 66.04)
 		)
 		(stroke
 			(width 0)
@@ -14126,7 +14126,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 26.67) (xy 140.97 55.88)
+			(xy 140.97 26.67) (xy 140.97 54.61)
 		)
 		(stroke
 			(width 0)
@@ -14796,16 +14796,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 55.88) (xy 134.62 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1dcee22d-967a-4b8f-8266-3ca3bed94a9d")
-	)
-	(wire
-		(pts
 			(xy 91.44 233.68) (xy 73.66 233.68)
 		)
 		(stroke
@@ -15356,7 +15346,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 66.04) (xy 173.99 66.04)
+			(xy 158.75 66.04) (xy 165.1 66.04)
 		)
 		(stroke
 			(width 0)
@@ -16466,16 +16456,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 55.88) (xy 140.97 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5aa99978-9b80-4dc6-ab7d-23a2419ba60d")
-	)
-	(wire
-		(pts
 			(xy 229.87 19.05) (xy 229.87 21.59)
 		)
 		(stroke
@@ -16626,7 +16606,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 66.04) (xy 134.62 66.04)
+			(xy 128.27 66.04) (xy 146.05 66.04)
 		)
 		(stroke
 			(width 0)
@@ -16756,6 +16736,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 54.61) (xy 146.05 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67bef41b-4c26-4c93-9faa-fcf8fde34089")
+	)
+	(wire
+		(pts
 			(xy 311.15 218.44) (xy 314.96 218.44)
 		)
 		(stroke
@@ -16796,7 +16786,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 53.34) (xy 134.62 55.88)
+			(xy 146.05 54.61) (xy 146.05 57.15)
 		)
 		(stroke
 			(width 0)
@@ -17426,7 +17416,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 44.45) (xy 134.62 45.72)
+			(xy 146.05 44.45) (xy 146.05 45.72)
 		)
 		(stroke
 			(width 0)
@@ -17766,16 +17756,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 66.04) (xy 163.83 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cc67bc3-1ae4-4a55-a91a-a452246d6f34")
-	)
-	(wire
-		(pts
 			(xy 311.15 132.08) (xy 322.58 132.08)
 		)
 		(stroke
@@ -17886,7 +17866,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 72.39) (xy 152.4 73.66)
+			(xy 165.1 72.39) (xy 165.1 73.66)
 		)
 		(stroke
 			(width 0)
@@ -18596,7 +18576,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 50.8) (xy 152.4 52.07)
+			(xy 165.1 50.8) (xy 165.1 52.07)
 		)
 		(stroke
 			(width 0)
@@ -19046,7 +19026,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 44.45) (xy 171.45 44.45)
+			(xy 176.53 44.45) (xy 165.1 44.45)
 		)
 		(stroke
 			(width 0)
@@ -19073,16 +19053,6 @@
 			(type default)
 		)
 		(uuid "bc6a1d52-46b6-4112-b6cc-71699032e0c7")
-	)
-	(wire
-		(pts
-			(xy 163.83 44.45) (xy 152.4 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcdf205b-8958-4852-91fb-95fde4b56a72")
 	)
 	(wire
 		(pts
@@ -19246,7 +19216,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 66.04) (xy 152.4 67.31)
+			(xy 165.1 66.04) (xy 165.1 67.31)
 		)
 		(stroke
 			(width 0)
@@ -19336,6 +19306,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 53.34) (xy 146.05 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7907d38-d16d-4e2d-bb32-900fd9bbe714")
+	)
+	(wire
+		(pts
 			(xy 275.59 93.98) (xy 270.51 93.98)
 		)
 		(stroke
@@ -19366,7 +19346,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 44.45) (xy 152.4 45.72)
+			(xy 165.1 44.45) (xy 165.1 45.72)
 		)
 		(stroke
 			(width 0)
@@ -20486,7 +20466,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 44.45) (xy 134.62 44.45)
+			(xy 128.27 44.45) (xy 146.05 44.45)
 		)
 		(stroke
 			(width 0)
@@ -20506,7 +20486,17 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 66.04) (xy 134.62 64.77)
+			(xy 158.75 44.45) (xy 165.1 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed4babe7-f155-4c36-b104-82a79064b01a")
+	)
+	(wire
+		(pts
+			(xy 146.05 66.04) (xy 146.05 64.77)
 		)
 		(stroke
 			(width 0)
@@ -20706,7 +20696,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 44.45) (xy 152.4 44.45)
+			(xy 146.05 44.45) (xy 151.13 44.45)
 		)
 		(stroke
 			(width 0)
@@ -20733,6 +20723,16 @@
 			(type default)
 		)
 		(uuid "f4664d45-0ae0-4c95-ae65-553e111efb04")
+	)
+	(wire
+		(pts
+			(xy 173.99 66.04) (xy 165.1 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f59b780c-f05a-4dd7-878e-6a190b82bed1")
 	)
 	(bus
 		(pts
@@ -22349,9 +22349,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "01b0822e-3573-45e8-bb1c-7e3ca819e1f2")
 		(property "Reference" "TP20"
@@ -22696,98 +22696,6 @@
 			(project "TAPRX-888"
 				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
 					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut")
-		(at 25.4 62.23 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "036feaf3-e2b7-4569-8913-124cb8238b53")
-		(property "Reference" "J3"
-			(at 25.7174 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CONN_SMA_JACK_EDGE_JLC_With_Nut"
-			(at 25.7174 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
-			(at 25.908 49.022 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C914558"
-			(at 30.226 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cffc03bd-bc3b-429a-a393-6e510cd66443")
-		)
-		(pin "2"
-			(uuid "3bb70f0a-5bc1-4216-8d67-a994914e30f6")
-		)
-		(instances
-			(project "TAPRX-888"
-				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -24644,7 +24552,7 @@
 	)
 	(symbol
 		(lib_id "Library:R-47Ω-0603")
-		(at 134.62 49.53 0)
+		(at 146.05 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24655,7 +24563,7 @@
 		(fields_autoplaced yes)
 		(uuid "14c17cfd-f75a-4fef-8966-df1f6aa97acc")
 		(property "Reference" "R2"
-			(at 137.16 48.2599 0)
+			(at 148.59 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24666,7 +24574,7 @@
 			)
 		)
 		(property "Value" "R-47Ω-0603"
-			(at 137.16 50.7999 0)
+			(at 148.59 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24677,7 +24585,7 @@
 			)
 		)
 		(property "Footprint" "TIS_Footprints:PAD_0603"
-			(at 135.636 49.784 90)
+			(at 147.066 49.784 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24688,7 +24596,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 49.53 0)
+			(at 146.05 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24699,7 +24607,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 49.53 0)
+			(at 146.05 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24710,7 +24618,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23179"
-			(at 134.62 49.53 0)
+			(at 146.05 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24737,7 +24645,7 @@
 	)
 	(symbol
 		(lib_id "Library:R-4.7-0603")
-		(at 167.64 44.45 90)
+		(at 154.94 44.45 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24748,7 +24656,7 @@
 		(fields_autoplaced yes)
 		(uuid "14fae91d-15c3-4b02-85cf-d8d2782cb7a4")
 		(property "Reference" "R4"
-			(at 167.64 38.1 90)
+			(at 154.94 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24758,7 +24666,7 @@
 			)
 		)
 		(property "Value" "R-4.7-0603"
-			(at 167.64 40.64 90)
+			(at 154.94 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24768,7 +24676,7 @@
 			)
 		)
 		(property "Footprint" "TIS_Footprints:PAD_0603"
-			(at 167.894 43.434 90)
+			(at 155.194 43.434 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24779,7 +24687,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 44.45 0)
+			(at 154.94 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24790,7 +24698,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 44.45 0)
+			(at 154.94 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24801,7 +24709,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23164"
-			(at 167.513 51.562 0)
+			(at 154.813 51.562 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25088,7 +24996,7 @@
 	)
 	(symbol
 		(lib_id "Library:R-47Ω-0603")
-		(at 134.62 60.96 0)
+		(at 146.05 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25098,7 +25006,7 @@
 		(dnp no)
 		(uuid "1a6c9482-8400-4120-84fc-d5c82d331db1")
 		(property "Reference" "R3"
-			(at 136.144 56.134 0)
+			(at 147.574 56.134 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25109,7 +25017,7 @@
 			)
 		)
 		(property "Value" "R-47Ω-0603"
-			(at 136.398 59.69 0)
+			(at 147.828 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25120,7 +25028,7 @@
 			)
 		)
 		(property "Footprint" "TIS_Footprints:PAD_0603"
-			(at 135.636 61.214 90)
+			(at 147.066 61.214 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25131,7 +25039,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 60.96 0)
+			(at 146.05 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25142,7 +25050,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 60.96 0)
+			(at 146.05 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25153,7 +25061,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23179"
-			(at 134.62 60.96 0)
+			(at 146.05 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28389,6 +28297,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Library:CONN_SMA_JACK_RA")
+		(at 25.4 41.91 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4591da50-b669-4c0b-ae5b-bc7a88f6885f")
+		(property "Reference" "J3"
+			(at 25.7174 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CONN_SMA_JACK_RA"
+			(at 25.7174 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TIS_Footprints:SMA-RA-Jack"
+			(at 26.67 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 25.4 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C91455"
+			(at 25.4 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "35181770-9001-4813-a29c-55b790d3e1ed")
+		)
+		(pin "2"
+			(uuid "e6c330c5-ef62-4d30-88c3-e8f8e994faef")
+		)
+		(instances
+			(project "TAPRX-888"
+				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Library:ESD-PESD5V0U1UA")
 		(at 186.69 247.65 0)
 		(unit 1)
@@ -28764,9 +28764,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a39adc4-2191-4085-abed-8d08a167aac5")
@@ -29930,6 +29930,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Library:CONN_SMA_JACK_RA")
+		(at 22.86 125.73 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "577dbb65-c26d-4f88-acc5-e874b2c06a2a")
+		(property "Reference" "J1"
+			(at 23.1774 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CONN_SMA_JACK_RA"
+			(at 23.1774 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TIS_Footprints:SMA-RA-Jack"
+			(at 24.13 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 22.86 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C91455"
+			(at 22.86 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5c4282a-7b5e-4a69-a953-1857cfbdc2cb")
+		)
+		(pin "2"
+			(uuid "7eb8a3bc-e530-49c7-ba4d-ee22823fca77")
+		)
+		(instances
+			(project "TAPRX-888"
+				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Library:VREG-3.3V-SOT223")
 		(at 44.45 182.88 0)
 		(unit 1)
@@ -30021,6 +30113,98 @@
 			(project "TAPRX-888"
 				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Library:CONN_SMA_JACK_RA")
+		(at 25.4 62.23 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "5de9a5a6-ad6c-4a23-a02b-124f9465b396")
+		(property "Reference" "J4"
+			(at 25.7174 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CONN_SMA_JACK_RA"
+			(at 25.7174 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TIS_Footprints:SMA-RA-Jack"
+			(at 26.67 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 25.4 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C91455"
+			(at 25.4 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c43144b-b686-469d-a347-c904606eff21")
+		)
+		(pin "2"
+			(uuid "6c8392d2-bc9e-4796-b4c9-d3fdf4bbcf98")
+		)
+		(instances
+			(project "TAPRX-888"
+				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -30120,7 +30304,7 @@
 	)
 	(symbol
 		(lib_id "Library:C-4.7p-0603")
-		(at 152.4 69.85 0)
+		(at 165.1 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -30131,7 +30315,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f3627c7-d597-456e-99ad-3e83fc6760e4")
 		(property "Reference" "C31"
-			(at 154.94 68.5862 0)
+			(at 167.64 68.5862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30142,7 +30326,7 @@
 			)
 		)
 		(property "Value" "C-4.7p-0603"
-			(at 154.94 71.1262 0)
+			(at 167.64 71.1262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30153,7 +30337,7 @@
 			)
 		)
 		(property "Footprint" "TIS_Footprints:C_0603"
-			(at 150.114 70.612 0)
+			(at 162.814 70.612 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30164,7 +30348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 69.85 0)
+			(at 165.1 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30175,7 +30359,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 69.85 0)
+			(at 165.1 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30186,7 +30370,7 @@
 			)
 		)
 		(property "LCSC Part #" "C1669"
-			(at 158.623 66.929 0)
+			(at 171.323 66.929 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31518,7 +31702,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "75c1a862-27f6-4e84-8c65-1339f0fda04b")
 		(property "Reference" "TP14"
@@ -33475,7 +33659,7 @@
 	)
 	(symbol
 		(lib_id "Library:C-4.7p-0603")
-		(at 152.4 48.26 0)
+		(at 165.1 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33486,7 +33670,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f18df31-6e5a-4a77-9a71-e9ec834924c4")
 		(property "Reference" "C30"
-			(at 154.94 46.9962 0)
+			(at 167.64 46.9962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33497,7 +33681,7 @@
 			)
 		)
 		(property "Value" "C-4.7p-0603"
-			(at 154.94 49.5362 0)
+			(at 167.64 49.5362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33508,7 +33692,7 @@
 			)
 		)
 		(property "Footprint" "TIS_Footprints:C_0603"
-			(at 150.114 49.022 0)
+			(at 162.814 49.022 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33519,7 +33703,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 48.26 0)
+			(at 165.1 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33530,7 +33714,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 48.26 0)
+			(at 165.1 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33541,7 +33725,7 @@
 			)
 		)
 		(property "LCSC Part #" "C1669"
-			(at 158.623 45.339 0)
+			(at 171.323 45.339 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33661,7 +33845,7 @@
 	)
 	(symbol
 		(lib_id "Library:GND")
-		(at 152.4 52.07 0)
+		(at 165.1 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33672,7 +33856,7 @@
 		(fields_autoplaced yes)
 		(uuid "90a9e9dd-19df-4e0a-b874-ae352a3e413d")
 		(property "Reference" "#PWR028"
-			(at 152.4 58.42 0)
+			(at 165.1 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33683,7 +33867,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 57.15 0)
+			(at 165.1 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33693,7 +33877,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 52.07 0)
+			(at 165.1 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33704,7 +33888,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 52.07 0)
+			(at 165.1 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33715,7 +33899,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 52.07 0)
+			(at 165.1 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33726,7 +33910,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 152.4 52.07 0)
+			(at 165.1 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34574,98 +34758,6 @@
 		)
 	)
 	(symbol
-		(lib_id "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut")
-		(at 25.4 41.91 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9dafb675-6824-46b8-84de-d9a2fe8f82bc")
-		(property "Reference" "J2"
-			(at 25.7174 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CONN_SMA_JACK_EDGE_JLC_With_Nut"
-			(at 25.7174 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
-			(at 25.908 28.702 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C914558"
-			(at 30.226 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d109d08c-1b3e-4155-8468-e5303a39ef10")
-		)
-		(pin "2"
-			(uuid "5d4f9ebf-e389-41df-a44c-c891a34c6090")
-		)
-		(instances
-			(project "TAPRX-888"
-				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Library:+3V3")
 		(at 242.57 40.64 0)
 		(unit 1)
@@ -34939,9 +35031,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3b14f2f-d77c-4881-9f4a-228bb3764a4a")
@@ -35386,98 +35478,6 @@
 		)
 	)
 	(symbol
-		(lib_id "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut")
-		(at 22.86 125.73 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab38790f-4c73-448f-bca5-136aa7e5ae51")
-		(property "Reference" "J4"
-			(at 23.1774 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CONN_SMA_JACK_EDGE_JLC_With_Nut"
-			(at 23.1774 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
-			(at 23.368 112.522 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 22.86 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C914558"
-			(at 27.686 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "34b99995-6922-4584-aa6f-419adcc63b90")
-		)
-		(pin "2"
-			(uuid "9f45e7ba-5ab9-4d78-8f72-fc04d6f9511b")
-		)
-		(instances
-			(project "TAPRX-888"
-				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Library:C-10u-0603")
 		(at 62.23 189.23 0)
 		(unit 1)
@@ -35846,9 +35846,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b04db2bc-ca0c-4fd8-84e3-814952996960")
@@ -36014,98 +36014,6 @@
 			(project "TAPRX-888"
 				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut")
-		(at 25.4 21.59 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b211b51f-b7a9-40c1-862f-1fe5f6d2e2c9")
-		(property "Reference" "J1"
-			(at 25.7174 15.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CONN_SMA_JACK_EDGE_JLC_With_Nut"
-			(at 25.7174 17.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
-			(at 25.908 8.382 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C2874826"
-			(at 30.226 11.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "076e5e80-a06f-49d5-94be-d00b64f9120b")
-		)
-		(pin "2"
-			(uuid "e264817a-0822-4f5f-bd74-03b5204ca45c")
-		)
-		(instances
-			(project "TAPRX-888"
-				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -36312,7 +36220,6 @@
 		(uuid "ba44746e-b836-4396-a921-2d3a2a54b003")
 		(property "Reference" "L2"
 			(at 109.22 265.4299 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36324,7 +36231,6 @@
 		)
 		(property "Value" "TIS_LOGO"
 			(at 109.22 267.9699 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36752,7 +36658,7 @@
 	)
 	(symbol
 		(lib_id "Library:GND")
-		(at 152.4 73.66 0)
+		(at 165.1 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36763,7 +36669,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7c06ed2-44c9-4180-ae71-27167a452a9b")
 		(property "Reference" "#PWR029"
-			(at 152.4 80.01 0)
+			(at 165.1 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36774,7 +36680,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 78.74 0)
+			(at 165.1 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36784,7 +36690,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 73.66 0)
+			(at 165.1 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36795,7 +36701,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 73.66 0)
+			(at 165.1 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36806,7 +36712,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 73.66 0)
+			(at 165.1 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36817,7 +36723,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 152.4 73.66 0)
+			(at 165.1 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39599,6 +39505,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Library:CONN_SMA_JACK_RA")
+		(at 25.4 21.59 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6e0da43-4a67-47d0-b55b-30384d7e42dd")
+		(property "Reference" "J2"
+			(at 25.7174 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CONN_SMA_JACK_RA"
+			(at 25.7174 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TIS_Footprints:SMA-RA-Jack"
+			(at 26.67 12.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 25.4 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C91455"
+			(at 25.4 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8991d9d0-d7a3-456c-ab63-17ef2b530491")
+		)
+		(pin "2"
+			(uuid "e5d18779-ae1c-42ed-835e-42906bf4ef0a")
+		)
+		(instances
+			(project "TAPRX-888"
+				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Library:R-47K-0603")
 		(at 167.64 92.71 0)
 		(unit 1)
@@ -39696,9 +39694,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec7c5369-bcb9-4fe6-8d6d-31fc2f81b915")
@@ -40437,7 +40435,7 @@
 	)
 	(symbol
 		(lib_id "Library:R-4.7-0603")
-		(at 167.64 66.04 90)
+		(at 154.94 66.04 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -40447,7 +40445,7 @@
 		(dnp no)
 		(uuid "f9a3abe6-758b-4b42-bef7-3b2d932dc2f6")
 		(property "Reference" "R5"
-			(at 167.386 63.754 90)
+			(at 154.686 63.754 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40457,7 +40455,7 @@
 			)
 		)
 		(property "Value" "R-4.7-0603"
-			(at 167.894 68.58 90)
+			(at 155.194 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40467,7 +40465,7 @@
 			)
 		)
 		(property "Footprint" "TIS_Footprints:PAD_0603"
-			(at 167.894 65.024 90)
+			(at 155.194 65.024 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40478,7 +40476,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 66.04 0)
+			(at 154.94 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40489,7 +40487,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 66.04 0)
+			(at 154.94 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40500,7 +40498,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23164"
-			(at 167.513 73.152 0)
+			(at 154.813 73.152 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

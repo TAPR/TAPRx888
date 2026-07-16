@@ -668,7 +668,7 @@
         "uuid": "eb8944cd-94ec-4b09-b419-3508e0096041"
       }
     ],
-    "used_designators": "J1-4,R61,C78",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -685,9 +685,7 @@
       "Clock"
     ]
   ],
-  "text_variables": {
-    "GIT_HASH": "dev"
-  },
+  "text_variables": {},
   "tuning_profiles": {
     "meta": {
       "version": 0
