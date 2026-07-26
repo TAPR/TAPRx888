@@ -90,7 +90,7 @@ kicad-cli pcb export drill "$PCB" -o reports/gerbers/ \
 if python3 scripts/check_3d_models.py --require-local . > reports/check_3d_models.txt 2>&1; then
   note "- ✅ 3D models: no legacy refs; all board-used models present"
 else
-  note "- ❌ 3D models: unresolved or missing (see reports/check_3d_models.txt)"; fail=1
+  note "- ❌ 3D models: unresolved or missing (see reports/check_3d_models.txt)"; exit 1
 fi
 # The stock KiCad models are vendored in-repo (3d/kicad-stock/, mirroring the
 # .3dshapes layout) so the STEP is reproducible with no image models or network
