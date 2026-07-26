@@ -1,9 +1,8 @@
-BOM completeness: 185/191 fitted rows complete.
+BOM completeness: 185/190 fitted rows complete.
 
 Incomplete rows:
-  L2    missing: LCSC
-  TP21  missing: LCSC
-  U12   missing: Value
-  U13   missing: Value
-  U15   missing: Value
-  U17   missing: Value
+  L2   missing: LCSC
+  U12  missing: Value
+  U13  missing: Value
+  U15  missing: Value
+  U17  missing: Value
