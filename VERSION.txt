@@ -12,5 +12,5 @@ the bottom silkscreen and in every exported PDF — are published here:
 
     https://github.com/TAPR/TAPRx888/releases
 
-Versioning: pre-releases are v0.x; the first production release will be v1.0,
-then v1.1, v1.2, ...  See docs/RELEASE_STRATEGY.md.
+Versioning: production releases are whole majors (v1.0, v2.0, ...); v0.x and the
+minor increments between majors are dev pre-releases.  See docs/RELEASE_STRATEGY.md.

@@ -177,7 +177,7 @@
 		(uuid "70bc1e0a-c4ec-4ef3-8adf-af387cb68886")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/MBR120ESFT1.STEP"
+	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -185,7 +185,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 0)
+			(xyz 0 0 0)
 		)
 	)
 )

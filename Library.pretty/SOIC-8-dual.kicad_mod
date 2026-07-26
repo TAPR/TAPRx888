@@ -211,15 +211,15 @@
 		(uuid "8d425932-e5cf-457c-bb55-cf906eaae1db")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-08 0.65p 3mm Pad.step"
+	(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step"
 		(offset
 			(xyz 0 0 0)
 		)
 		(scale
-			(xyz 1.9 1.5 1)
+			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -0)
+			(xyz 0 0 -90)
 		)
 	)
 )

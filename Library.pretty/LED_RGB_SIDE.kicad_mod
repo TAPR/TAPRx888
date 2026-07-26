@@ -142,15 +142,15 @@
 		(uuid "41ec0585-56fa-4a24-b8a0-ad6fb1c32fc6")
 	)
 	(embedded_fonts no)
-	(model ":TIS:TIS_3D/LED_SMD.3dshapes/LED Side.step"
+	(model "${KIPRJMOD}/3d/LED_RGB_SIDE.step"
 		(offset
-			(xyz 0 -0.25 0)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 90 90)
+			(xyz 0 0 0)
 		)
 	)
 )

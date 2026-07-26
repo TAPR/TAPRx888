@@ -392,15 +392,15 @@
 		(uuid "34b57d00-1b58-4ebf-bff9-3015ca8dc23f")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/SOIC16W.stp"
+	(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step"
 		(offset
 			(xyz 0 0 0)
 		)
 		(scale
-			(xyz 0.6 0.5 0.5)
+			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -90)
+			(xyz 0 0 -90)
 		)
 	)
 )

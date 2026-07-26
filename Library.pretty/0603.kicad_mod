@@ -217,7 +217,7 @@
 		(uuid "5326d3ff-4a22-46b1-965b-276fb8c84061")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/R-0603.step"
+	(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 		(offset
 			(xyz 0 0 0)
 		)

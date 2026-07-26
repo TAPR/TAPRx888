@@ -254,15 +254,15 @@
 		(uuid "1490ebd1-7098-4724-a948-9a9fda91962d")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/pin header 1x3 and jumper.stp"
+	(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 2.54 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz 0 0 90)
 		)
 	)
 )

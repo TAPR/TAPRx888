@@ -175,7 +175,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SC-70-6_rot90"
+			(property "Footprint" "Library:SC-70-6_rot90"
 				(at 0 -13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -512,7 +512,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOT-23"
+			(property "Footprint" "Library:SOT-23"
 				(at -0.127 4.572 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -767,7 +767,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:C_0603"
+			(property "Footprint" "Library:C_0603"
 				(at -2.286 -0.762 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -947,7 +947,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at -2.286 -0.762 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1127,7 +1127,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 13.716 2.286 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1272,6 +1272,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Library:C-8.2p-0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C-8.2p-0603"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Library:PAD_0603"
+				(at -1.016 8.636 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "8.2pf 50V 5% NP0 0603"
+				(at -1.016 12.954 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" "C962145"
+				(at -7.62 10.414 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_* C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C-8.2p-0603_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C-8.2p-0603_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Library:FBEAD0603-1u-190mA"
 			(pin_names
 				(offset 1.016)
@@ -1301,7 +1481,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:0603"
+			(property "Footprint" "Library:0603"
 				(at -0.508 9.652 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1600,7 +1780,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOT-23-5"
+			(property "Footprint" "Library:SOT-23-5"
 				(at -1.27 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1765,7 +1945,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOT-23"
+			(property "Footprint" "Library:SOT-23"
 				(at 5.08 -1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1971,7 +2151,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SC-70-6"
+			(property "Footprint" "Library:SC-70-6"
 				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2172,7 +2352,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOT-23"
+			(property "Footprint" "Library:SOT-23"
 				(at 5.08 -1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2664,7 +2844,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2853,7 +3033,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3042,7 +3222,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3231,7 +3411,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3420,7 +3600,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3609,7 +3789,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3795,7 +3975,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOT-23-5"
+			(property "Footprint" "Library:SOT-23-5"
 				(at 0 -13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4034,7 +4214,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:MSOP-10_W3mm"
+			(property "Footprint" "Library:MSOP-10_W3mm"
 				(at 2.54 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4304,7 +4484,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:TCXO-3225"
+			(property "Footprint" "Library:TCXO-3225"
 				(at 0 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4477,7 +4657,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOT-23-6"
+			(property "Footprint" "Library:SOT-23-6"
 				(at 2.54 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4677,7 +4857,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:TP"
+			(property "Footprint" "Library:TP"
 				(at -2.54 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4784,7 +4964,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:HRS_U.FL-R-SMT(01)"
+			(property "Footprint" "Library:HRS_U.FL-R-SMT(01)"
 				(at -1.27 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4923,375 +5103,6 @@
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "Ext"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "capacitors:C-8.2p-0603"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C-8.2p-0603"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
-				(at -1.016 8.636 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "8.2pf 50V 5% NP0 0603"
-				(at -1.016 12.954 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C962145"
-				(at -7.62 10.414 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_* C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C-8.2p-0603_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C-8.2p-0603_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "resistors:R-100-0603"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R-100-0603"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
-				(at 1.016 -0.254 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C22775"
-				(at -7.62 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R-100-0603_0_1"
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R-100-0603_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8207,7 +8018,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-23"
+		(property "Footprint" "Library:SOT-23"
 			(at 109.855 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8304,7 +8115,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-23-6"
+		(property "Footprint" "Library:SOT-23-6"
 			(at 111.76 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -8384,7 +8195,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "08589785-2380-4ef9-89b7-39db958b66d6")
 		(property "Reference" "TP17"
 			(at 90.3732 168.148 0)
@@ -8408,7 +8219,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 85.09 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -8497,7 +8308,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 138.176 39.878 0)
 			(hide yes)
 			(show_name no)
@@ -8676,7 +8487,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-23-5"
+		(property "Footprint" "Library:SOT-23-5"
 			(at 234.95 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -8866,7 +8677,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:HRS_U.FL-R-SMT(01)"
+		(property "Footprint" "Library:HRS_U.FL-R-SMT(01)"
 			(at 219.71 10.16 0)
 			(hide yes)
 			(show_name no)
@@ -8957,7 +8768,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TCXO-3225"
+		(property "Footprint" "Library:TCXO-3225"
 			(at 153.67 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9065,7 +8876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:0603"
+		(property "Footprint" "Library:0603"
 			(at 128.778 27.178 0)
 			(hide yes)
 			(show_name no)
@@ -9246,7 +9057,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 173.736 120.904 90)
 			(hide yes)
 			(show_name no)
@@ -9416,7 +9227,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 189.484 79.502 0)
 			(hide yes)
 			(show_name no)
@@ -9596,7 +9407,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 205.994 141.732 0)
 			(hide yes)
 			(show_name no)
@@ -9745,7 +9556,7 @@
 		)
 	)
 	(symbol
-		(lib_id "resistors:R-100-0603")
+		(lib_id "Library:R-100-0603")
 		(at 246.38 29.21 0)
 		(unit 1)
 		(body_style 1)
@@ -9778,7 +9589,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 247.396 29.464 90)
 			(hide yes)
 			(show_name no)
@@ -9870,7 +9681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-23"
+		(property "Footprint" "Library:SOT-23"
 			(at 58.928 123.317 0)
 			(hide yes)
 			(show_name no)
@@ -9965,7 +9776,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 232.156 112.268 0)
 			(hide yes)
 			(show_name no)
@@ -10233,7 +10044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 241.554 49.022 0)
 			(hide yes)
 			(show_name no)
@@ -10325,7 +10136,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-23"
+		(property "Footprint" "Library:SOT-23"
 			(at 132.588 141.097 0)
 			(hide yes)
 			(show_name no)
@@ -10420,7 +10231,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 218.186 90.424 90)
 			(hide yes)
 			(show_name no)
@@ -10512,7 +10323,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 232.156 156.464 90)
 			(hide yes)
 			(show_name no)
@@ -10604,7 +10415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 254.254 144.272 0)
 			(hide yes)
 			(show_name no)
@@ -10672,7 +10483,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "5931022b-9535-47c6-a642-b70c5d7f6183")
 		(property "Reference" "TP15"
 			(at 29.718 106.426 0)
@@ -10696,7 +10507,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 26.67 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -10962,7 +10773,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:0603"
+		(property "Footprint" "Library:0603"
 			(at 222.758 99.568 0)
 			(hide yes)
 			(show_name no)
@@ -11316,7 +11127,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 131.318 131.064 0)
 			(hide yes)
 			(show_name no)
@@ -11407,7 +11218,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:0603"
+		(property "Footprint" "Library:0603"
 			(at 44.958 46.228 0)
 			(hide yes)
 			(show_name no)
@@ -11651,7 +11462,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "85084a68-6270-441b-af1e-533fc46dc62e")
 		(property "Reference" "TP16"
 			(at 29.718 110.998 0)
@@ -11675,7 +11486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 26.67 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -11763,7 +11574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SC-70-6"
+		(property "Footprint" "Library:SC-70-6"
 			(at 240.03 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -11867,7 +11678,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 79.756 76.454 90)
 			(hide yes)
 			(show_name no)
@@ -12037,7 +11848,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 152.146 139.954 90)
 			(hide yes)
 			(show_name no)
@@ -12128,7 +11939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SC-70-6"
+		(property "Footprint" "Library:SC-70-6"
 			(at 177.8 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -12321,7 +12132,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 79.756 61.214 90)
 			(hide yes)
 			(show_name no)
@@ -12769,7 +12580,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 251.206 61.214 90)
 			(hide yes)
 			(show_name no)
@@ -12859,7 +12670,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 38.354 155.194 90)
 			(hide yes)
 			(show_name no)
@@ -13016,7 +12827,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "aa9a5dad-f135-4aa6-addc-63af34ffde84")
 		(property "Reference" "TP19"
 			(at 133.5532 110.998 0)
@@ -13040,7 +12851,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 128.27 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13128,7 +12939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-23-5"
+		(property "Footprint" "Library:SOT-23-5"
 			(at 53.34 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -13227,7 +13038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 45.466 106.934 90)
 			(hide yes)
 			(show_name no)
@@ -13319,7 +13130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 158.496 134.366 90)
 			(hide yes)
 			(show_name no)
@@ -13410,7 +13221,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SC-70-6_rot90"
+		(property "Footprint" "Library:SC-70-6_rot90"
 			(at 198.12 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -13779,7 +13590,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 64.516 80.264 90)
 			(hide yes)
 			(show_name no)
@@ -13872,7 +13683,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 228.346 25.654 90)
 			(hide yes)
 			(show_name no)
@@ -13964,7 +13775,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 54.356 58.928 0)
 			(hide yes)
 			(show_name no)
@@ -14057,7 +13868,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 68.834 174.752 0)
 			(hide yes)
 			(show_name no)
@@ -14149,7 +13960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 85.344 73.152 0)
 			(hide yes)
 			(show_name no)
@@ -14239,7 +14050,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 88.646 102.616 90)
 			(hide yes)
 			(show_name no)
@@ -14299,7 +14110,7 @@
 		)
 	)
 	(symbol
-		(lib_id "capacitors:C-8.2p-0603")
+		(lib_id "Library:C-8.2p-0603")
 		(at 266.7 29.21 0)
 		(unit 1)
 		(body_style 1)
@@ -14332,7 +14143,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 265.684 20.574 0)
 			(hide yes)
 			(show_name no)
@@ -14513,7 +14324,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 92.964 112.522 0)
 			(hide yes)
 			(show_name no)
@@ -14605,7 +14416,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 64.516 37.084 90)
 			(hide yes)
 			(show_name no)
@@ -14696,7 +14507,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-23"
+		(property "Footprint" "Library:SOT-23"
 			(at 64.135 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -14794,7 +14605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 40.386 106.934 90)
 			(hide yes)
 			(show_name no)
@@ -14884,7 +14695,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 53.848 99.314 0)
 			(hide yes)
 			(show_name no)
@@ -15062,7 +14873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 73.406 102.616 90)
 			(hide yes)
 			(show_name no)
@@ -15155,7 +14966,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-23"
+		(property "Footprint" "Library:SOT-23"
 			(at 175.26 135.255 0)
 			(hide yes)
 			(show_name no)
@@ -15495,7 +15306,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e2ceb34c-5248-41ef-ac58-009d7f4a6b07")
 		(property "Reference" "TP18"
 			(at 133.5532 107.188 0)
@@ -15519,7 +15330,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 128.27 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -15686,7 +15497,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 96.266 86.614 90)
 			(hide yes)
 			(show_name no)
@@ -15778,7 +15589,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 181.864 145.542 0)
 			(hide yes)
 			(show_name no)
@@ -15870,7 +15681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 211.836 90.424 90)
 			(hide yes)
 			(show_name no)
@@ -16050,7 +15861,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:MSOP-10_W3mm"
+		(property "Footprint" "Library:MSOP-10_W3mm"
 			(at 231.14 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -16167,7 +15978,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 46.736 171.704 0)
 			(hide yes)
 			(show_name no)
@@ -16259,7 +16070,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 246.126 112.268 0)
 			(hide yes)
 			(show_name no)

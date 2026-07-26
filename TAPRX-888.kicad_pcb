@@ -46,12 +46,14 @@
 		(stackup
 			(layer "F.SilkS"
 				(type "Top Silk Screen")
+				(color "White")
 			)
 			(layer "F.Paste"
 				(type "Top Solder Paste")
 			)
 			(layer "F.Mask"
 				(type "Top Solder Mask")
+				(color "Blue")
 				(thickness 0.01)
 			)
 			(layer "F.Cu"
@@ -115,6 +117,7 @@
 			)
 			(layer "B.Mask"
 				(type "Bottom Solder Mask")
+				(color "Blue")
 				(thickness 0.01)
 			)
 			(layer "B.Paste"
@@ -122,8 +125,9 @@
 			)
 			(layer "B.SilkS"
 				(type "Bottom Silk Screen")
+				(color "White")
 			)
-			(copper_finish "None")
+			(copper_finish "ENIG")
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0)
@@ -179,8 +183,11 @@
 			(outputdirectory "")
 		)
 	)
+	(property "DESIGNER" "Paul Elliott (WB6CXC)")
 	(property "GIT_HASH" "dev")
-	(footprint "TIS_Footprints:PAD_0603"
+	(property "LICENSE" "MIT")
+	(property "REPO" "github.com/TAPR/TAPRx888")
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "0112452e-5d52-40fe-890c-09e0ecdf3dae")
 		(at 141 96 180)
@@ -387,7 +394,7 @@
 			(uuid "c56e0e07-77b5-421d-b8a9-ad4e9567a0ee")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -399,7 +406,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "03be8d14-e353-46aa-92cf-82a9960dacab")
 		(at 142 56 90)
@@ -606,7 +613,7 @@
 			(uuid "35e7dc48-3f56-4ff9-80cd-f23b8e5e536f")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -618,7 +625,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "0467d535-add5-4b65-b3c7-fc4e4d5125a2")
 		(at 138 71 90)
@@ -825,7 +832,7 @@
 			(uuid "35ab699f-48e7-407e-9309-fa63abfd0c40")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -837,7 +844,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:4D02"
+	(footprint "Library:4D02"
 		(layer "F.Cu")
 		(uuid "05792caf-977f-41ba-8f9b-ea2b8dd37529")
 		(at 154.5 88.5 180)
@@ -1084,19 +1091,19 @@
 			(uuid "e290b01d-9e72-4ee3-a36f-48dc8ce7811a")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-08 0.65p 3mm Pad.iges"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.7 0.2 0.2)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz -0 -0 -90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "084bf781-4925-4885-8029-1efaa3f86cb0")
 		(at 161 109)
@@ -1303,7 +1310,7 @@
 			(uuid "db1e0637-7f3b-4ba3-b9fe-4a99a7117041")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1315,7 +1322,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23"
+	(footprint "Library:SOT-23"
 		(layer "F.Cu")
 		(uuid "0d68de14-48d6-4793-aad5-9fc54d2503b5")
 		(at 166.5 113.05 180)
@@ -1513,7 +1520,7 @@
 			(uuid "e311d9d9-75b5-4051-a453-b4f6685c9f5d")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1525,7 +1532,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SP3011"
+	(footprint "Library:SP3011"
 		(layer "F.Cu")
 		(uuid "0db09aee-bc00-4c89-8cc3-0167ad24ea6e")
 		(at 157 70)
@@ -1817,19 +1824,19 @@
 			(uuid "4ef2d8dd-45ac-474b-81f2-d622959c65a8")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_DFN_QFN.3dshapes/DFN-14-1EP_3x4mm_Pitch0.5mm.step"
+		(model "${KIPRJMOD}/3d/SP3011.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.3001 1 1)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -90)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "0e108833-5400-4607-a947-39309d83063e")
 		(at 124 129 90)
@@ -2036,7 +2043,7 @@
 			(uuid "b9ee9b45-c6de-4117-9738-232c64b982d9")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2048,7 +2055,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Pin_Header_Straight_1x03_Pitch2.54mm"
+	(footprint "Library:Pin_Header_Straight_1x03_Pitch2.54mm"
 		(layer "F.Cu")
 		(uuid "0e6ca191-caeb-4cfb-9fd4-635337967375")
 		(at 127 90)
@@ -2324,19 +2331,19 @@
 			(uuid "24138e08-41a7-47c7-8df3-2cd947d8dc2e")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/pin header 1x3 and jumper.stp"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.54 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "0eca1aa5-4d6a-47c7-8f2a-ff27e8064204")
 		(at 171 139)
@@ -2414,7 +2421,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -2427,7 +2434,7 @@
 			(uuid "8c533a88-4bd7-4047-bae0-8d8fb94d58ae")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2439,7 +2446,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "10fa67e7-8cbc-4c26-bf28-efed0c09be37")
 		(at 149 94)
@@ -2646,7 +2653,7 @@
 			(uuid "4ac51792-dab0-4e5a-b6ef-30f604ebeb5c")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2658,7 +2665,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "13265bc4-4920-4ba7-9369-3d1207eb961e")
 		(at 141 139 -90)
@@ -2865,7 +2872,7 @@
 			(uuid "1d8e1806-e635-4c25-9f92-11c71bcffdb9")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2877,7 +2884,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "1369b64d-c950-4993-9ec2-7efe0d387f74")
 		(at 158 114)
@@ -3084,7 +3091,7 @@
 			(uuid "38574f31-b7d3-4579-be0e-3dce2bc0c670")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3096,7 +3103,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "164e7f2e-b43f-4820-a7d1-1f5e3bfdf1b1")
 		(at 109 130)
@@ -3303,7 +3310,7 @@
 			(uuid "30613c0b-4d75-47a0-81fb-ad631630e821")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3315,7 +3322,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "17c11f36-7912-4117-a203-b3cc39f099b4")
 		(at 149.25 96.5 -90)
@@ -3520,7 +3527,7 @@
 			(uuid "d006653b-cb26-43c8-bbf8-90d4b007d907")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3532,7 +3539,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "1806f1ca-6bad-4e76-9a7f-6a4c46573c88")
 		(at 164.75 69.75 90)
@@ -3739,7 +3746,7 @@
 			(uuid "6835b763-50e5-486d-a63b-17a8f37f8208")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3751,7 +3758,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TSSOP-16-Thermal"
+	(footprint "Library:TSSOP-16-Thermal"
 		(layer "F.Cu")
 		(uuid "18fe1cf1-71c7-410d-a862-c5e3332a5f01")
 		(at 147 125 90)
@@ -4246,19 +4253,19 @@
 			(uuid "78e2db76-6cbe-452a-baf8-da75fd2bbc3a")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/SOIC16W.stp"
+		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.6 0.5 0.5)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -90)
+				(xyz 0 0 -90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "19fe58a8-76fb-4e40-93ce-27c9a7df2695")
 		(at 168.25 87 180)
@@ -4465,7 +4472,7 @@
 			(uuid "d9d8824a-030c-4cd9-82d4-91d82436f5ae")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4477,7 +4484,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "1a3c9ddf-07fd-40a0-80a4-3e63e83cde80")
 		(at 168.25 81 180)
@@ -4684,7 +4691,7 @@
 			(uuid "07700e41-3d18-4ed5-a7d8-d1b10e1730a3")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4696,7 +4703,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "1a746ded-e471-471f-9705-a50301490b5a")
 		(at 149 120 180)
@@ -4903,7 +4910,7 @@
 			(uuid "feabfbb6-dfc9-48ad-8f15-740d7d40868c")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4915,7 +4922,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "1d319c9c-8792-46e4-800d-2f23548a15d2")
 		(at 170 75 180)
@@ -5122,7 +5129,7 @@
 			(uuid "050b4c2d-dc5b-409f-b3ac-62e569f58848")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5134,7 +5141,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:BGA-121"
+	(footprint "Library:BGA-121"
 		(layer "F.Cu")
 		(uuid "1da336ef-4785-417c-bf7d-f27f9a72ea9f")
 		(at 156 81)
@@ -6599,7 +6606,7 @@
 			(uuid "a301933a-8b33-4c4b-8b1f-c78639c52eb1")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/BGA/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6611,7 +6618,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Murata2U"
+	(footprint "Library:Murata2U"
 		(layer "F.Cu")
 		(uuid "1e0e8f92-4881-4fd2-b2b0-35b1ce676792")
 		(at 116 129 -90)
@@ -6783,19 +6790,19 @@
 			(uuid "cbec0715-4a73-4e7e-9528-157eaecbe50d")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/LQW15AN2N2G80D.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 2.8 2.8 2.8)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-223_THERMAL"
+	(footprint "Library:SOT-223_THERMAL"
 		(layer "F.Cu")
 		(uuid "1e7bc555-5399-4bea-a026-e338cafde2be")
 		(at 113 60 -90)
@@ -7233,7 +7240,7 @@
 			(uuid "42f7cda0-1ad9-438b-b1b9-5b22a90a01c0")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7245,7 +7252,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "20da58ec-8ef8-4f63-a6b6-329cf5d9c5f7")
 		(at 152 101)
@@ -7452,7 +7459,7 @@
 			(uuid "f8b22ce9-e42f-4188-9c78-6a6c8b9720c7")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7464,7 +7471,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "213658ab-a57c-4f55-97b9-e5d46b61290e")
 		(at 159.95 104)
@@ -7671,7 +7678,7 @@
 			(uuid "95f8c711-00ac-4f53-a091-34cd539f4a85")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7683,7 +7690,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "21794130-9dee-4a28-a98c-6bf44781ba4a")
 		(at 145 94)
@@ -7890,7 +7897,7 @@
 			(uuid "8e8ca30c-a8c3-4d9c-b6cb-c2c808206041")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7902,7 +7909,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "22b615dd-0366-40d5-bc1a-174fc17da521")
 		(at 104 129 90)
@@ -8109,7 +8116,7 @@
 			(uuid "fee3e880-9d9c-4b15-827b-d1e2f2729f55")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8121,7 +8128,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP-Tiny"
+	(footprint "Library:TP-Tiny"
 		(layer "F.Cu")
 		(uuid "2647140d-40c1-43c7-97ce-85f57a4e28c4")
 		(at 165.5 81)
@@ -8200,7 +8207,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.5 -0.5)
@@ -8294,7 +8301,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "26706462-1410-474f-b709-c1654249a123")
 		(at 123 84 180)
@@ -8501,7 +8508,7 @@
 			(uuid "d703b931-d639-4e0a-8bbf-d4fc2b91e7a9")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8513,7 +8520,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "27404c59-b739-478f-a507-27f14ca6c428")
 		(at 166.25 69.75 90)
@@ -8720,7 +8727,7 @@
 			(uuid "d4d83286-7b4e-4396-8c89-7a0ebb937352")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8732,7 +8739,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "2b467fc1-3acb-4a5d-a4b6-d8ab743fe091")
 		(at 162 74 90)
@@ -8939,7 +8946,7 @@
 			(uuid "aac75fac-499f-4069-91be-e2623a19c9c5")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8951,7 +8958,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23"
+	(footprint "Library:SOT-23"
 		(layer "F.Cu")
 		(uuid "2d0e9e2c-402f-46ec-bcdd-56252770ef81")
 		(at 149 135 180)
@@ -9145,7 +9152,7 @@
 			(uuid "8a7188b8-8c17-44e7-baee-fd4ab8a51a62")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9157,7 +9164,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "2da624f7-66ee-42e7-8b39-d9e92a90cb73")
 		(at 166 77 180)
@@ -9364,7 +9371,7 @@
 			(uuid "bf1dadab-c644-4554-9c63-f6ae36242f50")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9376,7 +9383,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "2e4270fe-72df-4ba7-84bc-d7795dca5ba5")
 		(at 162 124)
@@ -9583,7 +9590,7 @@
 			(uuid "64dba5e4-ceff-48d9-ba76-49bcf53126cc")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9595,7 +9602,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "31336ccf-35dd-4e8f-80af-b91353e31917")
 		(at 168.25 83 180)
@@ -9802,7 +9809,7 @@
 			(uuid "7d32ec59-15d3-436e-848b-f73dedc91d1a")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9814,7 +9821,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "33bdc851-3df1-4f0d-bd94-9116f56318a3")
 		(at 141 92 180)
@@ -10021,7 +10028,7 @@
 			(uuid "5d5ad984-8e0d-487a-a716-55a50f4cbafe")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10033,7 +10040,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Murata2U"
+	(footprint "Library:Murata2U"
 		(layer "F.Cu")
 		(uuid "350e173b-410b-4134-b00c-2f64659bceb6")
 		(at 128 121 -90)
@@ -10205,19 +10212,19 @@
 			(uuid "d1c3aead-2e57-4462-b40c-ddf390c31c9c")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/LQW15AN2N2G80D.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 2.8 2.8 2.8)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:0603"
+	(footprint "Library:0603"
 		(layer "F.Cu")
 		(uuid "35b6e18e-0be2-4d13-97a4-3ebf9cc4bc76")
 		(at 170 73)
@@ -10449,7 +10456,7 @@
 			(uuid "31660330-a9e8-495e-bfcb-59f53605885d")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10461,7 +10468,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "3617c979-e8d2-4f53-9709-e5d8e552297f")
 		(at 170 96.125 180)
@@ -10668,7 +10675,7 @@
 			(uuid "7ed814fa-3c6b-4ba0-8422-a35f8f62b9ac")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10680,7 +10687,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "36a8fb5c-987f-434b-95b6-7762300ee6ad")
 		(at 160 101 180)
@@ -10887,7 +10894,7 @@
 			(uuid "8ce78a34-e919-4fe6-8035-c5b4e4ab540e")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10899,7 +10906,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "37a82ca0-fcbe-4e2c-b3b1-1c77001e2dfe")
 		(at 150 139 -90)
@@ -11106,7 +11113,7 @@
 			(uuid "ed4bc862-7f58-47ac-b976-180250994e65")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11118,7 +11125,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "384398e3-f979-4cb5-8726-43acd8b6ab14")
 		(at 146 85 180)
@@ -11325,7 +11332,7 @@
 			(uuid "65b7aab8-2a9b-4b44-b4a5-d7011295d313")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11337,7 +11344,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "3949c75f-b253-4e02-8d80-bcd2cb4f255d")
 		(at 149 73 180)
@@ -11544,7 +11551,7 @@
 			(uuid "7be42200-3b63-4309-bf64-693fb141b40a")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11556,7 +11563,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "3c945bc5-0d1b-45b2-b613-d14a3f46d53b")
 		(at 140.2 116.1 180)
@@ -11763,7 +11770,7 @@
 			(uuid "61214f3b-afe6-447f-ab97-8ac4edb39915")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11775,7 +11782,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "3de2ae53-b1ae-47ff-8e33-421bc8bcb510")
 		(at 104 71)
@@ -11853,7 +11860,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -11866,7 +11873,7 @@
 			(uuid "c76d3c4b-f673-4ac1-8eea-490aae021a6e")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11878,7 +11885,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
+	(footprint "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
 		(layer "F.Cu")
 		(uuid "3ecaeff4-fb03-47a4-a205-36288c0b0eeb")
 		(at 146.986483 145.602996 180)
@@ -12264,19 +12271,19 @@
 			(uuid "5b8623f0-356d-4bf6-a4d4-b54bebc32e7d")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Molex-SMA.stp"
+		(model "${KIPRJMOD}/3d/SMA_Jack_EdgeMount_JLC.step"
 			(offset
-				(xyz 0.0254 14.605 0.5999988)
+				(xyz 0 14 0.65)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -180)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "406cd16d-9dc0-47ca-822c-02be30c3888a")
 		(at 111 139 90)
@@ -12483,7 +12490,7 @@
 			(uuid "8c31a5fc-e0d8-4658-a904-99ef673b185f")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12495,7 +12502,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "4078bf50-941b-4a40-81c7-7ea234516587")
 		(at 120 82)
@@ -12573,7 +12580,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -12586,7 +12593,7 @@
 			(uuid "68510dd4-61f4-4617-8519-bb00a0a55af4")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12598,7 +12605,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "463cef0f-4e05-4a3b-93ae-1d7ab5737b30")
 		(at 149 77.5 180)
@@ -12805,7 +12812,7 @@
 			(uuid "c1912478-d51b-4e0a-b80a-fd694b776569")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12817,7 +12824,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
+	(footprint "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
 		(layer "F.Cu")
 		(uuid "47c2847e-fd19-4716-a405-6e680eabe986")
 		(at 111 145.423611 180)
@@ -13203,19 +13210,19 @@
 			(uuid "7e34707b-2e3f-47e2-b6c6-88e982f865ec")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Molex-SMA.stp"
+		(model "${KIPRJMOD}/3d/SMA_Jack_EdgeMount_JLC.step"
 			(offset
-				(xyz 0.0254 14.605 0.5999988)
+				(xyz 0 14 0.65)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -180)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "486a6d74-835f-4068-ad66-3ce7ce6c5bbb")
 		(at 129 139)
@@ -13293,7 +13300,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -13306,7 +13313,7 @@
 			(uuid "7cbd9083-8dcf-4f49-825f-ed2a3302d910")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13318,7 +13325,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:0603"
+	(footprint "Library:0603"
 		(layer "F.Cu")
 		(uuid "48cd68fd-43f1-4106-81ed-8e2da8ae4cfc")
 		(at 146 75.8)
@@ -13550,7 +13557,7 @@
 			(uuid "56b53a7e-ed5f-4a98-8ad2-41e8ca6ec2d9")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13562,7 +13569,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "49c773ba-d39a-4a10-b417-97273402e20a")
 		(at 145 130)
@@ -13769,7 +13776,7 @@
 			(uuid "b0736757-b0b6-42e5-9305-91fe2af9fb2d")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13781,7 +13788,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "4a09e098-4d95-483f-99a5-8606c292a664")
 		(at 136 85 180)
@@ -13988,7 +13995,7 @@
 			(uuid "cfc80e2c-cae4-4320-bd82-f6b9d1b9a06c")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14000,7 +14007,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "4a1807df-a634-4b7c-96ac-6c7ab289e4a6")
 		(at 145.55 74)
@@ -14207,7 +14214,7 @@
 			(uuid "09711f67-c0fe-4b09-bca1-069e25f0bfa6")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14219,7 +14226,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-223_THERMAL"
+	(footprint "Library:SOT-223_THERMAL"
 		(layer "F.Cu")
 		(uuid "4a6fe8ae-0311-43cd-b3cf-055f5c0f13fc")
 		(at 133 74 -90)
@@ -14657,7 +14664,7 @@
 			(uuid "5f6ad98d-1558-44ff-bc18-3691a5639dbf")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14669,7 +14676,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "4bf98cf2-0123-482a-8451-441070ee81b9")
 		(at 118 74 -90)
@@ -14876,7 +14883,7 @@
 			(uuid "99e355dc-d3e0-48e8-8533-3fa6f0a76a66")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14888,7 +14895,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOD-123"
+	(footprint "Library:SOD-123"
 		(layer "F.Cu")
 		(uuid "4c9adc64-8adf-4fe1-af64-cb84faf8295b")
 		(at 108 67.1 90)
@@ -15082,7 +15089,7 @@
 			(uuid "186b8030-b8c5-4e2d-b2a9-ffc2e5e2b5f2")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/MBR120ESFT1.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15090,11 +15097,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "4d21ab6f-f610-45c0-befb-dbc186b7140f")
 		(at 120 86)
@@ -15172,7 +15179,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -15185,7 +15192,7 @@
 			(uuid "d71c435a-f939-4373-b71b-809761ced965")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15197,7 +15204,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:4D02"
+	(footprint "Library:4D02"
 		(layer "F.Cu")
 		(uuid "4d8c0f3d-565f-4926-847d-25856198fc2f")
 		(at 157.5 88.5 180)
@@ -15444,19 +15451,19 @@
 			(uuid "f00bfd0a-a575-4e1a-a2b0-228a838f7aee")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-08 0.65p 3mm Pad.iges"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.7 0.2 0.2)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz -0 -0 -90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "4fb33f7b-ffdf-4233-ae9b-19b44872c947")
 		(at 150.5 104.5)
@@ -15663,7 +15670,7 @@
 			(uuid "e19da913-5ffb-4968-9b0b-924a1c4147cb")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15675,7 +15682,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "50de66a0-b1d2-4e0f-bed4-e1b36e22b24c")
 		(at 149 92)
@@ -15882,7 +15889,7 @@
 			(uuid "5b0dd775-1c71-46f3-85fb-10ab7bb83c45")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15894,7 +15901,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "5187c98b-6828-4ee2-9db1-0467f562c2bf")
 		(at 165 133)
@@ -16101,7 +16108,7 @@
 			(uuid "1baf3acf-63cb-4eb8-adf9-0dc7b3f3f52b")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16113,7 +16120,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "5200e626-7e1c-45fb-8394-75b5550111a2")
 		(at 162 130)
@@ -16320,7 +16327,7 @@
 			(uuid "c46afbcf-2931-4231-9156-8932e202f5e3")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16332,7 +16339,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:4D02"
+	(footprint "Library:4D02"
 		(layer "F.Cu")
 		(uuid "52694a0f-4a5b-458a-a693-1c5316ac2d66")
 		(at 162.15 93.5 90)
@@ -16579,19 +16586,19 @@
 			(uuid "c6400ae1-90be-4fa7-84d3-5d2a6685a289")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-08 0.65p 3mm Pad.iges"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.7 0.2 0.2)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz -0 -0 -90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "53357fdc-2bf7-4c54-aa58-c94ecb3cdb42")
 		(at 104 85.5)
@@ -16669,7 +16676,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -16682,7 +16689,7 @@
 			(uuid "803ee977-4a0c-46a6-a75b-aee5f66d1a5e")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16694,7 +16701,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "543106d5-0d7f-4e10-a70e-e3e1fd27295e")
 		(at 152 73)
@@ -16901,7 +16908,7 @@
 			(uuid "cee4a2f3-6eea-4d87-8882-6af2b885094f")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16913,7 +16920,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-223_THERMAL"
+	(footprint "Library:SOT-223_THERMAL"
 		(layer "F.Cu")
 		(uuid "545406cc-0fa6-47a4-ba28-70f6167f1084")
 		(at 133 60 -90)
@@ -17351,7 +17358,7 @@
 			(uuid "c67b34db-c9b7-49b9-9a49-93caa51e50ef")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17363,7 +17370,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "55ce034a-3556-489f-828a-5217a8a3e5c6")
 		(at 149.25 82.95 180)
@@ -17570,7 +17577,7 @@
 			(uuid "cc6b98af-d607-4b53-9c7f-56c7c471de65")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17582,7 +17589,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:HRS_U.FL-R-SMT(01)"
+	(footprint "Library:HRS_U.FL-R-SMT(01)"
 		(layer "F.Cu")
 		(uuid "56b18d6e-156d-4305-b014-7effa7a9bae4")
 		(at 147 105.275 90)
@@ -17918,19 +17925,19 @@
 			)
 		)
 		(embedded_fonts no)
-		(model ":TIS:TIS_3D/U.FL-R-SMT_01_.step"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step"
 			(offset
-				(xyz 0 0.635 0)
+				(xyz 0 0.7 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "57d9ef0f-dfff-4b30-b7f9-e7c907321056")
 		(at 169 127)
@@ -18137,7 +18144,7 @@
 			(uuid "8623cadc-f8f0-4183-bccc-f04d7558ab88")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18149,7 +18156,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "582b3923-0691-4172-a88e-78849f0b028e")
 		(at 169 120)
@@ -18356,7 +18363,7 @@
 			(uuid "d99eac5f-3626-4d3f-85b2-6ef9474651f5")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18368,7 +18375,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOD-123"
+	(footprint "Library:SOD-123"
 		(layer "F.Cu")
 		(uuid "58e1ac14-1664-42ea-9f2b-83b7b2e6fc2a")
 		(at 118 67.1 -90)
@@ -18562,7 +18569,7 @@
 			(uuid "2d286a95-4f48-4c62-a75c-d5f6eda97969")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/MBR120ESFT1.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18570,11 +18577,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "591969ef-4d73-4810-adcd-b98df5a7c05c")
 		(at 124 116 180)
@@ -18781,7 +18788,7 @@
 			(uuid "10f54afb-acd2-4a02-9f73-a1bf63300d74")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18793,7 +18800,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "5923a508-eba3-40a0-b1b9-51c915b78726")
 		(at 145 120)
@@ -19000,7 +19007,7 @@
 			(uuid "4cbd328c-05e8-440e-a50b-00a620b2a214")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19012,7 +19019,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:LED_RGB_SIDE"
+	(footprint "Library:LED_RGB_SIDE"
 		(layer "F.Cu")
 		(uuid "5a94c475-55ab-469f-8545-e4e17b0fb06e")
 		(at 138 52.5)
@@ -19178,19 +19185,19 @@
 			(uuid "b6b183dc-4f3f-41d3-a6d0-dcdf8cdfdf21")
 		)
 		(embedded_fonts no)
-		(model ":TIS:TIS_3D/LED_SMD.3dshapes/LED Side.step"
+		(model "${KIPRJMOD}/3d/LED_RGB_SIDE.step"
 			(offset
-				(xyz 0 -0.25 0)
+				(xyz 0 0 0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 90 90)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "5e218a32-b18c-4183-a5d6-7ed46843ff3e")
 		(at 104 121 90)
@@ -19397,7 +19404,7 @@
 			(uuid "c79959c8-6a14-4c52-8428-7cfd666b6b90")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19409,7 +19416,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "5e3afb2c-f490-4f3f-a596-a42b37babc1a")
 		(at 145 98)
@@ -19616,7 +19623,7 @@
 			(uuid "d74f2466-f3db-4938-b05f-d46aa5c7bed0")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19628,7 +19635,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "5f569ba2-0f22-430b-a867-2e3d46ab7046")
 		(at 170 114 180)
@@ -19835,7 +19842,7 @@
 			(uuid "3c93b961-9878-4c58-805d-a4381a2ae0bf")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19847,7 +19854,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "605df5cb-c542-49e9-8a67-10c3a5b78e8d")
 		(at 149 99)
@@ -20054,7 +20061,7 @@
 			(uuid "a2b5b90b-d54d-4289-87f4-22fe150f82a0")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20066,7 +20073,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SC-70-6"
+	(footprint "Library:SC-70-6"
 		(layer "F.Cu")
 		(uuid "60abc92e-fd3b-46ce-bc73-0aba4f7cff24")
 		(at 158.075 116.375)
@@ -20304,7 +20311,7 @@
 			(uuid "dcba275f-c702-423c-9bfa-3587a550ff0e")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/sc70/LIB_AD8029AKSZ-R2/AD8029AKSZ-R2/3D/AD8029AKSZ-R2.stp"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20312,11 +20319,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "64ac5a7d-054f-4edb-83ac-9e6a97947ec8")
 		(at 142.5 87 180)
@@ -20523,7 +20530,7 @@
 			(uuid "328680fd-50cf-4c85-bf9b-6620daf78349")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20535,7 +20542,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "67b1426e-513b-4f11-b61f-2dee57661dcf")
 		(at 168.25 85 180)
@@ -20742,7 +20749,7 @@
 			(uuid "1a856a5b-dbe9-48c8-9fc3-aa181d8e5769")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20754,7 +20761,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "68150e90-63a9-4bb2-be01-2f5171ceaff5")
 		(at 108 72 -90)
@@ -20961,7 +20968,7 @@
 			(uuid "c2e9f34e-cda9-4e6e-8f42-2a4668e54cad")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20973,7 +20980,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "6a5faf48-6608-4e9c-a6da-6750b61794e8")
 		(at 104 81)
@@ -21051,7 +21058,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -21064,7 +21071,7 @@
 			(uuid "4e27e097-5ea6-411c-b5e0-0619d68266f3")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21076,7 +21083,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "6b3e205b-b7dd-480e-941e-1c6bfbbae410")
 		(at 104 142)
@@ -21154,7 +21161,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -21167,7 +21174,7 @@
 			(uuid "e9a0e06c-0959-4e40-b0f8-a8a780668cdf")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21179,7 +21186,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOD-323"
+	(footprint "Library:SOD-323"
 		(layer "F.Cu")
 		(uuid "6be70265-ac45-4ac2-a584-ee30a751c2f5")
 		(at 151.945 70)
@@ -21363,7 +21370,7 @@
 			(uuid "35dccac3-fe46-4225-bd87-4fa1ae958866")
 		)
 		(embedded_fonts no)
-		(model ":TIS:TIS_3D/SOD-323_1P7X1P25_ONS.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21371,11 +21378,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "6cce1f2b-2ad5-4294-939a-ca344bd2e33a")
 		(at 167.75 69.75 90)
@@ -21582,7 +21589,7 @@
 			(uuid "a821289c-3da5-484c-89da-c20facfe873e")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21594,7 +21601,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "6cdf7b6c-3da7-4251-acfb-c4eba2bccdae")
 		(at 168 139)
@@ -21801,7 +21808,7 @@
 			(uuid "155c015b-1b0b-4de6-ae52-faffd8e2da89")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21813,7 +21820,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "6de8ee3e-02c9-41a1-9645-9854f12a28f6")
 		(at 106 129 90)
@@ -22020,7 +22027,7 @@
 			(uuid "590bf8f8-b565-469b-8cd5-f51a17632e65")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22032,7 +22039,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "6f378ee2-839c-472d-87bc-322eff133192")
 		(at 142.5 83 180)
@@ -22239,7 +22246,7 @@
 			(uuid "823eed0f-87b9-4009-95b1-096bbcce849a")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22251,7 +22258,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "72b90578-519b-4c51-adba-18f9c5e8f778")
 		(at 150 87)
@@ -22458,7 +22465,7 @@
 			(uuid "f2f86d76-c606-4571-96a7-b39b9c2a5684")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22470,7 +22477,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "737efe39-9bdd-4c5c-9b73-7f67eb497076")
 		(at 112 129 90)
@@ -22677,7 +22684,7 @@
 			(uuid "fb91e9a0-dda4-4c91-98ed-492349846745")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22689,7 +22696,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "73a69953-c0bc-4236-8460-3a1a680a3614")
 		(at 149 75.8)
@@ -22896,7 +22903,7 @@
 			(uuid "9ce67019-336c-4242-9aa8-4798af9bd985")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22908,7 +22915,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "740acb83-8f07-4ac6-9896-028bfd662b6f")
 		(at 145.9 83 180)
@@ -23115,7 +23122,7 @@
 			(uuid "35402cb0-661f-46c4-9317-bbfdca5f6c7b")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23127,7 +23134,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "75d7ef26-4af2-42f5-8ade-b62f703ac7f4")
 		(at 136 81)
@@ -23334,7 +23341,7 @@
 			(uuid "d047497b-57ee-4b21-9275-7f600d34e329")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23346,7 +23353,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "75fbf80e-50b8-45ea-8ca4-32da98e4380e")
 		(at 149 130)
@@ -23553,7 +23560,7 @@
 			(uuid "48dc7892-c96d-4668-978f-35e542535257")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23565,7 +23572,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "777f5eb5-7e79-4733-bb16-1866612fe390")
 		(at 146 56 90)
@@ -23772,7 +23779,7 @@
 			(uuid "5bffd7ee-1057-443f-9a41-4bc244731621")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23784,7 +23791,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-223_THERMAL"
+	(footprint "Library:SOT-223_THERMAL"
 		(layer "F.Cu")
 		(uuid "77baa6f6-ba31-405f-9b26-1e1263676ee1")
 		(at 113 74 -90)
@@ -24222,7 +24229,7 @@
 			(uuid "fc0050d0-5a6a-4982-9bf3-9ebe4a665a5a")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24234,7 +24241,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23"
+	(footprint "Library:SOT-23"
 		(layer "F.Cu")
 		(uuid "78aff9cf-7238-4ab9-8704-4b7ff3ad2952")
 		(at 158 125)
@@ -24432,7 +24439,7 @@
 			(uuid "3f1b0194-d403-479f-8022-420c4f16d586")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24444,7 +24451,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "79087709-ffaf-4cf4-9270-a76f10a92675")
 		(at 118 60 -90)
@@ -24651,7 +24658,7 @@
 			(uuid "e6683b51-c62f-4fd3-b634-1cd8c9107dc6")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24663,7 +24670,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "796815f3-afba-442b-bbfd-128d6a087f1b")
 		(at 149 101)
@@ -24870,7 +24877,7 @@
 			(uuid "d13eb93c-bc8a-4a2e-bf96-7d6071fb2ce4")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24882,7 +24889,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "7a5d4802-55bb-4883-98e2-8d34869c8cf6")
 		(at 162.65 95.8)
@@ -25089,7 +25096,7 @@
 			(uuid "405d0d33-c7b8-4ed5-be44-e0b2b72fd69d")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25101,7 +25108,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "7aa9fc5d-04b4-4e08-91df-d9aacff1d8e0")
 		(at 128 116 180)
@@ -25308,7 +25315,7 @@
 			(uuid "5e52c09d-fc0f-412b-8b27-17b0ceb96e72")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25320,7 +25327,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23-5"
+	(footprint "Library:SOT-23-5"
 		(layer "F.Cu")
 		(uuid "7aef3aa5-735a-4a9d-90dc-af2d9f80b21e")
 		(at 140 113 90)
@@ -25620,7 +25627,7 @@
 			(uuid "8d50c1ae-69d6-4730-a3fd-fa4c44fc3532")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25632,7 +25639,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "7ef9f895-c97f-4ba9-a151-87a65678196a")
 		(at 124 100 180)
@@ -25839,7 +25846,7 @@
 			(uuid "52d2897e-8887-4d8a-8d66-4fdc77dc1685")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25851,7 +25858,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "81ceff27-0cde-496f-811a-f937038a4a07")
 		(at 136 86.5)
@@ -26058,7 +26065,7 @@
 			(uuid "53bec1d9-0df0-40ee-90a5-93b7de97a6bc")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26070,7 +26077,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Pin_Header_Straight_1x03_Pitch2.54mm"
+	(footprint "Library:Pin_Header_Straight_1x03_Pitch2.54mm"
 		(layer "F.Cu")
 		(uuid "81d833fe-c158-4e9d-a1ef-3a9aa2eefdc2")
 		(at 127 134)
@@ -26346,19 +26353,19 @@
 			(uuid "43597900-f771-480b-90b0-984fe2a9417e")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/pin header 1x3 and jumper.stp"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.54 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "82136a55-1697-4c58-94c9-4509e65fd62a")
 		(at 149.25 85)
@@ -26565,7 +26572,7 @@
 			(uuid "e42721d1-e2b5-44b6-a196-808f8274c6a5")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26577,7 +26584,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "821dcf7b-3cab-4555-83b3-526019be3998")
 		(at 159 136)
@@ -26784,7 +26791,7 @@
 			(uuid "4ce030bc-764a-4e8a-b554-cc202ad92821")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26796,7 +26803,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Murata2U"
+	(footprint "Library:Murata2U"
 		(layer "F.Cu")
 		(uuid "84ffba4b-0bc8-46d7-b679-aed753c8f078")
 		(at 128 105 -90)
@@ -26968,19 +26975,19 @@
 			(uuid "dfc3bb10-0f95-45bc-a505-01b663572713")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/LQW15AN2N2G80D.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 2.8 2.8 2.8)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "86d2d86a-0879-4181-9716-4a34a91e2c2a")
 		(at 162 133)
@@ -27187,7 +27194,7 @@
 			(uuid "9babf4a1-d1c1-4e1b-890a-5574a59016a1")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27199,7 +27206,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "875f7692-f2e9-436f-9741-a93047172e99")
 		(at 156.75 101 180)
@@ -27406,7 +27413,7 @@
 			(uuid "ff97d33a-f35e-4682-be82-f794f2a1b0a3")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27418,7 +27425,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SC-70-6_rot90"
+	(footprint "Library:SC-70-6_rot90"
 		(layer "F.Cu")
 		(uuid "88374107-4ae0-4ab7-9481-a6583ec00161")
 		(at 169 123 90)
@@ -27652,7 +27659,7 @@
 			(uuid "afd978c3-432e-4893-9a42-ae87699811ab")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/sc70/LIB_AD8029AKSZ-R2/AD8029AKSZ-R2/3D/AD8029AKSZ-R2.stp"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27660,11 +27667,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 -90)
+				(xyz 0 0 90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "8b370b4d-9d70-49dd-946e-db90d425cd1e")
 		(at 162 127)
@@ -27871,7 +27878,7 @@
 			(uuid "23ac4d88-efea-4867-83e3-7be0d874477d")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27883,7 +27890,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "8bcd0434-aa30-4ec5-8cdb-f43a96f615f5")
 		(at 141 124)
@@ -28090,7 +28097,7 @@
 			(uuid "f646b174-7660-46a4-b454-62c7d0e787de")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28102,7 +28109,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "8c67d684-0590-47ab-93ac-67233367a180")
 		(at 153 125)
@@ -28309,7 +28316,7 @@
 			(uuid "4a87ea67-01af-41e8-b0c8-b433675bbf79")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28321,7 +28328,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "8cf30b33-0d05-41d6-ad05-e8320a74e3b4")
 		(at 132 139)
@@ -28399,7 +28406,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -28412,7 +28419,7 @@
 			(uuid "93297c3f-b6ad-47ce-9e0d-5e27a69574a3")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28424,7 +28431,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "8d774ab4-7db2-42d5-b707-5e4fc5df6562")
 		(at 165 118)
@@ -28631,7 +28638,7 @@
 			(uuid "b652f4e4-fb38-430d-a63b-9012be242314")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28643,7 +28650,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "8efcd30a-0425-44c5-be9c-1d1682d0150b")
 		(at 146 87 180)
@@ -28850,7 +28857,7 @@
 			(uuid "eb9a8a16-5f7e-44e7-b60e-d2437c55656b")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28862,7 +28869,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Murata2U"
+	(footprint "Library:Murata2U"
 		(layer "F.Cu")
 		(uuid "8feecdc7-d474-4e40-84de-309565811085")
 		(at 128 113 180)
@@ -29034,19 +29041,19 @@
 			(uuid "1941024c-b94e-46c2-a158-475614620c36")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/LQW15AN2N2G80D.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 2.8 2.8 2.8)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "90bc4114-b721-4386-9247-ae8c02c3a8f7")
 		(at 161 107)
@@ -29253,7 +29260,7 @@
 			(uuid "75635dc1-65a4-4a0a-86bf-f28d6eaaecb3")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29265,7 +29272,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23-5"
+	(footprint "Library:SOT-23-5"
 		(layer "F.Cu")
 		(uuid "90c5c450-659a-40a3-a9b3-47153e70f204")
 		(at 156 104.35 90)
@@ -29565,7 +29572,7 @@
 			(uuid "54e6ab06-2b27-4903-bc6f-7e5de2c433dc")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29577,7 +29584,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:0603"
+	(footprint "Library:0603"
 		(layer "F.Cu")
 		(uuid "92096be8-2d47-4862-93ae-76f6d85484a7")
 		(at 146 79)
@@ -29809,7 +29816,7 @@
 			(uuid "e8a48650-b6a6-4764-9db6-03803437c3c7")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29821,7 +29828,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "92357001-f895-46a9-9da3-46dab2d1cf5c")
 		(at 158 121 180)
@@ -30028,7 +30035,7 @@
 			(uuid "476a3ab7-3fd9-461a-b14b-0353953cb604")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30040,7 +30047,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:0603"
+	(footprint "Library:0603"
 		(layer "F.Cu")
 		(uuid "9295daec-170d-47d1-a038-4df008192ccb")
 		(at 170 112)
@@ -30272,7 +30279,7 @@
 			(uuid "62380d48-4cfe-43af-9ed6-a482bf439525")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30284,7 +30291,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOIC-8-dual"
+	(footprint "Library:SOIC-8-dual"
 		(layer "F.Cu")
 		(uuid "9396a3fd-f9c4-45bf-bfa0-43b384a5e8cd")
 		(at 129.675 84.635 -90)
@@ -30530,19 +30537,19 @@
 			(uuid "b52d70d5-5b3a-4a72-81ea-fccaaa087586")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-08 0.65p 3mm Pad.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 1.9 1.5 1)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz 0 0 -90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "9470aaa4-5249-4366-aaa1-60d541494cb2")
 		(at 158 119)
@@ -30749,7 +30756,7 @@
 			(uuid "db47582d-8cf2-4553-b65d-c73a688c9828")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30761,7 +30768,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "955e7a92-fcdb-4b83-a71b-19ce15c76972")
 		(at 141 94 180)
@@ -30968,7 +30975,7 @@
 			(uuid "151618f7-b013-4896-8edf-d81e9bf268bd")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30980,7 +30987,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "95853f5e-0ade-448d-9f18-a820fae51d35")
 		(at 166.25 107.5)
@@ -31058,7 +31065,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -31071,7 +31078,7 @@
 			(uuid "2fc7a41d-581f-4f92-a97e-9e46b3522add")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31083,7 +31090,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "95ba2e68-244b-4b66-a105-053052864a0f")
 		(at 138 60 -90)
@@ -31290,7 +31297,7 @@
 			(uuid "31e2917d-e04a-42d5-82e7-77eab80a4e5c")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31302,7 +31309,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "984f2fda-e8b3-447b-ae8f-a89056cdc212")
 		(at 140 128)
@@ -31380,7 +31387,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -31393,7 +31400,7 @@
 			(uuid "b048c411-7a3e-4e1c-89b7-f999a087782c")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31405,7 +31412,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "98c73bd1-3b46-4d2d-a59d-08d5a171fb28")
 		(at 160 88.1)
@@ -31483,7 +31490,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -31496,7 +31503,7 @@
 			(uuid "a4faf536-4614-4bde-93e2-a9ca67264949")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31508,7 +31515,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_1206"
+	(footprint "Library:PAD_1206"
 		(layer "F.Cu")
 		(uuid "999ef501-6779-4316-8ad2-20cfacfff11c")
 		(at 143.5 63 180)
@@ -31715,7 +31722,7 @@
 			(uuid "47945119-12c6-453f-bce8-7ae3eabf550e")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-1206.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31723,11 +31730,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "9b61479b-e398-44ce-aac1-e139a5b14b63")
 		(at 138 139 90)
@@ -31934,7 +31941,7 @@
 			(uuid "8b889873-518e-4d4c-816c-d2f4f545d8f7")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31946,7 +31953,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "9ea78c40-d257-4768-a750-38455d14b34e")
 		(at 144 139 90)
@@ -32153,7 +32160,7 @@
 			(uuid "f2bd4a49-8d8c-43a7-9738-d24b59b6527f")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32165,7 +32172,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23-6"
+	(footprint "Library:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "a175ecf7-6621-4193-b012-a9a2d269dc67")
 		(at 169 130 180)
@@ -32477,7 +32484,7 @@
 			(uuid "10f710ac-4688-4004-b8ec-d83d7750a1c5")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32485,11 +32492,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:MountingHole_M2.5-PTH"
+	(footprint "Library:MountingHole_M2.5-PTH"
 		(layer "F.Cu")
 		(uuid "a306aca4-c846-40d3-825d-28c36a9b815f")
 		(at 104 53)
@@ -32603,7 +32610,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TIS_Footprints:SC-70-6"
+	(footprint "Library:SC-70-6"
 		(layer "F.Cu")
 		(uuid "a4dcf366-c235-47e6-98b7-e2eeecfb4935")
 		(at 165 121)
@@ -32841,7 +32848,7 @@
 			(uuid "5ac73c3d-d5d1-487f-9929-464b8d3c4f30")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/sc70/LIB_AD8029AKSZ-R2/AD8029AKSZ-R2/3D/AD8029AKSZ-R2.stp"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32849,11 +32856,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "a613d16f-b0f6-461e-84e3-29e70bda9ae2")
 		(at 170 77.5)
@@ -32931,7 +32938,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -32944,7 +32951,7 @@
 			(uuid "ac763860-5597-45ed-8b75-6d989785082a")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32956,7 +32963,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "a8131dd6-56f5-4d33-8660-c5f3db1cb4e3")
 		(at 112 121 90)
@@ -33163,7 +33170,7 @@
 			(uuid "aa361ef4-a0fc-4db1-8fcd-44566504332d")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33175,7 +33182,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Murata2U"
+	(footprint "Library:Murata2U"
 		(layer "F.Cu")
 		(uuid "aa255490-0b2e-4d04-bce0-119835fb37c3")
 		(at 128 129 180)
@@ -33347,19 +33354,19 @@
 			(uuid "670873e4-73b6-477c-9c90-a4d67d7d3481")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/LQW15AN2N2G80D.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 2.8 2.8 2.8)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:MountingHole_M2.5-PTH"
+	(footprint "Library:MountingHole_M2.5-PTH"
 		(layer "F.Cu")
 		(uuid "ad7d677e-5a57-4547-bf8c-28bfeb0f2b3e")
 		(at 104 146)
@@ -33473,7 +33480,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "ad7d76c3-9fc4-4867-b265-816fe72917e5")
 		(at 147 139 90)
@@ -33680,7 +33687,7 @@
 			(uuid "baf7b7a5-9d78-4c10-9fe6-d66a7bd355c3")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33692,7 +33699,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:MountingHole_M2.5-PTH"
+	(footprint "Library:MountingHole_M2.5-PTH"
 		(layer "F.Cu")
 		(uuid "aebe7590-2913-426b-8d50-a73018fdfc0d")
 		(at 172 146)
@@ -33806,7 +33813,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TIS_Footprints:0603"
+	(footprint "Library:0603"
 		(layer "F.Cu")
 		(uuid "af7e3a0b-ae74-4779-a662-7f486c43ea8b")
 		(at 146 81)
@@ -34038,7 +34045,7 @@
 			(uuid "70bd52cf-ff53-4ebd-a20a-e9ac476b7ab1")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34050,7 +34057,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "b0de93d9-14dd-49b5-8704-bd297cd7bac6")
 		(at 153 123 180)
@@ -34257,7 +34264,7 @@
 			(uuid "971cad05-7aca-4115-8bce-f394ad6c89eb")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34269,7 +34276,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "b0f8d591-1828-4548-abeb-97cc84586141")
 		(at 166.25 109.75)
@@ -34476,7 +34483,7 @@
 			(uuid "c1481eb2-d6dd-47e3-96c3-63f44019b232")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34488,7 +34495,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "b201d18f-c8b0-4564-9a1f-0c9c67d7b4cf")
 		(at 106 121 90)
@@ -34695,7 +34702,7 @@
 			(uuid "17e89338-617a-4208-9a2a-97a112be20f2")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34707,7 +34714,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "b23540c6-cdea-4d08-8ca5-2a570001fcca")
 		(at 172 132)
@@ -34785,7 +34792,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -34798,7 +34805,7 @@
 			(uuid "6f55a331-26b2-4a0f-a896-67225bfeeab1")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34810,7 +34817,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:QFN-64_EP_9.5x9.5_Pitch0.5mm"
+	(footprint "Library:QFN-64_EP_9.5x9.5_Pitch0.5mm"
 		(layer "F.Cu")
 		(uuid "b35b4bd5-e763-4da8-9284-52fd2291a730")
 		(at 156 95)
@@ -36499,7 +36506,7 @@
 			(uuid "dde27ae9-9e60-4ab8-b74d-c65c504df3db")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.35x7.35mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.35x7.35mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36511,7 +36518,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23"
+	(footprint "Library:SOT-23"
 		(layer "F.Cu")
 		(uuid "b3aa6a4e-b6ba-4ad1-b208-44444969ba3a")
 		(at 169 134)
@@ -36705,7 +36712,7 @@
 			(uuid "cc902342-05eb-4355-afe5-258d59789639")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36717,7 +36724,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "b3f18ed8-62f8-4b70-a2c9-e44c2c7cab10")
 		(at 109 120 180)
@@ -36924,7 +36931,7 @@
 			(uuid "0861aea7-57fe-4653-8f87-5991a59c2bc8")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36936,7 +36943,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP-Tiny"
+	(footprint "Library:TP-Tiny"
 		(layer "F.Cu")
 		(uuid "b4130e0b-c203-4c47-8800-20d73546d20d")
 		(at 165.5 82.4)
@@ -37015,7 +37022,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.5 -0.5)
@@ -37109,7 +37116,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "b61c15c7-bdd5-450c-9864-b3271c9c09b5")
 		(at 165 127 180)
@@ -37316,7 +37323,7 @@
 			(uuid "b5063fd1-c7e7-4998-a7f0-b137562b1e5a")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37328,7 +37335,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "b8b60ae0-bc25-4cbc-89ae-bc33100149c4")
 		(at 162.2 88.1)
@@ -37406,7 +37413,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -37419,7 +37426,7 @@
 			(uuid "97b8d684-9e53-40f8-b681-12ed96b40123")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37431,7 +37438,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "b99acebe-c63f-4dc0-b755-559f591cd3b1")
 		(at 116.75 85.5 180)
@@ -37638,7 +37645,7 @@
 			(uuid "857dfa26-695c-4816-8f01-e9a714c7dda9")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37650,7 +37657,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "ba30724a-00a6-4fff-a470-5756a1f85c97")
 		(at 145 96)
@@ -37857,7 +37864,7 @@
 			(uuid "aee103b4-0611-4ea2-b7cd-f65e8a220bee")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37869,7 +37876,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "bac052c2-6177-4401-b65a-add658df8a2b")
 		(at 159 133 180)
@@ -38076,7 +38083,7 @@
 			(uuid "ae664b04-b378-42dc-968c-2c5ff24b0544")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38088,7 +38095,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:MSOP-10_W3mm"
+	(footprint "Library:MSOP-10_W3mm"
 		(layer "F.Cu")
 		(uuid "bac90ecd-0df2-4cd0-b14e-c65437bd6732")
 		(at 156 109 90)
@@ -38445,7 +38452,7 @@
 			(uuid "72a423a5-a957-4180-a7f0-d5cd4473fd70")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-10 0.50p 3mm Pad.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38453,11 +38460,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23"
+	(footprint "Library:SOT-23"
 		(layer "F.Cu")
 		(uuid "be3d5326-9302-4683-992b-828f07f8fdb1")
 		(at 158 130 -90)
@@ -38651,7 +38658,7 @@
 			(uuid "a2fac62c-64e1-487f-b91f-9e37f7c42a6e")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38663,7 +38670,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "c08e25a1-9711-41d4-b60d-1fbffc78d766")
 		(at 153 127 180)
@@ -38870,7 +38877,7 @@
 			(uuid "13314ec6-bd7c-48d5-8ff3-bfa3129956a3")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38882,7 +38889,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "c1a28e2c-40ad-4e19-89bc-4715bf5d32d2")
 		(at 128 94 180)
@@ -39089,7 +39096,7 @@
 			(uuid "10b0247d-2801-49c8-b701-5cae1b793c19")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39101,7 +39108,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "c3a377d8-23fc-49a2-9099-4ed9f1aca8ce")
 		(at 159 139)
@@ -39308,7 +39315,7 @@
 			(uuid "15f4cd1f-0937-4f70-bfab-3a0d04891044")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39320,7 +39327,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TCXO-3225"
+	(footprint "Library:TCXO-3225"
 		(layer "F.Cu")
 		(uuid "c3ff235f-d87a-42a7-ad84-ab94811d1482")
 		(at 170 117)
@@ -39477,19 +39484,19 @@
 			(uuid "0dab7073-0dff-48cb-8844-0cf238cea43f")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/ASTX-H12-10_000MHZ-T_ABR.step"
+		(model "${KIPRJMOD}/3d/TCXO-3225.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 1 1.5 1)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -90)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:0603"
+	(footprint "Library:0603"
 		(layer "F.Cu")
 		(uuid "c410010d-0f8e-455c-838a-ef55e547d5b1")
 		(at 172 127)
@@ -39721,7 +39728,7 @@
 			(uuid "67a59491-7df4-408e-a3ab-49363edf4d9b")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39733,7 +39740,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "c432658d-3cb7-43be-97c6-0ec02d5edcd9")
 		(at 128 100 180)
@@ -39940,7 +39947,7 @@
 			(uuid "b53b0e69-4117-415d-a2e7-46977ae44617")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39952,7 +39959,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "c5cd39c7-848d-49e7-a9bc-c7097e617a28")
 		(at 150.5 106 180)
@@ -40159,7 +40166,7 @@
 			(uuid "2c6f7a41-a4ba-4d79-a57b-218b24f1ae66")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40171,7 +40178,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "c66f6926-a098-435f-a1a3-e0e475e1cc25")
 		(at 149 132)
@@ -40378,7 +40385,7 @@
 			(uuid "55fa47ae-3b78-4252-b3cc-b66fd2e5d444")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40390,7 +40397,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "c6d7f05f-ab25-458a-9800-087c75abfd45")
 		(at 147.75 96.5 -90)
@@ -40595,7 +40602,7 @@
 			(uuid "0e67c574-cde5-4eec-aca5-1c234b51ac55")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40607,7 +40614,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "c8a04d32-8eb3-42d0-a4c3-c418efca4f40")
 		(at 152.5 117 180)
@@ -40814,7 +40821,7 @@
 			(uuid "72cd0df0-7854-4820-a230-acceac804513")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40826,7 +40833,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "c9a0a076-d257-4187-98f8-80eb9c92b876")
 		(at 164 97.6)
@@ -40904,7 +40911,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -40917,7 +40924,7 @@
 			(uuid "8d424132-f0ff-40f9-a2a8-e68775fe855c")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40929,7 +40936,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "cc80551d-6d86-4840-b2f8-bcdb9b8fa3d4")
 		(at 165 136 180)
@@ -41136,7 +41143,7 @@
 			(uuid "a3685b0d-52f7-4f5e-85b3-c1da775de678")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41148,7 +41155,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "cf2cac1a-48b2-40dd-84e6-3b950942902e")
 		(at 166 79 180)
@@ -41355,7 +41362,7 @@
 			(uuid "296a699b-7fce-45d2-afa5-73d266e4b534")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41367,7 +41374,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "d13c9c99-4181-47f0-903b-c2b8a8fb02a4")
 		(at 170 90.125 180)
@@ -41574,7 +41581,7 @@
 			(uuid "3befe35f-c63e-41ba-9df8-c6fd16cf811f")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41586,7 +41593,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "d1e87e3f-e0d9-4df1-afc8-5d07236d3140")
 		(at 109 122)
@@ -41793,7 +41800,7 @@
 			(uuid "dd8d1c22-1643-428e-964d-d6deabd777a9")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41805,7 +41812,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "d21f6d58-9cff-408f-9fbc-abe469b1b140")
 		(at 171.25 58.75 -90)
@@ -42012,7 +42019,7 @@
 			(uuid "cf93df59-ff18-499e-b0df-022dc57c90e1")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42024,7 +42031,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "d22c164b-f662-4d59-bb77-99a8485733d7")
 		(at 150 109)
@@ -42231,7 +42238,7 @@
 			(uuid "1ec05b17-1b47-4d7e-bb4e-36a99f0618db")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42243,7 +42250,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:0603"
+	(footprint "Library:0603"
 		(layer "F.Cu")
 		(uuid "d2ad610c-005b-4821-9a3d-009d408c09d1")
 		(at 141 120)
@@ -42475,7 +42482,7 @@
 			(uuid "d12eef78-175d-4149-9a4f-0b70c305cedd")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42487,7 +42494,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23-5"
+	(footprint "Library:SOT-23-5"
 		(layer "F.Cu")
 		(uuid "d4023961-decf-4738-8b27-7e2ba03cc95b")
 		(at 170 93.125 90)
@@ -42787,7 +42794,7 @@
 			(uuid "eaa97f34-8f6a-4985-8abf-0137e7b0c62e")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42799,7 +42806,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:CONN-JTAG10-mini"
+	(footprint "Library:CONN-JTAG10-mini"
 		(layer "F.Cu")
 		(uuid "d66de18c-6e3a-4278-bcfa-730fb13ae33b")
 		(at 168.635 60.54 -90)
@@ -43107,7 +43114,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "d6ffdec6-2825-49e4-9e3b-e0445263c603")
 		(at 162 139 180)
@@ -43314,7 +43321,7 @@
 			(uuid "cbbbbf72-4aed-4c24-bafa-b1ac4f32c8b7")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43326,7 +43333,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "d8e5239d-ce06-405c-ab53-04cbf034a4a0")
 		(at 104 91.5)
@@ -43404,7 +43411,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -43417,7 +43424,7 @@
 			(uuid "b0cea06c-ab7a-46c2-9ee6-eabd9a0b4914")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43429,7 +43436,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Murata2U"
+	(footprint "Library:Murata2U"
 		(layer "F.Cu")
 		(uuid "d909505f-d1bf-454a-80d0-3f37f202913d")
 		(at 128 97 180)
@@ -43601,19 +43608,19 @@
 			(uuid "d8290bf4-211f-45c6-81a5-cd9ee711325b")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/LQW15AN2N2G80D.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 2.8 2.8 2.8)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23"
+	(footprint "Library:SOT-23"
 		(layer "F.Cu")
 		(uuid "d938689b-5bb2-4ab2-b4af-8a8403c7d526")
 		(at 170.925 107.875 180)
@@ -43811,7 +43818,7 @@
 			(uuid "c6ea96c4-8121-4f74-98e4-698956c37d74")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43823,7 +43830,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:USB-3.0"
+	(footprint "Library:USB-3.0"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "d9448fd4-3e1b-46ab-a7a4-209ebd952b4f")
@@ -44058,9 +44065,9 @@
 			(uuid "e6349a04-4bee-4d1e-924d-48a47cc6b259")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/connectors/USB-3.0.STEP"
+		(model "${KIPRJMOD}/3d/USB-3.0.step"
 			(offset
-				(xyz 0 -8 0)
+				(xyz 0 -7.9 1)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -44070,7 +44077,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "d94e583a-9d78-427e-ab20-c09fe51017da")
 		(at 141 90 180)
@@ -44277,7 +44284,7 @@
 			(uuid "49d620a6-069c-4a23-bb4e-3207f91c9063")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44289,7 +44296,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "da45b24f-a662-4c2f-835b-ea46a17daa1f")
 		(at 116.75 84)
@@ -44496,7 +44503,7 @@
 			(uuid "2a82a9c4-b888-48eb-a61f-a422953829de")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44508,7 +44515,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "dbfe33a5-daa7-4cd1-9fe8-7dc74358c59c")
 		(at 104 139)
@@ -44586,7 +44593,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -44599,7 +44606,7 @@
 			(uuid "4c0e40ca-d6e2-4dc4-8a43-06b46c2af4ba")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44611,7 +44618,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "dd209ff4-8e97-45cc-818a-b8a961d25c85")
 		(at 125 121 -90)
@@ -44818,7 +44825,7 @@
 			(uuid "6d7d09aa-ab8b-45eb-8cae-bf3eb0e195e7")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44830,7 +44837,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "deca02ed-1e2f-4f98-b730-aa42527aa099")
 		(at 162 136 180)
@@ -45037,7 +45044,7 @@
 			(uuid "fd6461bf-ef2c-4d6a-a8be-abd8b8a4cb9f")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45049,7 +45056,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "df00bf83-d03b-46ec-ac61-da6d7e02253d")
 		(at 141 98)
@@ -45256,7 +45263,7 @@
 			(uuid "a6774589-215a-4fa6-aefd-afe668a46dc8")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45268,7 +45275,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "e066b2e1-9220-47ba-a039-df3002842c8f")
 		(at 156 74 -90)
@@ -45475,7 +45482,7 @@
 			(uuid "85448ee4-c7cc-4402-9f8f-5967d2803eb3")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45487,7 +45494,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:BUTTON-4p5X4p5"
+	(footprint "Library:BUTTON-4p5X4p5"
 		(layer "F.Cu")
 		(uuid "e20c1c12-42be-469c-821b-9a09f6ef6b70")
 		(at 110.7 84 180)
@@ -45657,7 +45664,7 @@
 			(uuid "7aca358b-e9de-4373-b437-096854d46327")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/BUTTON-4p5X4p5.stp"
+		(model "${KIPRJMOD}/3d/BUTTON-4p5X4p5.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45665,11 +45672,11 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "e2737106-2428-4b4e-b6f0-b713a31a1c1d")
 		(at 128 125 180)
@@ -45876,7 +45883,7 @@
 			(uuid "836c2a6f-78d7-4336-a894-222cfe166518")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45888,7 +45895,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "e2a53f0a-a5fc-4c50-9219-a9db04664bde")
 		(at 125 105 -90)
@@ -46095,7 +46102,7 @@
 			(uuid "cde26813-5c38-4b97-bcd6-5c91bd1a4df9")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46107,7 +46114,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Murata2U"
+	(footprint "Library:Murata2U"
 		(layer "F.Cu")
 		(uuid "e44f0214-17c8-4f3f-82ee-101ec9f0f612")
 		(at 116 121 180)
@@ -46279,19 +46286,19 @@
 			(uuid "e1d326c1-ee19-4a6d-b2cf-91307cc27786")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/LQW15AN2N2G80D.STEP"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 2.8 2.8 2.8)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "e4e42100-3f7d-40c2-8c62-f3d688356311")
 		(at 140 109 180)
@@ -46498,7 +46505,7 @@
 			(uuid "541b28c6-c611-4f92-b1d6-96e1a49faeaa")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46510,7 +46517,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:0603"
+	(footprint "Library:0603"
 		(layer "F.Cu")
 		(uuid "e4ef74d2-244a-42f4-91fa-2354b8171cd5")
 		(at 148 70 180)
@@ -46742,7 +46749,7 @@
 			(uuid "4d3de3f2-5b69-4cb0-a621-753705d7e942")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46754,7 +46761,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "e52d9b18-90d8-4dd7-ade0-b9edb7b06f7a")
 		(at 109 128 180)
@@ -46961,7 +46968,7 @@
 			(uuid "ed89eb88-c5ab-4255-99e1-01666557bc33")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46973,7 +46980,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "e561b61a-e403-4c54-95b6-b23f22ab5162")
 		(at 152.5 115)
@@ -47180,7 +47187,7 @@
 			(uuid "677c21bc-575a-4cb2-bfa3-6f34d7c736ff")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47192,7 +47199,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "e58506ab-ab14-433c-8229-801860ccf151")
 		(at 128 109 180)
@@ -47399,7 +47406,7 @@
 			(uuid "82edd191-8fd3-42e0-882c-1367ee3a809b")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47411,7 +47418,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Pin_Header_Straight_1x03_Pitch2.54mm"
+	(footprint "Library:Pin_Header_Straight_1x03_Pitch2.54mm"
 		(layer "F.Cu")
 		(uuid "e65eadba-265f-4abb-afef-f61ede46c4d9")
 		(at 111 135 180)
@@ -47687,19 +47694,19 @@
 			(uuid "6ac3193b-bd23-41fa-a6a7-8e64a39bfae9")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/pin header 1x3 and jumper.stp"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.54 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "e6cc3091-8a72-4316-809f-86d1674a7f7a")
 		(at 118 57 90)
@@ -47906,7 +47913,7 @@
 			(uuid "2514f4da-b8b3-4487-9cc1-31a9230840bd")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47918,7 +47925,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SOT-23"
+	(footprint "Library:SOT-23"
 		(layer "F.Cu")
 		(uuid "e73f9568-5170-4953-8e71-4df5b2d1c284")
 		(at 145 135)
@@ -48112,7 +48119,7 @@
 			(uuid "3465552c-2264-4639-b131-5d3110cbadce")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -48124,7 +48131,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
+	(footprint "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
 		(layer "F.Cu")
 		(uuid "e7eec491-70c1-498b-86bd-d6dbc1f73936")
 		(at 129 145.45 180)
@@ -48510,19 +48517,19 @@
 			(uuid "bbc0cf70-26b2-4473-bb13-2b1ffffc3f55")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Molex-SMA.stp"
+		(model "${KIPRJMOD}/3d/SMA_Jack_EdgeMount_JLC.step"
 			(offset
-				(xyz 0.0254 14.605 0.5999988)
+				(xyz 0 14 0.65)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -180)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "e7f40126-6b67-4891-83b9-a8e97bed712c")
 		(at 145 100)
@@ -48729,7 +48736,7 @@
 			(uuid "645e776d-a9ad-46f4-9bf6-c77c6e3298ee")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -48741,7 +48748,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:0603"
+	(footprint "Library:0603"
 		(layer "F.Cu")
 		(uuid "ebdb66a9-2d8b-4a90-ae89-ae4d176bbaec")
 		(at 161 113)
@@ -48973,7 +48980,7 @@
 			(uuid "02e55282-62fd-4666-820b-927ad4e89b5a")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -48985,7 +48992,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:Pin_Header_Straight_1x03_Pitch2.54mm"
+	(footprint "Library:Pin_Header_Straight_1x03_Pitch2.54mm"
 		(layer "F.Cu")
 		(uuid "ecc14ab6-c441-40d8-9c87-ae02386ccf11")
 		(at 110 116 180)
@@ -49261,19 +49268,19 @@
 			(uuid "5e0b8892-424f-4934-a2b2-f8066465d1d9")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/pin header 1x3 and jumper.stp"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.54 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SMD-2520"
+	(footprint "Library:SMD-2520"
 		(layer "F.Cu")
 		(uuid "ed66fb42-4fc1-4198-9195-5bfa6fe475b0")
 		(at 166 74 180)
@@ -49479,19 +49486,19 @@
 			(uuid "842c035b-c49e-47ff-aaef-86f752c99b29")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Oscillator.3dshapes/Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.4 0.4 0.4)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz 0 0 0)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "ee97fb85-3685-4e4c-ade4-5525703f8d47")
 		(at 161 111 180)
@@ -49698,7 +49705,7 @@
 			(uuid "1a43d3dd-ea50-4bd2-bef8-89bf1447f4ad")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -49710,7 +49717,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TP"
+	(footprint "Library:TP"
 		(layer "F.Cu")
 		(uuid "ef69c43d-3c13-4f05-ac2d-57448e944a28")
 		(at 165 139)
@@ -49788,7 +49795,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -49801,7 +49808,7 @@
 			(uuid "3fcd203a-aeee-4b4c-a8ab-3d6e3c8249c1")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x01_Pitch2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -49813,7 +49820,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:MountingHole_M2.5-PTH"
+	(footprint "Library:MountingHole_M2.5-PTH"
 		(layer "F.Cu")
 		(uuid "f07ac51d-4735-4f36-9ef8-acadefaf588f")
 		(at 172 53)
@@ -49927,7 +49934,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "f362c781-0902-454b-a47e-b6f5fb32e40b")
 		(at 158 74 -90)
@@ -50134,7 +50141,7 @@
 			(uuid "1736012f-e271-4eea-b010-341984d21435")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -50146,7 +50153,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:4D02"
+	(footprint "Library:4D02"
 		(layer "F.Cu")
 		(uuid "f606971f-f10d-485d-b477-912ede066d1e")
 		(at 162.15 90.5 90)
@@ -50393,19 +50400,19 @@
 			(uuid "5fbddfb7-6e8a-405f-8335-b03c39f5669e")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-08 0.65p 3mm Pad.iges"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 0.7 0.2 0.2)
+				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz -0 -0 -90)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "f70c471e-b7c5-46ba-ab41-44b5ab52a69d")
 		(at 149 81)
@@ -50612,7 +50619,7 @@
 			(uuid "307da141-f93b-48bc-8a2d-0e2af8f39b35")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -50624,7 +50631,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "f7dbc7af-fb29-4974-acd9-7710e3e3b1cc")
 		(at 142.5 85 180)
@@ -50831,7 +50838,7 @@
 			(uuid "3e196b69-6c55-447f-9b2d-92c930a06f8a")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -50843,7 +50850,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "f88e4614-64e7-4a06-804d-5e647229337d")
 		(at 165 130)
@@ -51050,7 +51057,7 @@
 			(uuid "f41aff73-61fd-4c52-89fd-effb08d568cd")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -51062,7 +51069,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:C_0603"
+	(footprint "Library:C_0603"
 		(layer "F.Cu")
 		(uuid "faa66ba1-a57a-45d9-bc5e-c206ac7bb462")
 		(at 149 79)
@@ -51269,7 +51276,7 @@
 			(uuid "352c47e1-c717-4bdb-90ef-fd4f704ed022")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -51281,7 +51288,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:PAD_0603"
+	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
 		(uuid "fd3c4c8c-fb80-4a99-8eba-5ab3c0ed91f6")
 		(at 144 56 90)
@@ -51488,7 +51495,7 @@
 			(uuid "5628d253-0e1c-40f8-8207-6a8345f5bd13")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/R-0603.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -51500,7 +51507,7 @@
 			)
 		)
 	)
-	(footprint "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
+	(footprint "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
 		(layer "F.Cu")
 		(uuid "fd63ee0f-2287-45be-939c-bbdd9a935011")
 		(at 164.8 145.4 180)
@@ -51886,19 +51893,19 @@
 			(uuid "ef2d8e36-ab06-4420-bf0e-f029dab43ddd")
 		)
 		(embedded_fonts no)
-		(model "${TIS}/TIS_3D/Molex-SMA.stp"
+		(model "${KIPRJMOD}/3d/SMA_Jack_EdgeMount_JLC.step"
 			(offset
-				(xyz 0.0254 14.605 0.5999988)
+				(xyz 0 14 0.65)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -180)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
-	(footprint "TIS_Footprints:TIS-Logo"
+	(footprint "Library:TIS-Logo"
 		(layer "B.Cu")
 		(uuid "a05e6d1e-dbca-4c18-9aaf-58ffbcf8d43f")
 		(at 125.2 108.5 180)
@@ -52396,7 +52403,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TIS_Footprints:HamSCI-25mm"
+	(footprint "Library:HamSCI-25mm"
 		(layer "B.Cu")
 		(uuid "b49e29b0-3b26-48e1-8758-e289c1dc9d25")
 		(at 118.5 121 180)
@@ -53152,7 +53159,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TIS_Footprints:TAPR 10mm"
+	(footprint "Library:TAPR 10mm"
 		(layer "B.Cu")
 		(uuid "ba01b626-cd8a-4f2f-a474-1021e01c61c5")
 		(at 107 108.6 180)

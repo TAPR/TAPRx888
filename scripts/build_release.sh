@@ -87,13 +87,19 @@ kibot -c "$CFG" -e "$SCH" -b "$PCB" -d "$OUT" --skip-pre erc,drc \
   ibom \
   || echo "WARN: iBOM generation failed; release continues without it."
 
-# NOTE: STEP (3D model) and 3D renders are intentionally NOT built here. The
-# board's footprints reference custom 3D models via ${TIS} (Turn Island Systems'
-# model library) and the deprecated ${KISYS3DMOD}, neither of which exists in the
-# CI image -- KiBot cannot resolve them and aborts. Restoring STEP/renders needs
-# either that model library provisioned in the CI image, or the
-# footprints' 3D paths remapped to KiCad's standard packages. Tracked as a
-# follow-up; the outputs remain defined in scripts/TAPRX-888.kibot.yaml for then.
+# STEP (3D model) + 3D renders. All footprint 3D paths resolve from the repo
+# (issue #45): stock via ${KICAD10_3DMODEL_DIR} -> the vendored 3d/kicad-stock/
+# mirror, custom via ${KIPRJMOD}/3d/. Point the var at that mirror when unset so
+# the export needs no image models and no network -- the CI image ships no 3D
+# models and KiBot's on-demand download 404s on KiCad 10 (see 3d/README.md). The
+# board STEP is the EE<->ME interface (mechanical/README.md). 2D-independent and
+# need no netlist, so --skip-pre all is safe.
+if [ -z "${KICAD10_3DMODEL_DIR:-}" ]; then
+  export KICAD10_3DMODEL_DIR="$PWD/3d/kicad-stock"
+fi
+echo "3D model path: KICAD10_3DMODEL_DIR=$KICAD10_3DMODEL_DIR"
+kibot -c "$CFG" -e "$SCH" -b "$PCB" -d "$OUT" --skip-pre all \
+  step render_top render_bottom
 
 echo "Built package for rev${REVISION} (git ${GIT_HASH}):"
 find "$OUT" -type f | sort

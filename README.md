@@ -30,34 +30,22 @@ Please see the schematic and layout documents for details.
 | USB3 controller | EZ-USB FX3 (CYUSB301x) |
 | SPI boot flash | MX25L3233F |
 
-## Repository & branches
+## Repository & workflow
 
-- **`dev`** — integration branch and the repository default; day-to-day work
-  lands here.
-- **`main`** — tagged, released board revisions.
-- **`design`** — where the schematic and PCB are edited (one person at a time,
-  because KiCad layout files can't be merged).
-
-## Contributing
-
-See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full workflow. In short:
-
-- Design edits (schematic / PCB / libraries) happen one person at a time on the
-  **`design`** branch.
-- Everything else (CI, design rules, BOM tooling, docs) is a short **`dev-*`**
-  branch opened as a pull request into **`dev`**.
-- **`dev` → `main`** (tagged) is a release, cut by consensus.
-- ERC and DRC run in CI as the shared source of truth.
+The KiCad project is at the repo root. Design/PCB, mechanical, and end-plate work
+happens on the **`design`** branch (one person at a time — KiCad layout files
+can't be merged); docs, CI, and tooling go on **`dev-*`** branches; flow is
+`design → dev → main`. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for how we
+collaborate and **[docs/RELEASE_STRATEGY.md](docs/RELEASE_STRATEGY.md)** for
+branches, CI, and versioning.
 
 ## Releases
 
-Fabrication and design packages are built by CI and published as **versioned
-GitHub Releases** — gerbers, drill, LCSC BOM, pick-and-place, interactive BOM,
-and the schematic + assembly PDFs, each stamped with its version and commit hash.
-Grab the latest from the
-**[Releases page](https://github.com/TAPR/TAPRx888/releases)** (pre-releases are
-`v0.x`; production spins are `v1.0`, `v2.0`, …). See
-[docs/RELEASE_STRATEGY.md](docs/RELEASE_STRATEGY.md) for how versioning works.
+CI publishes version-stamped fabrication/design packages as GitHub Releases; the
+`dev` `v0.x` pre-releases also bundle the end plates, the 3D enclosure assembly,
+and a live viewer (**<https://tapr.github.io/TAPRx888/>**). Grab the latest from
+the **[Releases page](https://github.com/TAPR/TAPRx888/releases)**; see
+**[docs/RELEASE_STRATEGY.md](docs/RELEASE_STRATEGY.md)** for details.
 
 ## Documentation
 

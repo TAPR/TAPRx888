@@ -191,15 +191,15 @@
 		(uuid "fbca9e09-5c8d-45b6-8152-e3f619ff1921")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/connectors/USB-3.0.STEP"
+	(model "${KIPRJMOD}/3d/USB-3.0.step"
 		(offset
-			(xyz 0 -8 0)
+			(xyz 0 1 4)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 -0 -0)
+			(xyz 0 0 90)
 		)
 	)
 )

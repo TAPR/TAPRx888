@@ -157,15 +157,15 @@
 		(uuid "26d21f85-8232-4810-b438-0e0b7f5b8c20")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/LQW15AN2N2G80D.STEP"
+	(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 		(offset
 			(xyz 0 0 0)
 		)
 		(scale
-			(xyz 2.8 2.8 2.8)
+			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 0)
+			(xyz 0 0 0)
 		)
 	)
 )

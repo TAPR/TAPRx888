@@ -316,7 +316,7 @@
 		(uuid "5f042ef0-d231-4ee0-8e9e-49777affb798")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-10 0.50p 3mm Pad.step"
+	(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -324,7 +324,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz 0 0 -90)
 		)
 	)
 )

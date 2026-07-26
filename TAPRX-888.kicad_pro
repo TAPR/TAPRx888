@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -242,7 +258,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "DEV"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -668,7 +684,7 @@
         "uuid": "eb8944cd-94ec-4b09-b419-3508e0096041"
       }
     ],
-    "used_designators": "J1-4,R61,C78",
+    "used_designators": "C78,R61,J1-4",
     "variants": []
   },
   "sheets": [
@@ -686,8 +702,8 @@
     ]
   ],
   "text_variables": {
-    "GIT_HASH": "dev",
     "DESIGNER": "Paul Elliott (WB6CXC)",
+    "GIT_HASH": "dev",
     "LICENSE": "MIT",
     "REPO": "github.com/TAPR/TAPRx888"
   },

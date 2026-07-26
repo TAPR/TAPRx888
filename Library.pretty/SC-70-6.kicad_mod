@@ -208,7 +208,7 @@
 		(uuid "a91b57bf-fc29-4eff-b3ae-399d6e1bdaa4")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/sc70/LIB_AD8029AKSZ-R2/AD8029AKSZ-R2/3D/AD8029AKSZ-R2.stp"
+	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -216,7 +216,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz 0 0 180)
 		)
 	)
 )

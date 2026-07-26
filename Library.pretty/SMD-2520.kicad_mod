@@ -183,15 +183,15 @@
 		(uuid "4abc28a8-bde9-4d50-af10-820c96d0cee2")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/Oscillator.3dshapes/Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm.step"
+	(model "${KICAD10_3DMODEL_DIR}/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm.step"
 		(offset
 			(xyz 0 0 0)
 		)
 		(scale
-			(xyz 0.4 0.4 0.4)
+			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -0)
+			(xyz 0 0 0)
 		)
 	)
 )

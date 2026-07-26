@@ -317,15 +317,15 @@
 		)
 	)
 	(embedded_fonts no)
-	(model ":TIS:TIS_3D/U.FL-R-SMT_01_.step"
+	(model "${KICAD10_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step"
 		(offset
-			(xyz 0 0.635 0)
+			(xyz 0 0.7 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 0)
+			(xyz 0 0 90)
 		)
 	)
 )

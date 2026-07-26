@@ -282,7 +282,7 @@
 		(uuid "61e4cc7b-f580-45de-aff5-b61bcb7c5f5e")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -290,7 +290,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz 0 0 180)
 		)
 	)
 )

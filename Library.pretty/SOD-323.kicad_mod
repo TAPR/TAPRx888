@@ -169,7 +169,7 @@
 		(uuid "79f4d9ad-e873-436e-b20a-b8dd17909bfc")
 	)
 	(embedded_fonts no)
-	(model ":TIS:TIS_3D/SOD-323_1P7X1P25_ONS.step"
+	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -177,7 +177,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 180)
+			(xyz 0 0 0)
 		)
 	)
 )

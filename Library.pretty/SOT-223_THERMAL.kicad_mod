@@ -381,7 +381,7 @@
 		(uuid "8833c361-bf98-4415-b400-600bc83d90fd")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -211,12 +211,12 @@
 		(uuid "f2db9d89-5912-4d60-bc66-cfe6f114dc9e")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/msop-and-tssop-packages-1.snapshot.1/MSOP-08 0.65p 3mm Pad.iges"
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 		(offset
 			(xyz 0 0 0)
 		)
 		(scale
-			(xyz 0.7 0.2 0.2)
+			(xyz 1 1 1)
 		)
 		(rotate
 			(xyz -0 -0 -0)

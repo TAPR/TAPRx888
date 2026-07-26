@@ -1084,7 +1084,7 @@
 		(uuid "247dea80-9605-4753-8363-cda117dc84b0")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/BGA/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step"
+	(model "${KICAD10_3DMODEL_DIR}/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step"
 		(offset
 			(xyz 0 0 0)
 		)

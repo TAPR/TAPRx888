@@ -151,9 +151,9 @@
 		(uuid "9a0f655b-4c68-4dc4-a6bf-cd727154c4fe")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/BUTTON-4p5X4p5.stp"
+	(model "${KIPRJMOD}/3d/BUTTON-4p5X4p5.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 0 3)
 		)
 		(scale
 			(xyz 1 1 1)

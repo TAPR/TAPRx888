@@ -1330,7 +1330,7 @@
 		(uuid "57923cec-b691-446a-826d-919fb6207841")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.35x7.35mm.step"
+	(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.35x7.35mm.step"
 		(offset
 			(xyz 0 0 0)
 		)

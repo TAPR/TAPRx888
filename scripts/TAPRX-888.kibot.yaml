@@ -60,17 +60,40 @@ outputs:
       extra_fields: 'LCSC Part #,MFG,MPN'
 
   # ---- fab (release) ----
-  # NOTE: these 3D outputs are DEFINED but not yet invoked by build_release.sh:
-  # the footprints reference custom 3D models via ${TIS}/${KISYS3DMOD}, absent
-  # from the CI image, so KiBot cannot resolve them. Re-enable once the model
-  # library is provisioned (or the 3D paths are remapped to KiCad standards).
+  # STEP + 3D renders, invoked by build_release.sh. All footprint 3D paths
+  # resolve from the repo (issue #45): stock via ${KICAD10_3DMODEL_DIR} (which
+  # build_release.sh points at the vendored 3d/kicad-stock/ mirror), custom via
+  # ${KIPRJMOD}/3d/. No image models or network needed -- the CI image ships no
+  # 3D models and KiBot's on-demand download 404s on KiCad 10 (see 3d/README.md).
+  #
+  # `export_3d` (not the legacy `step`) is the KiCad-10 output: it wraps
+  # `kicad-cli pcb export step` and exposes the board-feature flags, so the
+  # released STEP matches the PCB editor's 3D view (copper/silk/mask + component
+  # bodies) instead of a bare board. subst_models pulls the STEP twin of any
+  # VRML-referenced model; the via options give a solid, watertight body.
   - name: step
     comment: '3D model (STEP)'
-    type: step
+    type: export_3d
     dir: fab
     options:
+      format: step
       output: TAPRX-888.step
+      subst_models: true
+      include_tracks: true
+      include_silkscreen: true
+      include_soldermask: true
+      cut_vias_in_body: true
+      fill_all_vias: true
+      origin: drill
+      min_distance: 0.01
 
+  # transparent_background:false + solid gradient -> a clean opaque background.
+  # show_solderpaste:false is intended to reveal the ENIG pads, but it is INERT on
+  # the pinned toolchain: KiBot passes --hide_solderpaste to KiAuto 2.3.10, which
+  # on KiCad 10 writes only colours to 3d_viewer.json and drops the render.show_*
+  # visibility flags, so paste stays on (KiBot W143 "depends on KiCad version").
+  # Kept because it becomes effective once KiAuto is bumped to a version that
+  # writes render.show_solderpaste. Same OpenGL engine as the PCB editor's viewer.
   - name: render_top
     comment: '3D render -- top'
     type: render_3d
@@ -79,6 +102,10 @@ outputs:
       output: TAPRX-888-3d-top.png
       ray_tracing: false
       view: top
+      transparent_background: false
+      background1: '#ffffff'
+      background2: '#d0d0d0'
+      show_solderpaste: false
 
   - name: render_bottom
     comment: '3D render -- bottom'
@@ -88,6 +115,10 @@ outputs:
       output: TAPRX-888-3d-bottom.png
       ray_tracing: false
       view: bottom
+      transparent_background: false
+      background1: '#ffffff'
+      background2: '#d0d0d0'
+      show_solderpaste: false
 
   # ---- JLCPCB turnkey (release) ----
   - name: JLCPCB_gerbers
@@ -170,6 +201,12 @@ outputs:
       output: TAPRX-888-bom.csv
       exclude_filter: only_jlc_parts
       ref_separator: ','
+      # Our columns (Value/References/Footprint/LCSC Part #) are plain fields with
+      # no ${...} tokens, so the text-variable expansion pass has nothing to do
+      # except choke on the standard F.Fab `${REFERENCE}` text (a per-footprint
+      # KiCad built-in that has no meaning at BOM scope), logging
+      # "ERROR: Unable to expand `REFERENCE`". Disable it -- output is identical.
+      expand_text_vars: false
       columns:
         - field: Value
           name: Comment
