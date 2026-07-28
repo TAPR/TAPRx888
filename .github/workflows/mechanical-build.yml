@@ -100,12 +100,24 @@ jobs:
       - name: Build self-contained web viewer
         run: |
           set -euxo pipefail
-          curl -fsSL https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js \
-            -o /tmp/model-viewer.min.js
+          # Pinned three.js r148 -- the last release whose jsm addons import ONLY
+          # the bare 'three' specifier, which lets make_3d_viewer.py inline them
+          # via a runtime import map with no bundler (see that script's header).
+          # The viewer lets you toggle the four top-level parts on/off.
+          THREE=https://unpkg.com/three@0.148.0
+          curl -fsSL "$THREE/build/three.module.js"                        -o /tmp/three.module.js
+          curl -fsSL "$THREE/examples/jsm/loaders/GLTFLoader.js"           -o /tmp/GLTFLoader.js
+          curl -fsSL "$THREE/examples/jsm/controls/OrbitControls.js"       -o /tmp/OrbitControls.js
+          curl -fsSL "$THREE/examples/jsm/environments/RoomEnvironment.js" -o /tmp/RoomEnvironment.js
           python scripts/make_3d_viewer.py \
             --glb out/TAPRX-888-mechanical-assembly.glb \
-            --lib /tmp/model-viewer.min.js \
+            --three /tmp/three.module.js \
+            --gltf  /tmp/GLTFLoader.js \
+            --orbit /tmp/OrbitControls.js \
+            --room  /tmp/RoomEnvironment.js \
             --rev "${GITHUB_SHA::7}" \
+            --branch "${GITHUB_REF_NAME}" \
+            --repo-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}" \
             --out out/TAPRX-888-mechanical-viewer.html
           ls -la out
       - uses: actions/upload-artifact@v6

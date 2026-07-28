@@ -39,23 +39,23 @@ def Rx(deg):
 # opaque; anything more transparent (the ~0.35 enclosure) stays translucent.
 OPAQUE_ALPHA = 0.5
 
-# Turn Island blue -- the boards' soldermask is recoloured to this so the PCBs
-# read as TIS blue in the viewer (matching the TIS product finish). Linear-ish
-# sRGB triple; tune here.
-TIS_BLUE = (0.050, 0.130, 0.280)
+# Turn Island dark navy (linear sRGB). KiCad's "Blue" stackup preset exports as
+# a much brighter cornflower blue, so the blue soldermask is recoloured to this
+# to match the TIS product finish. Tune here.
+TIS_BLUE = (0.030, 0.090, 0.220)
 
 
-def _is_soldermask(rgb):
-    """Green-dominant and dark = soldermask (~0.08,0.20,0.14); the copper/pads
-    are also green-ish but much brighter (r ~0.42), so gate on a low red to keep
-    them gold/olive."""
-    r, g, b = rgb[0], rgb[1], rgb[2]
-    return g > r and g > b and r < 0.25
+def _is_soldermask(bcf, metal):
+    """The soldermask is the matte, blue-dominant, low-red material (KiCad's
+    "Blue" mask exports ~[0.008,0.184,0.51], metal 0); the metallic blue parts
+    (metal 1) and the pale translucent enclosure (high red) are excluded."""
+    r, g, b = bcf[0], bcf[1], bcf[2]
+    return metal < 0.1 and b > 0.35 and b > r and b > g and r < 0.10
 
 
 def fix_materials(path):
-    """Make PCB layers opaque, recolour the soldermask TIS blue (in place, GLB
-    byte level).
+    """Make the PCB layers render stably and recolour the blue soldermask to the
+    Turn Island navy (in place, GLB byte level).
 
     KiCad exports every PCB layer as alphaMode BLEND with a near-opaque alpha
     (silk ~0.90, mask ~0.83, copper ~0.98). Transparent materials don't write
@@ -66,8 +66,9 @@ def fix_materials(path):
     enclosure (alpha ~0.35) is left BLEND so you can still see inside. Also keep
     doubleSided so thin decals never back-face cull.
 
-    The green soldermask materials are recoloured to Turn Island blue (copper /
-    silk left alone) so the boards read as the TIS finish.
+    The blue soldermask is recoloured to the Turn Island navy (copper / silk /
+    metal parts left alone) so the boards read as the TIS finish rather than
+    KiCad's brighter "Blue" preset.
 
     Done directly on the GLB (parse the JSON chunk, patch materials, rewrite the
     chunk lengths) so it does not depend on trimesh's material export path.
@@ -88,7 +89,9 @@ def fix_materials(path):
         gltf = json.loads(bytes(cdata).decode("utf-8"))
         for m in gltf.get("materials", []):
             m["doubleSided"] = True
-            bcf = m.get("pbrMetallicRoughness", {}).get("baseColorFactor")
+            pbr = m.get("pbrMetallicRoughness", {})
+            bcf = pbr.get("baseColorFactor")
+            metal = pbr.get("metallicFactor", 1.0)
             alpha = bcf[3] if bcf and len(bcf) > 3 else 1.0
             if alpha >= OPAQUE_ALPHA:
                 m["alphaMode"] = "OPAQUE"
@@ -98,7 +101,7 @@ def fix_materials(path):
             else:
                 m["alphaMode"] = "BLEND"
                 blend += 1
-            if bcf and _is_soldermask(bcf):
+            if bcf and _is_soldermask(bcf, metal):
                 bcf[0], bcf[1], bcf[2] = TIS_BLUE
                 blued += 1
         newjson = json.dumps(gltf, separators=(",", ":")).encode("utf-8")
@@ -107,7 +110,7 @@ def fix_materials(path):
     body = b"".join(struct.pack("<II", len(c), t) + bytes(c) for t, c in chunks)
     with open(path, "wb") as f:
         f.write(struct.pack("<III", magic, ver, 12 + len(body)) + body)
-    print("[glb] materials -> opaque:%d  translucent(enclosure):%d  soldermask->blue:%d"
+    print("[glb] materials -> opaque:%d  translucent(enclosure):%d  soldermask->navy:%d"
           % (opaque, blend, blued))
 
 

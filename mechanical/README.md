@@ -40,8 +40,13 @@ The reusable `mechanical-build.yml` (called by `mechanical-ci` on `design`/`dev-
 and by `dev-release` on `dev`) assembles enclosure + board + both plates
 (`assemble_mechanical.py`, CadQuery) into a multi-component STEP, a coloured GLB
 (`assemble_glb.py`), and a self-contained viewer (`make_3d_viewer.py`), and
-deploys the viewer to **<https://tapr.github.io/TAPRx888/>**. Non-gating; board
-**connector** 3D models are still missing (#45).
+deploys the viewer to **<https://tapr.github.io/TAPRx888/>**. The viewer
+(three.js) lets you toggle the four top-level parts -- enclosure, main board,
+front / rear end plates -- on and off (turning the translucent enclosure off is
+handy for seeing the board inside). `assemble_glb.py` recolours the boards'
+soldermask to the Turn Island navy (KiCad's `Blue` stackup preset exports a
+brighter cornflower blue), and the viewer's lighting is tuned so every face reads
+the same colour. Non-gating; board **connector** 3D models are still missing (#45).
 
 ## Plate geometry
 
