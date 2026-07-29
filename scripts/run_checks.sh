@@ -43,20 +43,23 @@ emit_report() {
 note "## Dev-CI checks (ENFORCE=$ENFORCE)"
 
 # --- ERC (gate) ---------------------------------------------------------------
-# Full report as artifact; --severity-error means only errors set the exit code
-# (the known footprint-library-name warnings, #10, do not gate).
+# Full report including warnings, uploaded as an artifact. --exit-code-violations
+# makes any violation (error or warning) set the exit code; with ENFORCE=false the
+# job still passes and just records the baseline (see the verdict block).
 if kicad-cli sch erc "$SCH" -o reports/erc.rpt --exit-code-violations; then
-  note "- ✅ ERC: no errors"
+  note "- ✅ ERC: no violations"
 else
-  note "- ❌ ERC: errors found (see reports/erc.rpt)"; fail=1
+  note "- ⚠️ ERC: violations found (errors and/or warnings; see reports/erc.rpt)"; fail=1
 fi
 
 # --- DRC (gate) ---------------------------------------------------------------
-# Uses the board design settings in .kicad_pro (no .kicad_dru yet, #3).
+# Uses the board design settings in .kicad_pro plus the custom rules in
+# TAPRX-888.kicad_dru (auto-loaded from the project directory). Full report
+# including warnings; --exit-code-violations is non-gating while ENFORCE=false.
 if kicad-cli pcb drc "$PCB" -o reports/drc.rpt --exit-code-violations; then
-  note "- ✅ DRC: no errors"
+  note "- ✅ DRC: no violations"
 else
-  note "- ❌ DRC: errors found (see reports/drc.rpt)"; fail=1
+  note "- ⚠️ DRC: violations found (errors and/or warnings; see reports/drc.rpt)"; fail=1
 fi
 
 # --- BOM completeness (gate) --------------------------------------------------
