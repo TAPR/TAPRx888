@@ -45,7 +45,7 @@ note "## Dev-CI checks (ENFORCE=$ENFORCE)"
 # --- ERC (gate) ---------------------------------------------------------------
 # Full report as artifact; --severity-error means only errors set the exit code
 # (the known footprint-library-name warnings, #10, do not gate).
-if kicad-cli sch erc "$SCH" -o reports/erc.rpt --severity-error --exit-code-violations; then
+if kicad-cli sch erc "$SCH" -o reports/erc.rpt --exit-code-violations; then
   note "- ✅ ERC: no errors"
 else
   note "- ❌ ERC: errors found (see reports/erc.rpt)"; fail=1
@@ -53,7 +53,7 @@ fi
 
 # --- DRC (gate) ---------------------------------------------------------------
 # Uses the board design settings in .kicad_pro (no .kicad_dru yet, #3).
-if kicad-cli pcb drc "$PCB" -o reports/drc.rpt --severity-error --exit-code-violations; then
+if kicad-cli pcb drc "$PCB" -o reports/drc.rpt --exit-code-violations; then
   note "- ✅ DRC: no errors"
 else
   note "- ❌ DRC: errors found (see reports/drc.rpt)"; fail=1
