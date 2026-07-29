@@ -9670,7 +9670,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "BAV99"
 			(at 60.96 124.3965 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10125,7 +10125,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "BAV99"
 			(at 134.62 142.1765 90)
 			(show_name no)
 			(do_not_autoplace no)

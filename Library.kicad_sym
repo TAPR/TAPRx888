@@ -869,7 +869,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "BAV99"
 			(at 0 2.667 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16220,7 +16220,7 @@
 			(hide yes)
 		)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
