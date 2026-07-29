@@ -11954,12 +11954,6 @@
 		(path "/9dafb675-6824-46b8-84de-d9a2fe8f82bc")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12226,7 +12220,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 0 0.127)
+			(at 0 0.127 180)
 			(size 1.27 3.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/Front_End_Filter/RF_ATTEN__IN")
@@ -12235,7 +12229,7 @@
 			(uuid "4a2e9c5f-f15a-4b63-81c7-bd7237be7139")
 		)
 		(pad "2" smd rect
-			(at -2.825 0.327)
+			(at -2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -12244,7 +12238,7 @@
 			(uuid "a157ff92-47f9-4105-8502-a98aa7b11879")
 		)
 		(pad "2" smd rect
-			(at -2.825 0.327)
+			(at -2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -12253,7 +12247,7 @@
 			(uuid "3a8866c3-406f-4cdc-ba31-a5455994e3fe")
 		)
 		(pad "2" smd rect
-			(at 2.825 0.327)
+			(at 2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -12262,7 +12256,7 @@
 			(uuid "8aa362a4-f580-4471-bea2-bf436a5a4a58")
 		)
 		(pad "2" smd rect
-			(at 2.825 0.327)
+			(at 2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -12273,13 +12267,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/SMA_Jack_EdgeMount_JLC.step"
 			(offset
-				(xyz 0 14 0.65)
+				(xyz 0 4.5 -5.67)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -180 -180)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -12876,7 +12870,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C2874826"
+		(property "LCSC Part #" "C914558"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12893,12 +12887,6 @@
 		(path "/b211b51f-b7a9-40c1-862f-1fe5f6d2e2c9")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13165,7 +13153,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 0 0.127)
+			(at 0 0.127 180)
 			(size 1.27 3.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/Front_End_Filter/RF_IN")
@@ -13174,7 +13162,7 @@
 			(uuid "1d8d1f3b-03ef-49aa-9331-50ccfc140646")
 		)
 		(pad "2" smd rect
-			(at -2.825 0.327)
+			(at -2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -13183,7 +13171,7 @@
 			(uuid "82bf1b8f-1390-49dc-8935-5005241bc736")
 		)
 		(pad "2" smd rect
-			(at -2.825 0.327)
+			(at -2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -13192,7 +13180,7 @@
 			(uuid "9282ffe3-91f1-4792-bb94-dc30e6b83d03")
 		)
 		(pad "2" smd rect
-			(at 2.825 0.327)
+			(at 2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -13201,7 +13189,7 @@
 			(uuid "f7a413f0-ee19-463a-906c-eda14dfa083b")
 		)
 		(pad "2" smd rect
-			(at 2.825 0.327)
+			(at 2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -13212,13 +13200,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/SMA_Jack_EdgeMount_JLC.step"
 			(offset
-				(xyz 0 14 0.65)
+				(xyz 0 4.5 -5.67)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -180 -180)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -48200,12 +48188,6 @@
 		(path "/036feaf3-e2b7-4569-8913-124cb8238b53")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -48472,7 +48454,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 0 0.127)
+			(at 0 0.127 180)
 			(size 1.27 3.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J3-In)")
@@ -48481,7 +48463,7 @@
 			(uuid "35b98f65-f505-41f5-84ff-315c48177d08")
 		)
 		(pad "2" smd rect
-			(at -2.825 0.327)
+			(at -2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -48490,7 +48472,7 @@
 			(uuid "b458c383-758b-488d-9c0a-d12332549839")
 		)
 		(pad "2" smd rect
-			(at -2.825 0.327)
+			(at -2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -48499,7 +48481,7 @@
 			(uuid "b1d11af0-b5d5-4799-ae5f-d55352f120d0")
 		)
 		(pad "2" smd rect
-			(at 2.825 0.327)
+			(at 2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -48508,7 +48490,7 @@
 			(uuid "a946cf2f-e693-4e85-8001-37d2a9ce3bfc")
 		)
 		(pad "2" smd rect
-			(at 2.825 0.327)
+			(at 2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -48519,13 +48501,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/SMA_Jack_EdgeMount_JLC.step"
 			(offset
-				(xyz 0 14 0.65)
+				(xyz 0 4.5 -5.67)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -180 -180)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -51576,12 +51558,6 @@
 		(path "/ab38790f-4c73-448f-bca5-136aa7e5ae51")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -51848,7 +51824,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 0 0.127)
+			(at 0 0.127 180)
 			(size 1.27 3.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/Clock/EXT_REF_IN")
@@ -51857,7 +51833,7 @@
 			(uuid "30cf9207-74ec-4f84-bea0-c518ec8a08ec")
 		)
 		(pad "2" smd rect
-			(at -2.825 0.327)
+			(at -2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -51866,7 +51842,7 @@
 			(uuid "5904e5dd-fc28-45c2-9321-01ede590d711")
 		)
 		(pad "2" smd rect
-			(at -2.825 0.327)
+			(at -2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -51875,7 +51851,7 @@
 			(uuid "73ce01b2-a062-4ade-a211-707df6455a03")
 		)
 		(pad "2" smd rect
-			(at 2.825 0.327)
+			(at 2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -51884,7 +51860,7 @@
 			(uuid "3c6a6913-0f1f-4684-adad-d4b5d9ab1d10")
 		)
 		(pad "2" smd rect
-			(at 2.825 0.327)
+			(at 2.825 0.327 180)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -51895,13 +51871,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/SMA_Jack_EdgeMount_JLC.step"
 			(offset
-				(xyz 0 14 0.65)
+				(xyz 0 4.5 -5.67)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -180 -180)
+				(xyz 0 0 180)
 			)
 		)
 	)

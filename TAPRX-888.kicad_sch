@@ -1030,7 +1030,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Library:PAD_0603"
+			(property "Footprint" "Library:C_0603"
 				(at -2.286 -0.762 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1366,7 +1366,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Library:PAD_0603"
+			(property "Footprint" "Library:C_0603"
 				(at 13.716 2.286 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1546,7 +1546,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Library:PAD_0603"
+			(property "Footprint" "Library:C_0603"
 				(at 1.27 9.906 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -36090,7 +36090,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C2874826"
+		(property "LCSC Part #" "C914558"
 			(at 30.226 11.43 0)
 			(hide yes)
 			(show_name no)
@@ -38335,7 +38335,7 @@
 			)
 		)
 		(property "Footprint" "Library:C_0603"
-			(at 119.634 108.712 0)
+			(at 135.636 105.664 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38357,7 +38357,7 @@
 			)
 		)
 		(property "Description" "1uF 50V X5R 0603"
-			(at 121.92 107.95 0)
+			(at 133.096 107.696 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38368,7 +38368,7 @@
 			)
 		)
 		(property "LCSC Part #" "C15849"
-			(at 121.92 107.95 0)
+			(at 130.048 103.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38863,7 +38863,7 @@
 		(dnp no)
 		(uuid "dfda5505-8e6d-4bc6-9b48-43b34b846aa7")
 		(property "Reference" "C41"
-			(at 349.25 92.7162 0)
+			(at 346.964 92.202 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38874,7 +38874,7 @@
 			)
 		)
 		(property "Value" "C-22u-0603"
-			(at 332.994 91.44 0)
+			(at 346.964 96.012 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

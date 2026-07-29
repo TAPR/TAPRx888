@@ -502,7 +502,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "BAV99"
 				(at 0 2.667 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -947,7 +947,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Library:PAD_0603"
+			(property "Footprint" "Library:C_0603"
 				(at -2.286 -0.762 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1127,7 +1127,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Library:PAD_0603"
+			(property "Footprint" "Library:C_0603"
 				(at 13.716 2.286 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1307,7 +1307,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Library:PAD_0603"
+			(property "Footprint" "Library:C_0603"
 				(at -1.016 8.636 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9660,25 +9660,23 @@
 		(dnp no)
 		(uuid "3839e481-dd84-4a22-94d3-b503c8ef78e6")
 		(property "Reference" "U15"
-			(at 61.722 121.666 90)
+			(at 60.833 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "BAV99"
-			(at 60.96 124.3965 90)
+			(at 60.833 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Library:SOT-23"
@@ -10115,25 +10113,23 @@
 		(dnp no)
 		(uuid "4576ee39-aa27-4ad3-ab52-70483c38dcd0")
 		(property "Reference" "U17"
-			(at 135.382 139.446 90)
+			(at 134.493 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "BAV99"
-			(at 134.62 142.1765 90)
+			(at 134.493 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Library:SOT-23"
