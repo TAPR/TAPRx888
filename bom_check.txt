@@ -1,8 +1,2 @@
-BOM completeness: 185/190 fitted rows complete.
-
-Incomplete rows:
-  L2   missing: LCSC
-  U12  missing: Value
-  U13  missing: Value
-  U15  missing: Value
-  U17  missing: Value
+BOM completeness: 189/189 fitted rows complete.
+All fitted parts have Value, Footprint, and an LCSC number.
