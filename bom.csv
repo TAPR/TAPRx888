@@ -81,7 +81,7 @@
 "D1","Schottky_Pwr_B5819W","Library:SOD-123","C8598"
 "D2","Schottky_Pwr_B5819W","Library:SOD-123","C8598"
 "D3","LED_RGB_SIDE","Library:LED_RGB_SIDE","C389528"
-"J1","CONN_SMA_JACK_EDGE_JLC_With_Nut","Library:SMA_Jack_EdgeMount_JLC_With_Nut","C2874826"
+"J1","CONN_SMA_JACK_EDGE_JLC_With_Nut","Library:SMA_Jack_EdgeMount_JLC_With_Nut","C914558"
 "J2","CONN_SMA_JACK_EDGE_JLC_With_Nut","Library:SMA_Jack_EdgeMount_JLC_With_Nut","C914558"
 "J4","CONN_SMA_JACK_EDGE_JLC_With_Nut","Library:SMA_Jack_EdgeMount_JLC_With_Nut","C914558"
 "J5","USB-3.0","Library:USB-3.0","C2895032"

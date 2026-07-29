@@ -1,79 +1,13 @@
-ERC report (2026-07-29T03:57:39, Encoding UTF8)
+ERC report (2026-07-29T05:22:01, Encoding UTF8)
 Report includes: Errors, Warnings
 
 ***** Sheet /
-[lib_symbol_mismatch]: Symbol 'C-1u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(35.56 mm, 85.09 mm): Symbol C4 [C-1u-0603]
-[lib_symbol_mismatch]: Symbol 'C-10u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(57.15 mm, 209.55 mm): Symbol C11 [C-10u-0603]
-[lib_symbol_mismatch]: Symbol 'C-10u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(62.23 mm, 82.55 mm): Symbol C12 [C-10u-0603]
-[lib_symbol_mismatch]: Symbol 'C-10u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(62.23 mm, 171.45 mm): Symbol C13 [C-10u-0603]
-[lib_symbol_mismatch]: Symbol 'C-10u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(62.23 mm, 189.23 mm): Symbol C14 [C-10u-0603]
-[lib_symbol_mismatch]: Symbol 'C-22u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(101.60 mm, 209.55 mm): Symbol C22 [C-22u-0603]
-[lib_symbol_mismatch]: Symbol 'C-1u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(121.92 mm, 107.95 mm): Symbol C25 [C-1u-0603]
-[lib_symbol_mismatch]: Symbol 'C-10u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(162.56 mm, 20.32 mm): Symbol C29 [C-10u-0603]
-[lib_symbol_mismatch]: Symbol 'C-22u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(346.71 mm, 93.98 mm): Symbol C41 [C-22u-0603]
-[lib_symbol_mismatch]: Symbol 'C-22u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(367.03 mm, 68.58 mm): Symbol C45 [C-22u-0603]
-[lib_symbol_mismatch]: Symbol 'C-22u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(381.00 mm, 104.14 mm): Symbol C47 [C-22u-0603]
-[lib_symbol_mismatch]: Symbol 'C-1u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(33.02 mm, 173.99 mm): Symbol C62 [C-1u-0603]
-[lib_symbol_mismatch]: Symbol 'BAV99-Dual_Diode' doesn't match copy in library 'Library'
-    ; warning
-    @(63.50 mm, 123.19 mm): Symbol U15 [BAV99-Dual_Diode]
-[lib_symbol_mismatch]: Symbol 'C-10u-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(71.12 mm, 173.99 mm): Symbol C65 [C-10u-0603]
-[lib_symbol_mismatch]: Symbol 'BAV99-Dual_Diode' doesn't match copy in library 'Library'
-    ; warning
-    @(137.16 mm, 140.97 mm): Symbol U17 [BAV99-Dual_Diode]
-[lib_symbol_mismatch]: Symbol 'C-8.2p-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(266.70 mm, 29.21 mm): Symbol C78 [C-8.2p-0603]
-[lib_symbol_mismatch]: Symbol 'C-12p-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(64.77 mm, 111.76 mm): Symbol C51 [C-12p-0603]
-[lib_symbol_mismatch]: Symbol 'C-330p-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(76.20 mm, 40.64 mm): Symbol C52 [C-330p-0603]
-[lib_symbol_mismatch]: Symbol 'C-330p-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(116.84 mm, 40.64 mm): Symbol C57 [C-330p-0603]
-[lib_symbol_mismatch]: Symbol 'C-100p-0603' doesn't match copy in library 'Library'
-    ; warning
-    @(149.86 mm, 134.62 mm): Symbol C60 [C-100p-0603]
-[lib_symbol_mismatch]: Symbol 'BAV99-Dual_Diode' doesn't match copy in library 'Library'
-    ; warning
-    @(243.84 mm, 113.03 mm): Symbol U12 [BAV99-Dual_Diode]
-[lib_symbol_mismatch]: Symbol 'BAV99-Dual_Diode' doesn't match copy in library 'Library'
-    ; warning
-    @(252.73 mm, 113.03 mm): Symbol U13 [BAV99-Dual_Diode]
 
 ***** Sheet /Front_End_Filter/
 
 ***** Sheet /Clock/
 
- ** ERC messages: 22  Errors 0  Warnings 22
+ ** ERC messages: 0  Errors 0  Warnings 0
 
  ** Ignored checks:
     - Global label only appears once in the schematic

@@ -1,23 +1,8 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-07-29T03:57:47 **
+** Created on 2026-07-29T05:22:08 **
 ** Report includes: Errors, Warnings **
 
-** Found 5 DRC violations **
-[lib_footprint_mismatch]: Footprint 'SMA_Jack_EdgeMount_JLC_With_Nut' does not match copy in library 'Library'
-    Local override; warning
-    @(146.9865 mm, 145.6030 mm): Footprint J2
-[lib_footprint_mismatch]: Footprint 'SMA_Jack_EdgeMount_JLC_With_Nut' does not match copy in library 'Library'
-    Local override; warning
-    @(111.0000 mm, 145.4236 mm): Footprint J1
-[lib_footprint_mismatch]: Footprint 'HRS_U.FL-R-SMT(01)' does not match copy in library 'Library'
-    Local override; warning
-    @(147.0000 mm, 105.2750 mm): Footprint J10
-[lib_footprint_mismatch]: Footprint 'SMA_Jack_EdgeMount_JLC_With_Nut' does not match copy in library 'Library'
-    Local override; warning
-    @(129.0000 mm, 145.4500 mm): Footprint J3
-[lib_footprint_mismatch]: Footprint 'SMA_Jack_EdgeMount_JLC_With_Nut' does not match copy in library 'Library'
-    Local override; warning
-    @(164.8000 mm, 145.4000 mm): Footprint J4
+** Found 0 DRC violations **
 
 ** Found 0 unconnected pads **
 
