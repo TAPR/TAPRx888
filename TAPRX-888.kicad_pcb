@@ -131,6 +131,7 @@
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0)
+		(solder_mask_min_width 0.1)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting
 			(front yes)
@@ -20128,12 +20129,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/87c956d3-e744-4cc3-98e4-aa0f683e97b9")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "6" "4" "5" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20245,7 +20240,7 @@
 			(net "/Clock/EXTCLKSEL_N")
 			(pinfunction "IN1_1")
 			(pintype "input")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "32e795a1-03a1-4a5a-8796-215332987cd3")
 		)
 		(pad "2" smd rect
@@ -20255,7 +20250,7 @@
 			(net "GND")
 			(pinfunction "GND_2")
 			(pintype "power_in")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "ee5101f4-d265-4911-90b3-8b4bde039ee9")
 		)
 		(pad "3" smd rect
@@ -20265,7 +20260,7 @@
 			(net "/EXT_REF_ACTIVE")
 			(pinfunction "IN0_3")
 			(pintype "input")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "fbb85926-aadd-44e3-a3f8-12a1ef08d37f")
 		)
 		(pad "4" smd rect
@@ -20275,7 +20270,7 @@
 			(net "Net-(Q1-G)")
 			(pinfunction "Z_4")
 			(pintype "output")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "b5b6a9d5-af11-4f35-a529-781a29a23fc2")
 		)
 		(pad "5" smd rect
@@ -20285,7 +20280,7 @@
 			(net "/Clock/CLKGEN3.3V")
 			(pinfunction "VCC_5")
 			(pintype "power_in")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "ebd918be-1fbf-4732-a05c-f6dcbd74ca5c")
 		)
 		(pad "6" smd rect
@@ -20295,7 +20290,7 @@
 			(net "Net-(U21-SEL)")
 			(pinfunction "SEL_6")
 			(pintype "input")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "dcba275f-c702-423c-9bfa-3587a550ff0e")
 		)
 		(embedded_fonts no)
@@ -27480,12 +27475,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/b4fd968f-f873-4737-bab9-ab94178152f9")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "6" "4" "5" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27596,7 +27585,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(Q2-C)")
 			(pintype "input")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "52454801-cc3a-43e4-a196-8494e6fd647f")
 		)
 		(pad "2" smd rect
@@ -27606,7 +27595,7 @@
 			(net "GND")
 			(pinfunction "GND_2")
 			(pintype "power_in")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "dde9b6e5-1ed1-49c0-bd2d-e85b81eebc55")
 		)
 		(pad "3" smd rect
@@ -27615,7 +27604,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
 			(pintype "input")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "a16cd36d-73cc-448c-b6ca-982d8d941303")
 		)
 		(pad "4" smd rect
@@ -27624,7 +27613,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U19-Pad4)")
 			(pintype "output+no_connect")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "66873a1e-2c8a-4876-8f0c-756b79a5cf85")
 		)
 		(pad "5" smd rect
@@ -27634,7 +27623,7 @@
 			(net "+3V3")
 			(pinfunction "VCC_5")
 			(pintype "power_in")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "c693f642-152e-4cce-953e-117bb2b64a45")
 		)
 		(pad "6" smd rect
@@ -27643,7 +27632,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/EXT_REF_ACTIVE")
 			(pintype "output")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "afd978c3-432e-4893-9a42-ae87699811ab")
 		)
 		(embedded_fonts no)
@@ -32665,12 +32654,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/8e0495a6-fb00-4d32-8810-010904235d0f")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "6" "4" "5" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32782,7 +32765,7 @@
 			(net "Net-(U16-OUT)")
 			(pinfunction "IN1_1")
 			(pintype "input")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "8c73f8cc-edbf-4af1-be9e-e75c04356a53")
 		)
 		(pad "2" smd rect
@@ -32792,7 +32775,7 @@
 			(net "GND")
 			(pinfunction "GND_2")
 			(pintype "power_in")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "9a6391e2-6fef-4317-807f-f56ef2b832d2")
 		)
 		(pad "3" smd rect
@@ -32802,7 +32785,7 @@
 			(net "Net-(U18-IN0)")
 			(pinfunction "IN0_3")
 			(pintype "input")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "04e3eb3d-a123-46d1-9628-b2ddb7ec2163")
 		)
 		(pad "4" smd rect
@@ -32812,7 +32795,7 @@
 			(net "Net-(U18-Z)")
 			(pinfunction "Z_4")
 			(pintype "output")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "0764b40b-db04-4f05-93ea-e2f79b1e5a91")
 		)
 		(pad "5" smd rect
@@ -32822,7 +32805,7 @@
 			(net "/Clock/CLKGEN3.3V")
 			(pinfunction "VCC_5")
 			(pintype "power_in")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "b2deb3c6-5b75-4e21-a763-4245d9968bc2")
 		)
 		(pad "6" smd rect
@@ -32832,7 +32815,7 @@
 			(net "Net-(Q1-G)")
 			(pinfunction "SEL_6")
 			(pintype "input")
-			(solder_mask_margin 0.1)
+			(solder_mask_margin 0.05)
 			(uuid "5ac73c3d-d5d1-487f-9929-464b8d3c4f30")
 		)
 		(embedded_fonts no)
@@ -80541,6 +80524,22 @@
 		(uuid "d8f4ef77-6190-45cd-bb7b-a2e1b6c08392")
 	)
 	(segment
+		(start 159.3 109.5)
+		(end 159.8 110)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "Net-(U18-Z)")
+		(uuid "1a7a97e5-7115-4ed3-a590-94fc3a73c21d")
+	)
+	(segment
+		(start 163.4 110)
+		(end 163.8 110.4)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "Net-(U18-Z)")
+		(uuid "20ef68ad-a179-430e-afc2-a74c818ffe7e")
+	)
+	(segment
 		(start 158.2 109.5)
 		(end 159.3 109.5)
 		(width 0.2)
@@ -80549,12 +80548,12 @@
 		(uuid "3dad0f06-3021-40bc-8f4c-1863a0b7b841")
 	)
 	(segment
-		(start 162.699 117.751057)
-		(end 162.699 119.149)
+		(start 163.8 110.4)
+		(end 163.8 116.650057)
 		(width 0.5)
 		(layer "F.Cu")
 		(net "Net-(U18-Z)")
-		(uuid "5f04fe03-a61d-4a5c-a512-c873aa66e1f3")
+		(uuid "6a7e5cbe-0d6f-4aca-8c08-d28de0eb5f17")
 	)
 	(segment
 		(start 162.699 119.149)
@@ -80562,31 +80561,7 @@
 		(width 0.5)
 		(layer "F.Cu")
 		(net "Net-(U18-Z)")
-		(uuid "634e7806-9412-4e84-a359-afe6667b1cec")
-	)
-	(segment
-		(start 163.8 110.4)
-		(end 163.8 116.650057)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "Net-(U18-Z)")
-		(uuid "670804cd-4ff8-4cbd-ae8c-326e274706bc")
-	)
-	(segment
-		(start 159.8 110)
-		(end 163.4 110)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "Net-(U18-Z)")
-		(uuid "6cfae7e4-188b-4d3f-80ce-4b7fe1c68da1")
-	)
-	(segment
-		(start 159.3 109.5)
-		(end 159.8 110)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "Net-(U18-Z)")
-		(uuid "7e87b037-92a4-406b-872f-6459be10efab")
+		(uuid "77c97cf4-4232-416a-ab38-871aecda3aae")
 	)
 	(segment
 		(start 163.8 116.650057)
@@ -80594,15 +80569,23 @@
 		(width 0.5)
 		(layer "F.Cu")
 		(net "Net-(U18-Z)")
-		(uuid "8b351c93-7a91-4699-aefd-a5d9918aa7b3")
+		(uuid "86b17a99-e65f-496a-948b-7a654a2b7d3d")
 	)
 	(segment
-		(start 163.4 110)
-		(end 163.8 110.4)
+		(start 162.699 117.751057)
+		(end 162.699 119.149)
 		(width 0.5)
 		(layer "F.Cu")
 		(net "Net-(U18-Z)")
-		(uuid "d3dad5bb-686a-490b-a18f-ed7e50a6b55c")
+		(uuid "e47b797e-03b5-427d-8c04-b5eb8870c2e4")
+	)
+	(segment
+		(start 159.8 110)
+		(end 163.4 110)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "Net-(U18-Z)")
+		(uuid "f6205e40-015f-4e22-ae85-2bfd6030b5c5")
 	)
 	(segment
 		(start 112 121.75)
