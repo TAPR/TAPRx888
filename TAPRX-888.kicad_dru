@@ -1,34 +1,89 @@
+(version 1)
 
-# USB3 SuperSpeed differential pairs: SSRX+/-, SSTX+/-
-# Skew and coupling constraints for 5 Gbps signaling
-(rule "USB3_SS diff pair skew"
-    (condition "A.NetClass == 'USB3_SS'")
-    (constraint skew (max 0.1mm))
-)
+# ============================================================================
+#  TAPRX-888 - custom design rules
+#  Process target : JLCPCB, 6-layer, ADVANCED via tier
+#                   (0.15 mm via drill / 0.30 mm pad -> 0.075 mm annular)
+#  Source         : jlcpcb.com/capabilities  (captured 2026-07-29; confirm live)
+#  Cross-checked  : github.com/tinfever/KiCAD-Custom-DRC-Rules-for-JLCPCB
+#  Model          : .kicad_pro "Constraints" hold the ABSOLUTE physical floor;
+#                   this file only *tightens*. KiCad enforces the most
+#                   restrictive of {constraints, netclasses, these rules}.
+#  Changing fabs  : replace the PROCESS section, update this header, archive the
+#                   outgoing set in the Wiki.
+#  CONFIRM before trusting as a gate:
+#   - Trace/space 3.5 mil = current JLC multilayer (older sheets capped OUTER at
+#     5 mil). Board's narrowest track 0.1 mm (~3.94 mil): OK, but sub-4-mil = JLC
+#     extra-cost tier.
+#   - Condition tokens (A.Type, A.Pad_Type) are best-effort - validate on load.
+# ============================================================================
 
-(rule "USB3_SS diff pair coupling"
-    (condition "A.NetClass == 'USB3_SS'")
-    (constraint diff_pair_uncoupled (max 2mm))
-)
+# ===== PROCESS  (JLCPCB 6-layer - complete capability reference; swap per fab) =
+# Severity: fab HARD limits = error; legibility guidance = warning.
+# Kept complete (incl. limits the .pro floor already covers) so this reads as the
+# full JLC 6-layer spec. Where the .pro design-practice floor is STRICTER it
+# governs - those DRU lines are documentation and won't fire.
 
-(rule "USB3_SS via limit"
-    (condition "A.NetClass == 'USB3_SS'")
-    (constraint via_count (max 2))
-)
+# .pro min_track_width 0.1mm is stricter and governs; this documents JLC's cap.
+(rule "JLC: min trace width 3.5mil"
+	(constraint track_width (min 0.0889mm)))
 
-# USB3 TX-RX isolation: keep SSTX and SSRX pairs separated
-(rule "USB3 TX-RX isolation"
-    (condition "(A.NetName == '/SSTX+' || A.NetName == '/SSTX-') && (B.NetName == '/SSRX+' || B.NetName == '/SSRX-')")
-    (constraint clearance (min 0.5mm))
-)
+# .pro min_clearance 0.1mm is stricter and governs.
+(rule "JLC: min copper clearance 3.5mil"
+	(constraint clearance (min 0.0889mm)))
 
-# USB2 High-Speed (480 Mbps): USB+/USB- differential pair
-(rule "USB2 diff pair skew"
-    (condition "A.NetClass == 'USB2'")
-    (constraint skew (max 0.5mm))
-)
+(rule "JLC: min via drill (advanced 0.15mm)"
+	(constraint hole_size (min 0.15mm))
+	(condition "A.Type == 'Via'"))
 
-(rule "USB2 diff pair coupling"
-    (condition "A.NetClass == 'USB2'")
-    (constraint diff_pair_uncoupled (max 5mm))
-)
+# 114 BGA vias at 0.05mm ring; WARNING = keep-and-document (advanced tier).
+# Flip to (severity error) if you'll enlarge to 0.30mm pads.
+(rule "JLC: min via annular ring"
+	(constraint annular_width (min 0.075mm))
+	(condition "A.Type == 'Via'")
+	(severity warning))
+
+(rule "JLC: min PTH drill 0.2mm"
+	(constraint hole_size (min 0.2mm))
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'"))
+
+# Net-aware: JLC 0.254mm same-net (GND stitching), 0.5mm different-net.
+(rule "JLC: hole-to-hole (different net)"
+	(constraint hole_to_hole (min 0.5mm))
+	(condition "A.NetName != B.NetName"))
+(rule "JLC: hole-to-hole (same net)"
+	(constraint hole_to_hole (min 0.254mm))
+	(condition "A.NetName == B.NetName"))
+
+# .pro min_copper_edge_clearance 0.5mm is stricter and governs.
+(rule "JLC: copper to board edge 0.3mm"
+	(constraint edge_clearance (min 0.3mm)))
+
+(rule "JLC: silk to pad 0.15mm"
+	(constraint silk_clearance (min 0.15mm)))
+
+# Silk text: JLC legibility guidance -> warning.
+(rule "JLC: min silk text height 1.0mm"
+	(constraint text_height (min 1.0mm))
+	(severity warning))
+(rule "JLC: min silk text thickness 0.15mm"
+	(constraint text_thickness (min 0.15mm))
+	(severity warning))
+
+# ===== PROJECT  (TAPRX-888 design intent) ===================================
+# DISABLED until USB3_SS / USB2 netclasses exist in .kicad_pro and nets are
+# assigned - these currently match nothing. Preserved from the prior .kicad_dru:
+#
+# (rule "USB3_SS diff pair skew"
+# 	(constraint skew (max 0.1mm))            (condition "A.NetClass == 'USB3_SS'"))
+# (rule "USB3_SS diff pair coupling"
+# 	(constraint diff_pair_uncoupled (max 2mm)) (condition "A.NetClass == 'USB3_SS'"))
+# (rule "USB3_SS via limit"
+# 	(constraint via_count (max 2))           (condition "A.NetClass == 'USB3_SS'"))
+# (rule "USB3 TX-RX isolation"
+# 	(constraint clearance (min 0.5mm))
+# 	(condition "(A.NetName=='/SSTX+' || A.NetName=='/SSTX-') && (B.NetName=='/SSRX+' || B.NetName=='/SSRX-')"))
+# (rule "USB2 diff pair skew"
+# 	(constraint skew (max 0.5mm))            (condition "A.NetClass == 'USB2'"))
+# (rule "USB2 diff pair coupling"
+# 	(constraint diff_pair_uncoupled (max 5mm)) (condition "A.NetClass == 'USB2'"))

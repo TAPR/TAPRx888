@@ -53,10 +53,13 @@ else
 fi
 
 # --- DRC (gate) ---------------------------------------------------------------
-# Uses the board design settings in .kicad_pro plus the custom rules in
-# TAPRX-888.kicad_dru (auto-loaded from the project directory). Full report
-# including warnings; --exit-code-violations is non-gating while ENFORCE=false.
-if kicad-cli pcb drc "$PCB" -o reports/drc.rpt --exit-code-violations; then
+# Board design settings (.kicad_pro) + custom rules (TAPRX-888.kicad_dru).
+# --refill-zones is REQUIRED: without it kicad-cli runs against the SAVED zone
+# fill and silently skips every pour-dependent check (solder-mask bridges,
+# copper-to-zone clearance). No --save-board, so the refill is transient and the
+# committed board is untouched. Full report incl. warnings; non-gating while
+# ENFORCE=false.
+if kicad-cli pcb drc "$PCB" -o reports/drc.rpt --refill-zones --exit-code-violations; then
   note "- ✅ DRC: no violations"
 else
   note "- ⚠️ DRC: violations found (errors and/or warnings; see reports/drc.rpt)"; fail=1
