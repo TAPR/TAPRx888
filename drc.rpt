@@ -1,60 +1,8 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-07-30T03:58:15 **
+** Created on 2026-07-30T04:56:59 **
 ** Report includes: Errors, Warnings **
 
-** Found 861 DRC violations **
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(159.1750 mm, 117.0250 mm): Pad 1 [/Clock/EXTCLKSEL_N] of U21 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(159.1750 mm, 115.7250 mm): Pad 3 [/EXT_REF_ACTIVE] of U21 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(156.9750 mm, 115.7250 mm): Pad 4 [Net-(Q1-G)] of U21 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(156.9750 mm, 116.3750 mm): Pad 5 [/Clock/CLKGEN3.3V] of U21 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(156.9750 mm, 117.0250 mm): Pad 6 [Net-(U21-SEL)] of U21 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(170.1000 mm, 123.6500 mm): Pad 1 [Net-(Q2-C)] of U19 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(167.9000 mm, 123.0000 mm): Pad 5 [+3V3] of U19 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(167.9000 mm, 123.6500 mm): Pad 6 [/EXT_REF_ACTIVE] of U19 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(166.1000 mm, 121.6500 mm): Pad 1 [Net-(U16-OUT)] of U18 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(166.1000 mm, 120.3500 mm): Pad 3 [Net-(U18-IN0)] of U18 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(163.9000 mm, 120.3500 mm): Pad 4 [Net-(U18-Z)] of U18 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(163.9000 mm, 121.0000 mm): Pad 5 [/Clock/CLKGEN3.3V] of U18 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(163.9000 mm, 121.6500 mm): Pad 6 [Net-(Q1-G)] of U18 on F.Cu
-    @(97.4000 mm, 159.3000 mm): Zone [GND] on F.Cu, B.Cu and 3 more, priority 0
+** Found 910 DRC violations **
 [silk_overlap]: Silkscreen clearance (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1261 mm)
     Rule: JLC: silk to pad 0.15mm; warning
     @(165.1400 mm, 66.7000 mm): Reference field of R17
@@ -1400,6 +1348,192 @@ LPF' on F.Silkscreen
     Rule: JLC: silk to pad 0.15mm; warning
     @(122.1000 mm, 100.2000 mm): Reference field of C53
     @(122.6000 mm, 99.3500 mm): Segment of C53 on F.Courtyard
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0884 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(102.5000 mm, 90.6000 mm): PCB text 'GND' on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1221 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(162.5000 mm, 99.8000 mm): PCB text 'GND' on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1037 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(155.2600 mm, 87.5000 mm): Segment of R12 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0814 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(155.6500 mm, 71.1000 mm): Segment of U7 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0814 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(151.0600 mm, 127.1500 mm): Segment of U6 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0300 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(110.0250 mm, 61.7750 mm): Segment of U2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0061 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(154.6000 mm, 101.0500 mm): Reference field of C21
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0500 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(165.0000 mm, 80.5000 mm): Segment of TP20 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0500 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(165.0000 mm, 81.5000 mm): Segment of TP20 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0500 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(166.0000 mm, 80.5000 mm): Segment of TP20 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0500 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(166.0000 mm, 81.5000 mm): Segment of TP20 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(169.7000 mm, 72.7000 mm): Segment of L4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(169.7000 mm, 73.3000 mm): Segment of L4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(145.0365 mm, 143.5660 mm): Segment of J2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(145.0365 mm, 147.2760 mm): Segment of J2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(147.8265 mm, 143.5660 mm): Segment of J2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(147.8265 mm, 147.2760 mm): Segment of J2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(109.0500 mm, 143.3866 mm): Segment of J1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(109.0500 mm, 147.0966 mm): Segment of J1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(111.8400 mm, 143.3866 mm): Segment of J1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(111.8400 mm, 147.0966 mm): Segment of J1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(145.7000 mm, 75.5000 mm): Segment of L7 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(145.7000 mm, 76.1000 mm): Segment of L7 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0300 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(130.0250 mm, 75.7750 mm): Segment of U5 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1300 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(107.2000 mm, 67.9500 mm): Segment of D1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1300 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(108.8000 mm, 67.9500 mm): Segment of D1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1037 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(158.2600 mm, 87.5000 mm): Segment of R11 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1037 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(163.1500 mm, 94.2600 mm): Segment of R9 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0300 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(130.0250 mm, 61.7750 mm): Segment of U3 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1218 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(147.5600 mm, 81.9800 mm): Reference field of C45
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1115 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(144.9600 mm, 103.9750 mm): Segment of J10 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1300 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(117.2000 mm, 66.2500 mm): Segment of D2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1300 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(118.8000 mm, 66.2500 mm): Segment of D2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0727 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(150.2060 mm, 70.0000 mm): Segment of Z1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0727 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(150.2060 mm, 70.0000 mm): Segment of Z1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0318 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(145.1200 mm, 81.8900 mm): Reference field of R18
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0300 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(110.0250 mm, 75.7750 mm): Segment of U1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(138.3500 mm, 112.0000 mm): Segment of U4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(138.7000 mm, 114.0000 mm): Segment of U4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(141.3000 mm, 111.3500 mm): Segment of U4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(141.3000 mm, 111.9500 mm): Segment of U4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(141.3000 mm, 114.0000 mm): Segment of U4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1031 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(170.3240 mm, 124.4000 mm): Segment of U19 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.1418 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(156.0000 mm, 106.8000 mm): Reference field of U22
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(154.3500 mm, 103.3500 mm): Segment of U22 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(154.7000 mm, 105.3500 mm): Segment of U22 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(157.3000 mm, 102.7000 mm): Segment of U22 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(157.3000 mm, 103.3000 mm): Segment of U22 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(157.3000 mm, 105.3500 mm): Segment of U22 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(145.7000 mm, 78.7000 mm): Segment of L6 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(145.7000 mm, 79.3000 mm): Segment of L6 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(169.7000 mm, 111.7000 mm): Segment of L16 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(169.7000 mm, 112.3000 mm): Segment of L16 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0814 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(124.7750 mm, 82.7450 mm): Segment of U9 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0036 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(138.8500 mm, 94.0500 mm): Reference field of C28
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(167.3500 mm, 128.7000 mm): Segment of U16 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(167.9500 mm, 128.7000 mm): Segment of U16 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(168.0000 mm, 131.6500 mm): Segment of U16 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(170.0000 mm, 128.7000 mm): Segment of U16 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0250 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(170.0000 mm, 131.3000 mm): Segment of U16 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(145.7000 mm, 80.7000 mm): Segment of L5 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask (rule 'JLC: silk to pad 0.15mm' clearance 0.1500 mm; actual 0.0400 mm)
+    Rule: JLC: silk to pad 0.15mm; warning
+    @(145.7000 mm, 81.3000 mm): Segment of L5 on F.Silkscreen
 [text_height]: Text height out of range (rule 'JLC: min silk text height 1.0mm' min height 1.0000 mm; actual 0.8000 mm)
     Rule: JLC: min silk text height 1.0mm; warning
     @(103.6000 mm, 117.0000 mm): PCB text 'BYPASS
