@@ -195,7 +195,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R2"
-			(at 2 0 0)
+			(at 2.4 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "de55d125-01dd-4095-8bee-5956d80f205d")
@@ -408,7 +408,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R27"
-			(at 2.3 0 90)
+			(at 2.8 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e5cd9dfa-1dca-42e5-84db-fc05fab1c71b")
@@ -1109,7 +1109,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R54"
-			(at 3 0 0)
+			(at 2.6 -0.2 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "ff378911-296b-406d-b440-946ef51ba6fe")
@@ -1322,7 +1322,7 @@
 		(descr "SOT-23, Standard")
 		(tags "SOT-23")
 		(property "Reference" "Q3"
-			(at -1.75 2.3 0)
+			(at 0 -2.45 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "efdd72de-b8ad-4009-9b15-9c06aa16c8e4")
@@ -2030,7 +2030,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J6"
-			(at -0.762 2.456 0)
+			(at -4 3 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "9176be20-9729-4c17-a1ec-4b7866d21156")
@@ -2795,7 +2795,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C75"
-			(at -2.5 0 0)
+			(at -2.8 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "de5213a0-5a36-4a3d-9434-bfb092848c88")
@@ -3643,7 +3643,7 @@
 		(uuid "18fe1cf1-71c7-410d-a862-c5e3332a5f01")
 		(at 147 125 90)
 		(property "Reference" "U6"
-			(at 4.0725 0 0)
+			(at 3.4 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b84ddf9f-a824-4446-b73e-6fa4ecef90c2")
@@ -4755,7 +4755,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C34"
-			(at -2.4 0 0)
+			(at -2.6 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e6c375d9-17e6-41ce-82c9-cd473ad7104c")
@@ -6428,7 +6428,7 @@
 		(uuid "1e0e8f92-4881-4fd2-b2b0-35b1ce676792")
 		(at 116 129 -90)
 		(property "Reference" "L9"
-			(at -2.8 -0.1 0)
+			(at -3.2 -0.1 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "c7258f1a-3f10-4731-8cc0-1626979b5a54")
@@ -7208,7 +7208,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C76"
-			(at 2.45 -0.1 0)
+			(at 2.65 -0.1 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "f0665613-a881-4b46-af04-b473012e804d")
@@ -7421,7 +7421,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R4"
-			(at -2 0 0)
+			(at -1.9 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "5dfbc705-21ee-4bbb-904c-7bfc93077ab8")
@@ -9087,7 +9087,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R50"
-			(at 0 -1.2 0)
+			(at 0 -1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e8bc1fb5-5f1d-46d9-b61c-659865bd2f73")
@@ -9513,7 +9513,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R1"
-			(at 2 0 0)
+			(at 2.4 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b77565df-c530-4f97-9172-7ce12b13de3d")
@@ -9924,7 +9924,7 @@
 		(uuid "35b6e18e-0be2-4d13-97a4-3ebf9cc4bc76")
 		(at 170 73)
 		(property "Reference" "L4"
-			(at 2 0 0)
+			(at 2.2 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "2fe68195-bd79-46df-b93b-d0f9432d3c74")
@@ -10388,7 +10388,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C24"
-			(at -2.5 0 0)
+			(at -2.7 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "a19c2007-f8ba-4211-a968-5b273be5569a")
@@ -11027,7 +11027,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C47"
-			(at 0 1.1 0)
+			(at 0 1.2 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "acbb3d9e-3638-463b-8f35-7a247483c6ab")
@@ -11240,7 +11240,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C12"
-			(at -2.6 0 0)
+			(at -2.7 -0.1 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b3271a87-5ddb-4775-a8e1-6abde14293cd")
@@ -12952,7 +12952,7 @@
 		(uuid "48cd68fd-43f1-4106-81ed-8e2da8ae4cfc")
 		(at 146 75.8)
 		(property "Reference" "L7"
-			(at -2 0 0)
+			(at -2.2 0.1 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "1d4bace3-bccc-4edc-be66-122cc20735c7")
@@ -15390,7 +15390,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R48"
-			(at 0 -1.2 0)
+			(at 0 -1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e3aeef67-5d73-404c-bdce-756f1d13ef99")
@@ -15603,7 +15603,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C68"
-			(at 0 -1.2 0)
+			(at 0 -1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "c212423e-892e-477f-91ed-3aa33e078e67")
@@ -16188,7 +16188,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R14"
-			(at 0 -1.25 0)
+			(at -0.2 -1.25 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e013b227-dc86-4eab-be9c-588d7de14f26")
@@ -17322,7 +17322,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C63"
-			(at 0 -1.2 0)
+			(at 0 -1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e9028dd6-a929-4e44-bcc4-a694690c9926")
@@ -18551,7 +18551,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R37"
-			(at -2.4 0 90)
+			(at -3 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "969fe7e1-6bac-413c-a07c-bb559aae98a1")
@@ -18764,7 +18764,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R5"
-			(at -2 0 0)
+			(at -1.9 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "6290ddca-0b74-47b8-a706-2b91fbe688fd")
@@ -19190,7 +19190,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C8"
-			(at -1.7 0 90)
+			(at -2 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "d46137e7-65ea-4863-a454-2db5c51a974e")
@@ -21891,7 +21891,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C46"
-			(at 0 -1.1 0)
+			(at 0 -1.3 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "fd160d6a-096d-4c8d-a191-895f84574666")
@@ -22743,7 +22743,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R25"
-			(at 2.3 0 90)
+			(at 2.8 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "9575b893-e2bd-4b1f-afb2-ecce92bcbfc6")
@@ -24396,7 +24396,7 @@
 		(uuid "7aef3aa5-735a-4a9d-90dc-af2d9f80b21e")
 		(at 140 113 90)
 		(property "Reference" "U4"
-			(at -0.1 3.4 0)
+			(at -0.1 2.9 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "59064836-576d-4321-8555-7c2f90c430e3")
@@ -25727,7 +25727,7 @@
 		(uuid "84ffba4b-0bc8-46d7-b679-aed753c8f078")
 		(at 128 105 -90)
 		(property "Reference" "L10"
-			(at 0 -3.4 0)
+			(at 0 -2.8 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "69cf47c7-b980-420c-bf13-947423e55a6d")
@@ -25929,7 +25929,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R44"
-			(at 0 -1.2 0)
+			(at 0 -1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "cc42122f-90c5-4c64-9c20-a68e5778b837")
@@ -26142,7 +26142,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R58"
-			(at -2.45 -1.5 0)
+			(at -2.75 -1.6 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "fab1f1dc-ccfe-4445-88e2-8d063debf2db")
@@ -26576,7 +26576,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R51"
-			(at 0 -1.2 0)
+			(at 0 -1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "d7557956-a28b-4144-a349-e5ac219444d8")
@@ -27002,7 +27002,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C25"
-			(at 2 0 270)
+			(at 2.2 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "bcefeb24-d64f-4ed1-a1a5-3823977a9274")
@@ -27938,7 +27938,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R53"
-			(at 3 0 0)
+			(at 2.7 -0.2 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "c8fe2c9c-e154-452c-9eaf-2b138b9413b9")
@@ -28149,7 +28149,7 @@
 		(uuid "90c5c450-659a-40a3-a9b3-47153e70f204")
 		(at 156 104.35 90)
 		(property "Reference" "U22"
-			(at -2.45 0 0)
+			(at -0.15 -2.7 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "3b673a5d-9074-46f3-8bfb-63477edc7053")
@@ -28637,7 +28637,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R52"
-			(at 2.5 0.029411 0)
+			(at 2.8 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b183f943-ba93-464c-b185-0fa8daeb905c")
@@ -29586,7 +29586,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C28"
-			(at 2.15 -0.05 0)
+			(at 2.6 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "393c8f8f-9e3c-41b1-83a8-9c0726b254d3")
@@ -30940,7 +30940,7 @@
 		(uuid "a175ecf7-6621-4193-b012-a9a2d269dc67")
 		(at 169 130 180)
 		(property "Reference" "U16"
-			(at -2.8 0 90)
+			(at -2.6 0.4 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "ee7cd950-f7b6-4af8-974c-f9162ba67847")
@@ -32692,7 +32692,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C23"
-			(at 0 2 0)
+			(at 0.4 1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "eb99a311-a2da-4e9d-9d99-fb6a1d338a5e")
@@ -32905,7 +32905,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R60"
-			(at 2.5 0 0)
+			(at 2.15 -0.35 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "86a9f5f8-5595-4127-a5e9-07a6a97ed968")
@@ -33118,7 +33118,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C57"
-			(at -2.4 0 90)
+			(at -3 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "9cd7c37d-9a15-4b9f-980d-aadc7e3289be")
@@ -35118,7 +35118,7 @@
 		(descr "SOT-23, Standard")
 		(tags "SOT-23")
 		(property "Reference" "U15"
-			(at 2.8 0 90)
+			(at 2.6 0.6 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "49ab5b9a-8257-4427-8a92-fce58cdd4ec4")
@@ -35719,7 +35719,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C67"
-			(at 0 1.2 0)
+			(at 0 1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "da9d7524-2c39-4707-adc7-cf04f5d8eac6")
@@ -37820,7 +37820,7 @@
 		(uuid "c3ff235f-d87a-42a7-ad84-ab94811d1482")
 		(at 170 117)
 		(property "Reference" "X1"
-			(at -3 -0.9 0)
+			(at 2.9 -0.4 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "0302a3ad-7a17-4ed5-accd-6598fd2fd464")
@@ -37995,7 +37995,7 @@
 		(uuid "c410010d-0f8e-455c-838a-ef55e547d5b1")
 		(at 172 127)
 		(property "Reference" "L15"
-			(at 0 -1 0)
+			(at 0 -1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "16481789-956d-42ab-8994-2577a7b1e083")
@@ -39406,7 +39406,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R45"
-			(at 0 1.2 0)
+			(at 0 1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "aaa64ba9-66f5-43a0-864a-25f035958138")
@@ -40682,7 +40682,7 @@
 		(uuid "d2ad610c-005b-4821-9a3d-009d408c09d1")
 		(at 141 120)
 		(property "Reference" "L1"
-			(at 0 -2.2 0)
+			(at 0 -1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b048110b-a74b-46a3-ba90-28cae010ebe3")
@@ -41791,7 +41791,7 @@
 		(uuid "d909505f-d1bf-454a-80d0-3f37f202913d")
 		(at 128 97 180)
 		(property "Reference" "L8"
-			(at -3.2 -0.1 0)
+			(at -3.2 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e75b8285-ef40-41bc-9dbb-b62ad426c26d")
@@ -41993,7 +41993,7 @@
 		(descr "SOT-23, Standard")
 		(tags "SOT-23")
 		(property "Reference" "Q1"
-			(at 0 -2.5 0)
+			(at -1.275 -2.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "c16f74f7-d0e8-4260-9d00-8903d495ba38")
@@ -42453,13 +42453,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/USB-3.0.step"
 			(offset
-				(xyz 0 1 4)
+				(xyz 0 -7.9 1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 90)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -43206,7 +43206,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C64"
-			(at 0 1.2 0)
+			(at 0 1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "6301e446-dbee-4f73-9ed8-19d59f94abf7")
@@ -43419,7 +43419,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R3"
-			(at -2 0 0)
+			(at -2.4 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "286639d5-0c97-41b1-92ab-757cd3ea4646")
@@ -44015,13 +44015,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/BUTTON-4p5X4p5.step"
 			(offset
-				(xyz 0 0 3)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -44456,7 +44456,7 @@
 		(uuid "e44f0214-17c8-4f3f-82ee-101ec9f0f612")
 		(at 116 121 180)
 		(property "Reference" "L12"
-			(at 0 2.77 0)
+			(at -3.2 -0.2 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b236ecac-a56a-48d6-bb0a-cc1b6718d418")
@@ -45759,7 +45759,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J7"
-			(at 1.78 2.158 0)
+			(at -2.6 -2.6 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "dcb98669-6c72-4471-b220-7c43c1de92b0")
@@ -46827,7 +46827,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C31"
-			(at -2.5 0 0)
+			(at -2.6 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "2157ac6d-8b0a-4b4e-8c08-27429b281a58")
@@ -47038,7 +47038,7 @@
 		(uuid "ebdb66a9-2d8b-4a90-ae89-ae4d176bbaec")
 		(at 161 113)
 		(property "Reference" "L17"
-			(at 2.1 0 0)
+			(at 2.2 0.6 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "bdde772d-607e-4ed2-88f7-dfe1324eda28")
@@ -47289,7 +47289,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J8"
-			(at 1.542 2.462 0)
+			(at 0 2.6 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "38aa3919-d6d7-49c8-aba7-9adbabdda96c")
@@ -47715,7 +47715,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C73"
-			(at -3 0 0)
+			(at -2.2 -0.2 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "a7ae9221-6513-43b5-aa6f-52c6f724b8d0")
@@ -49047,7 +49047,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R49"
-			(at 0 -1.2 0)
+			(at 0 -1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "1f32ae93-d962-4b57-9043-38213bb1237f")
@@ -49473,7 +49473,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R26"
-			(at 2.3 0 90)
+			(at 2.8 0 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "1ecc503c-e0a5-4fde-9e96-892ba50d8797")
@@ -52360,47 +52360,8 @@
 		(layer "Edge.Cuts")
 		(uuid "d484efe5-ff3a-4bae-a5dc-63442e0803eb")
 	)
-	(gr_text "BYPASS\nSHELF"
-		(at 103.6 117 0)
-		(layer "F.SilkS")
-		(uuid "fa191565-6531-465b-b2c5-6af8a1d4051f")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify bottom)
-		)
-	)
-	(gr_text "BYPASS\nSHELF"
-		(at 104 136.2 0)
-		(layer "F.SilkS")
-		(uuid "1ee2a6bf-439f-48dc-9f4a-d55b9fbeb007")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify bottom)
-		)
-	)
-	(gr_text "ENABLE\nSHELF"
-		(at 116.4 117 0)
-		(layer "F.SilkS")
-		(uuid "c9ec6486-39e3-4d54-adb6-0ab996e871ba")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify bottom)
-		)
-	)
 	(gr_text "ENABLE\nLPF"
-		(at 120.2 91 0)
+		(at 120.2 91.6 0)
 		(layer "F.SilkS")
 		(uuid "248f4f74-45de-4e57-a40e-c00fda491969")
 		(effects
@@ -52413,9 +52374,48 @@
 		)
 	)
 	(gr_text "BYPASS\nLPF"
-		(at 133.8 91.2 0)
+		(at 134 91.6 0)
 		(layer "F.SilkS")
 		(uuid "7006e6bf-3f93-4f52-a3ad-0b287fee8587")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "BYPASS\nSHELF"
+		(at 105 115.8 90)
+		(layer "F.SilkS")
+		(uuid "fa191565-6531-465b-b2c5-6af8a1d4051f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "BYPASS\nSHELF"
+		(at 106 135.2 90)
+		(layer "F.SilkS")
+		(uuid "1ee2a6bf-439f-48dc-9f4a-d55b9fbeb007")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "ENABLE\nSHELF"
+		(at 117 116 90)
+		(layer "F.SilkS")
+		(uuid "c9ec6486-39e3-4d54-adb6-0ab996e871ba")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -52555,19 +52555,6 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "3.3V"
-		(at 164.75 106.5 0)
-		(layer "F.SilkS")
-		(uuid "54b08b72-4cad-4572-918d-0571e2e12ca1")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "GND"
 		(at 169.5 137.7 0)
 		(layer "F.SilkS")
@@ -52618,6 +52605,19 @@
 				(bold yes)
 			)
 			(justify bottom)
+		)
+	)
+	(gr_text "3.3V"
+		(at 166.9 106.5 90)
+		(layer "F.SilkS")
+		(uuid "54b08b72-4cad-4572-918d-0571e2e12ca1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "TAPRX-888\nv${REVISION}"
