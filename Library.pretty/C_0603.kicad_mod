@@ -1,15 +1,15 @@
 (footprint "C_0603"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 	(tags "capacitor 0603")
 	(property "Reference" "REF**"
-		(at -5.2 -1.2 0)
+		(at 0 -1.2 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "1e95a89f-d4bc-41c0-b2cf-a2329f75cbf4")
+		(uuid "55ac208b-f4e3-4859-aac2-0b0706507f10")
 		(effects
 			(font
 				(size 0.75 0.75)
@@ -20,7 +20,7 @@
 	(property "Value" "C-0.1-0603"
 		(at 0 1.5 0)
 		(layer "F.Fab")
-		(uuid "fe7536af-1782-4dc5-8c08-db3eddf63f41")
+		(uuid "7763f9be-ec74-47db-8190-593c0bbe5f32")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "20201ade-866d-4ede-b329-12144f87e7e2")
+		(uuid "782b444b-3d4e-4c28-8474-674b904667b2")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +44,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a9d006cb-e39d-41e6-8afd-c2a108ad0a8c")
+		(uuid "72530b0c-232a-49d5-b669-e3506e0f00c7")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -57,7 +57,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "dfdd336e-b313-470a-ac62-87d70969d3f8")
+		(uuid "51242083-dfb1-45f8-9169-85c1327ad38f")
 		(effects
 			(font
 				(size 1 1)
@@ -66,6 +66,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -0.35 -0.6)
 		(end 0.35 -0.6)
@@ -74,7 +75,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "27e13cb7-fd9d-4ff1-a378-f85de67a6ad0")
+		(uuid "48798d8f-8157-46d4-a4c0-8247582d0985")
 	)
 	(fp_line
 		(start 0.35 0.6)
@@ -84,7 +85,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "69ab2e8e-9bac-4d4f-9c28-c830aa4b82c3")
+		(uuid "fa2d494a-1d28-4e6f-9191-b857a4c7dfdd")
 	)
 	(fp_line
 		(start -1.4 -0.65)
@@ -94,7 +95,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "1ac5b014-f3cc-4c90-ad4d-21dca10e9364")
+		(uuid "1898f828-1fb7-47fd-b833-32f7de5a1f3a")
 	)
 	(fp_line
 		(start -1.4 -0.65)
@@ -104,7 +105,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "ec0001ba-61a0-422b-a85c-b80128e2bd08")
+		(uuid "8bcd7f19-2dee-4e0b-a614-9e447325560f")
 	)
 	(fp_line
 		(start 1.4 0.65)
@@ -114,7 +115,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "f73fc2f2-717a-48d0-a107-724b831fde70")
+		(uuid "ca542121-c96d-4bc2-8a7a-843a85de47dc")
 	)
 	(fp_line
 		(start 1.4 0.65)
@@ -124,7 +125,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "be4c4a5a-e072-43e6-bd82-d464cf20d935")
+		(uuid "4f7967b2-adbe-4573-80eb-9560e12472f3")
 	)
 	(fp_line
 		(start -0.8 -0.4)
@@ -134,7 +135,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "b064e527-526d-4672-97bb-aff00c9b044d")
+		(uuid "5bbf2605-a3fe-4a39-bff0-e144e3e6e9f0")
 	)
 	(fp_line
 		(start -0.8 0.4)
@@ -144,7 +145,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "fc194786-15c9-447b-8079-a135d792c2e6")
+		(uuid "80b39434-835c-4e8b-ba18-60ea5869a404")
 	)
 	(fp_line
 		(start 0.8 -0.4)
@@ -154,7 +155,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "98e3d62e-80c9-460b-8ee8-3c0b8b39c16d")
+		(uuid "d31e1d97-343d-4fcc-bab9-5d65f88337ae")
 	)
 	(fp_line
 		(start 0.8 0.4)
@@ -164,16 +165,16 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "f7ec6087-ef2c-4f45-909a-ada309c28243")
+		(uuid "4de96a21-12ff-4c7f-a4ef-c1db8e1026f8")
 	)
-	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+	(fp_text user "REF**"
+		(at 0 -1.2 0)
 		(layer "F.Fab")
-		(uuid "f9cb5407-9c91-4494-ab3a-2b009277c28f")
+		(uuid "8f1fe128-505c-4645-b69d-bfc1449272f1")
 		(effects
 			(font
-				(size 0.3 0.3)
-				(thickness 0.075)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -181,13 +182,13 @@
 		(at -0.75 0)
 		(size 0.8 0.75)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "20af45d8-2ff6-4dbb-9c92-fb99d74f3c71")
+		(uuid "2ae44f96-db02-4016-888f-c523f1747c89")
 	)
 	(pad "2" smd rect
 		(at 0.75 0)
 		(size 0.8 0.75)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "a6521183-3f20-4eb7-9094-5f9c437e5e74")
+		(uuid "674dca33-7f89-458c-a788-819daa47d2bf")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"

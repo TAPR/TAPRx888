@@ -1,13 +1,13 @@
 (footprint "SMD-2520"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 2.17 -2.2 180)
+		(at 0 2 180)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "f54946ff-4711-4acd-9cc4-8b491a367bd7")
+		(uuid "5fd61fb9-abc9-45ac-83a8-97a84ceaeebd")
 		(effects
 			(font
 				(size 0.75 0.75)
@@ -18,7 +18,7 @@
 	(property "Value" "XO-19.2MHZ"
 		(at 0 -4 180)
 		(layer "F.Fab")
-		(uuid "eb9f3c95-0f64-4cd1-bef1-5879602a5757")
+		(uuid "6414c9a0-99f7-4a3b-b6e4-bb4edfc0bab9")
 		(effects
 			(font
 				(size 1 1)
@@ -30,7 +30,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1ea6616c-7a9d-41c6-bdad-22bde59903f8")
+		(uuid "0b71a340-fa96-487f-aa3d-723802f0e24b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "81ffeae1-c499-46b0-826b-d1e660eae4ff")
+		(uuid "13f5147b-78c2-40f1-8de0-afbbb81dc74c")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55,7 +55,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b7af48cd-eaac-41c2-bc89-fc577812f6a7")
+		(uuid "eb2db236-0938-4393-b267-35540256fea8")
 		(effects
 			(font
 				(size 1 1)
@@ -64,55 +64,17 @@
 		)
 	)
 	(attr smd)
-	(fp_line
-		(start -1.95 -1.65)
-		(end 1.95 -1.65)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center -1.9 1.6)
+		(end -1.7 1.6)
 		(stroke
-			(width 0.12)
-			(type default)
+			(width 0.1)
+			(type solid)
 		)
+		(fill yes)
 		(layer "F.SilkS")
-		(uuid "5ed76c0a-b46a-4c66-87da-55ae1870cbeb")
-	)
-	(fp_line
-		(start -1.95 0.85)
-		(end -1.95 -1.65)
-		(stroke
-			(width 0.12)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "e72dec79-d740-4d4f-af29-668661c899d5")
-	)
-	(fp_line
-		(start -1.15 1.65)
-		(end -1.95 0.85)
-		(stroke
-			(width 0.12)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "710f23f4-fc9e-4ca1-a925-6d216c1f9945")
-	)
-	(fp_line
-		(start 1.95 -1.65)
-		(end 1.95 1.65)
-		(stroke
-			(width 0.12)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "e1024cc5-0943-4cd7-ac0e-a7c80ff3c28e")
-	)
-	(fp_line
-		(start 1.95 1.65)
-		(end -1.15 1.65)
-		(stroke
-			(width 0.12)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "2398b276-ce53-440b-9126-62667b1d51d3")
+		(uuid "1a77eea1-bf3a-4b31-9483-889fd90ecfb1")
 	)
 	(fp_line
 		(start -1.7 -1.4)
@@ -122,7 +84,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "d11b6093-3bb7-407a-9e3a-4b42b785f4d5")
+		(uuid "79645a53-461e-4e74-af1a-43693f674e9b")
 	)
 	(fp_line
 		(start -1.7 1.4)
@@ -132,7 +94,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "52bd1e80-717b-4b78-ac49-ddfc6689343e")
+		(uuid "5cd67eba-e168-4bbe-b443-45902de256e9")
 	)
 	(fp_line
 		(start 1.7 -1.4)
@@ -142,7 +104,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "75f45e22-9169-41d1-9b85-98e9861ee638")
+		(uuid "9f217de9-b186-49e7-9777-8c72618276d6")
 	)
 	(fp_line
 		(start 1.7 1.4)
@@ -152,35 +114,46 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "aaecb354-0aed-49c0-be97-803119f7bc3c")
+		(uuid "4148a4ec-97a8-4862-8e68-6f4c5cf9f248")
+	)
+	(fp_text user "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a00c0138-6204-4dd6-a4cb-692cfed127f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
 	)
 	(pad "1" smd rect
 		(at -0.85 0.65)
 		(size 1.2 1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "a5aeafae-163e-40d2-a977-c7b3585d7362")
+		(uuid "8dc305e0-3bb4-4f29-b916-8f7cee37f224")
 	)
 	(pad "2" smd rect
 		(at 0.85 0.65)
 		(size 1.2 1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "ba41b630-bd74-4bca-92cb-89e205236052")
+		(uuid "cb1168b4-4af9-4c4f-910b-cf9e83be7c85")
 	)
 	(pad "3" smd rect
 		(at 0.85 -0.65)
 		(size 1.2 1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "a22dee78-ce14-4695-b89d-74e70e9c2de2")
+		(uuid "adda3a64-713c-40a9-abd6-7e89cdf46123")
 	)
 	(pad "4" smd rect
 		(at -0.85 -0.65)
 		(size 1.2 1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "4abc28a8-bde9-4d50-af10-820c96d0cee2")
+		(uuid "519c16e6-ce7e-405f-8b01-3a2778774386")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm.step"

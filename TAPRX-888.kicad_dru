@@ -62,9 +62,10 @@
 (rule "JLC: silk to pad 0.15mm"
 	(constraint silk_clearance (min 0.15mm)))
 
-# Silk text: JLC legibility guidance -> warning.
-(rule "JLC: min silk text height 1.0mm"
-	(constraint text_height (min 1.0mm))
+# Silk text: JLC ABSOLUTE min = 0.8mm height / 0.15mm stroke. (1.0mm is JLC's
+# *recommended*, not the manufacturability floor.)
+(rule "JLC: min silk text height 0.8mm"
+	(constraint text_height (min 0.8mm))
 	(severity warning))
 (rule "JLC: min silk text thickness 0.15mm"
 	(constraint text_thickness (min 0.15mm))

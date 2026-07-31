@@ -1,13 +1,13 @@
 (footprint "SOD-123"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -1.8 90)
+		(at 0 -1.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "65cded99-7534-4b0d-996f-785e5df528ac")
+		(uuid "1ab5dfed-57b7-4eb4-a761-2a5ba8e97c6d")
 		(effects
 			(font
 				(size 0.75 0.75)
@@ -18,7 +18,7 @@
 	(property "Value" "Schottky_Pwr_B5819W"
 		(at 0 -2.667 180)
 		(layer "F.Fab")
-		(uuid "bffe2910-d681-4c88-b72e-4c771d0be830")
+		(uuid "c90f8a2b-26b1-4de4-8aeb-5b5f612e34b8")
 		(effects
 			(font
 				(size 1 1)
@@ -30,7 +30,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ad7e02ee-9c5f-4635-93a7-4e2661c8680d")
+		(uuid "ea74baa9-9c06-4514-a442-3127a85c8bf4")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "83387954-4a5e-40e9-ba72-b7e86b728ef8")
+		(uuid "d5de49a8-9d6e-403f-985d-416557ef4d7d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55,7 +55,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "28ff047b-bb2f-4caa-93a7-70ad2ee8b9b7")
+		(uuid "fa4bcfa3-aa48-4794-adfb-dbe0f9f1c5bd")
 		(effects
 			(font
 				(size 1 1)
@@ -64,65 +64,16 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -0.85 -0.8)
-		(end 0.85 -0.8)
+		(start -2.5 -0.85)
+		(end -2.5 0.85)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f004224c-0a13-4b44-8b14-b8835a30c49c")
-	)
-	(fp_line
-		(start -0.85 0.8)
-		(end 0.85 0.8)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "0046af4e-c218-4aee-9337-3c64b7c1c02f")
-	)
-	(fp_line
-		(start -0.35 -0.4)
-		(end -0.35 0.4)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "b4636675-5b9b-4317-963e-05b3c0e15df4")
-	)
-	(fp_line
-		(start -0.3302 -0.0254)
-		(end 0.4064 -0.4064)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "4ce8fc3b-d5ba-47f1-a5d1-f32c95dc9260")
-	)
-	(fp_line
-		(start 0.381 0.3556)
-		(end -0.3302 -0.0254)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "d5971930-d074-43a7-ae43-fa2ce4b18144")
-	)
-	(fp_line
-		(start 0.4064 -0.4064)
-		(end 0.4064 0.3556)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "31239889-31f3-43dd-9dba-244b3a8ac04f")
+		(uuid "6d6606d8-7fa8-4640-a82c-93ed9fbbd1ca")
 	)
 	(fp_line
 		(start -2.2 -0.9)
@@ -132,7 +83,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "4ff6f9f1-3c53-4a60-a84f-d50ffe6a32c4")
+		(uuid "fa7a886d-bc98-4bd4-a09e-1a8090932dd2")
 	)
 	(fp_line
 		(start -2.2 0.9)
@@ -142,7 +93,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "b8cfb503-38ef-4f03-b152-4fca5975a136")
+		(uuid "c79a3c19-7bb2-4082-a56f-fe3bf782945a")
 	)
 	(fp_line
 		(start 2.2 -0.9)
@@ -152,7 +103,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "2fda8d8a-8892-4eeb-a1db-d3ffa82bfcc8")
+		(uuid "8ace701a-9902-4554-ba21-5afe98122a19")
 	)
 	(fp_line
 		(start 2.2 0.9)
@@ -162,19 +113,41 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "05297007-041e-4f96-b975-2a5cc2e29866")
+		(uuid "d297dd5b-7440-4de5-a953-020071afe658")
+	)
+	(fp_rect
+		(start -2 -0.8)
+		(end 2 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "10ae93d4-be64-4afc-b637-9c792a2c756a")
+	)
+	(fp_text user "REF**"
+		(at 0 1.8 0)
+		(layer "F.Fab")
+		(uuid "32799e42-d81b-4b65-b4f2-9e835c46d907")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
 	)
 	(pad "1" smd rect
 		(at -1.475 0)
 		(size 1.25 1.22)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "ede6aca4-42a0-4563-a490-f1136840dbf7")
+		(uuid "14c727a2-d3d2-4854-b348-d39b7ac254c2")
 	)
 	(pad "2" smd rect
 		(at 1.475 0)
 		(size 1.25 1.22)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "70bc1e0a-c4ec-4ef3-8adf-af387cb68886")
+		(uuid "493d77ed-c1d8-4ad2-a8e3-8c4c1d0e10ea")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
