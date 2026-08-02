@@ -1,28 +1,8 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-08-02T21:46:51 **
+** Created on 2026-08-02T22:38:34 **
 ** Report includes: Errors, Warnings **
 
-** Found 10 DRC violations **
-[hole_to_hole]: Drilled hole too close to other hole (rule 'JLC: hole-to-hole (different net)' min 0.4995 mm; actual 0.3500 mm)
-    Rule: JLC: hole-to-hole (different net); error
-    @(154.7500 mm, 87.5000 mm): Via [/D13] on F.Cu - B.Cu
-    @(155.2500 mm, 87.5000 mm): Via [/D12] on F.Cu - B.Cu
-[hole_to_hole]: Drilled hole too close to other hole (rule 'JLC: hole-to-hole (different net)' min 0.4995 mm; actual 0.3500 mm)
-    Rule: JLC: hole-to-hole (different net); error
-    @(163.2500 mm, 92.7500 mm): Micro via [/D3] on F.Cu - B.Cu
-    @(163.2500 mm, 93.2500 mm): Via [/D2] on F.Cu - B.Cu
-[hole_to_hole]: Drilled hole too close to other hole (rule 'JLC: hole-to-hole (different net)' min 0.4995 mm; actual 0.3500 mm)
-    Rule: JLC: hole-to-hole (different net); error
-    @(163.2500 mm, 93.7500 mm): Micro via [/D1] on F.Cu - B.Cu
-    @(163.2500 mm, 93.2500 mm): Via [/D2] on F.Cu - B.Cu
-[hole_to_hole]: Drilled hole too close to other hole (rule 'JLC: hole-to-hole (different net)' min 0.4995 mm; actual 0.3500 mm)
-    Rule: JLC: hole-to-hole (different net); error
-    @(163.2500 mm, 90.7500 mm): Via [/D5] on F.Cu - B.Cu
-    @(163.2500 mm, 91.2500 mm): Micro via [/D4] on F.Cu - B.Cu
-[hole_to_hole]: Drilled hole too close to other hole (rule 'JLC: hole-to-hole (different net)' min 0.4995 mm; actual 0.3500 mm)
-    Rule: JLC: hole-to-hole (different net); error
-    @(163.2500 mm, 90.2500 mm): Micro via [/D6] on F.Cu - B.Cu
-    @(163.2500 mm, 90.7500 mm): Via [/D5] on F.Cu - B.Cu
+** Found 5 DRC violations **
 [silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0786 mm)
     Rule: board setup constraints silk; warning
     @(158.2000 mm, 101.7000 mm): Segment on F.Silkscreen
