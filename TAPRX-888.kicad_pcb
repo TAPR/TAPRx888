@@ -128,7 +128,7 @@
 				(color "White")
 			)
 			(copper_finish "ENIG")
-			(dielectric_constraints no)
+			(dielectric_constraints yes)
 		)
 		(pad_to_mask_clearance 0)
 		(solder_mask_min_width 0.1)
@@ -26366,8 +26366,8 @@
 			(uuid "5083c921-3ffa-40d4-a5cf-de230dab0a5c")
 		)
 		(fp_line
-			(start 1.3 -1.25)
-			(end 1.3 1.3)
+			(start 1.1 -1.1)
+			(end -1.1 -1.1)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -26376,14 +26376,34 @@
 			(uuid "c7c8dc97-37d8-441d-ab4f-23e94154fefa")
 		)
 		(fp_line
-			(start -1.3 1.3)
-			(end -1.3 -1.2)
+			(start 1.1 -1.1)
+			(end 1.1 1.1)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
 			(uuid "da45b457-eba7-419e-81cd-3aeb50a9a481")
+		)
+		(fp_line
+			(start 1.1 1.1)
+			(end -1.1 1.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1da0ba02-200b-40f7-8b22-94746008677c")
+		)
+		(fp_line
+			(start -1.1 1.1)
+			(end -1.1 -1.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2a242c87-fb28-489b-b759-ec8009b29f0b")
 		)
 		(fp_text user "REF**"
 			(at 0 -4 90)
@@ -26461,7 +26481,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 90)
+				(xyz -0 -0 -90)
 			)
 		)
 	)
@@ -42030,7 +42050,7 @@
 		(path "/98cca603-49be-4158-86df-e86acdc9e952")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr board_only exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -7.8 -3)
@@ -44407,7 +44427,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C4"
-			(at 0 2 180)
+			(at 0 1.4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "04a2f815-1e48-4ec1-b4cb-177849926c26")
@@ -49739,7 +49759,7 @@
 		(path "/ba44746e-b836-4396-a921-2d3a2a54b003")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(attr through_hole)
+		(attr through_hole allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
@@ -50213,7 +50233,7 @@
 				(justify mirror)
 			)
 		)
-		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
@@ -50967,7 +50987,7 @@
 				(justify mirror)
 			)
 		)
-		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
