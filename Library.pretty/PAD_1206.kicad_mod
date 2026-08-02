@@ -6,21 +6,22 @@
 	(descr "Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)")
 	(tags "capacitor 1206")
 	(property "Reference" "REF**"
-		(at 0 -1.7 0)
+		(at 0 -1.9 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "253b854b-86e6-4e3c-83ce-ae069e56d369")
+		(uuid "941150b8-5a0b-4048-bcd3-1e192be948a6")
 		(effects
 			(font
-				(size 0.75 0.75)
-				(thickness 0.1)
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
 			)
 		)
 	)
 	(property "Value" "C-10u-50V-1206"
 		(at 0 2 180)
 		(layer "F.Fab")
-		(uuid "8b9839be-0b17-4033-b0c9-de0728deef2d")
+		(uuid "8535fbf2-17ae-42ac-b65d-4ffa6d403a4e")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +33,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "80938f03-6df6-49b6-9235-853eb77c6c7b")
+		(uuid "ffd3d463-1984-47ee-8ae6-4ab90ab92825")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +45,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "97e5ffcf-a56a-4b57-a672-5d0cb371bdef")
+		(uuid "181543ff-010a-4f10-8223-88f35d64124a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -57,7 +58,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e20347d0-e867-4dc0-a793-47bf9f012592")
+		(uuid "e8fbb947-e4c8-46f3-a887-e3f3270b81df")
 		(effects
 			(font
 				(size 1 1)
@@ -68,64 +69,64 @@
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -1 1.02)
-		(end 1 1.02)
+		(start -1 1.1)
+		(end 1 1.1)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "09485463-b5bc-4438-8aad-e2ffa9112bcd")
+		(uuid "edc13862-c28c-4550-b169-09e6ea90873a")
 	)
 	(fp_line
-		(start 1 -1.02)
-		(end -1 -1.02)
+		(start 1 -1.1)
+		(end -1 -1.1)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "767298bb-55ca-4f28-af4a-e33afe36d26c")
+		(uuid "7f69ac50-a0e6-4cd2-80a2-fd32637464ea")
 	)
 	(fp_line
-		(start -2.25 -1.05)
-		(end -2.25 1.05)
+		(start -2.1 -0.9)
+		(end -2.1 0.9)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "5cb4e56b-d534-49b5-9d66-fa48606fe13c")
+		(uuid "43df7da1-38ba-4d63-b1cf-9babbad1ecd7")
 	)
 	(fp_line
-		(start -2.25 -1.05)
-		(end 2.25 -1.05)
+		(start -2.1 -0.9)
+		(end 2.1 -0.9)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "dcdf7487-e7d0-4ac1-9a41-aa874ae7635f")
+		(uuid "bdb1f090-0f4c-4f4f-8b40-d1e60d1158ac")
 	)
 	(fp_line
-		(start 2.25 1.05)
-		(end -2.25 1.05)
+		(start 2.1 0.9)
+		(end -2.1 0.9)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "a7883f06-1f4c-4371-ba32-270906ceb60c")
+		(uuid "4b0d72a9-f907-432c-81cc-479352c915d0")
 	)
 	(fp_line
-		(start 2.25 1.05)
-		(end 2.25 -1.05)
+		(start 2.1 0.9)
+		(end 2.1 -0.9)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "83e5dd75-f6b4-4d59-9b01-4ff571e1eb95")
+		(uuid "83c32f02-02f6-44f1-a41d-d81feeebc638")
 	)
 	(fp_line
 		(start -1.6 -0.8)
@@ -135,7 +136,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4a824d46-2312-4688-810e-c5cace769697")
+		(uuid "0b42f8aa-6e4f-4449-8d10-b9b63d786fc4")
 	)
 	(fp_line
 		(start -1.6 0.8)
@@ -145,7 +146,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "2cf84c77-d546-4ffc-a672-9f2fe3effb6c")
+		(uuid "dd649e7e-5cc1-4788-8937-d88ba7103fd7")
 	)
 	(fp_line
 		(start 1.6 -0.8)
@@ -155,7 +156,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "7cc9930a-9f66-49fa-9c19-724245d2c6a8")
+		(uuid "3a2ba67b-e0fd-47c5-b452-23908ad45bf2")
 	)
 	(fp_line
 		(start 1.6 0.8)
@@ -165,12 +166,12 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "93d1733c-aae5-4118-a80c-ec41d692773d")
+		(uuid "19df147d-be5d-46ae-b768-a5626af49cf6")
 	)
 	(fp_text user "REF**"
 		(at 0 -1.75 180)
 		(layer "F.Fab")
-		(uuid "bf0d159d-365d-45be-93b8-b2ed7355120c")
+		(uuid "391a5a72-3f5a-4fd9-92f3-487654908a4c")
 		(effects
 			(font
 				(size 1 1)
@@ -182,13 +183,13 @@
 		(at -1.5 0)
 		(size 1 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "13404bee-b824-43a3-aa5b-db4fc2c295b5")
+		(uuid "934a67b8-3936-4362-a1bd-26fd0c19596f")
 	)
 	(pad "2" smd rect
 		(at 1.5 0)
 		(size 1 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "7ea94d8c-116e-499a-a02a-31f155cd3559")
+		(uuid "c38df4b9-f2c7-4d41-a76b-7c95eb84fb91")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"

@@ -9,18 +9,19 @@
 		(at 2.3 0 270)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "31460fd1-e779-4ea4-935e-2cad51784459")
+		(uuid "869be355-4122-4cec-9acc-3b3c3900915d")
 		(effects
 			(font
-				(size 0.75 0.75)
-				(thickness 0.1)
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
 			)
 		)
 	)
 	(property "Value" "~"
 		(at 0 2.5 0)
 		(layer "F.Fab")
-		(uuid "2f9dd1cf-a2be-4320-941c-fb17367d3414")
+		(uuid "43353082-7cf0-4431-89af-d371e6b607f6")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +33,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bf2897dc-3772-4bd8-9eb0-05036d5f7635")
+		(uuid "44044237-e446-4dcb-a9f0-ae2d90c4e9b8")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +45,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b5e88ba8-a0ff-481c-96d7-9f25ecdfeaa2")
+		(uuid "30ab8d9c-577c-4571-9a9b-1f360358e676")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -57,7 +58,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8f04ba3b-a2be-4bf8-a939-721ca24d6a2f")
+		(uuid "17993e2b-23f7-4269-9b0d-010c88381708")
 		(effects
 			(font
 				(size 1 1)
@@ -68,15 +69,15 @@
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_circle
-		(center 1.6 1.8)
-		(end 1.75 1.8)
+		(center 2 1.6)
+		(end 2.15 1.6)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill yes)
 		(layer "F.SilkS")
-		(uuid "88aadb24-0bd4-4601-a6aa-f5a2c5290e9c")
+		(uuid "76a81354-08d1-4bd7-93e6-820cee8e8eb5")
 	)
 	(fp_line
 		(start -1.7 -1.75)
@@ -86,7 +87,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "a1428aa5-b175-4999-a3f3-f1cd3891a6e8")
+		(uuid "899338f0-b242-4e37-85cd-3cafae9a0a85")
 	)
 	(fp_line
 		(start -1.7 1.75)
@@ -96,7 +97,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "efb08549-2593-4e7b-8a42-71a0f7df2b57")
+		(uuid "62038d12-0ea7-445f-8493-29fbad0ce3e2")
 	)
 	(fp_line
 		(start 1.7 -1.75)
@@ -106,7 +107,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "e445849b-d651-4e33-abd3-d49414053f45")
+		(uuid "3e761625-2849-49fb-ba46-5621f4dbf6e9")
 	)
 	(fp_line
 		(start 1.7 1.75)
@@ -116,7 +117,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "5a3d5d85-4ecc-45cb-9e5b-8e2d2c3aac3e")
+		(uuid "bf0dc425-3168-4c03-89eb-198bc115ad5a")
 	)
 	(fp_line
 		(start -0.825 -1.55)
@@ -126,7 +127,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "117487f0-72b0-4bb3-a556-b5146364afdf")
+		(uuid "97d2a228-b279-437e-8b1b-15134737d01a")
 	)
 	(fp_line
 		(start 0.6 1.5)
@@ -136,7 +137,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "ea656921-6e11-46d6-9660-c39a889750e9")
+		(uuid "27d813ac-a85c-4042-b7d5-1d9a6ccb6af9")
 	)
 	(fp_line
 		(start 0.6 1.5)
@@ -146,7 +147,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "1917f592-8107-4ff0-9844-8afb71e3bd1f")
+		(uuid "856fff63-014d-4773-92f7-64167181a7e7")
 	)
 	(fp_line
 		(start 0.925 -1.55)
@@ -156,7 +157,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "93c56871-5448-4250-b15d-ab4a33c2beac")
+		(uuid "b56de6f3-ad09-4392-b063-5f12d17ebbf8")
 	)
 	(fp_line
 		(start 0.925 -1.55)
@@ -166,12 +167,12 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "f44a8656-8b92-4041-82a2-79386a0d10e4")
+		(uuid "2815e696-3508-4e87-a65d-88886057756c")
 	)
 	(fp_text user "REF**"
 		(at 0 -0.2 90)
 		(layer "F.Fab")
-		(uuid "7ed72edc-f1ad-4804-a9e0-616bcb2eb14b")
+		(uuid "921b4f4b-2fd6-407d-ace7-e003880c30e4")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -183,19 +184,19 @@
 		(at 1 0.95 180)
 		(size 0.9 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "f9e2c466-1727-4444-b073-0207c25af7bf")
+		(uuid "7fcb41f6-f7d5-4cb2-935c-9ba063fd4fe0")
 	)
 	(pad "2" smd rect
 		(at 1 -0.95 180)
 		(size 0.9 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "4967c3d6-e78c-4c51-b9c8-cc663ac4b055")
+		(uuid "1c4a9a8f-afb0-4c63-968e-9a7e1cf1aeb6")
 	)
 	(pad "3" smd rect
 		(at -1 0 180)
 		(size 0.9 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "c74cffe7-4f66-4827-8b6e-01c98a962ac9")
+		(uuid "a23ca04a-a644-4f3c-9e9c-5278e75bc793")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
