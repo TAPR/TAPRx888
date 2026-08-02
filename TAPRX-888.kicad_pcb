@@ -1324,7 +1324,7 @@
 		(descr "SOT-23, Standard")
 		(tags "SOT-23")
 		(property "Reference" "Q3"
-			(at 0 -2.45 90)
+			(at 0 -2.35 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "efdd72de-b8ad-4009-9b15-9c06aa16c8e4")
@@ -45256,7 +45256,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "C55"
-			(at 3 0 180)
+			(at 2.8 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "6757c9f2-efd6-42f5-bc0a-902f38e12f7d")
