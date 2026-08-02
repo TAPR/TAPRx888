@@ -1,28 +1,8 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-08-02T22:38:34 **
+** Created on 2026-08-02T23:13:52 **
 ** Report includes: Errors, Warnings **
 
-** Found 5 DRC violations **
-[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0786 mm)
-    Rule: board setup constraints silk; warning
-    @(158.2000 mm, 101.7000 mm): Segment on F.Silkscreen
-    @(160.0000 mm, 102.6000 mm): Reference field of R58
-[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0300 mm)
-    Rule: board setup constraints silk; warning
-    @(149.6500 mm, 86.4000 mm): Segment of C2 on F.Silkscreen
-    @(150.5000 mm, 86.5000 mm): Segment of U11 on F.Silkscreen
-[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0603 mm)
-    Rule: board setup constraints silk; warning
-    @(149.6500 mm, 86.4000 mm): Segment of C2 on F.Silkscreen
-    @(153.0000 mm, 86.5000 mm): Segment of U11 on F.Silkscreen
-[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1177 mm)
-    Rule: board setup constraints silk; warning
-    @(147.6000 mm, 84.0000 mm): Reference field of C77
-    @(149.6000 mm, 83.5500 mm): Segment of C45 on F.Silkscreen
-[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0773 mm)
-    Rule: board setup constraints silk; warning
-    @(150.5000 mm, 96.5000 mm): Reference field of R61
-    @(149.8500 mm, 96.1500 mm): Segment of R61 on F.Silkscreen
+** Found 0 DRC violations **
 
 ** Found 0 unconnected pads **
 
