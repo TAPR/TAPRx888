@@ -1,8 +1,8 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-08-02T19:51:17 **
+** Created on 2026-08-02T20:50:20 **
 ** Report includes: Errors, Warnings **
 
-** Found 10 DRC violations **
+** Found 13 DRC violations **
 [hole_to_hole]: Drilled hole too close to other hole (rule 'JLC: hole-to-hole (different net)' min 0.4995 mm; actual 0.3500 mm)
     Rule: JLC: hole-to-hole (different net); error
     @(154.7500 mm, 87.5000 mm): Via [/D13] on F.Cu - B.Cu
@@ -35,21 +35,29 @@
     Rule: board setup constraints silk; warning
     @(149.6500 mm, 86.4000 mm): Segment of C2 on F.Silkscreen
     @(153.0000 mm, 86.5000 mm): Segment of U11 on F.Silkscreen
-[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0773 mm)
-    Rule: board setup constraints silk; warning
-    @(150.5000 mm, 96.5000 mm): Reference field of R61
-    @(149.8500 mm, 96.1500 mm): Segment of R61 on F.Silkscreen
 [silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1177 mm)
     Rule: board setup constraints silk; warning
     @(147.6000 mm, 84.0000 mm): Reference field of C77
     @(149.6000 mm, 83.5500 mm): Segment of C45 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0773 mm)
+    Rule: board setup constraints silk; warning
+    @(150.5000 mm, 96.5000 mm): Reference field of R61
+    @(149.8500 mm, 96.1500 mm): Segment of R61 on F.Silkscreen
+[missing_courtyard]: Footprint has no courtyard defined
+    Local override; warning
+    @(125.2000 mm, 108.5000 mm): Footprint L2
+[missing_courtyard]: Footprint has no courtyard defined
+    Local override; warning
+    @(118.5000 mm, 121.0000 mm): Footprint G***
+[missing_courtyard]: Footprint has no courtyard defined
+    Local override; warning
+    @(107.0000 mm, 108.6000 mm): Footprint G***
 
 ** Found 0 unconnected pads **
 
 ** Found 0 Footprint errors **
 
 ** Ignored checks **
-    - Footprint has no courtyard defined
     - Track endpoint not centered on via
     - Tuning profile track geometries
     - Footprint doesn't match symbol's footprint filters
