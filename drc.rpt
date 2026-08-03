@@ -1,8 +1,96 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-08-02T23:13:52 **
+** Created on 2026-08-03T00:30:56 **
 ** Report includes: Errors, Warnings **
 
-** Found 0 DRC violations **
+** Found 23 DRC violations **
+[diff_pair_uncoupled_length_too_long]: Differential uncoupled length too long (USB3_SS diff pair coupling maximum uncoupled length 2.0000 mm; actual 4.2896 mm)
+    Rule: USB3_SS diff pair coupling; error
+    @(155.5000 mm, 70.4000 mm): Track [/SSRX+] on F.Cu, length 0.8000 mm
+    @(154.4705 mm, 74.0295 mm): Track [/SSRX-] on F.Cu, length 1.2310 mm
+[diff_pair_uncoupled_length_too_long]: Differential uncoupled length too long (USB3_SS diff pair coupling maximum uncoupled length 2.0000 mm; actual 3.6309 mm)
+    Rule: USB3_SS diff pair coupling; error
+    @(156.5000 mm, 70.4000 mm): Track [/SSTX+] on F.Cu, length 0.8000 mm
+    @(156.9750 mm, 69.2750 mm): Track [/SSTX-] on F.Cu, length 0.3501 mm
+[diff_pair_uncoupled_length_too_long]: Differential uncoupled length too long (USB2 diff pair coupling maximum uncoupled length 5.0000 mm; actual 5.3984 mm)
+    Rule: USB2 diff pair coupling; error
+    @(158.5000 mm, 70.7000 mm): Track [/USB+] on F.Cu, length 1.8031 mm
+    @(158.0000 mm, 70.4000 mm): Track [/USB-] on F.Cu, length 0.8000 mm
+[skew_out_of_range]: Skew between tracks out of range (rule 'USB3_SS diff pair skew' max skew 0.1000 mm; actual -4.0529 mm; target net length 18.7381 mm (from /SSRX+); actual 14.6852 mm)
+    Rule: USB3_SS diff pair skew; error
+    @(154.4705 mm, 74.0295 mm): Track [/SSRX-] on F.Cu, length 1.5490 mm
+[skew_out_of_range]: Skew between tracks out of range (rule 'USB3_SS diff pair skew' max skew 0.1000 mm; actual -7.9080 mm; target net length 18.7381 mm (from /SSRX+); actual 10.8301 mm)
+    Rule: USB3_SS diff pair skew; error
+    @(156.5000 mm, 69.3000 mm): Track [/SSTX+] on F.Cu, length 0.0721 mm
+[skew_out_of_range]: Skew between tracks out of range (rule 'USB3_SS diff pair skew' max skew 0.1000 mm; actual -7.1282 mm; target net length 18.7381 mm (from /SSRX+); actual 11.6099 mm)
+    Rule: USB3_SS diff pair skew; error
+    @(156.8990 mm, 68.1803 mm): Track [/SSTX-] on F.Cu, length 6.0994 mm
+[skew_out_of_range]: Skew between tracks out of range (rule 'USB2 diff pair skew' max skew 0.5000 mm; actual -2.3087 mm; target net length 27.6221 mm (from /USB-); actual 25.3134 mm)
+    Rule: USB2 diff pair skew; error
+    @(159.7750 mm, 74.2745 mm): Track [/USB+] on F.Cu, length 1.9445 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2350 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.0000 mm, 69.6000 mm): Pad 13 [/SSRX-] of U7 on F.Cu
+    @(156.5000 mm, 69.3000 mm): Track [/SSTX+] on F.Cu, length 0.0721 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2500 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.0000 mm, 69.6000 mm): Pad 13 [/SSRX-] of U7 on F.Cu
+    @(156.5000 mm, 69.6000 mm): Track [/SSTX+] on F.Cu, length 0.3000 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2990 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.0000 mm, 70.4000 mm): Pad 2 [/SSRX-] of U7 on F.Cu
+    @(156.5490 mm, 70.4490 mm): Track [/SSTX+] on F.Cu, length 1.3020 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.3699 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.4490 mm, 69.2490 mm): Track [/SSTX+] on F.Cu, length 1.2551 mm
+    @(156.0000 mm, 70.4000 mm): Track [/SSRX-] on F.Cu, length 0.8000 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2500 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.0000 mm, 70.4000 mm): Pad 2 [/SSRX-] of U7 on F.Cu
+    @(156.5000 mm, 70.4000 mm): Track [/SSTX+] on F.Cu, length 0.8000 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2519 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.4490 mm, 69.2490 mm): Track [/SSTX+] on F.Cu, length 1.2551 mm
+    @(156.0000 mm, 69.3000 mm): Track [/SSRX-] on F.Cu, length 0.0354 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.3980 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(154.4705 mm, 72.4805 mm): Track [/SSRX-] on F.Cu, length 2.0938 mm
+    @(156.5490 mm, 70.4490 mm): Track [/SSTX+] on F.Cu, length 1.3020 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.3636 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.5000 mm, 70.4000 mm): Track [/SSTX+] on F.Cu, length 0.8000 mm
+    @(155.9510 mm, 71.0000 mm): Track [/SSRX-] on F.Cu, length 0.4724 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2350 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.0000 mm, 69.6000 mm): Pad 13 [/SSRX-] of U7 on F.Cu
+    @(156.4490 mm, 69.2490 mm): Track [/SSTX+] on F.Cu, length 1.2551 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2519 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.0000 mm, 69.6000 mm): Track [/SSRX-] on F.Cu, length 0.3000 mm
+    @(156.4490 mm, 69.2490 mm): Track [/SSTX+] on F.Cu, length 1.2551 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.3061 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.5000 mm, 70.4000 mm): Track [/SSTX+] on F.Cu, length 0.8000 mm
+    @(155.9510 mm, 70.5276 mm): Track [/SSRX-] on F.Cu, length 0.0693 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2740 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(155.9750 mm, 69.2750 mm): Track [/SSRX-] on F.Cu, length 2.7809 mm
+    @(156.4490 mm, 69.2490 mm): Track [/SSTX+] on F.Cu, length 1.2551 mm
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2000 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.0000 mm, 70.4000 mm): Pad 2 [/SSRX-] of U7 on F.Cu
+    @(156.5000 mm, 70.4000 mm): Pad 3 [/SSTX+] of U7 on F.Cu
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.4472 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.0000 mm, 70.4000 mm): Pad 2 [/SSRX-] of U7 on F.Cu
+    @(156.5000 mm, 69.6000 mm): Pad 12 [/SSTX+] of U7 on F.Cu
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.4472 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.5000 mm, 70.4000 mm): Pad 3 [/SSTX+] of U7 on F.Cu
+    @(156.0000 mm, 69.6000 mm): Pad 13 [/SSRX-] of U7 on F.Cu
+[clearance]: Clearance violation (rule 'USB3 TX-RX isolation' clearance 0.5000 mm; actual 0.2000 mm)
+    Rule: USB3 TX-RX isolation; error
+    @(156.5000 mm, 69.6000 mm): Pad 12 [/SSTX+] of U7 on F.Cu
+    @(156.0000 mm, 69.6000 mm): Pad 13 [/SSRX-] of U7 on F.Cu
 
 ** Found 0 unconnected pads **
 
