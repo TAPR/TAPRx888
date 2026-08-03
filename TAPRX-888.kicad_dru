@@ -130,16 +130,16 @@
 # DISABLED until USB3_SS / USB2 netclasses exist in .kicad_pro and nets are
 # assigned - these currently match nothing. Preserved from the prior .kicad_dru:
 #
-# (rule "USB3_SS diff pair skew"
-# 	(constraint skew (max 0.1mm))            (condition "A.NetClass == 'USB3_SS'"))
-# (rule "USB3_SS diff pair coupling"
-# 	(constraint diff_pair_uncoupled (max 2mm)) (condition "A.NetClass == 'USB3_SS'"))
-# (rule "USB3_SS via limit"
-# 	(constraint via_count (max 2))           (condition "A.NetClass == 'USB3_SS'"))
-# (rule "USB3 TX-RX isolation"
-# 	(constraint clearance (min 0.5mm))
-# 	(condition "(A.NetName=='/SSTX+' || A.NetName=='/SSTX-') && (B.NetName=='/SSRX+' || B.NetName=='/SSRX-')"))
-# (rule "USB2 diff pair skew"
-# 	(constraint skew (max 0.5mm))            (condition "A.NetClass == 'USB2'"))
-# (rule "USB2 diff pair coupling"
-# 	(constraint diff_pair_uncoupled (max 5mm)) (condition "A.NetClass == 'USB2'"))
+ (rule "USB3_SS diff pair skew"
+ 	(constraint skew (max 0.1mm))            (condition "A.NetClass == 'USB3_SS'"))
+ (rule "USB3_SS diff pair coupling"
+ 	(constraint diff_pair_uncoupled (max 2mm)) (condition "A.NetClass == 'USB3_SS'"))
+ (rule "USB3_SS via limit"
+ 	(constraint via_count (max 2))           (condition "A.NetClass == 'USB3_SS'"))
+ (rule "USB3 TX-RX isolation"
+ 	(constraint clearance (min 0.5mm))
+ 	(condition "(A.NetName=='/SSTX+' || A.NetName=='/SSTX-') && (B.NetName=='/SSRX+' || B.NetName=='/SSRX-')"))
+ (rule "USB2 diff pair skew"
+ 	(constraint skew (max 0.5mm))            (condition "A.NetClass == 'USB2'"))
+ (rule "USB2 diff pair coupling"
+ 	(constraint diff_pair_uncoupled (max 5mm)) (condition "A.NetClass == 'USB2'"))

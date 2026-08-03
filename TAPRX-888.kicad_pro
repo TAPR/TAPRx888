@@ -530,17 +530,82 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "USB2",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 0, 194)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "USB3_SS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(194, 0, 0)",
+        "tuning_profile": "",
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/SSRX+": [
+        "USB3_SS"
+      ],
+      "/SSRX-": [
+        "USB3_SS"
+      ],
+      "/SSTX+": [
+        "USB3_SS"
+      ],
+      "/SSTX+_FX3": [
+        "USB3_SS"
+      ],
+      "/SSTX-": [
+        "USB3_SS"
+      ],
+      "/SSTX-_FX3": [
+        "USB3_SS"
+      ],
+      "/USB+": [
+        "USB2"
+      ],
+      "/USB-": [
+        "USB2"
+      ]
+    },
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": "GND"
+        "netclass": "USB3_SS",
+        "pattern": "SSRX-"
+      },
+      {
+        "netclass": "USB3_SS",
+        "pattern": "SSRX+"
+      },
+      {
+        "netclass": "USB3_SS",
+        "pattern": "SSTX-"
+      },
+      {
+        "netclass": "USB3_SS",
+        "pattern": "SSTX+"
+      },
+      {
+        "netclass": "USB2",
+        "pattern": "USB-"
+      },
+      {
+        "netclass": "USB2",
+        "pattern": "USB+"
       }
     ]
   },
