@@ -21447,7 +21447,7 @@
 		)
 		(uuid "64e547bf-2ac3-45b8-bcae-0c001d6c434b")
 	)
-	(label "SSTX+_FX3"
+	(label "FX3_SSTX+"
 		(at 313.69 134.62 0)
 		(fields_autoplaced yes)
 		(effects
@@ -22243,7 +22243,7 @@
 			)
 		)
 	)
-	(label "SSTX-_FX3"
+	(label "FX3_SSTX-"
 		(at 313.69 132.08 0)
 		(fields_autoplaced yes)
 		(effects
