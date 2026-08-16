@@ -1,28 +1,24 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-08-16T21:08:23 **
+** Created on 2026-08-16T22:24:48 **
 ** Report includes: Errors, Warnings **
 
-** Found 6 DRC violations **
-[diff_pair_uncoupled_length_too_long]: Differential uncoupled length too long (USB3_SS diff pair coupling maximum uncoupled length 2.0000 mm; actual 3.6660 mm)
+** Found 5 DRC violations **
+[diff_pair_uncoupled_length_too_long]: Differential uncoupled length too long (USB3_SS diff pair coupling maximum uncoupled length 2.0000 mm; actual 2.4395 mm)
     Rule: USB3_SS diff pair coupling; error
-    @(156.0000 mm, 70.4000 mm): Track [/SSRX+] on F.Cu, length 0.2275 mm
-    @(153.8225 mm, 76.7775 mm): Track [/SSRX-] on F.Cu, length 3.8260 mm
-[diff_pair_uncoupled_length_too_long]: Differential uncoupled length too long (USB3_SS diff pair coupling maximum uncoupled length 2.0000 mm; actual 3.8144 mm)
-    Rule: USB3_SS diff pair coupling; error
-    @(156.1000 mm, 73.2500 mm): Track [/SSTX+] on F.Cu, length 0.0250 mm
-    @(157.0000 mm, 70.7000 mm): Track [/SSTX-] on F.Cu, length 0.3000 mm
-[skew_out_of_range]: Skew between tracks out of range (rule 'USB3_SS diff pair skew' max skew 0.1000 mm; actual -0.2139 mm; target net length 17.1256 mm (from /SSRX-); actual 16.9117 mm)
+    @(155.9025 mm, 70.9485 mm): Track [/SSRX+] on F.Cu, length 2.4395 mm
+[skew_out_of_range]: Skew between tracks out of range (rule 'USB3_SS diff pair skew' max skew 0.1000 mm; actual -0.5315 mm; target net length 16.8718 mm (from /SSRX-); actual 16.3402 mm)
     Rule: USB3_SS diff pair skew; error
-    @(153.8500 mm, 65.0750 mm): Track [/SSRX+] on B.Cu, length 0.1211 mm
-[skew_out_of_range]: Skew between tracks out of range (rule 'USB3_SS diff pair skew' max skew 0.1000 mm; actual -0.2763 mm; target net length 13.7605 mm (from /SSTX-); actual 13.4841 mm)
+    @(155.7500 mm, 66.7000 mm): Track [/SSRX+] on B.Cu, length 0.2475 mm
+[skew_out_of_range]: Skew between tracks out of range (rule 'USB3_SS diff pair skew' max skew 0.1000 mm; actual -0.2879 mm; target net length 14.6525 mm (from /SSTX+); actual 14.3646 mm)
     Rule: USB3_SS diff pair skew; error
-    @(160.0225 mm, 64.7775 mm): Track [/SSTX+] on B.Cu, length 0.3495 mm
-[skew_out_of_range]: Skew between tracks out of range (rule 'USB3_SS diff pair skew' max skew 0.1000 mm; actual -0.1843 mm; target net length 2.9658 mm (from /FX3_SSTX+); actual 2.7814 mm)
-    Rule: USB3_SS diff pair skew; error
-    @(157.3000 mm, 74.7750 mm): Track [/FX3_SSTX-] on F.Cu, length 0.0250 mm
-[skew_out_of_range]: Skew between tracks out of range (rule 'USB2 diff pair skew' max skew 0.5000 mm; actual -2.5135 mm; target net length 27.0065 mm (from /USB-); actual 24.4930 mm)
+    @(161.2119 mm, 63.8674 mm): Track [/SSTX-] on B.Cu, length 1.0032 mm
+[skew_out_of_range]: Skew between tracks out of range (rule 'USB2 diff pair skew' max skew 0.5000 mm; actual -2.6054 mm; target net length 26.9333 mm (from /USB-); actual 24.3279 mm)
     Rule: USB2 diff pair skew; error
-    @(159.0495 mm, 75.1505 mm): Track [/USB+] on F.Cu, length 0.1793 mm
+    @(158.6225 mm, 76.7775 mm): Track [/USB+] on F.Cu, length 0.3147 mm
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0000 mm)
+    Rule: board setup constraints silk; warning
+    @(155.6288 mm, 74.4750 mm): Segment of C39 on F.Silkscreen
+    @(155.6288 mm, 73.7750 mm): Segment of C40 on F.Silkscreen
 
 ** Found 0 unconnected pads **
 
