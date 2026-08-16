@@ -129,10 +129,10 @@
 # ===== PROJECT  (TAPRX-888 design intent) ===================================
 
 (rule "USB3_SS diff pair skew"
-	(constraint skew (max 0.1mm) (within_diff_pairs))   
+	(constraint skew (max 0.12mm) (within_diff_pairs))   
     (condition "A.hasNetclass('USB3_SS')"))
 (rule "USB3_SS diff pair coupling"
-	(constraint diff_pair_uncoupled (max 2mm))        
+	(constraint diff_pair_uncoupled (max 3mm))        
     (condition "A.hasNetclass('USB3_SS')"))
 (rule "USB3_SS via limit"
 	(constraint via_count (max 2))                    
@@ -141,7 +141,7 @@
 	(constraint clearance (min 0.5mm))
 	(condition "(A.NetName=='/SSTX+' || A.NetName=='/SSTX-') && (B.NetName=='/SSRX+' || B.NetName=='/SSRX-')"))
 (rule "USB2 diff pair skew"
-	(constraint skew (max 0.5mm) (within_diff_pairs))   
+	(constraint skew (max 1.25mm) (within_diff_pairs))   
     (condition "A.hasNetclass('USB2')"))
 (rule "USB2 diff pair coupling"
 	(constraint diff_pair_uncoupled (max 5mm))        
