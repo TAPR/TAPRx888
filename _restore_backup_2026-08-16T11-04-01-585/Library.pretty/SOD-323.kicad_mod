@@ -1,0 +1,167 @@
+(footprint "SOD-323"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.215 -1.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1d31e386-d7a1-4893-ba0f-3cf130bfc38e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "PESD5V0U1UA"
+		(at 0 -1.915 0)
+		(layer "F.Fab")
+		(uuid "0409f720-3f0e-45ed-998e-0ed0d1decbaa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "617e0456-2bf9-417b-bb4f-2b5df65841bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f8829c6a-983b-4528-81b7-f144d291edfa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part #" "C5380401"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d39f4fb0-15d5-4e41-8270-cd80178876ea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.7 -0.7)
+		(end -1.7 0.7)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fd79008b-ffb3-4c85-829a-38c65f04cecc")
+	)
+	(fp_line
+		(start -1.5 -0.66)
+		(end 1.5 -0.66)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "7fa31ad7-6c75-4269-9397-1d4fff7643f0")
+	)
+	(fp_line
+		(start -1.5 0.66)
+		(end -1.5 -0.66)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "28ad4abe-1b1e-48a9-9040-650a46c75f65")
+	)
+	(fp_line
+		(start 1.49 0.66)
+		(end -1.5 0.66)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "6f062928-69a8-47f4-9dca-21546ddc4a0a")
+	)
+	(fp_line
+		(start 1.5 -0.66)
+		(end 1.5 0.66)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "923b47eb-36b1-45fe-8313-782f4b3e5bbc")
+	)
+	(fp_rect
+		(start -1.4 -0.6)
+		(end 1.4 0.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "24503704-ffee-4add-8cf7-d2e9788e7081")
+	)
+	(fp_text user "REF**"
+		(at 0 1.5 0)
+		(layer "F.Fab")
+		(uuid "402d3953-75ab-4ee1-b17e-1f68a7db537c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.055 0)
+		(size 0.63 0.83)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "6780a3e6-5f8b-466b-b2c8-25a4bfd4ee1f")
+	)
+	(pad "2" smd rect
+		(at 1.055 0)
+		(size 0.63 0.83)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "f3bcca1f-a2df-4530-8cae-c8a6bc5ac94c")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,225 @@
+(footprint "SC-70-6_rot90"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -2 -0.6 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4d80368b-6e34-4bd9-b3ae-ac23952be753")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "74LVC2G14"
+		(at -0.1 2.8 0)
+		(layer "F.Fab")
+		(uuid "807180e9-ca41-48a1-9398-c425e38adf1e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c7abb2a3-a538-45a8-a9ea-02d13e1da638")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "63087945-7214-49ed-a203-39f25afac4b3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part #" "C19829575"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "59d40692-4fb2-47e5-9880-7932e621600d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center -0.7 2.1)
+		(end -0.5 2.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "ffc4cbb8-2ade-4bf5-9ee2-e1fe46c4daff")
+	)
+	(fp_line
+		(start -1.25 -1.7)
+		(end -1.25 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7b33b809-e29f-4b51-96a6-797f97ddd790")
+	)
+	(fp_line
+		(start -1.25 -1.7)
+		(end 1.25 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "225b5428-749b-47c5-852c-8d9f9802b976")
+	)
+	(fp_line
+		(start 1.25 1.7)
+		(end -1.25 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a94683cb-ebff-4645-827c-67892bd6777a")
+	)
+	(fp_line
+		(start 1.25 1.7)
+		(end 1.25 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a0f954c2-893c-4b66-8d82-56057803c0ba")
+	)
+	(fp_line
+		(start -1.1 1.1)
+		(end -1.1 -1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a9ab2588-ebbb-4456-bda3-4d680d5c928f")
+	)
+	(fp_line
+		(start 1.1 -1.1)
+		(end -1.1 -1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "58b02d49-907e-405d-a037-74c4dae7e86e")
+	)
+	(fp_line
+		(start 1.1 -1.1)
+		(end 1.1 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9112e79c-c9c8-4355-bd1e-72d49807326d")
+	)
+	(fp_line
+		(start 1.1 1.1)
+		(end -1.1 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4ef8bbec-bfb1-4e07-80ac-e583f51a3ffc")
+	)
+	(fp_text user "REF**"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(uuid "701e4776-5122-4a33-b051-5bae8555b600")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.65 1.1)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "14e3d90f-1341-4024-9a9f-316ec10ea722")
+	)
+	(pad "2" smd rect
+		(at 0 1.1)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "f836fa9d-82e4-44d9-be36-a1b0a4f5a9af")
+	)
+	(pad "3" smd rect
+		(at 0.65 1.1)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "b7cee6fd-8521-430e-a353-04eb4cf748d8")
+	)
+	(pad "4" smd rect
+		(at 0.65 -1.1)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "528d8ab9-f0af-44ef-beb4-079638ec862c")
+	)
+	(pad "5" smd rect
+		(at 0 -1.1)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "c4a9e1f6-8fd9-4483-9813-592f35c14cde")
+	)
+	(pad "6" smd rect
+		(at -0.65 -1.1)
+		(size 0.4 0.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "79ddded5-294e-4684-b0c9-c0646f00bd21")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+)

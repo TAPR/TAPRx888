@@ -1,0 +1,206 @@
+name: endplate-release
+
+# Fabrication packages + GitHub Release for the mechanical end plates, versioned
+# INDEPENDENTLY of the board on a combined "endplates-vX.Y" lane.
+#
+# The end plates (mechanical/endplate-{front,rear}) are non-functional enclosure
+# parts. They evolve on their own cadence, so they get their own release lane
+# rather than riding the board's version -- see docs/RELEASE_STRATEGY.md.
+#
+# Runs on every merge to main. A new endplates release is published ONLY when an
+# end-plate design file (either plate, or the shared worksheet frame) changed
+# since the last endplates release; other merges are a no-op. Both plates are
+# always cut together at the same version (one combined release carrying both).
+#
+# Versioning: MAJOR.MINOR, minor auto-increments (v1.3 -> v1.4) and never rolls
+# over (v1.9 -> v1.10). First release -> v1.0. A MAJOR bump is a human decision:
+# dispatch with `version: 2.0`.
+#
+# Dispatch with dry_run=true to build both packages and upload them as run
+# artifacts WITHOUT publishing a release -- for validating the pipeline.
+
+on:
+  push:
+    branches: [main]
+  # PRs into dev/main that touch a plate or the endplate pipeline get a FORCED
+  # dry-run: both packages are built and uploaded as a run artifact, but nothing
+  # is published (the release job is gated on publish==true).
+  pull_request:
+    branches: [dev, main]
+    paths:
+      - 'mechanical/endplate-front/**'
+      - 'mechanical/endplate-rear/**'
+      - 'TAPR.kicad_wks'
+      - 'scripts/build_endplates.sh'
+      - 'scripts/inject_provenance.py'
+      - '.github/workflows/endplate-release.yml'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Force this version, e.g. 2.0 (blank = automatic minor bump)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Build both packages + upload as run artifacts, but do NOT publish a release"
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  group: endplate-release-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      revision: ${{ steps.rev.outputs.revision }}
+      githash: ${{ steps.rev.outputs.githash }}
+      publish: ${{ steps.rev.outputs.publish }}
+      build: ${{ steps.rev.outputs.build }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Determine endplates version & whether to publish
+        id: rev
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OVERRIDE: ${{ github.event.inputs.version }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          # End-plate design files -- changes here (and only here) trigger an
+          # uprev. The shared worksheet frame counts (it renders on the fab PDF).
+          DESIGN=('mechanical/endplate-front/' 'mechanical/endplate-rear/'
+                  'TAPR.kicad_wks')
+
+          # GIT_HASH = last commit that touched an end-plate design file, so the
+          # stamp names the commit that defines the released plates.
+          githash=$(git log -1 --format=%h -- "${DESIGN[@]}")
+
+          # Existing endplates releases, one "X.Y" per line (strip the prefix).
+          eptags=$(gh release list --repo "$GITHUB_REPOSITORY" --limit 200 \
+                     --json tagName --jq '.[].tagName' 2>/dev/null \
+                     | grep -E '^endplates-v[0-9]+\.[0-9]+$' | sed 's/^endplates-v//' \
+                     || true)
+          # Highest existing version (major, then minor).
+          latest=$(printf '%s\n' "$eptags" | grep -E '.' \
+                     | sort -t. -k1,1n -k2,2n | tail -1 || true)
+
+          changed=""
+          if [ -n "${OVERRIDE:-}" ]; then
+            revision="$OVERRIDE"; publish=true
+            reason="Manual override -> endplates-v$revision"
+          elif [ -z "$latest" ]; then
+            revision="1.0"; publish=true
+            reason="No prior endplates release -> endplates-v$revision"
+          else
+            base=$(git rev-list -1 "endplates-v$latest")
+            changed=$(git diff --name-only "$base"..HEAD -- "${DESIGN[@]}" || true)
+            if [ -n "$changed" ]; then
+              maj="${latest%%.*}"; min="${latest#*.}"
+              revision="${maj}.$((min + 1))"; publish=true
+              reason="End plates changed since endplates-v$latest -> endplates-v$revision"
+            else
+              revision="$latest"; publish=false
+              reason="No end-plate change since endplates-v$latest -> no new release"
+            fi
+          fi
+
+          build="$publish"
+
+          # Dry run (explicit, or any PR): build both packages + upload, but
+          # never publish.
+          if [ "${DRY_RUN:-false}" = "true" ] || [ "${EVENT:-}" = "pull_request" ]; then
+            publish=false
+            build=true
+            [ -n "$revision" ] || revision="DRYRUN"
+            reason="DRY RUN (${EVENT:-manual}) -> build packages for endplates-v${revision}, skip publish"
+          fi
+
+          {
+            echo "revision=$revision"
+            echo "githash=$githash"
+            echo "publish=$publish"
+            echo "build=$build"
+          } >> "$GITHUB_OUTPUT"
+
+          echo "$reason (design commit $githash)." >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$changed" ]; then
+            { echo '```'; echo "$changed"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  build:
+    needs: prepare
+    if: needs.prepare.outputs.build == 'true'
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/inti-cmnb/kicad10_auto:1.9.0-6_k10.0.4_d13.2
+      options: --user root
+    env:
+      HOME: /root
+      EPREVISION: ${{ needs.prepare.outputs.revision }}
+      GIT_HASH: ${{ needs.prepare.outputs.githash }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build end-plate packages
+        run: |
+          chmod +x scripts/build_endplates.sh
+          scripts/build_endplates.sh
+      - uses: actions/upload-artifact@v6
+        with:
+          name: endplate-packages
+          path: out/
+
+  release:
+    needs: [prepare, build]
+    if: needs.prepare.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: endplate-packages
+          path: out
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REV: ${{ needs.prepare.outputs.revision }}
+          SHA: ${{ needs.prepare.outputs.githash }}
+        run: |
+          set -euo pipefail
+          TAG="endplates-v${REV}"
+          FILES=(
+            "out/endplate-front-v${REV}-gerbers.zip"
+            "out/endplate-rear-v${REV}-gerbers.zip"
+            "out/endplate-front-v${REV}-fab.pdf"
+            "out/endplate-rear-v${REV}-fab.pdf"
+          )
+          NOTES="End-plate fabrication packages for ${TAG} (design commit ${SHA}). Both plates cut together. Auto-generated by endplate-release CI."
+          # Idempotent: create, or refresh assets if the release already exists.
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "$TAG" "${FILES[@]}" --repo "$GITHUB_REPOSITORY" --clobber
+            gh release edit   "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" --notes "$NOTES"
+          else
+            gh release create "$TAG" "${FILES[@]}" \
+              --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+              --title "$TAG" --notes "$NOTES"
+          fi
+
+          # Self-cleaning: drop any assets not in the current set.
+          keep=""
+          for f in "${FILES[@]}"; do keep=" $keep $(basename "$f") "; done
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' \
+            | while read -r a; do
+                [ -n "$a" ] || continue
+                case "$keep" in
+                  *" $a "*) ;;
+                  *) echo "Removing stale asset: $a"
+                     gh release delete-asset "$TAG" "$a" --yes --repo "$GITHUB_REPOSITORY" ;;
+                esac
+              done

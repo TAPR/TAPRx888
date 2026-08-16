@@ -1,0 +1,324 @@
+name: dev-release
+
+# Pre-release (0.x) pipeline for the dev lane -- the sibling of main-release.
+#
+# Runs on every merge to dev. Publishes/refreshes a GitHub *pre-release* only
+# when a design file changed since the last pre-release; docs/CI/script-only
+# merges are a no-op. Mirrors main-release, with two differences:
+#   - bumps the minor within the current major line (0.6 -> 0.7; after a main
+#     X.0, continues X.1 -> X.2 -> ...), first run seeds v0.6
+#   - publishes with --prerelease
+#
+# The dev v0.x pre-release is a COMBINED snapshot: it folds in the board fab
+# package, BOTH end-plate fab packages, and the mechanical assembly (STEP +
+# coloured GLB + viewer), and deploys the live GitHub Pages viewer. "Design
+# changed" therefore spans the board, the end plates, AND the mechanical inputs
+# -- any of them cuts/refreshes the snapshot. (On main the plates keep their
+# INDEPENDENT endplates-vX.Y lane in endplate-release.yml; only the dev snapshot
+# is combined.) See docs/RELEASE_STRATEGY.md.
+#
+# Provenance is injected at build time only: GIT_HASH stamps the board package
+# from the last board-design commit, and EP_GIT_HASH stamps the plates from the
+# last end-plate-design commit, so each sub-package names the commit that defines
+# it. The plates are stamped with the board's v0.x so their filenames/frames
+# match the snapshot.
+#
+# Dispatch with dry_run=true to build the packages as run artifacts without
+# publishing; with version=0.7 to force a specific pre-release number.
+
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Force this pre-release, e.g. 0.7 (blank = automatic minor bump)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Build the package + upload as run artifacts, but do NOT publish"
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  group: dev-release-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      revision: ${{ steps.rev.outputs.revision }}
+      githash: ${{ steps.rev.outputs.githash }}
+      ep_githash: ${{ steps.rev.outputs.ep_githash }}
+      publish: ${{ steps.rev.outputs.publish }}
+      build: ${{ steps.rev.outputs.build }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Determine pre-release version & whether to publish
+        id: rev
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OVERRIDE: ${{ github.event.inputs.version }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          # Root board files -- scoped to the main TAPRX-888 board. A bare glob
+          # like '*.kicad_pcb' is a git pathspec that matches at ANY depth
+          # (mechanical/**/x.kicad_pcb), so we list the root files explicitly.
+          BOARD=('TAPRX-888.kicad_sch' 'Front_End.kicad_sch' 'refclk.kicad_sch'
+                 'TAPRX-888.kicad_pcb' 'TAPRX-888.kicad_pro' 'TAPRX-888.kicad_dru'
+                 'Library.kicad_sym' 'Library.pretty/' 'fp-lib-table' 'sym-lib-table')
+          # End-plate design files (same set endplate-release.yml keys off).
+          ENDPLATE=('mechanical/endplate-front/' 'mechanical/endplate-rear/'
+                    'TAPR.kicad_wks')
+          # Mechanical-assembly inputs (enclosure/hardware + the assembler
+          # scripts). The end-plate dirs are already under mechanical/, so this
+          # broader 'mechanical/' entry also covers them.
+          MECH=('mechanical/' '3d/' 'TAPR.kicad_wks'
+                'scripts/assemble_mechanical.py' 'scripts/assemble_glb.py'
+                'scripts/make_3d_viewer.py' 'scripts/build_endplates.sh')
+          # The v0.x snapshot is combined, so ANY of board/endplate/mechanical
+          # changing cuts or refreshes it.
+          TRIGGER=("${BOARD[@]}" "${MECH[@]}")
+
+          # Per-sub-package provenance: board stamped from the last board-design
+          # commit, plates from the last end-plate-design commit.
+          githash=$(git log -1 --format=%h -- "${BOARD[@]}")
+          ep_githash=$(git log -1 --format=%h -- "${ENDPLATE[@]}")
+
+          # All releases, newest-first: "<tag> <isPrerelease>". Feeds the shared
+          # version policy in scripts/next_version.sh (docs/RELEASE_STRATEGY.md).
+          releases=$(gh release list --repo "$GITHUB_REPOSITORY" --limit 100 \
+                       --json tagName,isPrerelease \
+                       --jq '.[] | "\(.tagName) \(.isPrerelease)"' 2>/dev/null || echo "")
+          # Most recent release of any kind = the base for "did the design change".
+          latest_tag=$(printf '%s\n' "$releases" | awk 'NF{print $1; exit}')
+
+          changed=""
+          if [ -n "${OVERRIDE:-}" ]; then
+            revision="$OVERRIDE"; publish=true
+            reason="Manual override -> v$revision (pre-release)"
+          elif [ -z "$latest_tag" ]; then
+            # First release anywhere: seed the pre-release line (dev lane -> 0.6).
+            revision=$(printf '%s' "$releases" | bash scripts/next_version.sh dev)
+            publish=true
+            reason="No prior release -> seed v$revision (pre-release)"
+          else
+            base=$(git rev-list -1 "$latest_tag")
+            # Exclude markdown: a docs edit under mechanical/ or 3d/ (e.g. a
+            # README) must NOT cut a pre-release. The MECH prefixes above match
+            # those dirs broadly, so drop *.md from the change set.
+            changed=$(git diff --name-only "$base"..HEAD -- "${TRIGGER[@]}" ':(exclude)*.md' || true)
+            if [ -n "$changed" ]; then
+              revision=$(printf '%s' "$releases" | bash scripts/next_version.sh dev)
+              publish=true
+              reason="Design (board/endplate/mechanical) changed since $latest_tag -> v$revision (pre-release)"
+            else
+              revision="${latest_tag#v}"; publish=false
+              reason="No design change since $latest_tag -> no new pre-release (docs / CI-only merge)"
+            fi
+          fi
+
+          build="$publish"
+          if [ "${DRY_RUN:-false}" = "true" ]; then
+            publish=false; build=true
+            [ -n "$revision" ] || revision="DRYRUN"
+            reason="DRY RUN -> build pre-release package for v${revision}, skip publish"
+          fi
+
+          {
+            echo "revision=$revision"
+            echo "githash=$githash"
+            echo "ep_githash=$ep_githash"
+            echo "publish=$publish"
+            echo "build=$build"
+          } >> "$GITHUB_OUTPUT"
+
+          echo "$reason (design commit $githash)." >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$changed" ]; then
+            { echo '```'; echo "$changed"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  build:
+    needs: prepare
+    if: needs.prepare.outputs.build == 'true'
+    runs-on: ubuntu-latest
+    container:
+      # Public INTI-CMNB KiBot image (kicad10_auto): kicad-cli, KiBot, python3,
+      # git, ghostscript, poppler-utils. Fully-qualified pin (KiBot 1.9.0 /
+      # KiCad 10.0.4 / Debian 13.2) keeps release output reproducible.
+      image: ghcr.io/inti-cmnb/kicad10_auto:1.9.0-6_k10.0.4_d13.2
+      options: --user root
+    env:
+      HOME: /root
+      REVISION: ${{ needs.prepare.outputs.revision }}
+      GIT_HASH: ${{ needs.prepare.outputs.githash }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build fab/design package
+        run: |
+          chmod +x scripts/build_release.sh
+          scripts/build_release.sh
+      - uses: actions/upload-artifact@v6
+        with:
+          name: release-package
+          path: out/
+
+  # End-plate fab packages, folded into the SAME v0.x snapshot. Stamped with the
+  # board's v0.x (EPREVISION) so filenames/frames match, and with the end-plate
+  # design commit (EP_GIT_HASH) for accurate provenance.
+  build-endplates:
+    needs: prepare
+    if: needs.prepare.outputs.build == 'true'
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/inti-cmnb/kicad10_auto:1.9.0-6_k10.0.4_d13.2
+      options: --user root
+    env:
+      HOME: /root
+      EPREVISION: ${{ needs.prepare.outputs.revision }}
+      GIT_HASH: ${{ needs.prepare.outputs.ep_githash }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build end-plate packages
+        run: |
+          chmod +x scripts/build_endplates.sh
+          scripts/build_endplates.sh
+      - uses: actions/upload-artifact@v6
+        with:
+          name: endplate-packages
+          path: out/
+
+  # Mechanical assembly (STEP + coloured GLB + viewer) via the shared reusable
+  # build. Uploads `mechanical-assembly` into this run.
+  mechanical:
+    needs: prepare
+    if: needs.prepare.outputs.build == 'true'
+    uses: ./.github/workflows/mechanical-build.yml
+
+  release:
+    needs: [prepare, build, build-endplates, mechanical]
+    if: needs.prepare.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: release-package
+          path: out
+      - uses: actions/download-artifact@v8
+        with:
+          name: endplate-packages
+          path: ep
+      - uses: actions/download-artifact@v8
+        with:
+          name: mechanical-assembly
+          path: mech
+      - name: Package release assets
+        env:
+          REV: ${{ needs.prepare.outputs.revision }}
+        run: |
+          set -euo pipefail
+          # --- board (version-stamped names; see docs/RELEASE_STRATEGY.md) ------
+          cp "out/docs/TAPRX-888-v${REV}-schematic.pdf" "TAPRX-888-v${REV}-schematic.pdf"
+          cp "out/docs/TAPRX-888-v${REV}-assembly.pdf"  "TAPRX-888-v${REV}-assembly.pdf"
+          ( cd out/JLCPCB/gerbers && zip -qr "../../../TAPRX-888-v${REV}-gerbers.zip" . )
+          # Board-only fabrication zip -- built BEFORE the plate/mechanical assets
+          # land at top level so it keeps its board-only meaning.
+          ( cd out && zip -qr "../TAPRX-888-v${REV}-fabrication.zip" . )
+          # --- end plates (already named v${REV}: EPREVISION == board REV) ------
+          cp "ep/endplate-front-v${REV}-gerbers.zip" "ep/endplate-rear-v${REV}-gerbers.zip" .
+          cp "ep/endplate-front-v${REV}-fab.pdf"     "ep/endplate-rear-v${REV}-fab.pdf"     .
+          # --- mechanical assembly (rename to the versioned snapshot names) -----
+          cp "mech/TAPRX-888-mechanical-assembly.step" "TAPRX-888-v${REV}-mechanical-assembly.step"
+          cp "mech/TAPRX-888-mechanical-assembly.glb"  "TAPRX-888-v${REV}-mechanical-assembly.glb"
+          cp "mech/TAPRX-888-mechanical-viewer.html"   "TAPRX-888-v${REV}-mechanical-viewer.html"
+          ls -la
+      - name: Publish GitHub pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REV: ${{ needs.prepare.outputs.revision }}
+          SHA: ${{ needs.prepare.outputs.githash }}
+          EPSHA: ${{ needs.prepare.outputs.ep_githash }}
+        run: |
+          set -euo pipefail
+          FILES=(
+            "TAPRX-888-v${REV}-fabrication.zip"
+            "TAPRX-888-v${REV}-gerbers.zip"
+            "TAPRX-888-v${REV}-schematic.pdf"
+            "TAPRX-888-v${REV}-assembly.pdf"
+            "endplate-front-v${REV}-gerbers.zip"
+            "endplate-rear-v${REV}-gerbers.zip"
+            "endplate-front-v${REV}-fab.pdf"
+            "endplate-rear-v${REV}-fab.pdf"
+            "TAPRX-888-v${REV}-mechanical-assembly.step"
+            "TAPRX-888-v${REV}-mechanical-assembly.glb"
+            "TAPRX-888-v${REV}-mechanical-viewer.html"
+          )
+          NOTES="Combined pre-release snapshot for v${REV}: board (design commit ${SHA}), end plates (design commit ${EPSHA}), and the mechanical assembly. Auto-generated by dev-release CI."
+          if gh release view "v${REV}" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "v${REV}" "${FILES[@]}" --repo "$GITHUB_REPOSITORY" --clobber
+            gh release edit   "v${REV}" --repo "$GITHUB_REPOSITORY" --prerelease \
+              --title "v${REV} (pre-release)" --notes "$NOTES"
+          else
+            gh release create "v${REV}" "${FILES[@]}" \
+              --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease \
+              --title "v${REV} (pre-release)" --notes "$NOTES"
+          fi
+
+          # Self-cleaning: drop any assets not in the current snapshot set.
+          keep=" ${FILES[*]} "
+          gh release view "v${REV}" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' \
+            | while read -r a; do
+                [ -n "$a" ] || continue
+                case "$keep" in
+                  *" $a "*) ;;
+                  *) echo "Removing stale asset: $a"
+                     gh release delete-asset "v${REV}" "$a" --yes --repo "$GITHUB_REPOSITORY" ;;
+                esac
+              done
+
+  # Deploy the live viewer to GitHub Pages (https://tapr.github.io/TAPRx888/).
+  # Only on an actual publish -- a dispatch dry-run builds artifacts but must not
+  # move the live site. Shares the `pages` concurrency group with mechanical-ci
+  # so the design/dev-* lane and this dev lane never deploy on top of each other.
+  pages:
+    needs: [prepare, mechanical]
+    if: needs.prepare.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: mechanical-assembly
+          path: dl
+      - name: Lay out the Pages site (viewer as index.html)
+        run: |
+          set -euxo pipefail
+          mkdir -p site
+          cp dl/TAPRX-888-mechanical-viewer.html site/index.html
+          ls -la site
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

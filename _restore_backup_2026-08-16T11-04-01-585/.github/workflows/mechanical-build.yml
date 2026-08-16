@@ -1,0 +1,129 @@
+name: mechanical-build
+
+# Reusable mechanical fit-check build (workflow_call only). Exports 3D from the
+# main board and both end-plate PCBs, assembles them with the enclosure into one
+# multi-component STEP + a coloured GLB, and builds a self-contained web viewer.
+#
+# The STEP comes from CadQuery (crisp geometry, for CAD). The GLB/viewer are
+# built from KiCad's OWN GLB export per board -- which carries the silkscreen /
+# soldermask / pad colours that a STEP import drops -- reusing the CadQuery
+# placement so both match. Board connector 3D models are still missing (#45).
+# See scripts/assemble_mechanical.py + assemble_glb.py.
+#
+# Called by mechanical-ci.yml (design / dev-* / PR + Pages) and dev-release.yml
+# (dev merge, folded into the v0.x pre-release). Uploads two artifacts into the
+# caller's run: `board-parts` (per-board STEP/GLB) and `mechanical-assembly`
+# (assembly STEP + coloured GLB + viewer HTML).
+
+on:
+  workflow_call:
+
+jobs:
+  boards-step:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/inti-cmnb/kicad10_auto:1.9.0-6_k10.0.4_d13.2
+      options: --user root
+    steps:
+      - uses: actions/checkout@v6
+      - name: Export STEP + coloured GLB from each PCB
+        run: |
+          set -euxo pipefail
+          mkdir -p out/step out/glb
+          # Resolve stock 3D models from the vendored mirror, exactly as
+          # scripts/build_release.sh does -- the CI image ships none and KiCad's
+          # on-demand download 404s on v10 (#45). Without this only the in-repo
+          # ${KIPRJMOD}/3d custom models load, so the board STEP/GLB would carry
+          # connectors but no passives/ICs. Custom models resolve via KIPRJMOD.
+          export KICAD10_3DMODEL_DIR="${KICAD10_3DMODEL_DIR:-$PWD/3d/kicad-stock}"
+          echo "KICAD10_3DMODEL_DIR=$KICAD10_3DMODEL_DIR"
+          # STEP for CAD (silk baked as geometry). GLB for the viewer, where
+          # KiCad colours the silk/mask/pads natively.
+          STEP_OPTS="--include-silkscreen"
+          GLB_OPTS="--include-silkscreen --include-soldermask"
+          for pair in \
+            "TAPRX-888.kicad_pcb:board:--no-dnp --subst-models" \
+            "mechanical/endplate-front/endplate-front.kicad_pcb:front:" \
+            "mechanical/endplate-rear/endplate-rear.kicad_pcb:rear:" ; do
+            src="${pair%%:*}"; rest="${pair#*:}"; name="${rest%%:*}"; extra="${rest#*:}"
+            kicad-cli pcb export step "$src" $extra $STEP_OPTS -o "out/step/$name.step"
+            kicad-cli pcb export glb  "$src" $extra $GLB_OPTS  -o "out/glb/$name.glb"
+          done
+          # Component-free board datum: substrate + Edge.Cuts only (no models,
+          # no silk). assemble_mechanical.py seats the board off THIS -- its bbox
+          # is the PCB mid-plane (vertical) + outline center (lateral), so adding
+          # or removing parts never shifts where the board sits.
+          kicad-cli pcb export step TAPRX-888.kicad_pcb --board-only \
+            -o out/step/board-bare.step
+          ls -la out/step out/glb
+      - uses: actions/upload-artifact@v6
+        with:
+          name: board-parts
+          path: out/
+
+  assemble:
+    needs: boards-step
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/download-artifact@v8
+        with:
+          name: board-parts
+          path: out
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CadQuery + trimesh
+        # numpy pinned <2 for cadquery 2.4.0 (nptyping uses np.bool8).
+        run: pip install "cadquery==2.4.0" "numpy==1.26.4" trimesh
+      - name: Assemble STEP + placement matrices + enclosure GLB
+        run: |
+          set -euxo pipefail
+          python scripts/assemble_mechanical.py \
+            --enclosure mechanical/enclosure.step \
+            --board out/step/board.step --board-bare out/step/board-bare.step \
+            --front out/step/front.step --rear out/step/rear.step \
+            --screw mechanical/hardware/screw-M3-threadforming.step \
+            --washer mechanical/hardware/washer.step \
+            --nut mechanical/hardware/nut.step \
+            --out out/TAPRX-888-mechanical-assembly.step \
+            --matrices out/placements.json \
+            --enclosure-glb out/enclosure.glb
+      - name: Assemble coloured GLB from KiCad's per-board GLBs
+        run: |
+          set -euxo pipefail
+          python scripts/assemble_glb.py \
+            --matrices out/placements.json \
+            --enclosure out/enclosure.glb \
+            --board out/glb/board.glb --front out/glb/front.glb --rear out/glb/rear.glb \
+            --out out/TAPRX-888-mechanical-assembly.glb
+      - name: Build self-contained web viewer
+        run: |
+          set -euxo pipefail
+          # Pinned three.js r148 -- the last release whose jsm addons import ONLY
+          # the bare 'three' specifier, which lets make_3d_viewer.py inline them
+          # via a runtime import map with no bundler (see that script's header).
+          # The viewer lets you toggle the four top-level parts on/off.
+          THREE=https://unpkg.com/three@0.148.0
+          curl -fsSL "$THREE/build/three.module.js"                        -o /tmp/three.module.js
+          curl -fsSL "$THREE/examples/jsm/loaders/GLTFLoader.js"           -o /tmp/GLTFLoader.js
+          curl -fsSL "$THREE/examples/jsm/controls/OrbitControls.js"       -o /tmp/OrbitControls.js
+          curl -fsSL "$THREE/examples/jsm/environments/RoomEnvironment.js" -o /tmp/RoomEnvironment.js
+          python scripts/make_3d_viewer.py \
+            --glb out/TAPRX-888-mechanical-assembly.glb \
+            --three /tmp/three.module.js \
+            --gltf  /tmp/GLTFLoader.js \
+            --orbit /tmp/OrbitControls.js \
+            --room  /tmp/RoomEnvironment.js \
+            --rev "${GITHUB_SHA::7}" \
+            --branch "${GITHUB_REF_NAME}" \
+            --repo-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}" \
+            --out out/TAPRX-888-mechanical-viewer.html
+          ls -la out
+      - uses: actions/upload-artifact@v6
+        with:
+          name: mechanical-assembly
+          path: |
+            out/TAPRX-888-mechanical-assembly.step
+            out/TAPRX-888-mechanical-assembly.glb
+            out/TAPRX-888-mechanical-viewer.html

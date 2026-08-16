@@ -1,0 +1,254 @@
+name: main-release
+
+# Full fabrication/design package + GitHub Release, with build-time revision
+# and git-hash injection.
+#
+# Runs on every merge to main (and can be dispatched manually). A new revision
+# is published ONLY when a design file changed since the last release; docs / CI
+# / script-only merges are a no-op. GIT_HASH is stamped from the last commit
+# that touched a design file, so it stays truthful and stable across doc-only
+# commits. See docs/RELEASE_STRATEGY.md.
+#
+# Versioning (TAPRX-888): MAJOR.MINOR, minor auto-increments (v1.3 -> v1.4) and
+# never rolls over (v1.9 -> v1.10). First release -> v1.0. A MAJOR bump is a
+# human decision: dispatch with `version: 2.0`. The v0.x pre-releases live on
+# the dev lane as GitHub *pre-releases* and are ignored here.
+#
+# Dispatch with dry_run=true to build the full turnkey package and upload it as
+# run artifacts WITHOUT publishing a release -- for validating the pipeline
+# (e.g. the KiBot build) before committing to a real release.
+
+on:
+  push:
+    branches: [main]
+  # PRs into dev/main that touch the design or the release pipeline get a
+  # FORCED dry-run: the full package is built and uploaded as a run artifact
+  # (downloadable from the PR's Checks tab), but nothing is ever published --
+  # the `release` job is gated on publish==true, which is never set for PRs.
+  # Path-filtered so unrelated PRs don't trigger the (heavier) KiBot build.
+  pull_request:
+    branches: [dev, main]
+    # Root board files ONLY (not '**.kicad_*', which would also match sibling
+    # projects like mechanical/ end plates and false-trigger the preview build).
+    paths:
+      - 'TAPRX-888.kicad_sch'
+      - 'Front_End.kicad_sch'
+      - 'refclk.kicad_sch'
+      - 'TAPRX-888.kicad_pcb'
+      - 'TAPRX-888.kicad_pro'
+      - 'TAPRX-888.kicad_dru'
+      - 'Library.kicad_sym'
+      - 'Library.pretty/**'
+      - 'fp-lib-table'
+      - 'sym-lib-table'
+      - 'TAPR.kicad_wks'
+      - 'scripts/TAPRX-888.kibot.yaml'
+      - 'scripts/build_release.sh'
+      - 'scripts/inject_provenance.py'
+      - 'scripts/next_version.sh'
+      - '.github/workflows/main-release.yml'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Force this version, e.g. 2.0 (blank = automatic minor bump)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Build the package + upload as run artifacts, but do NOT publish a release"
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  # Serialize real releases (push to main), but let each PR/ref run independently
+  # and supersede its own older runs.
+  group: main-release-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      revision: ${{ steps.rev.outputs.revision }}
+      githash: ${{ steps.rev.outputs.githash }}
+      publish: ${{ steps.rev.outputs.publish }}
+      build: ${{ steps.rev.outputs.build }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Determine version & whether to publish
+        id: rev
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OVERRIDE: ${{ github.event.inputs.version }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          # Root board files ONLY -- changes here (and only here) trigger an
+          # uprev. Docs, workflows, scripts, *.kicad_prl (UI state), and sibling
+          # KiCad projects under mechanical/ (end plates) do NOT. A bare glob like
+          # '*.kicad_pcb' is a git pathspec that matches at ANY depth, so we list
+          # the root files explicitly to keep the board's version lane its own.
+          DESIGN=('TAPRX-888.kicad_sch' 'Front_End.kicad_sch' 'refclk.kicad_sch'
+                  'TAPRX-888.kicad_pcb' 'TAPRX-888.kicad_pro' 'TAPRX-888.kicad_dru'
+                  'Library.kicad_sym' 'Library.pretty/' 'fp-lib-table' 'sym-lib-table')
+
+          # GIT_HASH = last commit that touched a design file, so the stamp
+          # always names the commit that defines the released design and does
+          # not drift on doc-only commits.
+          githash=$(git log -1 --format=%h -- "${DESIGN[@]}")
+
+          # All releases, newest-first: "<tag> <isPrerelease>". Feeds the shared
+          # version policy in scripts/next_version.sh (docs/RELEASE_STRATEGY.md).
+          # main advances to the next whole major .0; dev pre-releases (marked
+          # prerelease) never affect the main number.
+          releases=$(gh release list --repo "$GITHUB_REPOSITORY" --limit 100 \
+                       --json tagName,isPrerelease \
+                       --jq '.[] | "\(.tagName) \(.isPrerelease)"' 2>/dev/null || echo "")
+          # Latest production (non-prerelease) release = base for change detection.
+          latest_main=$(printf '%s\n' "$releases" | awk '$2=="false"{print $1; exit}')
+
+          # Compute version + publish once (no early exits), so the dry-run
+          # override below can adjust the decision uniformly.
+          changed=""
+          if [ -n "${OVERRIDE:-}" ]; then
+            revision="$OVERRIDE"; publish=true
+            reason="Manual override -> v$revision"
+          elif [ -z "$latest_main" ]; then
+            # First production release -> v1.0 (promotion; always publish).
+            revision=$(printf '%s' "$releases" | bash scripts/next_version.sh main)
+            publish=true
+            reason="No prior production release -> v$revision"
+          else
+            base=$(git rev-list -1 "$latest_main")
+            changed=$(git diff --name-only "$base"..HEAD -- "${DESIGN[@]}" || true)
+            if [ -n "$changed" ]; then
+              # Next whole major .0 (2.0, 3.0, ...). Every production release is a major.
+              revision=$(printf '%s' "$releases" | bash scripts/next_version.sh main)
+              publish=true
+              reason="Design changed since $latest_main -> v$revision"
+            else
+              revision="${latest_main#v}"; publish=false
+              reason="No design change since $latest_main -> no new release (docs / CI-only merge)"
+            fi
+          fi
+
+          # By default the build job runs exactly when we publish.
+          build="$publish"
+
+          # Dry run: build the package + upload artifacts for inspection, but
+          # never publish. Forces a build even when there is no design change,
+          # so the turnkey pipeline can be exercised on demand. A pull_request
+          # event is always a dry run (the PR-preview build).
+          if [ "${DRY_RUN:-false}" = "true" ] || [ "${EVENT:-}" = "pull_request" ]; then
+            publish=false
+            build=true
+            [ -n "$revision" ] || revision="DRYRUN"
+            reason="DRY RUN (${EVENT:-manual}) -> build package for v${revision}, skip publish"
+          fi
+
+          {
+            echo "revision=$revision"
+            echo "githash=$githash"
+            echo "publish=$publish"
+            echo "build=$build"
+          } >> "$GITHUB_OUTPUT"
+
+          echo "$reason (design commit $githash)." >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$changed" ]; then
+            { echo '```'; echo "$changed"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  build:
+    needs: prepare
+    if: needs.prepare.outputs.build == 'true'
+    runs-on: ubuntu-latest
+    container:
+      # Public INTI-CMNB KiBot image (kicad10_auto): kicad-cli, KiBot, python3,
+      # git, ghostscript, poppler-utils -- everything build_release.sh needs.
+      # Fully-qualified pin (KiBot 1.9.0 / KiCad 10.0.4 / Debian 13.2), not
+      # :latest, keeps release output reproducible.
+      image: ghcr.io/inti-cmnb/kicad10_auto:1.9.0-6_k10.0.4_d13.2
+      options: --user root
+    env:
+      HOME: /root
+      REVISION: ${{ needs.prepare.outputs.revision }}
+      GIT_HASH: ${{ needs.prepare.outputs.githash }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build fab/design package
+        run: |
+          chmod +x scripts/build_release.sh
+          scripts/build_release.sh
+      - uses: actions/upload-artifact@v6
+        with:
+          name: release-package
+          path: out/
+
+  release:
+    needs: [prepare, build]
+    if: needs.prepare.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    # To require a human "Approve" before every publish, create a GitHub
+    # Environment named "release" with a required reviewer and uncomment:
+    # environment: release
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: release-package
+          path: out
+      - name: Package release assets
+        env:
+          REV: ${{ needs.prepare.outputs.revision }}
+        run: |
+          set -euo pipefail
+          # Version-stamped asset names so an emailed/downloaded file names its
+          # own version. Permalinks therefore carry the version too (link people
+          # to the release page, not a fixed /releases/latest/download/ path).
+          cp "out/docs/TAPRX-888-v${REV}-schematic.pdf" "TAPRX-888-v${REV}-schematic.pdf"
+          cp "out/docs/TAPRX-888-v${REV}-assembly.pdf"  "TAPRX-888-v${REV}-assembly.pdf"
+          # Board STEP as a standalone asset: the EE<->ME interface, so mechanical
+          # can grab the current board to design the enclosure/end plates against
+          # without unpacking the fabrication zip (see mechanical/README.md).
+          cp "out/fab/TAPRX-888.step"                   "TAPRX-888-v${REV}.step"
+          ( cd out/JLCPCB/gerbers && zip -qr "../../../TAPRX-888-v${REV}-gerbers.zip" . )
+          ( cd out && zip -qr "../TAPRX-888-v${REV}-fabrication.zip" . )
+          ls -la
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REV: ${{ needs.prepare.outputs.revision }}
+          SHA: ${{ needs.prepare.outputs.githash }}
+        run: |
+          set -euo pipefail
+          FILES=("TAPRX-888-v${REV}-fabrication.zip" "TAPRX-888-v${REV}-gerbers.zip" "TAPRX-888-v${REV}-schematic.pdf" "TAPRX-888-v${REV}-assembly.pdf" "TAPRX-888-v${REV}.step")
+          NOTES="Fabrication and design package for v${REV} (design commit ${SHA}). Auto-generated by main-release CI."
+          # Idempotent: create the release, or refresh assets if it already
+          # exists (e.g. a manual override re-publishing an existing version).
+          if gh release view "v${REV}" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "v${REV}" "${FILES[@]}" --repo "$GITHUB_REPOSITORY" --clobber
+            gh release edit   "v${REV}" --repo "$GITHUB_REPOSITORY" --title "v${REV}" --notes "$NOTES"
+          else
+            gh release create "v${REV}" "${FILES[@]}" \
+              --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+              --title "v${REV}" --notes "$NOTES"
+          fi
+
+          # Self-cleaning: drop any assets not in the current stable set, so a
+          # renamed/legacy asset can never linger on the release.
+          keep=" ${FILES[*]} "
+          gh release view "v${REV}" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' \
+            | while read -r a; do
+                [ -n "$a" ] || continue
+                case "$keep" in
+                  *" $a "*) ;;
+                  *) echo "Removing stale asset: $a"
+                     gh release delete-asset "v${REV}" "$a" --yes --repo "$GITHUB_REPOSITORY" ;;
+                esac
+              done

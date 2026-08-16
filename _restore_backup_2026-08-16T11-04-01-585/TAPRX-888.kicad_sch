@@ -22219,7 +22219,7 @@
 		)
 		(uuid "d783a69b-9231-44aa-881f-abfb2cc40ad6")
 	)
-	(label "SSRX+"
+	(label "SSRX-"
 		(at 182.88 208.28 0)
 		(fields_autoplaced yes)
 		(effects

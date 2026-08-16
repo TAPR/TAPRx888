@@ -1,0 +1,191 @@
+(footprint "LED_RGB_SIDE"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.05 2.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "66f21d88-3314-4ee2-a174-d986c6cbc4df")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "LED_RGB_SIDE"
+		(at 0.05 3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "42a531b3-0cf1-4ba4-bff6-b59744f8729e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "240d7867-8954-4ee0-88a7-34eb22071184")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7ee1b569-36d2-472a-b1fa-cd75acfdc56d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part #" "C389528"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d02bebe0-1633-4d60-a22f-3da2c1320cb1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 1.5 0.9)
+		(end 1.65 0.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "a1707cd4-4c20-427e-b37e-428453b15acd")
+	)
+	(fp_line
+		(start 1.1 -0.45)
+		(end -1.1 -0.45)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "d892824a-1d3e-4d23-a3b3-1c3941cf44f5")
+	)
+	(fp_arc
+		(start -1.1 -0.45)
+		(mid 0 -1.55)
+		(end 1.1 -0.45)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "064078c5-53e2-4d00-94ac-a8e8cb2a5abe")
+	)
+	(fp_rect
+		(start 1.8 0.65)
+		(end -1.8 -1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e51c2d71-eb5d-465e-9cce-b7bf20910d08")
+	)
+	(fp_rect
+		(start -1.5 -0.4)
+		(end 1.5 0.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "610e79d3-d227-4252-a1ea-93cdb450001a")
+	)
+	(fp_arc
+		(start -1.1 -0.4)
+		(mid 0 -1.5)
+		(end 1.1 -0.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c3fda6c0-2f6d-4300-8d7a-26e2ceeb9af4")
+	)
+	(fp_text user "REF**"
+		(at 0.05 1.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "13d06e6b-677a-490a-a6cf-bae5da10700f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 1.4 0 180)
+		(size 0.7 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "407bb31a-d12d-4f09-b7fc-01d4d847a677")
+	)
+	(pad "2" smd roundrect
+		(at 0.4 0.275 180)
+		(size 0.5 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "e4200e25-0f02-4088-974c-20c19e9d52d7")
+	)
+	(pad "3" smd roundrect
+		(at -0.4 0.275 180)
+		(size 0.5 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "1497829f-8f0a-4012-baf4-b476c5232f70")
+	)
+	(pad "4" smd roundrect
+		(at -1.4 0 180)
+		(size 0.7 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "264cd42c-087d-48fe-8a0b-4bfece662b4c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/LED_RGB_SIDE.step"
+		(offset
+			(xyz 0 0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

@@ -1,0 +1,108 @@
+name: dev-checks
+
+# Dev CI (Phase 1): ERC, DRC, and a BOM completeness check via kicad-cli, plus
+# the schematic PDF and gerbers/drill as artifacts. Runs on pushes to `design`
+# (the designer's working branch) and `dev-*` feature branches, and on PRs into
+# `dev` and `main` (design -> ci-docs -> dev -> main flow; see
+# docs/RELEASE_STRATEGY.md).
+#
+# Gating is off during bring-up (ENFORCE=false): checks run and upload their
+# reports, but do not fail the job. The current design has known ERC/DRC
+# violations tracked as issues (#10, #17, ...); this run captures the baseline.
+# Flip ENFORCE to "true" (and add these as required status checks on the dev/main
+# rulesets) once the baseline is triaged.
+#
+# The KiBot outputs (interactive BOM, STEP, CPL, 3D renders) and the
+# main/release pipeline are Phase 2.
+
+on:
+  push:
+    # `design` = the designer's push branch (TAPR flow); `dev-*` = feature
+    # branches. PRs into dev/main are covered by the pull_request trigger below.
+    branches: ['design', 'dev-*']
+  pull_request:
+    branches: [dev, main]
+  workflow_dispatch:
+
+# Cancel superseded runs of the same event on the same ref. Push and
+# pull_request stay in separate groups so a PR check is never cancelled by its
+# branch's push run.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write   # for the "Publish docs" step (pushes a ci-docs branch)
+
+jobs:
+  dev-checks:
+    runs-on: ubuntu-latest
+    container:
+      # Public INTI-CMNB KiBot image (kicad10_auto): ships kicad-cli, KiBot,
+      # python3, git, ghostscript and poppler-utils. Phase 1 uses only kicad-cli
+      # + python3 here; the release lanes use the rest. Pinned to a fully-
+      # qualified tag (KiBot 1.9.0 / KiCad 10.0.4 / Debian 13.2) -- not :latest --
+      # so CI output stays reproducible and matches the KiCad 10.0.4 baseline.
+      image: ghcr.io/inti-cmnb/kicad10_auto:1.9.0-6_k10.0.4_d13.2
+      options: --user root
+    env:
+      HOME: /root
+      ENFORCE: "false"   # bring-up mode; set "true" to gate on ERC/DRC/BOM
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Run ERC / DRC / BOM checks + export artifacts
+        run: |
+          chmod +x scripts/run_checks.sh scripts/bom_check.py
+          scripts/run_checks.sh
+
+      - name: Upload reports and fab artifacts
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: dev-checks-reports
+          path: reports/
+          if-no-files-found: warn
+
+      # Publish the built reports to a throwaway `ci-docs` branch so they can be
+      # read via raw.githubusercontent.com without downloading the artifact zip.
+      # `design` pushes ONLY: ci-docs is the reviewer's (George's) single review
+      # surface, so it must track what's pending in `design` -- letting `dev-*`
+      # pushes clobber it would muddy the review. `dev-*` pushes still run the
+      # checks and upload the artifact above; they just don't overwrite ci-docs.
+      # continue-on-error so this convenience step can never gate CI.
+      - name: Publish docs to ci-docs branch
+        if: always() && github.event_name == 'push' && github.ref_name == 'design'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          [ -d reports ] || { echo "no reports/ to publish"; exit 0; }
+          WS="$(pwd)"
+          REMOTE="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          PUB="$(mktemp -d)"
+          # Commit onto the EXISTING ci-docs (continuous history, plain push)
+          # rather than force-pushing a fresh orphan branch; fall back to creating
+          # it if it doesn't exist yet.
+          if git clone --depth 1 --branch ci-docs "$REMOTE" "$PUB" 2>/dev/null; then
+            cd "$PUB"; git rm -rqf . >/dev/null 2>&1 || true
+          else
+            cd "$PUB"; git init -q; git checkout -qb ci-docs
+          fi
+          cp -r "$WS/reports/." .
+          printf 'CI docs for %s\n\nSource: %s @ %s\nRun: %s/%s/actions/runs/%s\n' \
+            "$GITHUB_REF_NAME" "$GITHUB_REF_NAME" "$GITHUB_SHA" \
+            "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > README.md
+          git -c user.name=ci-bot -c user.email=ci-bot@users.noreply.github.com add -A
+          git -c user.name=ci-bot -c user.email=ci-bot@users.noreply.github.com \
+            commit -qm "dev-checks docs: ${GITHUB_REF_NAME} @ ${GITHUB_SHA}" \
+            || { echo "no doc changes to publish"; exit 0; }
+          ok=0
+          for attempt in 1 2 3 4 5; do
+            if git push "$REMOTE" HEAD:ci-docs; then ok=1; break; fi
+            echo "ci-docs push attempt $attempt failed; retrying..."; sleep $((attempt * 4))
+          done
+          [ "$ok" = 1 ] || { echo "ci-docs publish failed after retries"; exit 1; }
+          echo "Published to ci-docs: https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/ci-docs/erc.rpt (drc.rpt, bom.csv, bom_check.txt, ...)"
