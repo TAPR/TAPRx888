@@ -149,3 +149,13 @@
 (rule "USB3 TX-RX isolation: breakout exemption"
     (constraint clearance (min 0.1mm))
     (condition "(A.NetName=='/SSTX+' || A.NetName=='/SSTX-') && (B.NetName=='/SSRX+' || B.NetName=='/SSRX-') && (A.intersectsCourtyard('*') || B.intersectsCourtyard('*'))"))
+
+# Diff-pair coupling: exempt the fan-out at the pads. The pair must spread from
+# its 0.355 mm coupled pitch to the BGA ball pitch and the connector's 1.75 mm
+# pin pitch; that spreading is inherently uncoupled and unavoidable. Same
+# rationale as the TX-RX isolation breakout exemption above. Uncoupling in OPEN
+# board between these parts is NOT exempt and still flags.
+(rule "USB3_SS coupling: breakout exemption (fan-out at pads)"
+    (constraint diff_pair_uncoupled)
+    (severity ignore)
+    (condition "A.hasNetclass('USB3_SS') && (A.intersectsCourtyard('U11') || A.intersectsCourtyard('U7') || A.intersectsCourtyard('J5') || A.intersectsCourtyard('C39') || A.intersectsCourtyard('C40'))"))
