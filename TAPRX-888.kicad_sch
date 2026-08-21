@@ -11038,7 +11038,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 7.62 0)
 					(length 2.54)
 					(name ""
@@ -11056,7 +11056,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 5.08 0)
 					(length 2.54)
 					(name ""
@@ -11074,7 +11074,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 2.54 0)
 					(length 2.54)
 					(name ""
@@ -11092,7 +11092,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
 					(name ""
@@ -11110,7 +11110,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 -7.62 0)
 					(length 2.54)
 					(name ""
@@ -11128,7 +11128,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 -2.54 0)
 					(length 2.54)
 					(name ""
@@ -11146,7 +11146,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 -5.08 0)
 					(length 2.54)
 					(name ""
@@ -11164,7 +11164,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 -5.08 180)
 					(length 2.54)
 					(name ""
@@ -11182,7 +11182,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 -2.54 180)
 					(length 2.54)
 					(name ""
@@ -11200,7 +11200,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 -7.62 180)
 					(length 2.54)
 					(name ""
@@ -11218,7 +11218,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
 					(name ""
@@ -11236,7 +11236,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 2.54 180)
 					(length 2.54)
 					(name ""
@@ -11254,7 +11254,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 5.08 180)
 					(length 2.54)
 					(name ""
@@ -11272,7 +11272,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 7.62 180)
 					(length 2.54)
 					(name ""
@@ -11377,7 +11377,7 @@
 				)
 			)
 			(symbol "USB-3.0_1_1"
-				(pin input line
+				(pin passive line
 					(at 2.54 -12.7 180)
 					(length 2.54)
 					(name "SHELL"
@@ -11395,7 +11395,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 2.54 -7.62 180)
 					(length 2.54)
 					(name "V+"
@@ -11413,7 +11413,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 2.54 -5.08 180)
 					(length 2.54)
 					(name "D-"
@@ -11431,7 +11431,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 2.54 -2.54 180)
 					(length 2.54)
 					(name "D+"
@@ -11449,7 +11449,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 2.54 -10.16 180)
 					(length 2.54)
 					(name "GND"
@@ -11467,7 +11467,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 2.54 2.54 180)
 					(length 2.54)
 					(name "SSTX-"
@@ -11485,7 +11485,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 2.54 5.08 180)
 					(length 2.54)
 					(name "SSTX+"
@@ -11503,7 +11503,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 2.54 0 180)
 					(length 2.54)
 					(name "SIG_GND"
@@ -11521,7 +11521,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 2.54 7.62 180)
 					(length 2.54)
 					(name "SSRX-"
@@ -11539,7 +11539,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 2.54 10.16 180)
 					(length 2.54)
 					(name "SSRX+"
@@ -21801,7 +21801,7 @@
 		)
 		(uuid "982b4ac8-f88f-4bee-923d-6f9a14326de9")
 	)
-	(label "SSRX+"
+	(label "SSRX-"
 		(at 182.88 205.74 0)
 		(fields_autoplaced yes)
 		(effects
@@ -22145,7 +22145,7 @@
 		)
 		(uuid "c98a56a9-f858-442f-a9e3-90c38e42de5a")
 	)
-	(label "SSRX-"
+	(label "SSRX+"
 		(at 210.82 208.28 0)
 		(fields_autoplaced yes)
 		(effects
@@ -22297,7 +22297,7 @@
 		)
 		(uuid "ef5fd5e3-4339-4dc8-8cca-6efdbc790d39")
 	)
-	(label "SSRX+"
+	(label "SSRX-"
 		(at 210.82 205.74 0)
 		(fields_autoplaced yes)
 		(effects
