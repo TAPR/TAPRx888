@@ -17,7 +17,7 @@ The KiCad project lives at the repository root (`TAPRX-888.kicad_pro` /
 - Improved RF input filter(s) (bypassable)
 - External reference clock input, auto-switching
 - Attenuated filter-bypass injector port (used for timesync)
-- SPI boot prom. configurable as USB boot, SPI boot, SPI boot with USB fallback.
+- Support use of a SPI boot eeprom.
 
 Please see the schematic and layout documents for details.
 
