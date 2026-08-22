@@ -1,2 +1,0 @@
-- '3D render -- top' (render_top) [render_3d]
-WARNING:(W143) This output depends on KiCad version, use `blender_export` instead (kibot - out_render_3d.py:307)
