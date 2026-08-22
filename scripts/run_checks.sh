@@ -59,7 +59,7 @@ fi
 # copper-to-zone clearance). No --save-board, so the refill is transient and the
 # committed board is untouched. Full report incl. warnings; non-gating while
 # ENFORCE=false.
-if kicad-cli pcb drc "$PCB" -o reports/drc.rpt --refill-zones --exit-code-violations; then
+if kicad-cli pcb drc "$PCB" -o reports/drc.rpt --refill-zones --schematic-parity --exit-code-violations; then
   note "- ✅ DRC: no violations"
 else
   note "- ⚠️ DRC: violations found (errors and/or warnings; see reports/drc.rpt)"; fail=1
