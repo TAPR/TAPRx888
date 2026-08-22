@@ -30,13 +30,6 @@ jobs:
         run: |
           set -euxo pipefail
           mkdir -p out/step out/glb
-          # Resolve stock 3D models from the vendored mirror, exactly as
-          # scripts/build_release.sh does -- the CI image ships none and KiCad's
-          # on-demand download 404s on v10 (#45). Without this only the in-repo
-          # ${KIPRJMOD}/3d custom models load, so the board STEP/GLB would carry
-          # connectors but no passives/ICs. Custom models resolve via KIPRJMOD.
-          export KICAD10_3DMODEL_DIR="${KICAD10_3DMODEL_DIR:-$PWD/3d/kicad-stock}"
-          echo "KICAD10_3DMODEL_DIR=$KICAD10_3DMODEL_DIR"
           # STEP for CAD (silk baked as geometry). GLB for the viewer, where
           # KiCad colours the silk/mask/pads natively.
           STEP_OPTS="--include-silkscreen"

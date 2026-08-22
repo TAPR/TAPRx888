@@ -1826,8 +1826,8 @@
 			)
 			(symbol "LP5907MFX-3.3_0_1"
 				(rectangle
-					(start -6.35 -2.54)
-					(end 6.35 2.54)
+					(start -6.35 2.54)
+					(end 6.35 -5.08)
 					(stroke
 						(width 0)
 						(type default)
@@ -1885,6 +1885,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 8.89 -3.81 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -12990,6 +13008,9 @@
 		)
 		(pin "3"
 			(uuid "8909c522-8882-41f5-b4cb-753644913862")
+		)
+		(pin "4"
+			(uuid "cc86c5d1-d68a-4fdc-999a-600b11c152d8")
 		)
 		(instances
 			(project "TAPRX-888"

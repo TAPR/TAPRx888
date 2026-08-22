@@ -4390,6 +4390,26 @@
 					)
 				)
 			)
+			(symbol "CYUSB3014-BZXCT_1_0"
+				(pin no_connect line
+					(at 17.78 -101.6 180)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
 		(symbol "Library:Conn_JTAG10-mini"
@@ -6204,8 +6224,8 @@
 			)
 			(symbol "LP5907MFX-3.3_0_1"
 				(rectangle
-					(start -6.35 -2.54)
-					(end 6.35 2.54)
+					(start -6.35 2.54)
+					(end 6.35 -5.08)
 					(stroke
 						(width 0)
 						(type default)
@@ -6263,6 +6283,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 8.89 -3.81 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -24458,6 +24496,9 @@
 		(pin "C2"
 			(uuid "65cdc086-6bf9-4d23-af09-ca6a06523451")
 		)
+		(pin "A11"
+			(uuid "54db4594-9efc-44e1-8eac-01b14d0b9039")
+		)
 		(instances
 			(project "TAPRX-888"
 				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
@@ -36407,6 +36448,9 @@
 		)
 		(pin "3"
 			(uuid "c53b7517-fddb-4de9-b5c3-6e4d728ed092")
+		)
+		(pin "4"
+			(uuid "6c574518-c297-48be-bc26-35a35c342d07")
 		)
 		(instances
 			(project "TAPRX-888"
