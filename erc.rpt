@@ -1,16 +1,13 @@
-ERC report (2026-08-22T03:17:25, Encoding UTF8)
+ERC report (2026-08-22T14:06:16, Encoding UTF8)
 Report includes: Errors, Warnings
 
 ***** Sheet /
-[lib_symbol_mismatch]: Symbol 'LTC2208CUP_PBF' doesn't match copy in library 'Library'
-    ; warning
-    @(215.90 mm, 124.46 mm): Symbol U8 [LTC2208CUP_PBF]
 
 ***** Sheet /Front_End_Filter/
 
 ***** Sheet /Clock/
 
- ** ERC messages: 1  Errors 0  Warnings 1
+ ** ERC messages: 0  Errors 0  Warnings 0
 
  ** Ignored checks:
     - Global label only appears once in the schematic
