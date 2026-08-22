@@ -1,30 +1,30 @@
-distinct models: 27  (stock: 21, custom: 6)
+distinct models: 27  (stock: 0, custom: 27)
    [present] custom 3d/BUTTON-4p5X4p5.step
    [present] custom 3d/LED_RGB_SIDE.step
    [present] custom 3d/SMA_Jack_EdgeMount_JLC.step
    [present] custom 3d/SP3011.step
    [present] custom 3d/TCXO-3225.step
    [present] custom 3d/USB-3.0.step
-   [present] stock  3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step
-   [present] stock  3d/kicad-stock/Capacitor_SMD.3dshapes/C_1206_3216Metric.step
-   [present] stock  3d/kicad-stock/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step
-   [present] stock  3d/kicad-stock/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step
-   [present] stock  3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-123.step
-   [present] stock  3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-323.step
-   [present] stock  3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step
-   [present] stock  3d/kicad-stock/Inductor_SMD.3dshapes/L_1008_2520Metric.step
-   [present] stock  3d/kicad-stock/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm.step
-   [present] stock  3d/kicad-stock/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step
-   [present] stock  3d/kicad-stock/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.35x7.35mm.step
-   [present] stock  3d/kicad-stock/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step
-   [present] stock  3d/kicad-stock/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step
-   [present] stock  3d/kicad-stock/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step
-   [present] stock  3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-223.step
-   [present] stock  3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step
-   [present] stock  3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step
-   [present] stock  3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23.step
-   [present] stock  3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step
-   [present] stock  3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step
-   [present] stock  3d/kicad-stock/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step
+   [present] custom 3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step
+   [present] custom 3d/kicad-stock/Capacitor_SMD.3dshapes/C_1206_3216Metric.step
+   [present] custom 3d/kicad-stock/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step
+   [present] custom 3d/kicad-stock/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step
+   [present] custom 3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-123.step
+   [present] custom 3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-323.step
+   [present] custom 3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step
+   [present] custom 3d/kicad-stock/Inductor_SMD.3dshapes/L_1008_2520Metric.step
+   [present] custom 3d/kicad-stock/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm.step
+   [present] custom 3d/kicad-stock/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step
+   [present] custom 3d/kicad-stock/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.35x7.35mm.step
+   [present] custom 3d/kicad-stock/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step
+   [present] custom 3d/kicad-stock/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step
+   [present] custom 3d/kicad-stock/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step
+   [present] custom 3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-223.step
+   [present] custom 3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step
+   [present] custom 3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step
+   [present] custom 3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23.step
+   [present] custom 3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step
+   [present] custom 3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step
+   [present] custom 3d/kicad-stock/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step
 
 OK
