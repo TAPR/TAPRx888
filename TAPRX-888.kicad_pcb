@@ -53762,6 +53762,19 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "FABRICATION SPECIFICATION\n========================================\nProject: TAPRX-888\n\nGENERAL\n  Layers:             6\n  Material:           FR4 (JLC06161H), standard Tg\n  Finished Thickness: 1.6mm (~63 mil) +/-10%\n  Surface Finish:     ENIG\n  Solder Mask:        Blue, both sides\n  Silkscreen:         White, both sides\n  IPC Class:          2            [confirm]\n\nSTACKUP  (JLC06161H, impedance controlled)\n  F.Cu     1 oz  (0.035mm)   - signal\n  prepreg  0.0994mm  3313 (Er 4.05)\n  In1.Cu   0.5 oz (0.0152mm) - GND reference plane\n  core     0.55mm    3313 (Er 4.05)\n  In2.Cu   0.5 oz (0.0152mm) - GND / power\n  prepreg  0.1088mm  2116 (Er 4.16)\n  In3.Cu   0.5 oz (0.0152mm) - signal / power\n  core     0.55mm    3313 (Er 4.05)\n  In4.Cu   0.5 oz (0.0152mm) - GND / power\n  prepreg  0.0994mm  3313 (Er 4.05)\n  B.Cu     1 oz  (0.035mm)   - signal\n  (~1.56mm nominal, ENIG)\n\nCONTROLLED IMPEDANCE\n  USB3 SuperSpeed (SSRX/SSTX): 90 ohm diff  (top microstrip / In1 GND,\n                               W 0.20mm, gap 0.155mm)\n  USB2 High-Speed (D+/D-):     90 ohm diff  (W 0.20mm, gap 0.155mm)\n  Tolerance: +/-10%.  Verify trace geometry vs. fab stackup calculator.\n\nMINIMUM FEATURES  (JLCPCB 6-layer)\n  Track width:    0.10mm design floor  (USB diff pairs 0.20mm)\n  Track spacing:  0.10mm\n  Via, general:   0.40mm dia\n  Via, FX3 BGA fanout: 0.25mm dia / 0.15mm drill  (0.05mm annular,\n                       JLC min-capability -- deliberate, see .kicad_dru)\n  Annular ring:   0.075mm general / 0.05mm fanout\n  Hole-to-hole:   0.50mm (diff net) / 0.254mm (same net)\n  Min PTH drill:  0.20mm\n  Copper-to-edge: 0.30mm\n  Silk:           0.15mm min width, >=0.8mm text height\n\nVIAS\n  Through-hole only -- no blind/buried vias.\n  Via tenting/plugging: [confirm preference]\n\nNOTES\n  1. All dimensions in mm unless noted.\n  2. 6-layer, impedance controlled per JLC06161H stackup above.\n  3. DNP parts excluded from assembly (EXCLUDE DNP)."
+		(at 194.475 155 0)
+		(layer "Cmts.User")
+		(uuid "4bea448e-e9bd-4cfe-a8c9-ed5168a08550")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(dimension
 		(type orthogonal)
 		(layer "Dwgs.User")
