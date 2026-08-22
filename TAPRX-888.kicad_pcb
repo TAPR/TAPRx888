@@ -42063,7 +42063,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "Cxxxxxx"
+		(property "LCSC Part #" "C17362550"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42209,7 +42209,7 @@
 			(uuid "f4bbcd30-246b-40c3-9239-ce7291a0fc20")
 		)
 		(fp_text user "REF**"
-			(at 0.1 0 270)
+			(at 0.1 0 90)
 			(layer "F.Fab")
 			(uuid "ae45dd2f-659b-4c19-9c44-1db920d19e7f")
 			(effects
@@ -42221,8 +42221,8 @@
 		)
 		(pad "1" thru_hole circle
 			(at -2.54 0.635 270)
-			(size 0.9 0.9)
-			(drill 0.6)
+			(size 0.95 0.95)
+			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+3V3")
@@ -42232,8 +42232,8 @@
 		)
 		(pad "2" thru_hole circle
 			(at -1.27 0.635 270)
-			(size 0.9 0.9)
-			(drill 0.6)
+			(size 0.95 0.95)
+			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/TMS")
@@ -42243,8 +42243,8 @@
 		)
 		(pad "3" thru_hole circle
 			(at 0 0.635 270)
-			(size 0.9 0.9)
-			(drill 0.6)
+			(size 0.95 0.95)
+			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
@@ -42254,8 +42254,8 @@
 		)
 		(pad "4" thru_hole circle
 			(at 1.27 0.635 270)
-			(size 0.9 0.9)
-			(drill 0.6)
+			(size 0.95 0.95)
+			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/TCK")
@@ -42276,8 +42276,8 @@
 		)
 		(pad "6" thru_hole circle
 			(at 2.54 -0.635 270)
-			(size 0.9 0.9)
-			(drill 0.6)
+			(size 0.95 0.95)
+			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/TDO")
@@ -42287,8 +42287,8 @@
 		)
 		(pad "7" thru_hole circle
 			(at 1.27 -0.635 270)
-			(size 0.9 0.9)
-			(drill 0.6)
+			(size 0.95 0.95)
+			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J11-Pin_7-Pad7)")
@@ -42298,8 +42298,8 @@
 		)
 		(pad "8" thru_hole circle
 			(at 0 -0.635 270)
-			(size 0.9 0.9)
-			(drill 0.6)
+			(size 0.95 0.95)
+			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/TDI")
@@ -42309,8 +42309,8 @@
 		)
 		(pad "9" thru_hole circle
 			(at -1.27 -0.635 270)
-			(size 0.9 0.9)
-			(drill 0.6)
+			(size 0.95 0.95)
+			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/TRST")
@@ -42320,8 +42320,8 @@
 		)
 		(pad "10" thru_hole circle
 			(at -2.54 -0.635 270)
-			(size 0.9 0.9)
-			(drill 0.6)
+			(size 0.95 0.95)
+			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/RESET_N")
