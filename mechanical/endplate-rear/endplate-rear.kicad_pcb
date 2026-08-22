@@ -240,6 +240,17 @@
 		(layer "Edge.Cuts")
 		(uuid "00000000-0000-0000-0000-000000000084")
 	)
+	(gr_circle
+		(center 148.5 95.5)
+		(end 149.5 95.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000000000089")
+	)
 	(gr_arc
 		(start 188 85.99)
 		(mid 191.182 87.308)
@@ -316,6 +327,18 @@
 			(justify mirror)
 		)
 	)
+	(gr_text "STATUS"
+		(at 148.5 91.89 0)
+		(layer "B.SilkS")
+		(uuid "00000000-0000-0000-0000-000000000090")
+		(effects
+			(font
+				(size 1.25 1.25)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
 	(gr_text "TAPRX-888 HF SDR Receiver"
 		(at 148.5 113.99 0)
 		(layer "B.SilkS")
@@ -338,29 +361,6 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
-		)
-	)
-	(gr_circle
-		(center 148.5 94.99)
-		(end 149.5 94.99)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "00000000-0000-0000-0000-000000000089")
-	)
-	(gr_text "STATUS"
-		(at 148.5 91.89 0)
-		(layer "B.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000090")
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-			)
-			(justify mirror)
 		)
 	)
 	(embedded_fonts no)
