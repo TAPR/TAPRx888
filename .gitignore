@@ -29,6 +29,9 @@ fp-info-cache
 erc.rpt
 drc.rpt
 
+# JLCPCB Fabrication Toolkit output
+/jlcpcb/
+
 # Generated board STEP export (kicad-cli / KiBot output — regenerated, not
 # committed). Scoped to the root board so it does NOT swallow the vendored
 # component 3D models tracked under 3d/ (see 3d/README.md) — a bare *.step would.
