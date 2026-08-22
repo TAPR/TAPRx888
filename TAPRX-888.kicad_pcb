@@ -34033,18 +34033,6 @@
 		(layer "F.Cu")
 		(uuid "b35b4bd5-e763-4da8-9284-52fd2291a730")
 		(at 156 95)
-		(property "Reference" "U8"
-			(at 5.7 3.4 90)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "98d49c51-ccec-43bb-bb7c-3f87e14303f8")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Value" "LTC2208CUP#PBF"
 			(at 0 6.1 0)
 			(layer "F.Fab")
@@ -34080,7 +34068,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTC2208CUP#PBF"
+		(property "MPN" "LTC2208CUP#PBF#PBF"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34145,7 +34133,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C7458386"
+		(property "LCSC Part #" "C679544"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34158,20 +34146,21 @@
 				)
 			)
 		)
-		(path "/76548f7d-529c-4d35-8889-fa85f4e52b18")
-		(sheetname "/")
-		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "15" "16" "17" "5" "6" "49" "32" "19" "20" "62" "64" "1" "61" "63"
-					"12" "13" "8" "9" "65" "31" "50" "4" "14" "7" "10" "2" "11" "18" "21"
-					"22" "23" "24" "25" "26" "27" "28" "29" "30" "33" "34" "35" "36" "37"
-					"38" "42" "43" "44" "45" "46" "47" "48" "51" "52" "53" "54" "55" "56"
-					"57" "58" "59" "60" "39" "40" "41" "3"
+		(property "Reference" "U8"
+			(at 5.7 3.4 90)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "98d49c51-ccec-43bb-bb7c-3f87e14303f8")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
 				)
 			)
 		)
+		(path "/76548f7d-529c-4d35-8889-fa85f4e52b18")
+		(sheetname "/")
+		(sheetfile "TAPRX-888.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34354,17 +34343,6 @@
 			)
 			(layer "F.Fab")
 			(uuid "78ff1763-455c-4064-aa06-789c1d3119ef")
-		)
-		(fp_text user "REF**"
-			(at -0.2 -5.8 0)
-			(layer "F.SilkS")
-			(uuid "a2452415-5133-4f55-be32-e281c5f3b2ab")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
 		)
 		(fp_text user "REF**"
 			(at -0.1524 -7.5692 0)
