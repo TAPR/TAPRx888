@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,10.0.4-10.0.4~ubuntu25.10.1*%
-%TF.CreationDate,2026-08-22T16:56:37+00:00*%
+%TF.CreationDate,2026-08-22T17:17:27+00:00*%
 %TF.ProjectId,TAPRX-888,54415052-582d-4383-9838-2e6b69636164,DEV*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L1,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.4-10.0.4~ubuntu25.10.1) date 2026-08-22 16:56:37*
+G04 Created by KiCad (PCBNEW 10.0.4-10.0.4~ubuntu25.10.1) date 2026-08-22 17:17:27*
 %MOMM*%
 %LPD*%
 G01*
@@ -498,8 +498,8 @@ X158400000Y-77000000D03*
 %TO.P,U11,A10,DM_A10*%
 %TO.N,/USB-*%
 X159200000Y-77000000D03*
-%TO.P,U11,A11*%
-%TO.N,N/C*%
+%TO.P,U11,A11,NC_A11*%
+%TO.N,unconnected-(U11-NC-PadA11)*%
 X160000000Y-77000000D03*
 %TO.P,U11,B1,VIO4_B1*%
 %TO.N,+3V3*%
@@ -1599,8 +1599,8 @@ X140000000Y-111650000D03*
 %TO.P,U4,3,ENA_3*%
 %TO.N,/VBUS*%
 X139050000Y-111650000D03*
-%TO.P,U4,4*%
-%TO.N,N/C*%
+%TO.P,U4,4,NC_4*%
+%TO.N,unconnected-(U4-NC-Pad4)*%
 X139050000Y-114350000D03*
 %TO.P,U4,5,OUT_5*%
 %TO.N,Net-(U4-OUT)*%
@@ -2494,8 +2494,8 @@ X170000000Y-91775000D03*
 %TO.P,U14,3,ENA_3*%
 %TO.N,/VBUS*%
 X169050000Y-91775000D03*
-%TO.P,U14,4*%
-%TO.N,N/C*%
+%TO.P,U14,4,NC_4*%
+%TO.N,unconnected-(U14-NC-Pad4)*%
 X169050000Y-94475000D03*
 %TO.P,U14,5,OUT_5*%
 %TO.N,3V3REF*%
