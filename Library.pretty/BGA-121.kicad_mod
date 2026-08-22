@@ -1076,7 +1076,7 @@
 		(uuid "39ee7ca7-daf1-4750-8e23-f42be46736f4")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step"
+	(model "${KIPRJMOD}/3d/kicad-stock/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step"
 		(offset
 			(xyz 0 0 0)
 		)

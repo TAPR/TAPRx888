@@ -157,7 +157,7 @@
 		(uuid "e2f87bc2-6ad5-43d7-8899-f402be7e2ca5")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm.step"
+	(model "${KIPRJMOD}/3d/kicad-stock/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm.step"
 		(offset
 			(xyz 0 0 0)
 		)

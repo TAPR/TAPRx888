@@ -151,7 +151,7 @@
 		(uuid "98f42cf2-c5f6-4185-8202-1e69d2ad705c")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+	(model "${KIPRJMOD}/3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-123.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -264,12 +264,6 @@
 		(path "/14c17cfd-f75a-4fef-8966-df1f6aa97acc")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -400,7 +394,7 @@
 			(uuid "c56e0e07-77b5-421d-b8a9-ad4e9567a0ee")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -483,12 +477,6 @@
 		(path "/cb913998-d718-4303-aea8-57340d481365")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -619,7 +607,7 @@
 			(uuid "35e7dc48-3f56-4ff9-80cd-f23b8e5e536f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -702,12 +690,6 @@
 		(path "/df149708-f9a0-456e-9d63-75a6e2df8c67")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -838,7 +820,7 @@
 			(uuid "35ab699f-48e7-407e-9309-fa63abfd0c40")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -919,12 +901,6 @@
 		(path "/2d152c8e-bef8-4459-b145-38753650ac87")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "8" "7" "6" "5")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -1120,7 +1096,7 @@
 			(uuid "e290b01d-9e72-4ee3-a36f-48dc8ce7811a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1203,12 +1179,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/4ab5f976-0c17-4316-9bec-861f032d5cdd")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1339,7 +1309,7 @@
 			(uuid "db1e0637-7f3b-4ba3-b9fe-4a99a7117041")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1422,12 +1392,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/d489f58a-a4c9-4917-88fd-854e80dc569b")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -1570,7 +1534,7 @@
 			(uuid "e311d9d9-75b5-4051-a453-b4f6685c9f5d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1650,12 +1614,6 @@
 		(path "/e3841f0f-1f65-49af-ab91-5a877dce755f")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "6" "7" "5" "14" "13" "12" "11" "9" "8" "10")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -1930,12 +1888,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/f6c226a9-c38a-4b18-8755-9a51c20c2f94")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2066,7 +2018,7 @@
 			(uuid "b9ee9b45-c6de-4117-9738-232c64b982d9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2151,12 +2103,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/91b61e0e-2c6b-4822-b7a4-dcef7630563d")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2314,7 +2260,7 @@
 			(uuid "24138e08-41a7-47c7-8df3-2cd947d8dc2e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 			(offset
 				(xyz 2.54 0 0)
 			)
@@ -2494,12 +2440,6 @@
 		(path "/a789369e-7ae9-4d63-ac43-f832b9832a04")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2630,7 +2570,7 @@
 			(uuid "4ac51792-dab0-4e5a-b6ef-30f604ebeb5c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2713,12 +2653,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/f07a1abd-e100-4f9a-bb4e-ee2c91072474")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2849,7 +2783,7 @@
 			(uuid "1d8e1806-e635-4c25-9f92-11c71bcffdb9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2932,12 +2866,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/584b4ab8-f5a4-4fde-bef1-c486068cfda0")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3068,7 +2996,7 @@
 			(uuid "38574f31-b7d3-4579-be0e-3dce2bc0c670")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3151,12 +3079,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/e8f63b41-b407-4057-84f7-e4f9592f6b9d")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3287,7 +3209,7 @@
 			(uuid "30613c0b-4d75-47a0-81fb-ad631630e821")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3370,12 +3292,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/3415de7d-62af-469e-a7c3-773fcfe0118f")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3506,7 +3422,7 @@
 			(uuid "d006653b-cb26-43c8-bbf8-90d4b007d907")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3589,12 +3505,6 @@
 		(path "/2a576e53-5248-4911-94c7-ec1678250ddf")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3725,7 +3635,7 @@
 			(uuid "6835b763-50e5-486d-a63b-17a8f37f8208")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3805,14 +3715,6 @@
 		(path "/0414026e-39a9-4888-ba7b-2263833b4c73")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "16" "2" "15" "14" "13" "12" "4" "7" "10" "8" "9" "5" "3" "6"
-					"11"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -4205,7 +4107,7 @@
 			(uuid "78e2db76-6cbe-452a-baf8-da75fd2bbc3a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4288,12 +4190,6 @@
 		(path "/c23ff221-6225-404b-b342-6f14d59d5912")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4424,7 +4320,7 @@
 			(uuid "d9d8824a-030c-4cd9-82d4-91d82436f5ae")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4507,12 +4403,6 @@
 		(path "/3fe6c699-dbb3-41da-9a29-826527556b08")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4643,7 +4533,7 @@
 			(uuid "07700e41-3d18-4ed5-a7d8-d1b10e1730a3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4726,12 +4616,6 @@
 		(path "/0e57ab2e-110a-4ce8-8ed0-fd8505d68b35")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4862,7 +4746,7 @@
 			(uuid "feabfbb6-dfc9-48ad-8f15-740d7d40868c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4945,12 +4829,6 @@
 		(path "/64eda688-7e05-42ad-bea5-62b386668aad")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5081,7 +4959,7 @@
 			(uuid "050b4c2d-dc5b-409f-b3ac-62e569f58848")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5252,21 +5130,6 @@
 		(path "/127b8066-2f17-43c9-b126-ad24a8dae152")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "A3" "A4" "C9" "B2" "B4" "E6" "D7" "D6" "C5" "E7" "B11" "E8" "F6"
-					"F10" "F9" "F7" "G10" "G9" "F8" "H10" "H9" "J10" "J9" "K11" "L10" "K10"
-					"K9" "J8" "G8" "J6" "K8" "K7" "J7" "H7" "G7" "G6" "K6" "H8" "G5" "H6"
-					"K5" "J5" "H5" "G4" "H4" "L4" "K2" "J4" "K1" "J2" "J3" "J1" "H2" "H3"
-					"F4" "G2" "G3" "F3" "F2" "F5" "E1" "E5" "E4" "D1" "D2" "D3" "D4" "C1"
-					"C2" "D5" "C4" "A9" "A10" "C6" "C7" "D9" "D10" "L8" "B10" "C3" "E9"
-					"F11" "H1" "L7" "J11" "L5" "H11" "L9" "F1" "E3" "B1" "A7" "C11" "B7"
-					"E10" "A1" "E11" "B6" "B5" "A2" "A6" "A5" "C10" "D11" "C8" "B3" "D8"
-					"E2" "G1" "G11" "L1" "L6" "L11" "B8" "B9" "K4" "L3" "K3" "L2" "A8"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6548,7 +6411,7 @@
 			(uuid "a301933a-8b33-4c4b-8b1f-c78639c52eb1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_BGA.3dshapes/BGA-121_9.0x9.0mm_Layout11x11_P0.8mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6628,12 +6491,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/b3eb26d4-8b3b-4972-851e-23956bb9053a")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6755,7 +6612,7 @@
 			(uuid "cbec0715-4a73-4e7e-9528-157eaecbe50d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6837,12 +6694,6 @@
 		(path "/585ee74b-d3d4-4017-9cfa-1bb1564d2245")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "4" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -7126,7 +6977,7 @@
 			(uuid "42f7cda0-1ad9-438b-b1b9-5b22a90a01c0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7209,12 +7060,6 @@
 		(path "/d4d9b88f-0ead-480f-82ca-8918b8846c6b")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7345,7 +7190,7 @@
 			(uuid "f8b22ce9-e42f-4188-9c78-6a6c8b9720c7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7428,12 +7273,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/427640ce-816b-4006-9acf-4191c0faaa13")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7564,7 +7403,7 @@
 			(uuid "95f8c711-00ac-4f53-a091-34cd539f4a85")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7647,12 +7486,6 @@
 		(path "/14fae91d-15c3-4b02-85cf-d8d2782cb7a4")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7783,7 +7616,7 @@
 			(uuid "8e8ca30c-a8c3-4d9c-b6cb-c2c808206041")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7866,12 +7699,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/608f4422-d653-4c30-830b-a7a1a55f5f5d")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8002,7 +7829,7 @@
 			(uuid "fee3e880-9d9c-4b15-827b-d1e2f2729f55")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8087,19 +7914,13 @@
 		(path "/01b0822e-3573-45e8-bb1c-7e3ca819e1f2")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
@@ -8109,7 +7930,7 @@
 			(start -0.5 0.5)
 			(end 0.5 0.5)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
@@ -8119,7 +7940,7 @@
 			(start 0.5 -0.5)
 			(end -0.5 -0.5)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
@@ -8129,7 +7950,7 @@
 			(start 0.5 0.5)
 			(end 0.5 -0.5)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
@@ -8218,12 +8039,6 @@
 		(path "/d6950a44-1f94-48df-ad18-23558c7dc93f")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8354,7 +8169,7 @@
 			(uuid "d703b931-d639-4e0a-8bbf-d4fc2b91e7a9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8437,12 +8252,6 @@
 		(path "/df0e6e79-9a7e-478c-8652-245bdfa842b8")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8573,7 +8382,7 @@
 			(uuid "d4d83286-7b4e-4396-8c89-7a0ebb937352")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8656,12 +8465,6 @@
 		(path "/a60aef98-0248-4ad8-a315-956a34aba6bf")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8792,7 +8595,7 @@
 			(uuid "aac75fac-499f-4069-91be-e2623a19c9c5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8874,12 +8677,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/8b870def-4241-4caf-b3ea-1fc4edf732b8")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -9019,7 +8816,7 @@
 			(uuid "8a7188b8-8c17-44e7-baee-fd4ab8a51a62")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9102,12 +8899,6 @@
 		(path "/01bbdc88-f089-4708-adf8-c1a6c9feb6c0")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9238,7 +9029,7 @@
 			(uuid "bf1dadab-c644-4554-9c63-f6ae36242f50")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9321,12 +9112,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/8a780b7e-e62d-45c4-be02-6e6a77807707")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9457,7 +9242,7 @@
 			(uuid "64dba5e4-ceff-48d9-ba76-49bcf53126cc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9540,12 +9325,6 @@
 		(path "/2b6db495-829b-43fb-a7b8-0fe65d5b4183")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9676,7 +9455,7 @@
 			(uuid "7d32ec59-15d3-436e-848b-f73dedc91d1a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9759,12 +9538,6 @@
 		(path "/7741ed1f-dca6-4065-85f5-f1376ff61a68")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9895,7 +9668,7 @@
 			(uuid "5d5ad984-8e0d-487a-a716-55a50f4cbafe")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9975,12 +9748,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/b6e8de6c-477d-461e-ac11-4dab50345912")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10102,7 +9869,7 @@
 			(uuid "d1c3aead-2e57-4462-b40c-ddf390c31c9c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10182,12 +9949,6 @@
 		(path "/81e2ea46-6ce2-4077-b899-1c37411a53fc")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10318,7 +10079,7 @@
 			(uuid "31660330-a9e8-495e-bfcb-59f53605885d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10401,12 +10162,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/c9c41350-0124-45d3-8d31-1f2ef024a89f")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10537,7 +10292,7 @@
 			(uuid "7ed814fa-3c6b-4ba0-8422-a35f8f62b9ac")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10620,12 +10375,6 @@
 		(path "/7e3fb244-a200-45d7-bd65-4061d6c6db3a")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10756,7 +10505,7 @@
 			(uuid "8ce78a34-e919-4fe6-8035-c5b4e4ab540e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10839,12 +10588,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/7e085f2a-c646-4bc6-b918-af2326a8e75c")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10975,7 +10718,7 @@
 			(uuid "ed4bc862-7f58-47ac-b976-180250994e65")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11058,12 +10801,6 @@
 		(path "/388a5084-f52e-46b9-814a-6a569349d053")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11194,7 +10931,7 @@
 			(uuid "65b7aab8-2a9b-4b44-b4a5-d7011295d313")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11277,12 +11014,6 @@
 		(path "/e4f9ac8f-815e-44d3-b377-88f64cd83146")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11413,7 +11144,7 @@
 			(uuid "7be42200-3b63-4309-bf64-693fb141b40a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11496,12 +11227,6 @@
 		(path "/68f2afec-6699-474c-8269-cb6c3e23a6e1")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11632,7 +11357,7 @@
 			(uuid "61214f3b-afe6-447f-ab97-8ac4edb39915")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11810,12 +11535,6 @@
 		(path "/9dafb675-6824-46b8-84de-d9a2fe8f82bc")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12170,12 +11889,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/8bfb4d0b-d375-4d1c-81fa-f6c011c86444")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12306,7 +12019,7 @@
 			(uuid "8c31a5fc-e0d8-4658-a904-99ef673b185f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12486,12 +12199,6 @@
 		(path "/dfda5505-8e6d-4bc6-9b48-43b34b846aa7")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12622,7 +12329,7 @@
 			(uuid "c1912478-d51b-4e0a-b80a-fd694b776569")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12703,12 +12410,6 @@
 		(path "/b211b51f-b7a9-40c1-862f-1fe5f6d2e2c9")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13157,12 +12858,6 @@
 		(path "/1680fea0-92a2-42d8-b0a8-9296a9f55bd4")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13293,7 +12988,7 @@
 			(uuid "56b53a7e-ed5f-4a98-8ad2-41e8ca6ec2d9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13376,12 +13071,6 @@
 		(path "/3d307838-6392-4719-84b4-43cc054919ff")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13512,7 +13201,7 @@
 			(uuid "b0736757-b0b6-42e5-9305-91fe2af9fb2d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13595,12 +13284,6 @@
 		(path "/720f1cc5-b719-4e9f-8186-6bc32d1c2d1b")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13731,7 +13414,7 @@
 			(uuid "cfc80e2c-cae4-4320-bd82-f6b9d1b9a06c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13814,12 +13497,6 @@
 		(path "/dd35f90b-bc69-4ee7-919e-70a078f747b0")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13950,7 +13627,7 @@
 			(uuid "09711f67-c0fe-4b09-bca1-069e25f0bfa6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14032,12 +13709,6 @@
 		(path "/4a4a119d-97cc-495d-b92d-7990322f4fa3")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "4" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -14321,7 +13992,7 @@
 			(uuid "5f6ad98d-1558-44ff-bc18-3691a5639dbf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14404,12 +14075,6 @@
 		(path "/46fed085-0eb7-4e02-ba89-b3c29aefb5a2")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14540,7 +14205,7 @@
 			(uuid "99e355dc-d3e0-48e8-8533-3fa6f0a76a66")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14620,12 +14285,6 @@
 		(path "/9ed8a705-0fc5-464e-bc91-bb10ad9fdf3d")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14719,7 +14378,7 @@
 			(uuid "186b8030-b8c5-4e2d-b2a9-ffc2e5e2b5f2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14897,12 +14556,6 @@
 		(path "/142de4f1-1b16-41c3-a8da-6579e70f85ca")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "8" "7" "6" "5")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -15098,7 +14751,7 @@
 			(uuid "f00bfd0a-a575-4e1a-a2b0-228a838f7aee")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15181,12 +14834,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/c6e7cde0-054e-40f7-8611-ed387dde0a24")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15317,7 +14964,7 @@
 			(uuid "e19da913-5ffb-4968-9b0b-924a1c4147cb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15400,12 +15047,6 @@
 		(path "/8195f622-0267-43e3-985f-09c379a99d6a")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15536,7 +15177,7 @@
 			(uuid "5b0dd775-1c71-46f3-85fb-10ab7bb83c45")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15619,12 +15260,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/d1ca7c91-b69e-4054-ac10-08542b77cf6c")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15755,7 +15390,7 @@
 			(uuid "1baf3acf-63cb-4eb8-adf9-0dc7b3f3f52b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15838,12 +15473,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/6e940d09-0db2-4a35-8d22-b0ef4dac67ed")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15974,7 +15603,7 @@
 			(uuid "c46afbcf-2931-4231-9156-8932e202f5e3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16055,12 +15684,6 @@
 		(path "/54497fd6-67d4-4ef5-b7d5-42d1b60288af")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "8" "7" "6" "5")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -16256,7 +15879,7 @@
 			(uuid "c6400ae1-90be-4fa7-84d3-5d2a6685a289")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16436,12 +16059,6 @@
 		(path "/92db6829-a9cd-46d3-9ff8-67dcfc38e535")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16572,7 +16189,7 @@
 			(uuid "cee4a2f3-6eea-4d87-8882-6af2b885094f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16654,12 +16271,6 @@
 		(path "/75035bdc-8a70-4fb9-8345-d98c605e25f7")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "4" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -16943,7 +16554,7 @@
 			(uuid "c67b34db-c9b7-49b9-9a49-93caa51e50ef")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17026,12 +16637,6 @@
 		(path "/2a5989ae-1396-40f7-9df0-387a4de026be")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17162,7 +16767,7 @@
 			(uuid "cc6b98af-d607-4b53-9c7f-56c7c471de65")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17243,12 +16848,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/135b6285-2ec9-45bd-bfde-ed5cb890bc18")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17512,7 +17111,7 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step"
 			(offset
 				(xyz 0 0.7 0)
 			)
@@ -17520,7 +17119,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 90)
+				(xyz -0 -0 -90)
 			)
 		)
 	)
@@ -17595,12 +17194,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/c9a07463-ca0f-4b81-a548-626c2e9a6388")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17731,7 +17324,7 @@
 			(uuid "8623cadc-f8f0-4183-bccc-f04d7558ab88")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17814,12 +17407,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/319dc624-abe5-4494-9e3b-c19ec54d328a")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17950,7 +17537,7 @@
 			(uuid "d99eac5f-3626-4d3f-85b2-6ef9474651f5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18030,12 +17617,6 @@
 		(path "/c31f3f60-a056-4412-b26c-6c29493bdc67")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18129,7 +17710,7 @@
 			(uuid "2d286a95-4f48-4c62-a75c-d5f6eda97969")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18212,12 +17793,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/3f60c8c6-0769-470d-b43b-cac91162ad34")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18348,7 +17923,7 @@
 			(uuid "10f54afb-acd2-4a02-9f73-a1bf63300d74")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18431,12 +18006,6 @@
 		(path "/23126e06-5358-4b8c-a9d8-267c95352517")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18567,7 +18136,7 @@
 			(uuid "4cbd328c-05e8-440e-a50b-00a620b2a214")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18649,12 +18218,6 @@
 		(path "/223e9988-8b9f-4b79-986a-5982457aff43")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "3" "4" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -18862,12 +18425,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/92e8ce63-9225-41b4-b863-6afbeea4d6f8")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18998,7 +18555,7 @@
 			(uuid "c79959c8-6a14-4c52-8428-7cfd666b6b90")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19081,12 +18638,6 @@
 		(path "/f9a3abe6-758b-4b42-bef7-3b2d932dc2f6")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19217,7 +18768,7 @@
 			(uuid "d74f2466-f3db-4938-b05f-d46aa5c7bed0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19300,12 +18851,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/09394434-a9c8-4d9d-a38b-fb5ea8d596c0")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19436,7 +18981,7 @@
 			(uuid "3c93b961-9878-4c58-805d-a4381a2ae0bf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19519,12 +19064,6 @@
 		(path "/8a340cb1-3ec3-49ca-87be-91f0332d30ca")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19655,7 +19194,7 @@
 			(uuid "a2b5b90b-d54d-4289-87f4-22fe150f82a0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19735,12 +19274,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/87c956d3-e744-4cc3-98e4-aa0f683e97b9")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "6" "4" "5" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -19866,7 +19399,7 @@
 			(uuid "dcba275f-c702-423c-9bfa-3587a550ff0e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19949,12 +19482,6 @@
 		(path "/991392c5-aec5-42fb-9490-8b2777069b06")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20085,7 +19612,7 @@
 			(uuid "328680fd-50cf-4c85-bf9b-6620daf78349")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20168,12 +19695,6 @@
 		(path "/977697f7-c3b5-4cba-b6ab-5182385989ea")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20304,7 +19825,7 @@
 			(uuid "1a856a5b-dbe9-48c8-9fc3-aa181d8e5769")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20387,12 +19908,6 @@
 		(path "/2f946d5d-51c8-44e9-b380-05bb50a71993")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20523,7 +20038,7 @@
 			(uuid "c2e9f34e-cda9-4e6e-8f42-2a4668e54cad")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20797,12 +20312,6 @@
 		(path "/46b8c8a8-e592-4a3e-a985-858768cc4976")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20896,7 +20405,7 @@
 			(uuid "35dccac3-fe46-4225-bd87-4fa1ae958866")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-323.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20979,12 +20488,6 @@
 		(path "/9d88e390-5311-4f99-867b-7c0de75f1601")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21115,7 +20618,7 @@
 			(uuid "a821289c-3da5-484c-89da-c20facfe873e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21198,12 +20701,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/b2d9d6a5-22db-4bb2-abfb-e79ac8406706")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21334,7 +20831,7 @@
 			(uuid "155c015b-1b0b-4de6-ae52-faffd8e2da89")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21417,12 +20914,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/fd4a6d7c-e68a-48e3-bfdf-9ccbbdb3bcbe")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21553,7 +21044,7 @@
 			(uuid "590bf8f8-b565-469b-8cd5-f51a17632e65")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21636,12 +21127,6 @@
 		(path "/d0878499-58b7-44bd-828e-042ba84be752")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21772,7 +21257,7 @@
 			(uuid "823eed0f-87b9-4009-95b1-096bbcce849a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21855,12 +21340,6 @@
 		(path "/90540b50-66f1-4c17-ac26-50ccc2ea232b")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21991,7 +21470,7 @@
 			(uuid "f2f86d76-c606-4571-96a7-b39b9c2a5684")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22074,12 +21553,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/255b9a7a-d4ba-49fd-b143-5cdb94f10bd2")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22210,7 +21683,7 @@
 			(uuid "fb91e9a0-dda4-4c91-98ed-492349846745")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22293,12 +21766,6 @@
 		(path "/ad030eb8-49a7-47dc-810e-111cf185082c")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22429,7 +21896,7 @@
 			(uuid "9ce67019-336c-4242-9aa8-4798af9bd985")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22512,12 +21979,6 @@
 		(path "/24c3c204-f493-4c91-8ed3-35dd28c9ad52")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22648,7 +22109,7 @@
 			(uuid "35402cb0-661f-46c4-9317-bbfdca5f6c7b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22731,12 +22192,6 @@
 		(path "/e33070ee-8c6f-43b6-8586-f34158e37473")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22867,7 +22322,7 @@
 			(uuid "d047497b-57ee-4b21-9275-7f600d34e329")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22950,12 +22405,6 @@
 		(path "/8371e8f5-6e3e-4ed5-b8c3-4022e1a98fa1")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23086,7 +22535,7 @@
 			(uuid "48dc7892-c96d-4668-978f-35e542535257")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23169,12 +22618,6 @@
 		(path "/4078d04d-2e25-48be-b314-0dfd7989ce38")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23305,7 +22748,7 @@
 			(uuid "5bffd7ee-1057-443f-9a41-4bc244731621")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23387,12 +22830,6 @@
 		(path "/4767a75a-1528-4305-919a-6f444a57c3f2")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "4" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -23676,7 +23113,7 @@
 			(uuid "fc0050d0-5a6a-4982-9bf3-9ebe4a665a5a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23759,12 +23196,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/e05e6af5-53bc-4a73-80de-b073d07d7dc7")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -23907,7 +23338,7 @@
 			(uuid "3f1b0194-d403-479f-8022-420c4f16d586")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23990,12 +23421,6 @@
 		(path "/2b7d4b7d-e4cd-45de-bd1c-8e96f75db2ed")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24126,7 +23551,7 @@
 			(uuid "e6683b51-c62f-4fd3-b634-1cd8c9107dc6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24209,12 +23634,6 @@
 		(path "/64ba9c95-55d1-4880-aa7b-94d733feb6e6")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24345,7 +23764,7 @@
 			(uuid "d13eb93c-bc8a-4a2e-bf96-7d6071fb2ce4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24428,12 +23847,6 @@
 		(path "/f59f80a1-db4e-4e27-aa93-5d6ebd50f5f1")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24564,7 +23977,7 @@
 			(uuid "405d0d33-c7b8-4ed5-be44-e0b2b72fd69d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24647,12 +24060,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/ad23f2cc-4996-410e-be11-9c6d7281c15e")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24783,7 +24190,7 @@
 			(uuid "5e52c09d-fc0f-412b-8b27-17b0ceb96e72")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24863,12 +24270,6 @@
 		(path "/b4f62572-3d6f-4a35-b9d4-c62f79b3b682")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "5" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -25026,7 +24427,7 @@
 			(uuid "8d50c1ae-69d6-4730-a3fd-fa4c44fc3532")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25109,12 +24510,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/7997fa8c-3e2c-4e96-a6a5-daf1edac6306")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25245,7 +24640,7 @@
 			(uuid "52d2897e-8887-4d8a-8d66-4fdc77dc1685")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25328,12 +24723,6 @@
 		(path "/4c759d24-9a90-4b50-9f05-d67862a1e05f")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25464,7 +24853,7 @@
 			(uuid "53bec1d9-0df0-40ee-90a5-93b7de97a6bc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25549,12 +24938,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/72b7401f-d7e2-40d2-81f7-88e550172e50")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25712,7 +25095,7 @@
 			(uuid "43597900-f771-480b-90b0-984fe2a9417e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 			(offset
 				(xyz 2.54 0 0)
 			)
@@ -25795,12 +25178,6 @@
 		(path "/419625ae-fe8f-48bb-ae5c-b57ab8450889")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25931,7 +25308,7 @@
 			(uuid "e42721d1-e2b5-44b6-a196-808f8274c6a5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26014,12 +25391,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/93c7a00a-c3b7-498a-abf7-ac53eb622e43")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26150,7 +25521,7 @@
 			(uuid "4ce030bc-764a-4e8a-b554-cc202ad92821")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26230,12 +25601,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/86147264-6fef-40f0-96e7-6e4237a683ec")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26357,7 +25722,7 @@
 			(uuid "dfc3bb10-0f95-45bc-a505-01b663572713")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26440,12 +25805,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/c1790f31-6099-420f-ba0f-11d6bc6b0761")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26576,7 +25935,7 @@
 			(uuid "9babf4a1-d1c1-4e1b-890a-5574a59016a1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26659,12 +26018,6 @@
 		(path "/e8cd3569-98e6-41e8-97b7-027f213a83b2")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26795,7 +26148,7 @@
 			(uuid "ff97d33a-f35e-4682-be82-f794f2a1b0a3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26875,12 +26228,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/b4fd968f-f873-4737-bab9-ab94178152f9")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "6" "4" "5" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -27042,7 +26389,7 @@
 			(uuid "afd978c3-432e-4893-9a42-ae87699811ab")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27125,12 +26472,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/b459557d-59b2-422b-b3ba-66120d946db4")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27261,7 +26602,7 @@
 			(uuid "23ac4d88-efea-4867-83e3-7be0d874477d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27344,12 +26685,6 @@
 		(path "/34368a33-4bea-426c-add3-10c9ee026e8e")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27480,7 +26815,7 @@
 			(uuid "f646b174-7660-46a4-b454-62c7d0e787de")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27563,12 +26898,6 @@
 		(path "/da7f0a4c-d1d2-4c12-828d-8cacffa3179d")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27699,7 +27028,7 @@
 			(uuid "4a87ea67-01af-41e8-b0c8-b433675bbf79")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27879,12 +27208,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/29b277fd-7f95-4358-910a-7d293e4339f0")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28015,7 +27338,7 @@
 			(uuid "b652f4e4-fb38-430d-a63b-9012be242314")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28098,12 +27421,6 @@
 		(path "/c9cb06d2-d70d-4f36-91f5-b3a71a446b07")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28234,7 +27551,7 @@
 			(uuid "eb9a8a16-5f7e-44e7-b60e-d2437c55656b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28314,12 +27631,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/ce846b62-efb9-4147-85f4-ba04f05a81b0")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28441,7 +27752,7 @@
 			(uuid "1941024c-b94e-46c2-a158-475614620c36")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28524,12 +27835,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/e6abfae3-a822-4b64-bb6f-96efcf5f3b94")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28660,7 +27965,7 @@
 			(uuid "75635dc1-65a4-4a0a-86bf-f28d6eaaecb3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28740,12 +28045,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/0b920c90-2a5f-4876-bdf8-5cc8b723bd7e")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "5" "4" "3" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -28903,7 +28202,7 @@
 			(uuid "54e6ab06-2b27-4903-bc6f-7e5de2c433dc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28983,12 +28282,6 @@
 		(path "/9500640a-be75-49be-9356-d8e154f1327e")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29119,7 +28412,7 @@
 			(uuid "e8a48650-b6a6-4764-9db6-03803437c3c7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29202,12 +28495,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/262a13cd-0745-4a57-9db8-39c6413068f1")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29338,7 +28625,7 @@
 			(uuid "476a3ab7-3fd9-461a-b14b-0353953cb604")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29418,12 +28705,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/1b998485-1511-4d04-898e-097b843dd972")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29554,7 +28835,7 @@
 			(uuid "62380d48-4cfe-43af-9ed6-a482bf439525")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29634,12 +28915,6 @@
 		(path "/f13243a5-48bd-4680-ae27-4293b78961dd")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "6" "5" "2" "1" "8" "3" "7" "4")
-			)
-		)
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -29835,7 +29110,7 @@
 			(uuid "b52d70d5-5b3a-4a72-81ea-fccaaa087586")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29918,12 +29193,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/e5894f18-8e48-41b6-b13f-3ea797bd027d")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30054,7 +29323,7 @@
 			(uuid "db47582d-8cf2-4553-b65d-c73a688c9828")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30137,12 +29406,6 @@
 		(path "/e6bc7a29-ba65-4912-a215-8290ee9c3fdf")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30273,7 +29536,7 @@
 			(uuid "151618f7-b013-4896-8edf-d81e9bf268bd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30453,12 +29716,6 @@
 		(path "/f061284c-60ff-4079-8367-b442e42fda11")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30589,7 +29846,7 @@
 			(uuid "31e2917d-e04a-42d5-82e7-77eab80a4e5c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30866,12 +30123,6 @@
 		(path "/c970e8e0-2728-4920-be49-8b25187cf814")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31002,7 +30253,7 @@
 			(uuid "47945119-12c6-453f-bce8-7ae3eabf550e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31085,12 +30336,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/6cce2120-bd53-4d9f-82ca-44d5620af8cd")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31221,7 +30466,7 @@
 			(uuid "8b889873-518e-4d4c-816c-d2f4f545d8f7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31304,12 +30549,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/59d0a36e-092c-4bd8-b172-64fd16eaca68")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31440,7 +30679,7 @@
 			(uuid "f2bd4a49-8d8c-43a7-9738-d24b59b6527f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31520,12 +30759,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/0457028f-4e8a-4d2e-bab2-33de133bb9f7")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2" "4" "6" "5")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -31695,7 +30928,7 @@
 			(uuid "10f710ac-4688-4004-b8ec-d83d7750a1c5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31778,12 +31011,6 @@
 		(path "/b04db2bc-ca0c-4fd8-84e3-814952996960")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -31878,12 +31105,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/8e0495a6-fb00-4d32-8810-010904235d0f")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "1" "6" "4" "5" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -32009,7 +31230,7 @@
 			(uuid "5ac73c3d-d5d1-487f-9929-464b8d3c4f30")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32189,12 +31410,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/190b65e1-4c9f-407c-a7d5-d94d86d2a990")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32325,7 +31540,7 @@
 			(uuid "aa361ef4-a0fc-4db1-8fcd-44566504332d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32405,12 +31620,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/3027f621-8f0e-4868-93f8-0295dd776847")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32532,7 +31741,7 @@
 			(uuid "670873e4-73b6-477c-9c90-a4d67d7d3481")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32615,12 +31824,6 @@
 		(path "/4a39adc4-2191-4085-abed-8d08a167aac5")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -32718,12 +31921,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/9eca9bb0-7408-4aa5-ad8d-1376b3aba692")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32854,7 +32051,7 @@
 			(uuid "baf7b7a5-9d78-4c10-9fe6-d66a7bd355c3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32937,12 +32134,6 @@
 		(path "/ec7c5369-bcb9-4fe6-8d6d-31fc2f81b915")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -33037,12 +32228,6 @@
 		(path "/88b1d904-be81-4ef7-81d8-061455be9cdc")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33173,7 +32358,7 @@
 			(uuid "70bd52cf-ff53-4ebd-a20a-e9ac476b7ab1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33256,12 +32441,6 @@
 		(path "/dea7d1bb-17bd-4798-a3d9-6549e62f49e8")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33392,7 +32571,7 @@
 			(uuid "971cad05-7aca-4115-8bce-f394ad6c89eb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33475,12 +32654,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/d3d30bd0-b363-40f8-8130-e5efe2d251f3")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33611,7 +32784,7 @@
 			(uuid "c1481eb2-d6dd-47e3-96c3-63f44019b232")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33694,12 +32867,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/76b5fb9f-a3b8-419e-968c-8f0da849fced")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33830,7 +32997,7 @@
 			(uuid "17e89338-617a-4208-9a2a-97a112be20f2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34071,17 +33238,6 @@
 		(path "/76548f7d-529c-4d35-8889-fa85f4e52b18")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "15" "16" "17" "5" "6" "49" "32" "19" "20" "62" "64" "1" "61" "63"
-					"12" "13" "8" "9" "65" "31" "50" "4" "14" "7" "10" "2" "11" "18" "21"
-					"22" "23" "24" "25" "26" "27" "28" "29" "30" "33" "34" "35" "36" "37"
-					"38" "42" "43" "44" "45" "46" "47" "48" "51" "52" "53" "54" "55" "56"
-					"57" "58" "59" "60" "39" "40" "41" "3"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34264,6 +33420,17 @@
 			)
 			(layer "F.Fab")
 			(uuid "78ff1763-455c-4064-aa06-789c1d3119ef")
+		)
+		(fp_text user "REF**"
+			(at -0.2 -5.8 0)
+			(layer "F.SilkS")
+			(uuid "a2452415-5133-4f55-be32-e281c5f3b2ab")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
 		)
 		(fp_text user "REF**"
 			(at -0.1524 -7.5692 0)
@@ -35627,7 +34794,7 @@
 			(uuid "dde27ae9-9e60-4ab8-b74d-c65c504df3db")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.35x7.35mm.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.35x7.35mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35709,12 +34876,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/3839e481-dd84-4a22-94d3-b503c8ef78e6")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -35854,7 +35015,7 @@
 			(uuid "cc902342-05eb-4355-afe5-258d59789639")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35937,12 +35098,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/52d48728-5e13-4cef-b825-919086b6c1d6")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36073,7 +35228,7 @@
 			(uuid "0861aea7-57fe-4653-8f87-5991a59c2bc8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36158,19 +35313,13 @@
 		(path "/0f7f5d41-5a93-4a2f-893b-cc4b98dc415f")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
@@ -36180,7 +35329,7 @@
 			(start -0.5 0.5)
 			(end 0.5 0.5)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
@@ -36190,7 +35339,7 @@
 			(start 0.5 -0.5)
 			(end -0.5 -0.5)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
@@ -36200,7 +35349,7 @@
 			(start 0.5 0.5)
 			(end 0.5 -0.5)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
@@ -36289,12 +35438,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/d2da09e9-cfc3-4017-b8ce-82c3984f6e48")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36425,7 +35568,7 @@
 			(uuid "b5063fd1-c7e7-4998-a7f0-b137562b1e5a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36605,12 +35748,6 @@
 		(path "/f5287f18-788d-433f-9376-cdb895414bb9")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36741,7 +35878,7 @@
 			(uuid "857dfa26-695c-4816-8f01-e9a714c7dda9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36824,12 +35961,6 @@
 		(path "/8f18df31-6e5a-4a77-9a71-e9ec834924c4")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36960,7 +36091,7 @@
 			(uuid "aee103b4-0611-4ea2-b7cd-f65e8a220bee")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37043,12 +36174,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/d119fda3-05d7-4c1b-a482-7c55287262b1")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37179,7 +36304,7 @@
 			(uuid "ae664b04-b378-42dc-968c-2c5ff24b0544")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37259,12 +36384,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/f214e720-c181-4b37-863d-f4580c059f83")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "3" "5" "4" "10" "9" "6" "1" "7" "8")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -37480,7 +36599,7 @@
 			(uuid "72a423a5-a957-4180-a7f0-d5cd4473fd70")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37562,12 +36681,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/4576ee39-aa27-4ad3-ab52-70483c38dcd0")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -37707,7 +36820,7 @@
 			(uuid "a2fac62c-64e1-487f-b91f-9e37f7c42a6e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37790,12 +36903,6 @@
 		(path "/ed0aacf6-0cf3-41f0-a240-2f243cd47d97")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37926,7 +37033,7 @@
 			(uuid "13314ec6-bd7c-48d5-8ff3-bfa3129956a3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38009,12 +37116,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/4586e307-5f0f-40a3-b931-9097e8e6f105")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -38145,7 +37246,7 @@
 			(uuid "10b0247d-2801-49c8-b701-5cae1b793c19")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38228,12 +37329,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/88c2c139-024b-4356-9425-974e629c07f0")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -38364,7 +37459,7 @@
 			(uuid "15f4cd1f-0937-4f70-bfab-3a0d04891044")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38457,12 +37552,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/1b9452a9-b14a-4c0b-aa46-e1a2452fc448")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "4" "1" "2" "3")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -38626,12 +37715,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/713a3bbb-2843-44cd-b9a8-5bdbf29604fd")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -38762,7 +37845,7 @@
 			(uuid "67a59491-7df4-408e-a3ab-49363edf4d9b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38845,12 +37928,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/1afb59a6-7dfe-42b0-99e3-fefd635bad2c")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -38981,7 +38058,7 @@
 			(uuid "b53b0e69-4117-415d-a2e7-46977ae44617")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39064,12 +38141,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/a6e08e92-1dff-410b-b4f0-bdc49129e1ff")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39200,7 +38271,7 @@
 			(uuid "2c6f7a41-a4ba-4d79-a57b-218b24f1ae66")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39283,12 +38354,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/982ef052-d612-473c-83f2-ea6dceff8548")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39419,7 +38484,7 @@
 			(uuid "55fa47ae-3b78-4252-b3cc-b66fd2e5d444")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39502,12 +38567,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/d226479a-f561-4507-a3c2-0628f734aa27")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39638,7 +38697,7 @@
 			(uuid "0e67c574-cde5-4eec-aca5-1c234b51ac55")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39721,12 +38780,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/531d8a34-1500-4cb8-98b5-836ebf9c436f")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39857,7 +38910,7 @@
 			(uuid "72cd0df0-7854-4820-a230-acceac804513")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40037,12 +39090,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/df74c83a-5438-4087-b3ef-88278d38cbe0")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40173,7 +39220,7 @@
 			(uuid "a3685b0d-52f7-4f5e-85b3-c1da775de678")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40256,12 +39303,6 @@
 		(path "/4f9a8634-9674-412c-b344-0e679f498b20")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40392,7 +39433,7 @@
 			(uuid "296a699b-7fce-45d2-afa5-73d266e4b534")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40475,12 +39516,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/f73f2bdf-23c1-4e69-946c-9f2ddf80b667")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40611,7 +39646,7 @@
 			(uuid "3befe35f-c63e-41ba-9df8-c6fd16cf811f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40694,12 +39729,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/c3e3180c-bdbf-411c-9eb7-befed59eedf2")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40830,7 +39859,7 @@
 			(uuid "dd8d1c22-1643-428e-964d-d6deabd777a9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40913,12 +39942,6 @@
 		(path "/884692b1-ecd1-4fb0-a4b1-d8d0f3d07aac")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41049,7 +40072,7 @@
 			(uuid "cf93df59-ff18-499e-b0df-022dc57c90e1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41132,12 +40155,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/f758b7eb-bb13-4dd3-835e-2053a3bc27b0")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41268,7 +40285,7 @@
 			(uuid "1ec05b17-1b47-4d7e-bb4e-36a99f0618db")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41348,12 +40365,6 @@
 		(path "/2acacc05-d47f-4b4a-a51e-ce3056836b05")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41484,7 +40495,7 @@
 			(uuid "d12eef78-175d-4149-9a4f-0b70c305cedd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41564,12 +40575,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/abc0129c-b89c-4851-b515-e6c09d615cce")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "5" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -41727,7 +40732,7 @@
 			(uuid "eaa97f34-8f6a-4985-8abf-0137e7b0c62e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41808,12 +40813,6 @@
 		(path "/2abe1434-b2a3-4423-9883-48cb9b0d82a9")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "10" "9" "8" "7" "6")
-			)
-		)
 		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42130,12 +41129,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/d9f80736-9291-48e1-9dad-d29f50b7b6b7")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42266,7 +41259,7 @@
 			(uuid "cbbbbf72-4aed-4c24-bafa-b1ac4f32c8b7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42443,12 +41436,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/3002eb5c-5511-44b7-b5ca-0275fcdeaab5")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42570,7 +41557,7 @@
 			(uuid "d8290bf4-211f-45c6-81a5-cd9ee711325b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42653,12 +41640,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/0321b64e-6cbe-4121-b0b3-b8f9296485a5")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -42801,7 +41782,7 @@
 			(uuid "c6ea96c4-8121-4f74-98e4-698956c37d74")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42885,12 +41866,6 @@
 		(path "/98cca603-49be-4158-86df-e86acdc9e952")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "9" "8" "6" "5" "7" "3" "2" "1" "4" "0")
-			)
-		)
 		(attr board_only)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -43131,12 +42106,6 @@
 		(path "/28d0f5c1-6b8d-4ee4-a756-06c17b927433")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -43267,7 +42236,7 @@
 			(uuid "49d620a6-069c-4a23-bb4e-3207f91c9063")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43350,12 +42319,6 @@
 		(path "/87d05f67-13ec-4b0b-ab8a-47bb427b139e")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -43486,7 +42449,7 @@
 			(uuid "2a82a9c4-b888-48eb-a61f-a422953829de")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43666,12 +42629,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/99de05e1-df4c-43b5-8f90-5c9d85153536")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -43802,7 +42759,7 @@
 			(uuid "6d7d09aa-ab8b-45eb-8cae-bf3eb0e195e7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43885,12 +42842,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/dcd10163-7cb8-4604-932d-6f15dd86a7c7")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -44021,7 +42972,7 @@
 			(uuid "fd6461bf-ef2c-4d6a-a8be-abd8b8a4cb9f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44104,12 +43055,6 @@
 		(path "/1a6c9482-8400-4120-84fc-d5c82d331db1")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -44240,7 +43185,7 @@
 			(uuid "a6774589-215a-4fa6-aefd-afe668a46dc8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44323,12 +43268,6 @@
 		(path "/5e56f5c8-ca10-4095-9f79-4235f3361996")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -44459,7 +43398,7 @@
 			(uuid "85448ee4-c7cc-4402-9f8f-5967d2803eb3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44539,12 +43478,6 @@
 		(path "/147a1356-29e2-4700-a5b2-249b2d320a0e")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "4" "3")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -44736,12 +43669,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/bcdbcabf-3a49-4d6d-8d71-0c5f975ec01c")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -44872,7 +43799,7 @@
 			(uuid "836c2a6f-78d7-4336-a894-222cfe166518")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44955,12 +43882,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/71068caf-e6df-4c21-8a51-7226f902a839")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -45091,7 +44012,7 @@
 			(uuid "cde26813-5c38-4b97-bcd6-5c91bd1a4df9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45171,12 +44092,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/b3fb8272-f911-4259-8e3d-993d7974cc80")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -45298,7 +44213,7 @@
 			(uuid "e1d326c1-ee19-4a6d-b2cf-91307cc27786")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45381,12 +44296,6 @@
 		(path "/659eed0a-01d8-4e31-9305-fe83612571af")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -45517,7 +44426,7 @@
 			(uuid "541b28c6-c611-4f92-b1d6-96e1a49faeaa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45597,12 +44506,6 @@
 		(path "/75944f79-cd2b-49d2-bf09-9122d769df4c")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -45733,7 +44636,7 @@
 			(uuid "4d3de3f2-5b69-4cb0-a621-753705d7e942")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45816,12 +44719,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/e965606f-80d4-404e-b100-ea359677767f")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -45952,7 +44849,7 @@
 			(uuid "ed89eb88-c5ab-4255-99e1-01666557bc33")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46035,12 +44932,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/a9365d41-f4bd-4b87-a7ee-81dba5f177fa")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -46171,7 +45062,7 @@
 			(uuid "677c21bc-575a-4cb2-bfa3-6f34d7c736ff")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46254,12 +45145,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/26142b81-e7e3-4691-8142-eb191d6accaf")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -46390,7 +45275,7 @@
 			(uuid "82edd191-8fd3-42e0-882c-1367ee3a809b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46475,12 +45360,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/1fbcc20c-ddca-4d9f-91ea-98ef1e84f4c9")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -46638,7 +45517,7 @@
 			(uuid "6ac3193b-bd23-41fa-a6a7-8e64a39bfae9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 			(offset
 				(xyz 2.54 0 0)
 			)
@@ -46721,12 +45600,6 @@
 		(path "/ab8f87f5-dabf-4f9b-ac84-f3ab7a5d0fb1")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -46857,7 +45730,7 @@
 			(uuid "2514f4da-b8b3-4487-9cc1-31a9230840bd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46939,12 +45812,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/8fcd0857-0265-49f3-87a3-be6e14d28035")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -47084,7 +45951,7 @@
 			(uuid "3465552c-2264-4639-b131-5d3110cbadce")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47165,12 +46032,6 @@
 		(path "/036feaf3-e2b7-4569-8913-124cb8238b53")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -47525,12 +46386,6 @@
 		(path "/5f3627c7-d597-456e-99ad-3e83fc6760e4")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -47661,7 +46516,7 @@
 			(uuid "645e776d-a9ad-46f4-9bf6-c77c6e3298ee")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47741,12 +46596,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/64f1e552-4e26-48d2-8b78-d38e47368cc9")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -47877,7 +46726,7 @@
 			(uuid "02e55282-62fd-4666-820b-927ad4e89b5a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47962,12 +46811,6 @@
 		(path "/c305c302-fda1-4d48-83db-fa96ec3fb1d0/fe654fa6-5934-4017-b0a4-b7354a7908e3")
 		(sheetname "/Front_End_Filter/")
 		(sheetfile "Front_End.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -48125,7 +46968,7 @@
 			(uuid "5e0b8892-424f-4934-a2b2-f8066465d1d9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 			(offset
 				(xyz 2.54 0 0)
 			)
@@ -48205,12 +47048,6 @@
 		(path "/cb507d38-5acc-441f-ae50-5e831c932072")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "4" "1" "2" "3")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -48316,7 +47153,7 @@
 			(uuid "842c035b-c49e-47ff-aaef-86f752c99b29")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -48399,12 +47236,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/3d9d8557-8815-48d1-8288-d78423ff4112")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -48535,7 +47366,7 @@
 			(uuid "1a43d3dd-ea50-4bd2-bef8-89bf1447f4ad")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -48715,12 +47546,6 @@
 		(path "/a3b14f2f-d77c-4881-9f4a-228bb3764a4a")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -48818,12 +47643,6 @@
 		(path "/c96c66b3-35e6-4b43-bc37-8b7be13c68a3")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -48954,7 +47773,7 @@
 			(uuid "1736012f-e271-4eea-b010-341984d21435")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -49035,12 +47854,6 @@
 		(path "/696997df-1bd5-4d6d-8fa7-cb9679ef271e")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "8" "7" "6" "5")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -49236,7 +48049,7 @@
 			(uuid "5fbddfb7-6e8a-405f-8335-b03c39f5669e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -49319,12 +48132,6 @@
 		(path "/629d0900-1e53-4ff8-b9f3-8584c3929675")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -49455,7 +48262,7 @@
 			(uuid "307da141-f93b-48bc-8a2d-0e2af8f39b35")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -49538,12 +48345,6 @@
 		(path "/7613b31f-dc80-45b6-aa3a-aea2dee68ba8")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -49674,7 +48475,7 @@
 			(uuid "3e196b69-6c55-447f-9b2d-92c930a06f8a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -49757,12 +48558,6 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/e505d706-c7e8-4bbc-a522-939a8da1debe")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -49893,7 +48688,7 @@
 			(uuid "f41aff73-61fd-4c52-89fd-effb08d568cd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -49976,12 +48771,6 @@
 		(path "/d3edf8e8-c51a-4571-a930-b4243eec54b6")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -50112,7 +48901,7 @@
 			(uuid "352c47e1-c717-4bdb-90ef-fd4f704ed022")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -50195,12 +48984,6 @@
 		(path "/3a83f2c1-b8fb-4081-b888-d6ae37930322")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -50331,7 +49114,7 @@
 			(uuid "5628d253-0e1c-40f8-8207-6a8345f5bd13")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -50412,12 +49195,6 @@
 		(path "/ab38790f-4c73-448f-bca5-136aa7e5ae51")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -50776,12 +49553,6 @@
 		(path "/ba44746e-b836-4396-a921-2d3a2a54b003")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole exclude_from_bom allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly

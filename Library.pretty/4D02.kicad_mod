@@ -235,7 +235,7 @@
 		(uuid "658cb037-a4ef-4e65-b1ba-fabe86f61cfe")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
+	(model "${KIPRJMOD}/3d/kicad-stock/Resistor_SMD.3dshapes/R_Array_Convex_4x0402.step"
 		(offset
 			(xyz 0 0 0)
 		)
