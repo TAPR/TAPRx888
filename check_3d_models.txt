@@ -1,4 +1,4 @@
-distinct models: 28  (stock: 22, custom: 6)
+distinct models: 27  (stock: 21, custom: 6)
    [present] custom 3d/BUTTON-4p5X4p5.step
    [present] custom 3d/LED_RGB_SIDE.step
    [present] custom 3d/SMA_Jack_EdgeMount_JLC.step
@@ -8,7 +8,6 @@ distinct models: 28  (stock: 22, custom: 6)
    [present] stock  3d/kicad-stock/Capacitor_SMD.3dshapes/C_0603_1608Metric.step
    [present] stock  3d/kicad-stock/Capacitor_SMD.3dshapes/C_1206_3216Metric.step
    [present] stock  3d/kicad-stock/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step
-   [present] stock  3d/kicad-stock/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step
    [present] stock  3d/kicad-stock/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step
    [present] stock  3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-123.step
    [present] stock  3d/kicad-stock/Diode_SMD.3dshapes/D_SOD-323.step
