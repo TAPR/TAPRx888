@@ -1,23 +1,22 @@
 # TAPRX-888
 
 A simplified, **HF-only** software-defined radio (SDR) receiver based on the
-**RX-888** — a proof-of-concept on a larger 6-layer board with improved thermal
-and RF layout.
+**RX-888** — with improved thermal and RF layout.
 
 The KiCad project lives at the repository root (`TAPRX-888.kicad_pro` /
 `.kicad_sch` / `.kicad_pcb`). **KiCad 10.0** is the project baseline.
 
 ## Features
 
-- HF-only — no VHF up/down converter
+- HF-only — no VHF downconverter
 - Larger PCB, 6-layer
-- No bottom-side components
 - 0603 passive components
 - Improved thermal layout
-- Improved RF input filter(s) (bypassable)
+- Improved RF alias filter
+- RF shelving filter (bypassable)
 - External reference clock input, auto-switching
 - Attenuated filter-bypass injector port (used for timesync)
-- Support use of a SPI boot eeprom, with option for USB-only or SPI boot w/ USB fallback
+- Support use of a SPI boot EEPROM, with option for USB-only or SPI boot w/ USB fallback
 
 Please see the schematic and layout documents for details.
 
@@ -29,6 +28,16 @@ Please see the schematic and layout documents for details.
 | Clock generator | Si5351 |
 | USB3 controller | EZ-USB FX3 (CYUSB301x) |
 | SPI boot flash | MX25L3233F |
+
+## Mechanicals and Enclosure Design
+
+The project ships its own mechanical package: a JLCMC split-aluminium enclosure
+(88 × 38 x 100 mm) with two custom **PCB end plates** and M3 mounting hardware.
+
+The board's exported STEP is the EE↔ME interface; CI assembles enclosure + board +
+both plates into a coloured 3D model with a self-contained browser viewer
+(**<https://tapr.github.io/TAPRx888/>**). See **[mechanical/README.md](mechanical/README.md)**
+for the enclosure spec, plate geometry, and fit-check flow.
 
 ## Repository & workflow
 
