@@ -58,6 +58,8 @@ the **[Releases page](https://github.com/TAPR/TAPRx888/releases)**; see
 
 ## Documentation
 
+- **[mechanical/README.md](mechanical/README.md)** — the enclosure & end-plate
+  package (geometry, fit-check CI, 3D viewer)
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** — how we collaborate (the two-lane
   `design` / infra flow, the design baton)
 - **[docs/RELEASE_STRATEGY.md](docs/RELEASE_STRATEGY.md)** — versioning, CI, and
