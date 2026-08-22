@@ -1,12 +1,15 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-08-22T17:45:48 **
+** Created on 2026-08-22T23:37:08 **
 ** Report includes: Errors, Warnings **
 
 ** Found 0 DRC violations **
 
 ** Found 0 unconnected pads **
 
-** Found 0 Footprint errors **
+** Found 1 Footprint errors **
+[footprint_symbol_field_mismatch]: Field 'MPN' differs (PCB: 'LTC2208CUP#PBF#PBF', Schematic: 'LTC2208CUP#PBF')
+    Local override; warning
+    @(156.0000 mm, 95.0000 mm): Footprint U8
 
 ** Ignored checks **
     - Track endpoint not centered on via
