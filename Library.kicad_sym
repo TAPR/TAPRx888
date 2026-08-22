@@ -9669,7 +9669,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTC2208CUP#PBF#PBF"
+		(property "MPN" "LTC2208CUP#PBF"
 			(at -3.302 66.548 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9742,8 +9742,8 @@
 		)
 		(symbol "LTC2208CUP_PBF_0_0"
 			(rectangle
-				(start -22.86 -55.88)
-				(end 22.86 50.8)
+				(start -22.86 50.8)
+				(end 22.86 -55.88)
 				(stroke
 					(width 0.4064)
 					(type default)

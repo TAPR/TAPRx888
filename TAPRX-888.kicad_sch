@@ -31976,7 +31976,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTC2208CUP#PBF#PBF"
+		(property "MPN" "LTC2208CUP#PBF"
 			(at 212.598 57.912 0)
 			(hide yes)
 			(show_name no)
