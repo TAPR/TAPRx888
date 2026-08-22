@@ -1,4 +1,4 @@
 CI docs for design
 
-Source: design @ bc6bb985d0f8b5686a80adbb6a3804a0e17132e9
-Run: https://github.com/TAPR/TAPRx888/actions/runs/32578405614
+Source: design @ dbf660a661bba0a9200553e6a768b659f816bc37
+Run: https://github.com/TAPR/TAPRx888/actions/runs/32579853399
