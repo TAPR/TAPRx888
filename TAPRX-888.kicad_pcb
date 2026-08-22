@@ -2398,13 +2398,7 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/85084a68-6270-441b-af1e-533fc46dc62e")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -2428,17 +2422,6 @@
 			(uuid "8c533a88-4bd7-4047-bae0-8d8fb94d58ae")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:C_0603"
 		(layer "F.Cu")
@@ -8110,7 +8093,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.5 -0.5)
@@ -11733,13 +11716,7 @@
 		(path "/3d5ff7e9-e97e-46b1-bc00-ae9074d9ed2c")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -11763,17 +11740,6 @@
 			(uuid "c76d3c4b-f673-4ac1-8eea-490aae021a6e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
 		(layer "F.Cu")
@@ -12424,13 +12390,7 @@
 		(path "/f5e5204d-cdd8-4f87-8ca1-434886a52279")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -12454,17 +12414,6 @@
 			(uuid "68510dd4-61f4-4617-8519-bb00a0a55af4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:C_0603"
 		(layer "F.Cu")
@@ -13115,13 +13064,7 @@
 		(path "/6821529a-e78f-4203-8923-cce80a89c75c")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -13145,17 +13088,6 @@
 			(uuid "7cbd9083-8dcf-4f49-825f-ed2a3302d910")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:0603"
 		(layer "F.Cu")
@@ -14871,13 +14803,7 @@
 		(path "/09bfc709-3be1-4837-9512-c1a98b245cde")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -14901,17 +14827,6 @@
 			(uuid "d71c435a-f939-4373-b71b-809761ced965")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:4D02"
 		(layer "F.Cu")
@@ -16425,13 +16340,7 @@
 		(path "/548a6e9e-3a7b-4f22-bdc8-87469dcaf801")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -16455,17 +16364,6 @@
 			(uuid "803ee977-4a0c-46a6-a75b-aee5f66d1a5e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
@@ -20709,13 +20607,7 @@
 		(path "/b87fd388-3236-4596-9e24-d36f83a6b80b")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -20739,17 +20631,6 @@
 			(uuid "4e27e097-5ea6-411c-b5e0-0619d68266f3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:TP"
 		(layer "F.Cu")
@@ -20823,13 +20704,7 @@
 		(path "/2f9939f8-3e6b-466e-b0b3-0c46be7186e2")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -20853,17 +20728,6 @@
 			(uuid "e9a0e06c-0959-4e40-b0f8-a8a780668cdf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:SOD-323"
 		(layer "F.Cu")
@@ -27919,13 +27783,7 @@
 		(path "/3d9e671d-4b27-4efd-960e-cd70c70a9bf8")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -27949,17 +27807,6 @@
 			(uuid "93297c3f-b6ad-47ce-9e0d-5e27a69574a3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:C_0603"
 		(layer "F.Cu")
@@ -30510,13 +30357,7 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/08589785-2380-4ef9-89b7-39db958b66d6")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -30540,17 +30381,6 @@
 			(uuid "2fc7a41d-581f-4f92-a97e-9e46b3522add")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:C_0603"
 		(layer "F.Cu")
@@ -30843,13 +30673,7 @@
 		(path "/df318993-8ad3-48d1-90f4-7965c9266e4e")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -30873,17 +30697,6 @@
 			(uuid "b048c411-7a3e-4e1c-89b7-f999a087782c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:TP"
 		(layer "F.Cu")
@@ -30957,13 +30770,7 @@
 		(path "/527105f4-6e08-49e9-b94f-640ff3201df1")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -30987,17 +30794,6 @@
 			(uuid "a4faf536-4614-4bde-93e2-a9ca67264949")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:PAD_1206"
 		(layer "F.Cu")
@@ -32297,13 +32093,7 @@
 		(path "/150f588d-976e-4673-9d68-91e3a511aaee")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -32327,17 +32117,6 @@
 			(uuid "ac763860-5597-45ed-8b75-6d989785082a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
@@ -34135,13 +33914,7 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/e2ceb34c-5248-41ef-ac58-009d7f4a6b07")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -34165,17 +33938,6 @@
 			(uuid "6f55a331-26b2-4a0f-a896-67225bfeeab1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:QFN-64_EP_9.5x9.5_Pitch0.5mm"
 		(layer "F.Cu")
@@ -36402,7 +36164,7 @@
 				(pins "1")
 			)
 		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.5 -0.5)
@@ -36747,13 +36509,7 @@
 		(path "/d84c67ee-2e30-405b-aa9c-614555e25517")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -36777,17 +36533,6 @@
 			(uuid "97b8d684-9e53-40f8-b681-12ed96b40123")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
@@ -40196,13 +39941,7 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/aa9a5dad-f135-4aa6-addc-63af34ffde84")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -40226,17 +39965,6 @@
 			(uuid "8d424132-f0ff-40f9-a2a8-e68775fe855c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:PAD_0603"
 		(layer "F.Cu")
@@ -42622,13 +42350,7 @@
 		(path "/d59c4f47-b88f-48b3-a3a5-9b061354aa3b")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -42652,17 +42374,6 @@
 			(uuid "b0cea06c-ab7a-46c2-9ee6-eabd9a0b4914")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:Murata2U"
 		(layer "F.Cu")
@@ -43859,13 +43570,7 @@
 		(path "/75c1a862-27f6-4e84-8c65-1339f0fda04b")
 		(sheetname "/")
 		(sheetfile "TAPRX-888.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -43889,17 +43594,6 @@
 			(uuid "4c0e40ca-d6e2-4dc4-8a43-06b46c2af4ba")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:C_0603"
 		(layer "F.Cu")
@@ -48925,13 +48619,7 @@
 		(path "/5b925e9b-242c-4f7b-a311-47f6108c506e/5931022b-9535-47c6-a642-b70c5d7f6183")
 		(sheetname "/Clock/")
 		(sheetfile "refclk.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1 -1)
@@ -48955,17 +48643,6 @@
 			(uuid "3fcd203a-aeee-4b4c-a8ab-3d6e3c8249c1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Library:MountingHole_M2.5-PTH"
 		(layer "F.Cu")

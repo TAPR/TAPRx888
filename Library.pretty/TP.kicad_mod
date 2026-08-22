@@ -10,7 +10,7 @@
 		(unlocked yes)
 		(layer "Cmts.User")
 		(hide yes)
-		(uuid "cb09911f-b9ff-495d-9b30-9ee13d3cda35")
+		(uuid "b6d88283-8c58-4fa4-8849-134e0a3481a2")
 		(effects
 			(font
 				(size 1 1)
@@ -22,7 +22,7 @@
 		(at 1.778 0 0)
 		(layer "Cmts.User")
 		(hide yes)
-		(uuid "af829138-1ba4-403e-a54d-45678f5babab")
+		(uuid "42e9139d-af33-47fe-988e-3d0054420332")
 		(effects
 			(font
 				(size 1 1)
@@ -34,7 +34,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "00130694-c2e4-47d4-af97-b65f93099e33")
+		(uuid "2909451e-d74a-4673-9e11-41aaaec3234b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -46,7 +46,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bb067a32-8ad5-469d-a53d-7e56c72d7509")
+		(uuid "4bc3adb1-f9e7-4887-8891-291fc889f561")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -59,7 +59,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9478c638-63cf-43b1-967d-9973b99da61d")
+		(uuid "52f025a1-0df1-498d-ab50-d8e47c4b2fcc")
 		(effects
 			(font
 				(size 1 1)
@@ -67,7 +67,7 @@
 			)
 		)
 	)
-	(attr through_hole exclude_from_bom)
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
 		(start -1 -1)
@@ -78,7 +78,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "add38ac0-c285-4301-b926-2f7d1c9fe412")
+		(uuid "de1244e1-4968-4ce1-a209-b01c644d4506")
 	)
 	(pad "1" thru_hole circle
 		(at 0 0)
@@ -86,18 +86,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "734bae65-5d32-4077-8dd5-bc4960a5a33f")
+		(uuid "eccf5a87-cd40-4962-8f9f-9169f196587f")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 )

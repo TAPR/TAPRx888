@@ -12097,18 +12097,6 @@
 		)
 		(uuid "4c26ed4b-028b-488d-8dff-5430569c15ce")
 	)
-	(text "Issues:\n#1 - [NEEDS CORRECTION] Add firmware test points for ARM and GPIF debugging - done, TP on SPI MISO and MOSI\n#2 - Add configurable clock test port for Si clock issue diagnostics / alternative Fs clock input - done\n#3 - EEPROM - done\n#4 -?\n#5 - ID pins, done\n#6 - USB2, USB3 resistors need to be 1% precision values -- probably not needed but done\n#7-?\n#8 - [CRITICAL] AVDD (A7) is miswired to 3.3, must be 1.2V - done\n#9 - [IMPROVEMENT] PMODE resistors should allow for both UP/DOWN/Hi-Z options, if doing SPI FLASH boot - done\n#10 - Missing recommended bulk capacitance and ferrites for *VDDQ supplies - done, ferrites were there, added 22uF caps\n#11 - [OPTIONAL] Missing series resistors on GPIF data/clock between ADC and FX3 - done, also clk\n#12 - Oscillator input should be handled as such [FSLC and CLK/XTAL inputs] - done\n#13 - SHDN should be driven by FX3 (GPIO 28) = done\n-------------\n#14 - CVDDQ voltage must match Oscillator Voltage - done, moved to +3.3V\n#15 - FX3 GPIO48, GPIO49 need TP for alt-UART use - done, using small testpoint pads\n#16 - LTC2208 SHDN should be pulled up to VDD (47k should be fine) - done\n#17 - ID5 (GPIO52) conflicts with pin mapping with in SPI boot mode - done, moved ID5 to GPIO41\n#18 - [FEATURE] 0.1\" header for JTAG pins from FX3 - done, using 2x5 0.05\" footprint\n#19 - [FEATURE] circuit to power cycle the Si5351A - done, driven by GPIO[34] \n \n"
-		(exclude_from_sim no)
-		(at 425.45 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "4c3169c2-a7ad-4ad0-9512-cf9b130191b2")
-	)
 	(text "TXCO27M"
 		(exclude_from_sim no)
 		(at 368.3 169.164 0)
@@ -22573,7 +22561,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "01b0822e-3573-45e8-bb1c-7e3ca819e1f2")
 		(property "Reference" "TP20"
 			(at 267.462 190.5 0)
@@ -23244,7 +23232,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "09bfc709-3be1-4837-9512-c1a98b245cde")
 		(property "Reference" "TP10"
 			(at 198.12 16.51 0)
@@ -23691,7 +23679,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "0f7f5d41-5a93-4a2f-893b-cc4b98dc415f")
 		(property "Reference" "TP21"
 			(at 269.24 193.0399 0)
@@ -25056,7 +25044,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "150f588d-976e-4673-9d68-91e3a511aaee")
 		(property "Reference" "TP6"
@@ -27177,7 +27165,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "2f9939f8-3e6b-466e-b0b3-0c46be7186e2")
 		(property "Reference" "TP13"
 			(at 389.89 226.0599 0)
@@ -27807,7 +27795,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d5ff7e9-e97e-46b1-bc00-ae9074d9ed2c")
 		(property "Reference" "TP4"
@@ -27897,7 +27885,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d9e671d-4b27-4efd-960e-cd70c70a9bf8")
 		(property "Reference" "TP2"
@@ -29616,7 +29604,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "527105f4-6e08-49e9-b94f-640ff3201df1")
 		(property "Reference" "TP11"
 			(at 271.78 114.2999 0)
@@ -29981,7 +29969,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "548a6e9e-3a7b-4f22-bdc8-87469dcaf801")
 		(property "Reference" "TP7"
@@ -30989,7 +30977,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6821529a-e78f-4203-8923-cce80a89c75c")
 		(property "Reference" "TP1"
@@ -31740,7 +31728,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "75c1a862-27f6-4e84-8c65-1339f0fda04b")
 		(property "Reference" "TP14"
 			(at 397.51 242.5699 0)
@@ -36438,7 +36426,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b87fd388-3236-4596-9e24-d36f83a6b80b")
 		(property "Reference" "TP5"
@@ -37985,7 +37973,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d59c4f47-b88f-48b3-a3a5-9b061354aa3b")
 		(property "Reference" "TP8"
@@ -38257,7 +38245,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "d84c67ee-2e30-405b-aa9c-614555e25517")
 		(property "Reference" "TP12"
 			(at 271.78 116.8399 0)
@@ -38987,7 +38975,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "df318993-8ad3-48d1-90f4-7965c9266e4e")
 		(property "Reference" "TP3"
 			(at 89.1032 99.568 0)
@@ -40576,7 +40564,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "f5e5204d-cdd8-4f87-8ca1-434886a52279")
 		(property "Reference" "TP9"
 			(at 198.628 19.304 0)
