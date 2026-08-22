@@ -1,11 +1,8 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-08-22T17:17:24 **
+** Created on 2026-08-22T17:45:48 **
 ** Report includes: Errors, Warnings **
 
-** Found 1 DRC violations **
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(155.8000 mm, 89.2000 mm): Footprint text of U8 (REF**)
+** Found 0 DRC violations **
 
 ** Found 0 unconnected pads **
 
