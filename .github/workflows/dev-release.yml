@@ -203,6 +203,8 @@ jobs:
     needs: prepare
     if: needs.prepare.outputs.build == 'true'
     uses: ./.github/workflows/mechanical-build.yml
+    with:
+      revision: ${{ needs.prepare.outputs.revision }}
 
   release:
     needs: [prepare, build, build-endplates, mechanical]

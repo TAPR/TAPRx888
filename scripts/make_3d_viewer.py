@@ -62,6 +62,8 @@ def main():
     ap.add_argument("--repo-url", default="", dest="repo_url",
                     help="repo base URL (e.g. https://github.com/owner/repo); if "
                          "given, the hash and branch in the header link to it")
+    ap.add_argument("--release-version", default="", dest="release_version",
+                    help="release version for the header, e.g. 0.7 (blank = omit)")
     a = ap.parse_args()
 
     glb_b64 = base64.b64encode(open(a.glb, "rb").read()).decode("ascii")
@@ -81,10 +83,10 @@ def main():
         return text
 
     meta_bits = []
+    if a.release_version:
+        meta_bits.append("Version: v" + a.release_version.lstrip("v"))
     if a.rev:
         meta_bits.append("Git Hash: " + _linked(a.rev, "commit/" + a.rev))
-    if a.branch:
-        meta_bits.append("Branch: " + _linked(a.branch, "tree/" + a.branch))
     meta = " &nbsp;&middot;&nbsp; ".join(meta_bits)
     parts_js = json.dumps([[k, l, s] for k, l, s in PARTS])
 
