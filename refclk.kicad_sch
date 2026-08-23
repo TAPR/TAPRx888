@@ -8348,7 +8348,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "08589785-2380-4ef9-89b7-39db958b66d6")
 		(property "Reference" "TP17"
@@ -8966,7 +8966,7 @@
 				)
 			)
 		)
-		(property "Comment" "alternate: C46598427  ±2ppm"
+		(property "Comment" ""
 			(at 152.654 49.022 0)
 			(hide yes)
 			(show_name no)
@@ -9222,7 +9222,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C25804"
+		(property "Datasheet" ""
 			(at 172.72 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9392,7 +9392,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C14663"
+		(property "Datasheet" ""
 			(at 191.77 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -9572,7 +9572,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C14663"
+		(property "Datasheet" ""
 			(at 208.28 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -10207,7 +10207,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C14663"
+		(property "Datasheet" ""
 			(at 243.84 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -10484,7 +10484,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C25804"
+		(property "Datasheet" ""
 			(at 231.14 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -10576,7 +10576,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C14663"
+		(property "Datasheet" ""
 			(at 256.54 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -10632,7 +10632,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "5931022b-9535-47c6-a642-b70c5d7f6183")
 		(property "Reference" "TP15"
@@ -11288,7 +11288,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C14663"
+		(property "Datasheet" ""
 			(at 132.08 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -11611,7 +11611,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "85084a68-6270-441b-af1e-533fc46dc62e")
 		(property "Reference" "TP16"
@@ -11839,7 +11839,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C25804"
+		(property "Datasheet" ""
 			(at 78.74 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -12009,7 +12009,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C22935"
+		(property "Datasheet" ""
 			(at 151.13 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -12293,7 +12293,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C25804"
+		(property "Datasheet" ""
 			(at 78.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -12976,7 +12976,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "aa9a5dad-f135-4aa6-addc-63af34ffde84")
 		(property "Reference" "TP19"
@@ -13294,7 +13294,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C25804"
+		(property "Datasheet" ""
 			(at 158.75 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -13754,7 +13754,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C22935"
+		(property "Datasheet" ""
 			(at 63.5 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -14124,7 +14124,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C14663"
+		(property "Datasheet" ""
 			(at 87.63 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -14214,7 +14214,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C23138"
+		(property "Datasheet" ""
 			(at 88.9 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -14488,7 +14488,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C14663"
+		(property "Datasheet" ""
 			(at 95.25 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -14580,7 +14580,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C25804"
+		(property "Datasheet" ""
 			(at 63.5 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -14859,7 +14859,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C14663"
+		(property "Datasheet" ""
 			(at 54.61 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -15037,7 +15037,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C23138"
+		(property "Datasheet" ""
 			(at 73.66 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -15458,7 +15458,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "e2ceb34c-5248-41ef-ac58-009d7f4a6b07")
 		(property "Reference" "TP18"
@@ -15661,7 +15661,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C22935"
+		(property "Datasheet" ""
 			(at 95.25 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -15753,7 +15753,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "C14663"
+		(property "Datasheet" ""
 			(at 184.15 144.78 0)
 			(hide yes)
 			(show_name no)

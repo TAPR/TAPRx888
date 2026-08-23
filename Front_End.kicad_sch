@@ -6957,7 +6957,7 @@
 			)
 		)
 		(property "LCSC Part #" "C22962"
-			(at 76.2 49.53 0)
+			(at 76.2 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8154,7 +8154,7 @@
 			)
 		)
 		(property "LCSC Part #" "C22962"
-			(at 116.84 49.53 0)
+			(at 116.84 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

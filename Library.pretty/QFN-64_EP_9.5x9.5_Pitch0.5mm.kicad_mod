@@ -103,7 +103,7 @@
 			)
 		)
 	)
-	(property "LCSC Part #" "C679544"
+	(property "LCSC Part #" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
