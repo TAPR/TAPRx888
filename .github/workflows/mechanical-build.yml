@@ -17,7 +17,16 @@ name: mechanical-build
 
 on:
   workflow_call:
-
+    inputs:
+      revision:
+        description: "Release version to stamp in the viewer header (blank = none)"
+        required: false
+        type: string
+        default: ""
+            --branch "${GITHUB_REF_NAME}" \
+            --repo-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}" \
+            --release-version "${{ inputs.revision }}" \
+            --out out/TAPRX-888-mechanical-viewer.html
 jobs:
   boards-step:
     runs-on: ubuntu-latest
