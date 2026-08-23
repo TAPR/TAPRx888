@@ -49,6 +49,29 @@ def inject_revision(path, revision):
         f.write(t)
 
 
+def inject_board_git_hash(pcb_path, git_hash):
+    """Sync the board's embedded GIT_HASH copy.
+
+    KiCad caches the project text variables into the .kicad_pcb as a top-level
+    ``(property "GIT_HASH" "...")`` entry. kicad-cli re-reads the .kicad_pro
+    (so the schematic/assembly PDFs and the 3D GLB resolve ${GIT_HASH}
+    correctly), but the pcbnew-based gerber plot (KiBot) resolves ${GIT_HASH}
+    on the board silk from THIS embedded copy. If it isn't stamped too, the fab
+    gerbers render the stale committed value ("dev") while every kicad-cli
+    output is correct -- the split that hid this for several releases. Every
+    board here (main + both end plates) carries exactly one such property.
+    """
+    with open(pcb_path) as f:
+        t = f.read()
+    t, n = re.subn(r'(\(property "GIT_HASH" ")[^"]*(")',
+                   lambda m: m.group(1) + git_hash + m.group(2), t, count=1)
+    if n != 1:
+        sys.exit(f'ERROR: expected exactly one board (property "GIT_HASH" ...) '
+                 f"in {pcb_path}, replaced {n}")
+    with open(pcb_path, "w") as f:
+        f.write(t)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(
         description=__doc__,
@@ -76,10 +99,13 @@ def main(argv=None):
     inject_git_hash(args.pro, args.git_hash)
     for path in list(args.sheets) + [args.pcb]:
         inject_revision(path, args.revision)
+    # The board caches the project text vars; sync its GIT_HASH copy too, or the
+    # pcbnew-based gerber plot renders the stale value while kicad-cli is correct.
+    inject_board_git_hash(args.pcb, args.git_hash)
 
     print(f"Injected rev='{args.revision}' into "
           f"{len(args.sheets)} sheet(s) + PCB title blocks; "
-          f"GIT_HASH='{args.git_hash}' text var")
+          f"GIT_HASH='{args.git_hash}' text var (.kicad_pro + board property)")
     return 0
 
 
