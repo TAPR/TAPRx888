@@ -1,26 +1,27 @@
 (footprint "PAD_1206"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)")
 	(tags "capacitor 1206")
 	(property "Reference" "REF**"
-		(at 0 -1.75 180)
+		(at 0 -1.9 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "7cf17c46-012f-486d-b850-a31d8b3d286b")
+		(uuid "941150b8-5a0b-4048-bcd3-1e192be948a6")
 		(effects
 			(font
-				(size 0.75 0.75)
-				(thickness 0.1)
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
 			)
 		)
 	)
 	(property "Value" "C-10u-50V-1206"
 		(at 0 2 180)
 		(layer "F.Fab")
-		(uuid "e88a0f6c-0e56-4098-9bde-57f4d76b978a")
+		(uuid "8535fbf2-17ae-42ac-b65d-4ffa6d403a4e")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +33,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d4c029af-de1d-4c98-955b-274f9f985a0a")
+		(uuid "ffd3d463-1984-47ee-8ae6-4ab90ab92825")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +45,7 @@
 		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7efc51b2-d530-4d48-9578-bdbad77f77a9")
+		(uuid "181543ff-010a-4f10-8223-88f35d64124a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -52,12 +53,12 @@
 			)
 		)
 	)
-	(property "LCSC Part #" "C13585"
+	(property "LCSC Part #" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c7bf7075-5217-44d8-b8d8-a2f1f934d41f")
+		(uuid "e8fbb947-e4c8-46f3-a887-e3f3270b81df")
 		(effects
 			(font
 				(size 1 1)
@@ -66,65 +67,66 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -1 1.02)
-		(end 1 1.02)
+		(start -1 1.1)
+		(end 1 1.1)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "5397f0ed-0a6a-4dd4-a331-673df7481057")
+		(uuid "edc13862-c28c-4550-b169-09e6ea90873a")
 	)
 	(fp_line
-		(start 1 -1.02)
-		(end -1 -1.02)
+		(start 1 -1.1)
+		(end -1 -1.1)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "42d6e465-765a-4a33-b5c1-9b0548600c44")
+		(uuid "7f69ac50-a0e6-4cd2-80a2-fd32637464ea")
 	)
 	(fp_line
-		(start -2.25 -1.05)
-		(end -2.25 1.05)
+		(start -2.1 -0.9)
+		(end -2.1 0.9)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "ece25386-28c0-45a1-be0e-76844092c516")
+		(uuid "43df7da1-38ba-4d63-b1cf-9babbad1ecd7")
 	)
 	(fp_line
-		(start -2.25 -1.05)
-		(end 2.25 -1.05)
+		(start -2.1 -0.9)
+		(end 2.1 -0.9)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "a464f93b-a78c-4001-8e8e-7c3efa6df5ed")
+		(uuid "bdb1f090-0f4c-4f4f-8b40-d1e60d1158ac")
 	)
 	(fp_line
-		(start 2.25 1.05)
-		(end -2.25 1.05)
+		(start 2.1 0.9)
+		(end -2.1 0.9)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "f650ff79-58b7-4048-a134-8d2a09aacde5")
+		(uuid "4b0d72a9-f907-432c-81cc-479352c915d0")
 	)
 	(fp_line
-		(start 2.25 1.05)
-		(end 2.25 -1.05)
+		(start 2.1 0.9)
+		(end 2.1 -0.9)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "f48718eb-1fcf-4bf8-a81e-29f2f947efb0")
+		(uuid "83c32f02-02f6-44f1-a41d-d81feeebc638")
 	)
 	(fp_line
 		(start -1.6 -0.8)
@@ -134,7 +136,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "c1e62e30-6c76-43fc-9e59-30f4f1f7fc2b")
+		(uuid "0b42f8aa-6e4f-4449-8d10-b9b63d786fc4")
 	)
 	(fp_line
 		(start -1.6 0.8)
@@ -144,7 +146,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "c67b7767-760b-465e-8105-2c3aa9fa8578")
+		(uuid "dd649e7e-5cc1-4788-8937-d88ba7103fd7")
 	)
 	(fp_line
 		(start 1.6 -0.8)
@@ -154,7 +156,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "03c44537-9962-4d2c-956d-044a1b107e53")
+		(uuid "3a2ba67b-e0fd-47c5-b452-23908ad45bf2")
 	)
 	(fp_line
 		(start 1.6 0.8)
@@ -164,12 +166,12 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "bfa992bd-b803-42f2-925c-32f33093cfe6")
+		(uuid "19df147d-be5d-46ae-b768-a5626af49cf6")
 	)
-	(fp_text user "${REFERENCE}"
+	(fp_text user "REF**"
 		(at 0 -1.75 180)
 		(layer "F.Fab")
-		(uuid "5557fb77-3cce-467b-8e52-e3adbb54c27b")
+		(uuid "391a5a72-3f5a-4fd9-92f3-487654908a4c")
 		(effects
 			(font
 				(size 1 1)
@@ -181,16 +183,16 @@
 		(at -1.5 0)
 		(size 1 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "1cb6be77-fe0f-4fd3-8771-c7cd5955a013")
+		(uuid "934a67b8-3936-4362-a1bd-26fd0c19596f")
 	)
 	(pad "2" smd rect
 		(at 1.5 0)
 		(size 1 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "9de0bc6c-6d62-41ef-ae33-c6763c07bcd6")
+		(uuid "c38df4b9-f2c7-4d41-a76b-7c95eb84fb91")
 	)
 	(embedded_fonts no)
-	(model "${TIS}/TIS_3D/R-1206.STEP"
+	(model "${KIPRJMOD}/3d/kicad-stock/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -198,7 +200,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 0)
+			(xyz 0 0 0)
 		)
 	)
 )

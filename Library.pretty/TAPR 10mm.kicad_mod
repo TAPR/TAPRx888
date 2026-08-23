@@ -1,13 +1,13 @@
 (footprint "TAPR 10mm"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at -0.2 -7.1 0)
 		(unlocked yes)
 		(layer "Cmts.User")
-		(uuid "10ab3fea-7a31-4c92-8f68-52be1a19bb57")
+		(uuid "2f582c9e-6fd6-4e38-ad4b-a0937e49c105")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0.75 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "d2e3a010-98df-4d50-950f-843e07e68094")
+		(uuid "fae9467b-06f3-41ad-92da-e30bdf652b0c")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2b20132a-e2ad-4670-a643-ae57279a7bdf")
+		(uuid "b4a2be0e-1981-4c58-be25-d0ae80a21102")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "39dabf2e-e502-4501-a3ea-37f0afa1fb06")
+		(uuid "1b9bad29-c1e6-47c7-b9a5-75b424499bdf")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -51,7 +51,8 @@
 			)
 		)
 	)
-	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_poly
 		(pts
 			(xy 3.253825 -3.868261) (xy 3.362987 -3.852921) (xy 3.412411 -3.820832) (xy 3.425236 -3.768176) (xy 3.425446 -3.754763)
@@ -68,7 +69,7 @@
 		)
 		(fill yes)
 		(layer "F.SilkS")
-		(uuid "18a1fa39-be61-4308-b760-7b51c935b07f")
+		(uuid "ba1e6aee-7c13-4167-90fc-00e44d26a6e4")
 	)
 	(fp_poly
 		(pts
@@ -89,7 +90,7 @@
 		)
 		(fill yes)
 		(layer "F.SilkS")
-		(uuid "b223c222-9dbb-497d-966d-418606af4522")
+		(uuid "3a16572e-e87c-4b61-8a77-d4438e2e0594")
 	)
 	(fp_poly
 		(pts
@@ -112,7 +113,7 @@
 		)
 		(fill yes)
 		(layer "F.SilkS")
-		(uuid "2d8e7617-466b-4d4a-80f4-e269041354b5")
+		(uuid "fa8d104f-b0af-430b-b2db-86b3a748f85f")
 	)
 	(fp_poly
 		(pts
@@ -136,7 +137,7 @@
 		)
 		(fill yes)
 		(layer "F.SilkS")
-		(uuid "21096d66-4dc6-4797-ae47-22426e7d3ad0")
+		(uuid "9629891f-2769-4ae6-87a4-885f7e23d0f6")
 	)
 	(fp_poly
 		(pts
@@ -200,7 +201,7 @@
 		)
 		(fill yes)
 		(layer "F.SilkS")
-		(uuid "a970d394-a621-479b-8a86-6558f7a2f263")
+		(uuid "481883f8-a61d-427a-90bf-15bfe93a668f")
 	)
 	(embedded_fonts no)
 )

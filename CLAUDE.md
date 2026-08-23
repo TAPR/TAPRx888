@@ -97,24 +97,33 @@ is pending. Author changes with KiCad 10.
 
 **Implemented** — the full policy is in `docs/RELEASE_STRATEGY.md`; the workflows
 are in `.github/workflows/`. CI runs `kicad-cli` + **KiBot** inside the public
-**`ghcr.io/inti-cmnb/kicad10_auto`** image (pinned to KiCad 10.0.4), across three
+**`ghcr.io/inti-cmnb/kicad10_auto`** image (pinned to KiCad 10.0.4), across six
 workflows mirroring the `design → ci-docs → dev → main` flow:
 
 - **`dev-checks`** — on `design`/`dev-*` pushes and PRs into `dev`/`main`: ERC
   (root schematic), DRC (PCB), and a BOM completeness check, plus schematic PDF
   and gerbers/drill as artifacts. On a `design` push it also publishes the reports
   to the `ci-docs` branch (the reviewer's surface). **Currently non-gating**
-  (`ENFORCE=false`) during bring-up — the design has known ERC/DRC violations
-  tracked as issues; flip `ENFORCE=true` and add required checks once the baseline
-  is triaged.
-- **`dev-release`** — on merge to `dev`: publishes/refreshes a **pre-release**
-  (minor increment) when a design file changed.
-- **`main-release`** — on merge to `main`: builds the full fabrication package
-  (gerbers, drill, LCSC BOM, CPL, interactive BOM, schematic + assembly PDFs) via
-  KiBot and publishes a production **GitHub Release** (next whole `.0`). **STEP /
-  3D renders are not yet included** — the footprints reference custom 3D models
-  absent from the CI image (issue #45); the KiBot outputs remain defined for when
-  they are.
+  (`ENFORCE=false`) during bring-up — flip `ENFORCE=true` and add required checks
+  once the known ERC/DRC baseline is triaged.
+- **`dev-release`** — on merge to `dev`: publishes/refreshes the `v0.x`
+  **pre-release** when a board, end-plate, or mechanical file changed. It's a
+  **combined snapshot** — board fab package + both end-plate fab packages + the
+  mechanical assembly (STEP + coloured GLB + 3D viewer) — and deploys the viewer
+  to GitHub Pages.
+- **`main-release`** — on merge to `main`: builds the full board fabrication
+  package (gerbers, drill, LCSC BOM, CPL, interactive BOM, board STEP, schematic +
+  assembly PDFs) via KiBot and publishes a production **GitHub Release** (next
+  whole `.0`).
+- **`endplate-release`** — on merge to `main`: publishes the end plates on their
+  own independent `endplates-vX.Y` lane.
+- **`mechanical-ci`** / **`mechanical-build`** — build the mechanical assembly +
+  viewer for `design`/`dev-*` and deploy Pages; `mechanical-build` is the reusable
+  (`workflow_call`) build shared with `dev-release`.
+
+Board **connector** 3D models are still absent from the CI image (issue #45), so
+the assembly is missing those parts; everything else resolves from the vendored
+`3d/` mirror.
 
 - **Revision & provenance**: `${REVISION}` and `${GIT_HASH}` are **injected at
   build time** (`scripts/inject_provenance.py`) into the title block and bottom

@@ -1,43 +1,45 @@
 # TAPR manual-mode runbook — keep the 3-tier flow, turn CI off
 
 **Purpose.** The middle path between *keep full CI* and *roll all the way back*
-(see `docs/TAPR_rollback.md`). If the maintainers find the CI automation too
-much but are fine with the `design → dev → main` structure, this turns the
-robots off and hands the **same tools** to a human. The branches, the design,
-and the scripts all stay — only the workflow automation goes.
+(`docs/TAPR_rollback.md`): turn the robots off but keep the `design → dev → main`
+structure and hand the **same tools** to a human. Branches, design, and scripts
+all stay — only the workflow automation goes.
 
-> The key fact: the automation is **only the three workflow YAML files**.
-> Everything they call (`run_checks.sh`, `build_release.sh`, `next_version.sh`,
-> `inject_provenance.py`, the KiBot config) are standalone hand-tools. Turning
-> CI off doesn't throw the value away — it just stops the robots and lets a
-> person run the same steps. Kept in ringof so re-enabling is just restoring
-> three files.
+> The automation is **only the six workflow YAML files**. Everything they call
+> (`run_checks.sh`, `build_release.sh`, `next_version.sh`, `inject_provenance.py`,
+> `build_endplates.sh`, `assemble_mechanical.py`, `assemble_glb.py`,
+> `make_3d_viewer.py`, the KiBot config) are standalone hand-tools. Turning CI off
+> just stops the robots; re-enabling is restoring six files.
 
-Throughout, **`origin` = the TAPR repo** (maintainers clone TAPR as their
-primary once it's canonical).
+Throughout, **`origin` = the TAPR repo**.
 
 ---
 
 ## What changes
 
-**Remove** (the automation — "CI files no longer needed"):
+**Remove** (the automation):
 
 - `.github/workflows/dev-checks.yml`
 - `.github/workflows/dev-release.yml`
 - `.github/workflows/main-release.yml`
-- the **`ci-docs`** branch (it was *produced by* CI; it just goes stale with
-  nothing publishing to it)
+- `.github/workflows/mechanical-ci.yml`
+- `.github/workflows/mechanical-build.yml`
+- `.github/workflows/endplate-release.yml`
+- the **`ci-docs`** branch (produced by CI; goes stale with nothing publishing to it)
 
 **Keep** (now operated by hand):
 
-- Branches **`design → dev → main`** — the 3-tier flow is untouched.
-- `scripts/*` — the manual toolkit (see *Operating the flow by hand*).
-- `fabrication-toolkit-options.json` — *more* useful now: JLCPCB export straight
-  from the KiCad Fabrication Toolkit plugin GUI, no command line at all.
+- Branches **`design → dev → main`** — untouched.
+- `scripts/*` — the manual toolkit (see *Operating the flow by hand*), including
+  `run_checks.sh`, `build_release.sh`, `next_version.sh`, `inject_provenance.py`,
+  `build_endplates.sh`, `assemble_mechanical.py`, `assemble_glb.py`,
+  `make_3d_viewer.py`. Run these by hand instead of on push.
+- `fabrication-toolkit-options.json` — JLCPCB export straight from the KiCad
+  Fabrication Toolkit plugin GUI, no command line.
 - `TAPR.kicad_wks`, `VERSION.txt`, the design files, and the docs.
 
-**Branch protection:** **`main` only** — releases stay safe from an accidental
-clobber; `dev` and `design` are left open for friction-free day-to-day work.
+**Branch protection:** **`main` only** — releases stay safe; `dev` and `design`
+left open for day-to-day work.
 
 ---
 
@@ -45,14 +47,16 @@ clobber; `dev` and `design` are left open for friction-free day-to-day work.
 
 1. **Delete the workflow files.** They must be gone on *every* branch that could
    trigger them (`design`, `dev`, `main`), or Actions still fires from whichever
-   branch still carries one. Simplest: remove on `dev`, then propagate by the
-   normal merges.
+   branch carries one. Remove on `dev`, then propagate by the normal merges.
 
    ```sh
    git switch dev && git pull
    git rm .github/workflows/dev-checks.yml \
           .github/workflows/dev-release.yml \
-          .github/workflows/main-release.yml
+          .github/workflows/main-release.yml \
+          .github/workflows/mechanical-ci.yml \
+          .github/workflows/mechanical-build.yml \
+          .github/workflows/endplate-release.yml
    git commit -m "Turn CI off; operate the 3-tier flow manually (docs/TAPR_manual_mode.md)"
    git push origin dev
    # then carry it to main and design:
@@ -71,8 +75,7 @@ clobber; `dev` and `design` are left open for friction-free day-to-day work.
    force-push and deletion).
 
 4. **(Optional, belt-and-suspenders)** Settings → Actions → General → **Disable
-   Actions** for the repo, so nothing runs even if a stray workflow file
-   reappears later.
+   Actions** for the repo, so nothing runs even if a stray workflow reappears.
 
 ---
 
@@ -81,7 +84,6 @@ clobber; `dev` and `design` are left open for friction-free day-to-day work.
 ### Designer — unchanged
 
 Pull `design`, edit in KiCad, commit, push to `design`, say "design is free."
-Nothing about the designer's routine changes.
 
 ### Reviewer — check a design change *(replaces `dev-checks` / `ci-docs`)*
 
@@ -91,9 +93,8 @@ scripts/run_checks.sh          # ERC + DRC + BOM completeness -> reports/
 # read reports/erc.rpt, reports/drc.rpt, reports/bom_check.txt, reports/*.pdf
 ```
 
-If it looks good, merge `design → dev` (open a PR, or push directly — `dev` is
-unprotected in this mode). Then sync `design` back up to `dev` when the baton is
-free.
+If it looks good, merge `design → dev` (`dev` is unprotected in this mode), then
+sync `design` back up to `dev` when the baton is free.
 
 ### Cut a release *(replaces `dev-release` / `main-release`)*
 
@@ -112,11 +113,10 @@ gh release create "v$REV" "TAPRX-888-v$REV-fabrication.zip" \
   --notes "Fabrication package for v$REV (design commit $GIT_HASH). Built manually."
 ```
 
-`build_release.sh` still injects provenance (rev + git hash into the title block
-and silkscreen) and stamps `VERSION.txt` in the package — the manual build
-produces the **same stamped outputs** the CI did. It needs the same tools
-locally (`kicad-cli`, `kibot`, `python3`, `ghostscript`/`poppler-utils`); the
-easiest way to guarantee that is to run it inside the same public image:
+`build_release.sh` injects provenance and stamps `VERSION.txt`, producing the
+**same stamped outputs** CI did. It needs the same tools locally (`kicad-cli`,
+`kibot`, `python3`, `ghostscript`/`poppler-utils`); easiest is the same public
+image:
 
 ```sh
 docker run --rm -v "$PWD":/ws -w /ws \
@@ -125,36 +125,44 @@ docker run --rm -v "$PWD":/ws -w /ws \
   scripts/build_release.sh
 ```
 
-### Fab outputs with no command line at all
+### End plates *(replaces `endplate-release`)*
+
+Cut the independent `endplates-vX.Y` package by hand with `scripts/build_endplates.sh`
+(uses `inject_provenance.py`), then `gh release create endplates-v$REV …`.
+
+### Mechanical fit-check *(replaces `mechanical-ci` / `mechanical-build`)*
+
+Build the assembly STEP + GLB + viewer by hand:
+`scripts/assemble_mechanical.py`, `scripts/assemble_glb.py`,
+`scripts/make_3d_viewer.py`.
+
+### Fab outputs with no command line
 
 The JLCPCB Fabrication Toolkit KiCad plugin reads
 `fabrication-toolkit-options.json`, so a maintainer can export gerbers / BOM /
-CPL straight from KiCad's GUI — no scripts, no terminal.
+CPL straight from KiCad's GUI.
 
 ---
 
 ## Docs to touch when switching
 
 - `docs/RELEASE_STRATEGY.md` and `CONTRIBUTING.md` describe the *CI-driven* flow.
-  Add a short "manual mode" note (or trim the CI sections) so they say checks and
-  releases are now run by hand via `scripts/`.
-- `VERSION.txt` is already de-numbered (a "development snapshot" in the tree,
-  stamped only in built packages) — still correct; in manual mode you get the
-  stamp by running `build_release.sh` yourself.
+  Add a "manual mode" note (or trim the CI sections) so they say checks and
+  releases are run by hand via `scripts/`.
+- `VERSION.txt` is already de-numbered; in manual mode you get the stamp by
+  running `build_release.sh` yourself.
 
 ---
 
 ## Turning CI back on
 
-Restore the three workflow files from ringof (or this repo's history), push to
-`dev`, re-add `dev` protection. Nothing else was lost — the scripts never left,
-so CI and manual mode use the exact same tooling.
+Restore the six workflow files from history, push to `dev`, re-add `dev`
+protection. The scripts never left, so CI and manual mode use the same tooling.
 
 ---
 
 ## What this does NOT do
 
 - It does **not** touch the design or the branch structure — only the automation.
-- It is **not** a rollback to pre-migration (that's `docs/TAPR_rollback.md`,
-  which returns TAPR to the single `main @ c01bece8`).
+- It is **not** a rollback to pre-migration (that's `docs/TAPR_rollback.md`).
 - Existing GitHub Releases are left as they are.

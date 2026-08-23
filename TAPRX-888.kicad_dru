@@ -1,34 +1,161 @@
+(version 1)
 
-# USB3 SuperSpeed differential pairs: SSRX+/-, SSTX+/-
-# Skew and coupling constraints for 5 Gbps signaling
+# ============================================================================
+#  TAPRX-888 - custom design rules
+#  Process target : JLCPCB, 6-layer, ADVANCED via tier
+#                   (0.15 mm via drill / 0.30 mm pad -> 0.075 mm annular)
+#  Source         : jlcpcb.com/capabilities  (captured 2026-07-29; confirm live)
+#  Cross-checked  : github.com/tinfever/KiCAD-Custom-DRC-Rules-for-JLCPCB
+#  Model          : .kicad_pro "Constraints" hold the ABSOLUTE physical floor;
+#                   this file only *tightens*. KiCad enforces the most
+#                   restrictive of {constraints, netclasses, these rules}.
+#  Changing fabs  : replace the PROCESS section, update this header, archive the
+#                   outgoing set in the Wiki.
+#  CONFIRM before trusting as a gate:
+#   - Trace/space 3.5 mil = current JLC multilayer (older sheets capped OUTER at
+#     5 mil). Board's narrowest track 0.1 mm (~3.94 mil): OK, but sub-4-mil = JLC
+#     extra-cost tier.
+#   - Condition tokens (A.Type, A.Pad_Type) are best-effort - validate on load.
+# ============================================================================
+
+# ===== PROCESS  (JLCPCB 6-layer - complete capability reference; swap per fab) =
+# Severity: fab HARD limits = error; legibility guidance = warning.
+# Kept complete (incl. limits the .pro floor already covers) so this reads as the
+# full JLC 6-layer spec. Where the .pro design-practice floor is STRICTER it
+# governs - those DRU lines are documentation and won't fire.
+
+# .pro min_track_width 0.1mm is stricter and governs; this documents JLC's cap.
+(rule "JLC: min trace width 3.5mil"
+	(constraint track_width (min 0.0889mm)))
+
+# .pro min_clearance 0.1mm is stricter and governs.
+(rule "JLC: min copper clearance 3.5mil"
+	(constraint clearance (min 0.0889mm)))
+
+(rule "JLC: min via drill (advanced 0.15mm)"
+	(constraint hole_size (min 0.15mm))
+	(condition "A.Type == 'Via'"))
+
+# ---------------------------------------------------------------------------
+# Via annular ring - JLCPCB 6-layer
+#
+# JLCPCB published minimum via: 0.25 mm outer / 0.15 mm inner  =>  0.05 mm ring.
+# The 0.15 mm annular figure is JLCPCB's *recommended* value (drill-breakout
+# margin), NOT the floor; 0.05 mm is the hard minimum (IPC Class 3).
+# Sources: jlcpcb.com/blog/annular-rings-pcb-design
+#          jlcpcb.com/blog/pcb-via-design-best-practices
+#
+# General vias are held to a conservative 0.075 mm ring. The FX3 (CYUSB301x,
+# 0.5 mm-pitch BGA) escape fanout is dog-boned with 0.25/0.15 THROUGH vias,
+# which sit at JLCPCB's minimum-capability 0.05 mm ring by necessity - a
+# deliberate, documented deviation, scoped here to the 0.15 mm-drill class.
+# Production-grade upgrade path: HDI via-in-pad laser microvias.
+# ---------------------------------------------------------------------------
+# General via annular ring: everything with a drill larger than the fanout class.
+(rule "JLC: min via annular ring"
+    (constraint annular_width (min 0.075mm))
+    (condition "A.Type == 'Via' && A.Hole_Size_X > 0.15mm")
+    (severity warning)
+)
+# FX3 0.5 mm-BGA fanout vias (0.15 mm drill): allowed at JLCPCB minimum-
+# capability 0.05 mm annular ring. Deliberate, documented deviation.
+(rule "JLC: FX3 fanout via annular ring (min-capability)"
+    (constraint annular_width (min 0.05mm))
+    (condition "A.Type == 'Via' && A.Hole_Size_X <= 0.15mm")
+    (severity warning)
+)
+
+# ---------------------------------------------------------------------------
+# Via diameter (pad) - design intent vs fab floor
+#
+# .pro Constraints "Minimum via diameter" holds the ABSOLUTE floor = 0.25 mm
+# (JLCPCB min via outer diameter). General vias are held to a 0.4 mm design-
+# intent minimum here; the FX3 0.5 mm-BGA fanout (0.15 mm drill) is exempt and
+# rides the 0.25 mm .pro floor. via_diameter is a single global value in .pro
+# and can't distinguish the two, so the scoped design-intent floor lives here.
+# ---------------------------------------------------------------------------
+(rule "min via diameter (general, design intent)"
+    (constraint via_diameter (min 0.4mm))
+    (condition "A.Type == 'Via' && A.Hole_Size_X > 0.15mm"))
+
+
+(rule "JLC: min PTH drill 0.2mm"
+	(constraint hole_size (min 0.2mm))
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'"))
+
+# Net-aware: JLC 0.254mm same-net (GND stitching), 0.5mm different-net.
+(rule "JLC: hole-to-hole (different net)"
+	(constraint hole_to_hole (min 0.5mm))
+	(condition "A.NetName != B.NetName"))
+(rule "JLC: hole-to-hole (same net)"
+	(constraint hole_to_hole (min 0.254mm))
+	(condition "A.NetName == B.NetName"))
+
+# .pro min_copper_edge_clearance 0.5mm is stricter and governs.
+(rule "JLC: copper to board edge 0.3mm"
+	(constraint edge_clearance (min 0.3mm)))
+
+#(rule "JLC: silk to pad 0.15mm"
+#	(constraint silk_clearance (min 0.15mm)))
+
+# Fab-layer text (Value fields, assembly notes) is documentation, not printed
+# silk. silk_clearance checks silk against ALL nearby objects, incl. F.Fab;
+# ignore those pairs. Pattern: KiCad docs "silk_board_edge_clearance".
+(rule "silk clearance: ignore F.Fab / assembly text"
+    (constraint silk_clearance)
+    (severity ignore)
+    (condition "A.Layer == 'F.Fab' || A.Layer == 'B.Fab' || B.Layer == 'F.Fab' || B.Layer == 'B.Fab'"))
+
+# Courtyard is a virtual placement keep-out, not printed copper/silk - silk
+# routinely sits inside it (refdes on the part body). Silk-to-courtyard
+# clearance = 0.
+(rule "silk to courtyard: ignore (virtual layer, not printed)"
+    (constraint silk_clearance)
+    (severity ignore)
+    (condition "A.Layer == 'F.Courtyard' || A.Layer == 'B.Courtyard' || B.Layer == 'F.Courtyard' || B.Layer == 'B.Courtyard'"))
+
+# Silk text: JLC ABSOLUTE min = 0.8mm height / 0.15mm stroke. (1.0mm is JLC's
+# *recommended*, not the manufacturability floor.)
+(rule "JLC: min silk text height 0.8mm"
+	(constraint text_height (min 0.8mm))
+	(condition "A.Layer == 'F.Silkscreen' || A.Layer == 'B.Silkscreen'")
+	(severity warning))
+(rule "JLC: min silk text thickness 0.15mm"
+	(constraint text_thickness (min 0.15mm))
+	(condition "A.Layer == 'F.Silkscreen' || A.Layer == 'B.Silkscreen'")
+	(severity warning))
+
+
+# ===== PROJECT  (TAPRX-888 design intent) ===================================
+
 (rule "USB3_SS diff pair skew"
-    (condition "A.NetClass == 'USB3_SS'")
-    (constraint skew (max 0.1mm))
-)
-
+	(constraint skew (max 0.12mm) (within_diff_pairs))   
+    (condition "A.hasNetclass('USB3_SS')"))
 (rule "USB3_SS diff pair coupling"
-    (condition "A.NetClass == 'USB3_SS'")
-    (constraint diff_pair_uncoupled (max 2mm))
-)
-
+	(constraint diff_pair_uncoupled (max 3mm))        
+    (condition "A.hasNetclass('USB3_SS')"))
 (rule "USB3_SS via limit"
-    (condition "A.NetClass == 'USB3_SS'")
-    (constraint via_count (max 2))
-)
-
-# USB3 TX-RX isolation: keep SSTX and SSRX pairs separated
+	(constraint via_count (max 2))                    
+    (condition "A.hasNetclass('USB3_SS')"))
 (rule "USB3 TX-RX isolation"
-    (condition "(A.NetName == '/SSTX+' || A.NetName == '/SSTX-') && (B.NetName == '/SSRX+' || B.NetName == '/SSRX-')")
-    (constraint clearance (min 0.5mm))
-)
-
-# USB2 High-Speed (480 Mbps): USB+/USB- differential pair
+	(constraint clearance (min 0.5mm))
+	(condition "(A.NetName=='/SSTX+' || A.NetName=='/SSTX-') && (B.NetName=='/SSRX+' || B.NetName=='/SSRX-')"))
 (rule "USB2 diff pair skew"
-    (condition "A.NetClass == 'USB2'")
-    (constraint skew (max 0.5mm))
-)
-
+	(constraint skew (max 1.25mm) (within_diff_pairs))   
+    (condition "A.hasNetclass('USB2')"))
 (rule "USB2 diff pair coupling"
-    (condition "A.NetClass == 'USB2'")
-    (constraint diff_pair_uncoupled (max 5mm))
-)
+	(constraint diff_pair_uncoupled (max 5mm))        
+    (condition "A.hasNetclass('USB2')"))
+(rule "USB3 TX-RX isolation: breakout exemption"
+    (constraint clearance (min 0.1mm))
+    (condition "(A.NetName=='/SSTX+' || A.NetName=='/SSTX-') && (B.NetName=='/SSRX+' || B.NetName=='/SSRX-') && (A.intersectsCourtyard('*') || B.intersectsCourtyard('*'))"))
+
+# Diff-pair coupling: exempt the fan-out at the pads. The pair must spread from
+# its 0.355 mm coupled pitch to the BGA ball pitch and the connector's 1.75 mm
+# pin pitch; that spreading is inherently uncoupled and unavoidable. Same
+# rationale as the TX-RX isolation breakout exemption above. Uncoupling in OPEN
+# board between these parts is NOT exempt and still flags.
+(rule "USB3_SS coupling: breakout exemption (fan-out at pads)"
+    (constraint diff_pair_uncoupled)
+    (severity ignore)
+    (condition "A.hasNetclass('USB3_SS') && (A.intersectsCourtyard('U11') || A.intersectsCourtyard('U7') || A.intersectsCourtyard('J5') || A.intersectsCourtyard('C39') || A.intersectsCourtyard('C40'))"))

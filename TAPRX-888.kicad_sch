@@ -10,6 +10,142 @@
 		(rev "DEV")
 	)
 	(lib_symbols
+		(symbol "Library:+1V2"
+			(power global)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+1V2"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+1V2_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+1V2_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+1V2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Library:+3V3"
 			(power global)
 			(pin_names
@@ -146,6 +282,142 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Library:+3V3ADC"
+			(power global)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3ADC"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3ADC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3ADC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+3V3ADC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Library:AD8370"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -172,7 +444,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:TSSOP-16-Thermal"
+			(property "Footprint" "Library:TSSOP-16-Thermal"
 				(at -0.762 20.066 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -551,7 +823,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:BUTTON-4p5X4p5"
+			(property "Footprint" "Library:BUTTON-4p5X4p5"
 				(at -0.254 6.604 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -850,7 +1122,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:C_0603"
+			(property "Footprint" "Library:C_0603"
 				(at -2.286 -0.762 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1030,7 +1302,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:C_0603"
 				(at -2.286 -0.762 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1210,7 +1482,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_1206"
+			(property "Footprint" "Library:PAD_1206"
 				(at -2.286 -0.762 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1366,7 +1638,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:C_0603"
 				(at 13.716 2.286 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1546,7 +1818,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:C_0603"
 				(at 1.27 9.906 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1726,7 +1998,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:C_0603"
+			(property "Footprint" "Library:C_0603"
 				(at -2.286 -0.762 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1871,6 +2143,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Library:CONN_SMA_JACK_EDGE_JLC_with_nut"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CONN_SMA_JACK_EDGE_JLC_With_Nut"
+				(at 2.921 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
+				(at -0.508 13.208 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" "C2874826"
+				(at -4.826 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CONN_SMA_JACK_EDGE_JLC_with_nut_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.222 1.8083)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.808)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CONN_SMA_JACK_EDGE_JLC_with_nut_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Library:CYUSB3014-BZXCT"
 			(pin_names
 				(offset 1.016)
@@ -1902,7 +2360,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:BGA-121"
+			(property "Footprint" "Library:BGA-121"
 				(at -1.778 110.744 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4204,6 +4662,26 @@
 					)
 				)
 			)
+			(symbol "CYUSB3014-BZXCT_1_0"
+				(pin no_connect line
+					(at 17.78 -101.6 180)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
 		(symbol "Library:Conn_JTAG10-mini"
@@ -4236,7 +4714,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:CONN-JTAG10-mini"
+			(property "Footprint" "Library:CONN-JTAG10-mini"
 				(at 0.508 15.494 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4625,7 +5103,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOD-323"
+			(property "Footprint" "Library:SOD-323"
 				(at 0.762 18.288 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4776,7 +5254,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:0603"
+			(property "Footprint" "Library:0603"
 				(at -0.508 9.652 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4963,7 +5441,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:0603"
+			(property "Footprint" "Library:0603"
 				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5150,7 +5628,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOIC-8-dual"
+			(property "Footprint" "Library:SOIC-8-dual"
 				(at -1.27 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5493,7 +5971,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:MountingHole_M2.5-PTH"
+			(property "Footprint" "Library:MountingHole_M2.5-PTH"
 				(at 0 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5606,7 +6084,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:LED_RGB_SIDE"
+			(property "Footprint" "Library:LED_RGB_SIDE"
 				(at 0 12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5972,7 +6450,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOT-23-5"
+			(property "Footprint" "Library:SOT-23-5"
 				(at -1.27 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6018,8 +6496,8 @@
 			)
 			(symbol "LP5907MFX-3.3_0_1"
 				(rectangle
-					(start -6.35 -2.54)
-					(end 6.35 2.54)
+					(start -6.35 2.54)
+					(end 6.35 -5.08)
 					(stroke
 						(width 0)
 						(type default)
@@ -6084,6 +6562,24 @@
 						)
 					)
 				)
+				(pin no_connect line
+					(at 8.89 -3.81 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_out line
 					(at 8.89 1.27 180)
 					(length 2.54)
@@ -6136,7 +6632,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:QFN-64_EP_9.5x9.5_Pitch0.5mm"
+			(property "Footprint" "Library:QFN-64_EP_9.5x9.5_Pitch0.5mm"
 				(at -1.524 69.342 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6170,7 +6666,7 @@
 					)
 				)
 			)
-			(property "MPN" "LTC2208CUP#PBF#PBF"
+			(property "MPN" "LTC2208CUP#PBF"
 				(at -3.302 66.548 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6243,8 +6739,8 @@
 			)
 			(symbol "LTC2208CUP_PBF_0_0"
 				(rectangle
-					(start -22.86 -55.88)
-					(end 22.86 50.8)
+					(start -22.86 50.8)
+					(end 22.86 -55.88)
 					(stroke
 						(width 0.4064)
 						(type default)
@@ -7573,7 +8069,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7762,7 +8258,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7951,7 +8447,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8140,7 +8636,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8329,7 +8825,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8518,7 +9014,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:4D02"
+			(property "Footprint" "Library:4D02"
 				(at 1.905 9.271 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8995,7 +9491,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9184,7 +9680,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9373,7 +9869,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9562,7 +10058,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9751,7 +10247,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:PAD_0603"
+			(property "Footprint" "Library:PAD_0603"
 				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9942,7 +10438,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOD-123"
+			(property "Footprint" "Library:SOD-123"
 				(at 0 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -10109,7 +10605,7 @@
 				(hide yes)
 			)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
@@ -10133,7 +10629,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:TIS-Logo"
+			(property "Footprint" "Library:TIS-Logo"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -10210,7 +10706,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:TP"
+			(property "Footprint" "Library:TP"
 				(at -2.54 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -10318,7 +10814,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:TP-Tiny"
+			(property "Footprint" "Library:TP-Tiny"
 				(at -2.54 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -10421,7 +10917,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SP3011"
+			(property "Footprint" "Library:SP3011"
 				(at 0 12.954 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -10852,7 +11348,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 7.62 0)
 					(length 2.54)
 					(name ""
@@ -10870,7 +11366,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 5.08 0)
 					(length 2.54)
 					(name ""
@@ -10888,7 +11384,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 2.54 0)
 					(length 2.54)
 					(name ""
@@ -10906,7 +11402,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
 					(name ""
@@ -10924,7 +11420,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 -7.62 0)
 					(length 2.54)
 					(name ""
@@ -10942,7 +11438,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 -2.54 0)
 					(length 2.54)
 					(name ""
@@ -10960,7 +11456,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 -5.08 0)
 					(length 2.54)
 					(name ""
@@ -10978,7 +11474,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 -5.08 180)
 					(length 2.54)
 					(name ""
@@ -10996,7 +11492,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 -2.54 180)
 					(length 2.54)
 					(name ""
@@ -11014,7 +11510,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 -7.62 180)
 					(length 2.54)
 					(name ""
@@ -11032,7 +11528,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
 					(name ""
@@ -11050,7 +11546,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 2.54 180)
 					(length 2.54)
 					(name ""
@@ -11068,7 +11564,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 5.08 180)
 					(length 2.54)
 					(name ""
@@ -11086,7 +11582,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 7.62 180)
 					(length 2.54)
 					(name ""
@@ -11133,7 +11629,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:USB-3.0"
+			(property "Footprint" "Library:USB-3.0"
 				(at -4.572 21.59 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -11191,7 +11687,7 @@
 				)
 			)
 			(symbol "USB-3.0_1_1"
-				(pin input line
+				(pin passive line
 					(at 2.54 -12.7 180)
 					(length 2.54)
 					(name "SHELL"
@@ -11209,7 +11705,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 2.54 -7.62 180)
 					(length 2.54)
 					(name "V+"
@@ -11227,7 +11723,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 2.54 -5.08 180)
 					(length 2.54)
 					(name "D-"
@@ -11245,7 +11741,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 2.54 -2.54 180)
 					(length 2.54)
 					(name "D+"
@@ -11263,7 +11759,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 2.54 -10.16 180)
 					(length 2.54)
 					(name "GND"
@@ -11281,7 +11777,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 2.54 2.54 180)
 					(length 2.54)
 					(name "SSTX-"
@@ -11299,7 +11795,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 2.54 5.08 180)
 					(length 2.54)
 					(name "SSTX+"
@@ -11317,7 +11813,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 2.54 0 180)
 					(length 2.54)
 					(name "SIG_GND"
@@ -11335,7 +11831,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 2.54 7.62 180)
 					(length 2.54)
 					(name "SSRX-"
@@ -11353,7 +11849,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 2.54 10.16 180)
 					(length 2.54)
 					(name "SSRX+"
@@ -11403,7 +11899,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOT-223_THERMAL"
+			(property "Footprint" "Library:SOT-223_THERMAL"
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -11565,7 +12061,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SOT-223_THERMAL"
+			(property "Footprint" "Library:SOT-223_THERMAL"
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -11727,7 +12223,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TIS_Footprints:SMD-2520"
+			(property "Footprint" "Library:SMD-2520"
 				(at 0.254 12.192 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -11860,192 +12356,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0.254 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "CONN_SMA_JACK_EDGE_JLC_With_Nut"
-				(at 2.921 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
-				(at -0.508 13.208 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C2874826"
-				(at -4.826 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "CONN_SMA_JACK_EDGE_JLC_with_nut_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.778 0.508)
-					(mid 0.222 1.8083)
-					(end 1.778 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.778 0)
-					(mid 0.222 -1.808)
-					(end -1.778 -0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.508)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CONN_SMA_JACK_EDGE_JLC_with_nut_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "In"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "Ext"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "3.3V"
 		(exclude_from_sim no)
@@ -12096,18 +12406,6 @@
 			)
 		)
 		(uuid "4c26ed4b-028b-488d-8dff-5430569c15ce")
-	)
-	(text "Issues:\n#1 - [NEEDS CORRECTION] Add firmware test points for ARM and GPIF debugging - done, TP on SPI MISO and MOSI\n#2 - Add configurable clock test port for Si clock issue diagnostics / alternative Fs clock input - done\n#3 - EEPROM - done\n#4 -?\n#5 - ID pins, done\n#6 - USB2, USB3 resistors need to be 1% precision values -- probably not needed but done\n#7-?\n#8 - [CRITICAL] AVDD (A7) is miswired to 3.3, must be 1.2V - done\n#9 - [IMPROVEMENT] PMODE resistors should allow for both UP/DOWN/Hi-Z options, if doing SPI FLASH boot - done\n#10 - Missing recommended bulk capacitance and ferrites for *VDDQ supplies - done, ferrites were there, added 22uF caps\n#11 - [OPTIONAL] Missing series resistors on GPIF data/clock between ADC and FX3 - done, also clk\n#12 - Oscillator input should be handled as such [FSLC and CLK/XTAL inputs] - done\n#13 - SHDN should be driven by FX3 (GPIO 28) = done\n-------------\n#14 - CVDDQ voltage must match Oscillator Voltage - done, moved to +3.3V\n#15 - FX3 GPIO48, GPIO49 need TP for alt-UART use - done, using small testpoint pads\n#16 - LTC2208 SHDN should be pulled up to VDD (47k should be fine) - done\n#17 - ID5 (GPIO52) conflicts with pin mapping with in SPI boot mode - done, moved ID5 to GPIO41\n#18 - [FEATURE] 0.1\" header for JTAG pins from FX3 - done, using 2x5 0.05\" footprint\n#19 - [FEATURE] circuit to power cycle the Si5351A - done, driven by GPIO[34] \n \n"
-		(exclude_from_sim no)
-		(at 425.45 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "4c3169c2-a7ad-4ad0-9512-cf9b130191b2")
 	)
 	(text "TXCO27M"
 		(exclude_from_sim no)
@@ -12522,12 +12820,6 @@
 		(uuid "162fd5e4-660f-481e-bb68-e341e91d4791")
 	)
 	(junction
-		(at 180.34 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "17eb8c3a-7d73-4ee7-9f7a-54c400c84671")
-	)
-	(junction
 		(at 185.42 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12870,6 +13162,12 @@
 		(uuid "6039ccf9-416c-40e1-b2a5-41e9a20433f0")
 	)
 	(junction
+		(at 180.34 226.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60a1cc5b-55cc-4eca-9e87-d73c08975f4c")
+	)
+	(junction
 		(at 314.96 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12958,6 +13256,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78da6a90-2464-428e-adab-caff6a4c790f")
+	)
+	(junction
+		(at 180.34 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c7f62ca-0da0-4bcc-be15-14f90380bac6")
 	)
 	(junction
 		(at 55.88 274.32)
@@ -13198,12 +13502,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc845742-e6b6-4ab5-bd83-888248dd26f6")
-	)
-	(junction
-		(at 180.34 228.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bdd66469-0ab9-4a7d-abb0-ff1e6d539172")
 	)
 	(junction
 		(at 215.9 255.27)
@@ -14398,16 +14696,6 @@
 			(type default)
 		)
 		(uuid "0e75ed8f-0391-4cac-a710-d0ad77d93d42")
-	)
-	(wire
-		(pts
-			(xy 177.8 210.82) (xy 193.04 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ea8f182-9f9a-4fc8-b411-3d90ba576d90")
 	)
 	(wire
 		(pts
@@ -15641,16 +15929,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 215.9) (xy 240.03 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d854d19-092f-4de0-83aa-1e0a8239e87f")
-	)
-	(wire
-		(pts
 			(xy 82.55 166.37) (xy 82.55 170.18)
 		)
 		(stroke
@@ -16308,6 +16586,16 @@
 			(type default)
 		)
 		(uuid "528b5ad5-972b-4f8d-9444-1761f4d6e8e4")
+	)
+	(wire
+		(pts
+			(xy 177.8 210.82) (xy 193.04 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52bf4300-4ee5-4797-bf94-8a84c7b10b67")
 	)
 	(wire
 		(pts
@@ -17781,7 +18069,7 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 132.08) (xy 322.58 132.08)
+			(xy 311.15 132.08) (xy 325.12 132.08)
 		)
 		(stroke
 			(width 0)
@@ -18571,16 +18859,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 218.44) (xy 275.59 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9dd3aee-efea-433b-8faf-31d0ba572fd6")
-	)
-	(wire
-		(pts
 			(xy 38.1 265.43) (xy 38.1 267.97)
 		)
 		(stroke
@@ -18588,6 +18866,16 @@
 			(type default)
 		)
 		(uuid "a9eaf94e-7e27-4b71-a7d1-e9a649d44dd7")
+	)
+	(wire
+		(pts
+			(xy 177.8 213.36) (xy 193.04 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa8847ab-9147-4e1e-9686-3455a7e850ce")
 	)
 	(wire
 		(pts
@@ -19401,6 +19689,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 215.9) (xy 240.03 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9adf90d-d337-47b8-ae7f-62ca689a787c")
+	)
+	(wire
+		(pts
 			(xy 77.47 41.91) (xy 82.55 41.91)
 		)
 		(stroke
@@ -19551,7 +19849,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 134.62) (xy 346.71 134.62)
+			(xy 340.36 134.62) (xy 347.98 134.62)
 		)
 		(stroke
 			(width 0)
@@ -19911,6 +20209,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 218.44) (xy 275.59 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc894240-60d6-4f27-8709-8225cc9a88b8")
+	)
+	(wire
+		(pts
 			(xy 314.96 203.2) (xy 314.96 205.74)
 		)
 		(stroke
@@ -20138,16 +20446,6 @@
 			(type default)
 		)
 		(uuid "e14c2caf-9af6-4da9-86bb-5fee69c25285")
-	)
-	(wire
-		(pts
-			(xy 177.8 213.36) (xy 193.04 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e16b9843-cd2f-42a8-a0ac-d3472d379001")
 	)
 	(wire
 		(pts
@@ -20381,7 +20679,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 132.08) (xy 346.71 132.08)
+			(xy 330.2 132.08) (xy 347.98 132.08)
 		)
 		(stroke
 			(width 0)
@@ -21000,7 +21298,8 @@
 		(uuid "ffec6db3-3646-46c8-b658-69b7b93141e3")
 	)
 	(label "USB-"
-		(at 210.82 215.9 0)
+		(at 212.09 215.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21008,6 +21307,19 @@
 			(justify left bottom)
 		)
 		(uuid "047bc77a-8394-405d-85d6-b902b413c98f")
+		(property "Netclass" "USB2"
+			(at 212.09 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "ID2"
 		(at 270.51 182.88 180)
@@ -21058,16 +21370,6 @@
 			(justify right bottom)
 		)
 		(uuid "15288cc3-4d08-4cb0-830e-1c23ee6337e6")
-	)
-	(label "USB+"
-		(at 181.61 218.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "15c78fe0-ae01-4fe8-bb41-c0befe242c03")
 	)
 	(label "ID1"
 		(at 270.51 160.02 180)
@@ -21139,16 +21441,6 @@
 		)
 		(uuid "29f73cb1-7f06-495e-a61a-68a1e5c6d4a4")
 	)
-	(label "USB-"
-		(at 181.61 220.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2c1cfd7b-5a6a-4d82-8b8e-dc263c406347")
-	)
 	(label "EXT_REF_ACTIVE"
 		(at 262.89 109.22 180)
 		(effects
@@ -21219,16 +21511,6 @@
 		)
 		(uuid "356a7059-567a-4784-a0ba-0a4fe12bdbda")
 	)
-	(label "SSTX+"
-		(at 181.61 210.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "35946d9e-2b35-46d6-a1e8-96470029f4a4")
-	)
 	(label "SPI_SSN"
 		(at 270.51 205.74 180)
 		(effects
@@ -21280,7 +21562,7 @@
 		(uuid "43a197a5-aa7d-4368-a2cb-14c892bc709b")
 	)
 	(label "SSTX-"
-		(at 346.71 132.08 0)
+		(at 347.98 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21409,6 +21691,30 @@
 		)
 		(uuid "5a340e38-b1b8-4e9e-b7da-f4ae1ca3be3b")
 	)
+	(label "SSTX-"
+		(at 182.88 213.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b7e8a54-04c6-4825-b66c-39a7b4a38244")
+		(property "Netclass" "USB3_SS"
+			(at 182.88 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(label "D1"
 		(at 274.32 71.12 180)
 		(effects
@@ -21438,6 +21744,30 @@
 			(justify right bottom)
 		)
 		(uuid "64e547bf-2ac3-45b8-bcae-0c001d6c434b")
+	)
+	(label "FX3_SSTX+"
+		(at 313.69 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66d20072-f5d8-4bd6-9115-b43681aa151d")
+		(property "Netclass" "USB3_SS"
+			(at 313.69 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "D0"
 		(at 252.73 121.92 0)
@@ -21488,16 +21818,6 @@
 			(justify right bottom)
 		)
 		(uuid "6ef737c7-4f30-4438-9abf-c097ec25e4ec")
-	)
-	(label "SSRX+"
-		(at 181.61 205.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6f9e6036-b2cd-4542-82fb-16c6ff4ff0ea")
 	)
 	(label "D9"
 		(at 252.73 144.78 0)
@@ -21589,16 +21909,6 @@
 		)
 		(uuid "826d0cc2-ab60-4ccb-bd7d-1602dd09effb")
 	)
-	(label "SSRX-"
-		(at 181.61 208.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "861229d0-23ec-40f9-b742-4b6f1a3a3275")
-	)
 	(label "D14"
 		(at 252.73 157.48 0)
 		(effects
@@ -21608,16 +21918,6 @@
 			(justify left bottom)
 		)
 		(uuid "8833ac0e-7c99-4f3c-9274-194e441bf344")
-	)
-	(label "SSTX-"
-		(at 181.61 213.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "88933e38-80a2-4411-9224-d1473e422561")
 	)
 	(label "CLKIN"
 		(at 266.7 270.51 0)
@@ -21690,7 +21990,7 @@
 		(uuid "8fea06ae-586e-4782-916e-e55979df81d2")
 	)
 	(label "SSTX+"
-		(at 346.71 134.62 0)
+		(at 347.98 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21799,6 +22099,30 @@
 		)
 		(uuid "982b4ac8-f88f-4bee-923d-6f9a14326de9")
 	)
+	(label "SSRX-"
+		(at 182.88 205.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f73a43d-0aa4-4aae-99ee-671a7f92d9ee")
+		(property "Netclass" "USB3_SS"
+			(at 182.88 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(label "ID0"
 		(at 270.51 152.4 180)
 		(effects
@@ -21848,6 +22172,30 @@
 			(justify left bottom)
 		)
 		(uuid "a6fc2461-1631-43dd-a30e-d0c190118248")
+	)
+	(label "USB-"
+		(at 182.88 220.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8fec418-b169-4977-b87c-15b572a6250c")
+		(property "Netclass" "USB2"
+			(at 182.88 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "VGA_CLK"
 		(at 88.9 68.58 180)
@@ -21901,6 +22249,7 @@
 	)
 	(label "SSTX-"
 		(at 210.82 213.36 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21908,6 +22257,19 @@
 			(justify left bottom)
 		)
 		(uuid "b2f6cc32-7c04-4397-99bb-350fab3f6fa1")
+		(property "Netclass" "USB3_SS"
+			(at 210.82 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "SHDN"
 		(at 163.83 99.06 180)
@@ -21919,8 +22281,33 @@
 		)
 		(uuid "b33369e0-5cc1-4205-b4ce-5dc41314cb97")
 	)
+	(label "USB+"
+		(at 182.88 218.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3984c51-345b-437f-bbf2-686679db3b88")
+		(property "Netclass" "USB2"
+			(at 182.88 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(label "SSTX+"
 		(at 210.82 210.82 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21928,6 +22315,19 @@
 			(justify left bottom)
 		)
 		(uuid "b3ce178f-29a2-486e-b404-b75aadb3cca0")
+		(property "Netclass" "USB3_SS"
+			(at 210.82 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "D0"
 		(at 274.32 68.58 180)
@@ -22000,14 +22400,28 @@
 		(uuid "c43b00ba-0431-4cd9-9f27-44c297db3739")
 	)
 	(label "USB+"
-		(at 210.82 218.44 0)
+		(at 212.09 218.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "c6ad0b8f-cc61-42b0-a0c8-0c84a1e307d2")
+		(uuid "c5964f4d-d365-48a2-919d-f15b6fdbe1ff")
+		(property "Netclass" "USB2"
+			(at 212.09 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "ID7"
 		(at 364.49 215.9 180)
@@ -22029,8 +22443,9 @@
 		)
 		(uuid "c98a56a9-f858-442f-a9e3-90c38e42de5a")
 	)
-	(label "SSRX-"
+	(label "SSRX+"
 		(at 210.82 208.28 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -22038,6 +22453,19 @@
 			(justify left bottom)
 		)
 		(uuid "cb8d6180-9e8d-452e-9f24-049f352aa1e0")
+		(property "Netclass" "USB3_SS"
+			(at 210.82 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "D11"
 		(at 274.415 96.52 180)
@@ -22089,6 +22517,54 @@
 		)
 		(uuid "d783a69b-9231-44aa-881f-abfb2cc40ad6")
 	)
+	(label "SSRX+"
+		(at 182.88 208.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9297e4a-c2fb-4592-8a7b-9e8682ff2e02")
+		(property "Netclass" "USB3_SS"
+			(at 182.88 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(label "FX3_SSTX-"
+		(at 313.69 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da230ffd-b4e8-421c-b3a4-c5468fc9bbfb")
+		(property "Netclass" "USB3_SS"
+			(at 313.69 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(label "D2"
 		(at 252.73 127 0)
 		(effects
@@ -22119,8 +22595,9 @@
 		)
 		(uuid "ef5fd5e3-4339-4dc8-8cca-6efdbc790d39")
 	)
-	(label "SSRX+"
+	(label "SSRX-"
 		(at 210.82 205.74 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -22128,6 +22605,19 @@
 			(justify left bottom)
 		)
 		(uuid "f163d2ed-2b2f-4c98-be27-597de64436dc")
+		(property "Netclass" "USB3_SS"
+			(at 210.82 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "SPI_MOSI"
 		(at 270.51 210.82 180)
@@ -22158,6 +22648,30 @@
 			(justify left bottom)
 		)
 		(uuid "f51ff3ff-4a6a-42ef-ae1d-c648b90423df")
+	)
+	(label "SSTX+"
+		(at 182.88 210.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f67b3015-d8cf-452c-b664-b0ef7ff0d724")
+		(property "Netclass" "USB3_SS"
+			(at 182.88 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "D1"
 		(at 252.73 124.46 0)
@@ -22380,7 +22894,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP-Tiny"
+		(property "Footprint" "Library:TP-Tiny"
 			(at 273.05 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -22470,7 +22984,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 40.386 249.428 0)
 			(hide yes)
 			(show_name no)
@@ -22707,15 +23221,15 @@
 		)
 	)
 	(symbol
-		(lib_id "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut")
+		(lib_id "Library:CONN_SMA_JACK_EDGE_JLC_with_nut")
 		(at 25.4 62.23 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "036feaf3-e2b7-4569-8913-124cb8238b53")
@@ -22739,7 +23253,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
+		(property "Footprint" "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
 			(at 25.908 49.022 0)
 			(hide yes)
 			(show_name no)
@@ -22830,7 +23344,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TSSOP-16-Thermal"
+		(property "Footprint" "Library:TSSOP-16-Thermal"
 			(at 107.95 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -23027,7 +23541,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "09bfc709-3be1-4837-9512-c1a98b245cde")
 		(property "Reference" "TP10"
@@ -23052,7 +23566,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 194.31 10.16 0)
 			(hide yes)
 			(show_name no)
@@ -23317,7 +23831,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 126.492 68.326 0)
 			(hide yes)
 			(show_name no)
@@ -23472,9 +23986,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "0f7f5d41-5a93-4a2f-893b-cc4b98dc415f")
 		(property "Reference" "TP21"
@@ -23499,7 +24013,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP-Tiny"
+		(property "Footprint" "Library:TP-Tiny"
 			(at 273.05 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -23765,7 +24279,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:BGA-121"
+		(property "Footprint" "Library:BGA-121"
 			(at 291.592 16.256 0)
 			(hide yes)
 			(show_name no)
@@ -24254,6 +24768,9 @@
 		(pin "C2"
 			(uuid "65cdc086-6bf9-4d23-af09-ca6a06523451")
 		)
+		(pin "A11"
+			(uuid "54db4594-9efc-44e1-8eac-01b14d0b9039")
+		)
 		(instances
 			(project "TAPRX-888"
 				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
@@ -24384,7 +24901,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:4D02"
+		(property "Footprint" "Library:4D02"
 			(at 249.555 132.969 0)
 			(hide yes)
 			(show_name no)
@@ -24493,7 +25010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:BUTTON-4p5X4p5"
+		(property "Footprint" "Library:BUTTON-4p5X4p5"
 			(at 347.726 28.956 0)
 			(hide yes)
 			(show_name no)
@@ -24681,7 +25198,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 135.636 49.784 90)
 			(hide yes)
 			(show_name no)
@@ -24772,7 +25289,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 167.894 43.434 90)
 			(hide yes)
 			(show_name no)
@@ -24839,7 +25356,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "150f588d-976e-4673-9d68-91e3a511aaee")
@@ -24865,7 +25382,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 107.95 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -24954,7 +25471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:0603"
+		(property "Footprint" "Library:0603"
 			(at 387.858 89.408 0)
 			(hide yes)
 			(show_name no)
@@ -25124,7 +25641,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 135.636 61.214 90)
 			(hide yes)
 			(show_name no)
@@ -25214,7 +25731,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:LED_RGB_SIDE"
+		(property "Footprint" "Library:LED_RGB_SIDE"
 			(at 391.16 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -25400,7 +25917,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 126.492 46.736 0)
 			(hide yes)
 			(show_name no)
@@ -25460,7 +25977,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+3V3ADC")
 		(at 20.32 224.79 0)
 		(unit 1)
 		(body_style 1)
@@ -25668,7 +26185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 341.884 221.234 90)
 			(hide yes)
 			(show_name no)
@@ -25817,7 +26334,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 313.69 33.02 0)
 		(unit 1)
 		(body_style 1)
@@ -25939,7 +26456,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 160.274 21.082 0)
 			(hide yes)
 			(show_name no)
@@ -26029,7 +26546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 338.074 205.994 90)
 			(hide yes)
 			(show_name no)
@@ -26122,7 +26639,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 368.3 58.674 0)
 			(hide yes)
 			(show_name no)
@@ -26212,7 +26729,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:CONN-JTAG10-mini"
+		(property "Footprint" "Library:CONN-JTAG10-mini"
 			(at 217.678 40.386 0)
 			(hide yes)
 			(show_name no)
@@ -26245,7 +26762,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "Cxxxxxx"
+		(property "LCSC Part #" "C17362550"
 			(at 216.916 42.672 0)
 			(hide yes)
 			(show_name no)
@@ -26327,7 +26844,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:0603"
+		(property "Footprint" "Library:0603"
 			(at 55.372 94.488 0)
 			(hide yes)
 			(show_name no)
@@ -26420,7 +26937,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 58.166 249.428 0)
 			(hide yes)
 			(show_name no)
@@ -26512,7 +27029,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 208.026 250.698 0)
 			(hide yes)
 			(show_name no)
@@ -26603,7 +27120,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:4D02"
+		(property "Footprint" "Library:4D02"
 			(at 249.555 143.129 0)
 			(hide yes)
 			(show_name no)
@@ -26892,7 +27409,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 59.944 172.212 0)
 			(hide yes)
 			(show_name no)
@@ -26960,7 +27477,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2f9939f8-3e6b-466e-b0b3-0c46be7186e2")
 		(property "Reference" "TP13"
@@ -26985,7 +27502,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 393.7 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -27130,7 +27647,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 402.59 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -27252,7 +27769,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 84.836 108.458 0)
 			(hide yes)
 			(show_name no)
@@ -27342,7 +27859,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 341.884 230.124 90)
 			(hide yes)
 			(show_name no)
@@ -27432,7 +27949,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 372.364 209.804 90)
 			(hide yes)
 			(show_name no)
@@ -27523,7 +28040,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 84.328 39.624 0)
 			(hide yes)
 			(show_name no)
@@ -27590,7 +28107,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d5ff7e9-e97e-46b1-bc00-ae9074d9ed2c")
@@ -27616,7 +28133,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 107.95 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -27680,7 +28197,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d9e671d-4b27-4efd-960e-cd70c70a9bf8")
@@ -27706,7 +28223,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 30.48 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -27884,7 +28401,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 22.606 269.748 0)
 			(hide yes)
 			(show_name no)
@@ -27974,7 +28491,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 372.364 204.724 90)
 			(hide yes)
 			(show_name no)
@@ -28245,7 +28762,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 58.166 269.748 0)
 			(hide yes)
 			(show_name no)
@@ -28426,7 +28943,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOD-323"
+		(property "Footprint" "Library:SOD-323"
 			(at 187.452 229.362 0)
 			(hide yes)
 			(show_name no)
@@ -28518,7 +29035,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 251.206 250.698 0)
 			(hide yes)
 			(show_name no)
@@ -28609,7 +29126,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-223_THERMAL"
+		(property "Footprint" "Library:SOT-223_THERMAL"
 			(at 44.45 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -28797,7 +29314,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:MountingHole_M2.5-PTH"
+		(property "Footprint" "Library:MountingHole_M2.5-PTH"
 			(at 400.05 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -28885,7 +29402,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-223_THERMAL"
+		(property "Footprint" "Library:SOT-223_THERMAL"
 			(at 83.82 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -29061,7 +29578,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 192.786 34.544 90)
 			(hide yes)
 			(show_name no)
@@ -29242,7 +29759,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 326.136 99.568 0)
 			(hide yes)
 			(show_name no)
@@ -29399,7 +29916,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "527105f4-6e08-49e9-b94f-640ff3201df1")
 		(property "Reference" "TP11"
@@ -29424,7 +29941,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 275.59 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -29679,7 +30196,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:4D02"
+		(property "Footprint" "Library:4D02"
 			(at 249.555 112.649 0)
 			(hide yes)
 			(show_name no)
@@ -29764,7 +30281,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "548a6e9e-3a7b-4f22-bdc8-87469dcaf801")
@@ -29790,7 +30307,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 154.94 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -29966,7 +30483,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-223_THERMAL"
+		(property "Footprint" "Library:SOT-223_THERMAL"
 			(at 44.45 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -30064,7 +30581,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 337.058 136.906 0)
 			(hide yes)
 			(show_name no)
@@ -30157,7 +30674,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 150.114 70.612 0)
 			(hide yes)
 			(show_name no)
@@ -30338,7 +30855,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 358.394 67.818 0)
 			(hide yes)
 			(show_name no)
@@ -30431,7 +30948,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 75.946 229.108 0)
 			(hide yes)
 			(show_name no)
@@ -30523,7 +31040,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 234.696 269.748 0)
 			(hide yes)
 			(show_name no)
@@ -30705,7 +31222,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 49.276 82.804 0)
 			(hide yes)
 			(show_name no)
@@ -30772,7 +31289,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6821529a-e78f-4203-8923-cce80a89c75c")
@@ -30798,7 +31315,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 30.48 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -30888,7 +31405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 59.944 83.312 0)
 			(hide yes)
 			(show_name no)
@@ -30979,7 +31496,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:4D02"
+		(property "Footprint" "Library:4D02"
 			(at 249.555 122.809 0)
 			(hide yes)
 			(show_name no)
@@ -31179,7 +31696,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 232.156 30.988 0)
 			(hide yes)
 			(show_name no)
@@ -31239,7 +31756,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 20.32 265.43 0)
 		(unit 1)
 		(body_style 1)
@@ -31359,7 +31876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-223_THERMAL"
+		(property "Footprint" "Library:SOT-223_THERMAL"
 			(at 44.45 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -31455,7 +31972,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:0603"
+		(property "Footprint" "Library:0603"
 			(at 195.58 234.95 0)
 			(hide yes)
 			(show_name no)
@@ -31548,7 +32065,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 401.32 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -31635,7 +32152,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 341.884 233.934 90)
 			(hide yes)
 			(show_name no)
@@ -31726,7 +32243,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:QFN-64_EP_9.5x9.5_Pitch0.5mm"
+		(property "Footprint" "Library:QFN-64_EP_9.5x9.5_Pitch0.5mm"
 			(at 214.376 55.118 0)
 			(hide yes)
 			(show_name no)
@@ -31760,7 +32277,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTC2208CUP#PBF#PBF"
+		(property "MPN" "LTC2208CUP#PBF"
 			(at 212.598 57.912 0)
 			(hide yes)
 			(show_name no)
@@ -32069,7 +32586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 147.066 21.844 90)
 			(hide yes)
 			(show_name no)
@@ -32162,7 +32679,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 111.506 229.108 0)
 			(hide yes)
 			(show_name no)
@@ -32344,7 +32861,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 22.606 229.108 0)
 			(hide yes)
 			(show_name no)
@@ -32435,7 +32952,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:0603"
+		(property "Footprint" "Library:0603"
 			(at 225.298 257.048 0)
 			(hide yes)
 			(show_name no)
@@ -32526,7 +33043,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 85.852 32.766 0)
 			(hide yes)
 			(show_name no)
@@ -32753,7 +33270,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+3V3ADC")
 		(at 185.42 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -32875,7 +33392,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 362.966 34.798 0)
 			(hide yes)
 			(show_name no)
@@ -32967,7 +33484,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 243.586 44.704 90)
 			(hide yes)
 			(show_name no)
@@ -33059,7 +33576,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:0603"
+		(property "Footprint" "Library:0603"
 			(at 377.698 53.848 0)
 			(hide yes)
 			(show_name no)
@@ -33241,7 +33758,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 58.166 229.108 0)
 			(hide yes)
 			(show_name no)
@@ -33512,7 +34029,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 150.114 49.022 0)
 			(hide yes)
 			(show_name no)
@@ -33605,7 +34122,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 22.606 249.428 0)
 			(hide yes)
 			(show_name no)
@@ -33754,7 +34271,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+3V3ADC")
 		(at 115.57 166.37 270)
 		(unit 1)
 		(body_style 1)
@@ -33952,7 +34469,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 329.184 174.244 90)
 			(hide yes)
 			(show_name no)
@@ -34043,7 +34560,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:0603"
+		(property "Footprint" "Library:0603"
 			(at 387.858 79.248 0)
 			(hide yes)
 			(show_name no)
@@ -34225,7 +34742,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 40.386 269.748 0)
 			(hide yes)
 			(show_name no)
@@ -34316,7 +34833,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:USB-3.0"
+		(property "Footprint" "Library:USB-3.0"
 			(at 170.688 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -34429,7 +34946,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 341.884 244.094 90)
 			(hide yes)
 			(show_name no)
@@ -34519,7 +35036,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 338.074 193.294 90)
 			(hide yes)
 			(show_name no)
@@ -34579,7 +35096,7 @@
 		)
 	)
 	(symbol
-		(lib_id "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut")
+		(lib_id "Library:CONN_SMA_JACK_EDGE_JLC_with_nut")
 		(at 25.4 41.91 0)
 		(mirror y)
 		(unit 1)
@@ -34611,7 +35128,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
+		(property "Footprint" "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
 			(at 25.908 28.702 0)
 			(hide yes)
 			(show_name no)
@@ -34791,7 +35308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOD-123"
+		(property "Footprint" "Library:SOD-123"
 			(at 86.995 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -34972,7 +35489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:MountingHole_M2.5-PTH"
+		(property "Footprint" "Library:MountingHole_M2.5-PTH"
 			(at 400.05 229.87 0)
 			(hide yes)
 			(show_name no)
@@ -35060,7 +35577,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 329.184 169.164 90)
 			(hide yes)
 			(show_name no)
@@ -35153,7 +35670,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 40.386 229.108 0)
 			(hide yes)
 			(show_name no)
@@ -35391,7 +35908,7 @@
 		)
 	)
 	(symbol
-		(lib_id "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut")
+		(lib_id "Library:CONN_SMA_JACK_EDGE_JLC_with_nut")
 		(at 22.86 125.73 0)
 		(mirror y)
 		(unit 1)
@@ -35423,7 +35940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
+		(property "Footprint" "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
 			(at 23.368 112.522 0)
 			(hide yes)
 			(show_name no)
@@ -35516,7 +36033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 59.944 189.992 0)
 			(hide yes)
 			(show_name no)
@@ -35609,7 +36126,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 374.904 103.378 0)
 			(hide yes)
 			(show_name no)
@@ -35879,7 +36396,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:MountingHole_M2.5-PTH"
+		(property "Footprint" "Library:MountingHole_M2.5-PTH"
 			(at 400.05 233.68 0)
 			(hide yes)
 			(show_name no)
@@ -36025,7 +36542,7 @@
 		)
 	)
 	(symbol
-		(lib_id "TIS:CONN_SMA_JACK_EDGE_JLC_with_nut")
+		(lib_id "Library:CONN_SMA_JACK_EDGE_JLC_with_nut")
 		(at 25.4 21.59 0)
 		(mirror y)
 		(unit 1)
@@ -36057,7 +36574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SMA_Jack_EdgeMount_JLC_With_Nut"
+		(property "Footprint" "Library:SMA_Jack_EdgeMount_JLC_With_Nut"
 			(at 25.908 8.382 0)
 			(hide yes)
 			(show_name no)
@@ -36090,7 +36607,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C2874826"
+		(property "LCSC Part #" "C914558"
 			(at 30.226 11.43 0)
 			(hide yes)
 			(show_name no)
@@ -36148,7 +36665,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOT-23-5"
+		(property "Footprint" "Library:SOT-23-5"
 			(at 46.99 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -36204,6 +36721,9 @@
 		(pin "3"
 			(uuid "c53b7517-fddb-4de9-b5c3-6e4d728ed092")
 		)
+		(pin "4"
+			(uuid "6c574518-c297-48be-bc26-35a35c342d07")
+		)
 		(instances
 			(project "TAPRX-888"
 				(path "/eb8944cd-94ec-4b09-b419-3508e0096041"
@@ -36221,7 +36741,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b87fd388-3236-4596-9e24-d36f83a6b80b")
@@ -36247,7 +36767,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 107.95 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -36309,7 +36829,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -36339,7 +36859,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TIS-Logo"
+		(property "Footprint" "Library:TIS-Logo"
 			(at 107.95 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -36515,7 +37035,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 75.946 249.428 0)
 			(hide yes)
 			(show_name no)
@@ -36696,7 +37216,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOD-123"
+		(property "Footprint" "Library:SOD-123"
 			(at 86.995 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -36846,7 +37366,7 @@
 	)
 	(symbol
 		(lib_id "Library:C-0.1-0603")
-		(at 325.12 132.08 270)
+		(at 327.66 132.08 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -36858,7 +37378,7 @@
 		(fields_autoplaced yes)
 		(uuid "c96c66b3-35e6-4b43-bc37-8b7be13c68a3")
 		(property "Reference" "C39"
-			(at 325.1136 125.73 90)
+			(at 327.6536 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36868,7 +37388,7 @@
 			)
 		)
 		(property "Value" "C-0.1-0603"
-			(at 325.1136 128.27 90)
+			(at 327.6536 128.27 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36877,8 +37397,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
-			(at 324.358 134.366 0)
+		(property "Footprint" "Library:C_0603"
+			(at 326.898 134.366 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36889,7 +37409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 325.12 132.08 0)
+			(at 327.66 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36900,7 +37420,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 325.12 132.08 0)
+			(at 327.66 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36911,7 +37431,7 @@
 			)
 		)
 		(property "LCSC Part #" "C14663"
-			(at 325.12 132.08 0)
+			(at 327.66 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36969,7 +37489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_1206"
+		(property "Footprint" "Library:PAD_1206"
 			(at 213.614 252.222 0)
 			(hide yes)
 			(show_name no)
@@ -37034,7 +37554,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -37059,7 +37579,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 341.884 239.014 90)
 			(hide yes)
 			(show_name no)
@@ -37150,7 +37670,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SMD-2520"
+		(property "Footprint" "Library:SMD-2520"
 			(at 249.174 258.318 0)
 			(hide yes)
 			(show_name no)
@@ -37335,7 +37855,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 372.364 214.884 90)
 			(hide yes)
 			(show_name no)
@@ -37514,7 +38034,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 341.884 225.044 90)
 			(hide yes)
 			(show_name no)
@@ -37608,7 +38128,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 363.474 93.218 0)
 			(hide yes)
 			(show_name no)
@@ -37701,7 +38221,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 93.726 229.108 0)
 			(hide yes)
 			(show_name no)
@@ -37768,7 +38288,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d59c4f47-b88f-48b3-a3a5-9b061354aa3b")
@@ -37794,7 +38314,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 154.94 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -37883,7 +38403,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 199.136 34.544 90)
 			(hide yes)
 			(show_name no)
@@ -38040,7 +38560,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "d84c67ee-2e30-405b-aa9c-614555e25517")
 		(property "Reference" "TP12"
@@ -38065,7 +38585,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 275.59 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -38334,8 +38854,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
-			(at 119.634 108.712 0)
+		(property "Footprint" "Library:C_0603"
+			(at 135.636 105.664 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38357,7 +38877,7 @@
 			)
 		)
 		(property "Description" "1uF 50V X5R 0603"
-			(at 121.92 107.95 0)
+			(at 133.096 107.696 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38368,7 +38888,7 @@
 			)
 		)
 		(property "LCSC Part #" "C15849"
-			(at 121.92 107.95 0)
+			(at 130.048 103.632 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38427,7 +38947,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 75.946 269.748 0)
 			(hide yes)
 			(show_name no)
@@ -38520,7 +39040,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 105.156 108.458 0)
 			(hide yes)
 			(show_name no)
@@ -38610,7 +39130,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 338.074 198.374 90)
 			(hide yes)
 			(show_name no)
@@ -38703,7 +39223,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 102.87 199.644 0)
 			(hide yes)
 			(show_name no)
@@ -38770,7 +39290,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "df318993-8ad3-48d1-90f4-7965c9266e4e")
 		(property "Reference" "TP3"
@@ -38795,7 +39315,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 83.82 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -38863,7 +39383,7 @@
 		(dnp no)
 		(uuid "dfda5505-8e6d-4bc6-9b48-43b34b846aa7")
 		(property "Reference" "C41"
-			(at 349.25 92.7162 0)
+			(at 346.964 92.202 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38874,7 +39394,7 @@
 			)
 		)
 		(property "Value" "C-22u-0603"
-			(at 332.994 91.44 0)
+			(at 346.964 96.012 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38884,7 +39404,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 347.98 84.074 0)
 			(hide yes)
 			(show_name no)
@@ -39066,7 +39586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 54.864 210.312 0)
 			(hide yes)
 			(show_name no)
@@ -39156,7 +39676,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SP3011"
+		(property "Footprint" "Library:SP3011"
 			(at 196.85 200.406 0)
 			(hide yes)
 			(show_name no)
@@ -39284,7 +39804,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 382.27 94.234 0)
 			(hide yes)
 			(show_name no)
@@ -39544,7 +40064,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 148.336 29.718 0)
 			(hide yes)
 			(show_name no)
@@ -39636,7 +40156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 168.656 92.964 90)
 			(hide yes)
 			(show_name no)
@@ -39729,7 +40249,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:MountingHole_M2.5-PTH"
+		(property "Footprint" "Library:MountingHole_M2.5-PTH"
 			(at 400.05 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -39819,7 +40339,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 65.786 108.458 0)
 			(hide yes)
 			(show_name no)
@@ -39879,7 +40399,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+3V3ADC")
 		(at 167.64 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -40000,7 +40520,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:C_0603"
+		(property "Footprint" "Library:C_0603"
 			(at 242.316 250.698 0)
 			(hide yes)
 			(show_name no)
@@ -40091,7 +40611,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:SOIC-8-dual"
+		(property "Footprint" "Library:SOIC-8-dual"
 			(at 212.09 13.97 0)
 			(hide yes)
 			(show_name no)
@@ -40202,7 +40722,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 361.696 25.654 90)
 			(hide yes)
 			(show_name no)
@@ -40292,7 +40812,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 249.174 171.704 90)
 			(hide yes)
 			(show_name no)
@@ -40359,7 +40879,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f5e5204d-cdd8-4f87-8ca1-434886a52279")
 		(property "Reference" "TP9"
@@ -40384,7 +40904,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:TP"
+		(property "Footprint" "Library:TP"
 			(at 195.58 12.7 0)
 			(hide yes)
 			(show_name no)
@@ -40471,7 +40991,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TIS_Footprints:PAD_0603"
+		(property "Footprint" "Library:PAD_0603"
 			(at 167.894 65.024 90)
 			(hide yes)
 			(show_name no)
@@ -40699,7 +41219,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 321.31 68.58 0)
 		(unit 1)
 		(body_style 1)
@@ -40788,7 +41308,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 110.49 205.74 270)
 		(unit 1)
 		(body_style 1)

@@ -58,12 +58,13 @@ def main(argv=None):
     ap.add_argument("--git-hash", default=os.environ.get("GIT_HASH"),
                     help="GIT_HASH text variable value (env: GIT_HASH)")
     ap.add_argument("--pro", default="TAPRX-888.kicad_pro")
-    ap.add_argument("--sheets", nargs="+",
+    ap.add_argument("--sheets", nargs="*",
                     default=["TAPRX-888.kicad_sch",
                              "Front_End.kicad_sch",
                              "refclk.kicad_sch"],
                     help="schematic sheet files to stamp "
-                         "(each has exactly one title-block rev)")
+                         "(each has exactly one title-block rev); may be empty "
+                         "for a PCB-only project such as a mechanical end plate")
     ap.add_argument("--pcb", default="TAPRX-888.kicad_pcb")
     args = ap.parse_args(argv)
 
