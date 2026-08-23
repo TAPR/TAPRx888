@@ -67,7 +67,7 @@
 			)
 		)
 	)
-	(attr exclude_from_pos_files)
+	(attr exclude_from_pos_files exclude_from_bom)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_circle
 		(center 0 0)
