@@ -73,9 +73,10 @@ def main():
         _lib_block("lib-orbit", a.orbit),
         _lib_block("lib-room", a.room),
     ])
-    # Header sub-line: "Git Hash: <sha> &middot; Branch: <branch>" (each omitted if
-    # absent). With --repo-url, the sha links to its commit and the branch to its
-    # tree on the host.
+    # Header sub-line: "Version: v<rev> &middot; Board commit: <sha>" (each
+    # omitted if absent). The sha is the board design commit (same hash the fab
+    # package and the 3D board silk carry). With --repo-url it links to the
+    # commit on the host.
     def _linked(text, path):
         if a.repo_url and text:
             return '<a href="%s/%s" target="_blank" rel="noopener">%s</a>' % (
@@ -86,7 +87,7 @@ def main():
     if a.release_version:
         meta_bits.append("Version: v" + a.release_version.lstrip("v"))
     if a.rev:
-        meta_bits.append("Git Hash: " + _linked(a.rev, "commit/" + a.rev))
+        meta_bits.append("Board commit: " + _linked(a.rev, "commit/" + a.rev))
     meta = " &nbsp;&middot;&nbsp; ".join(meta_bits)
     parts_js = json.dumps([[k, l, s] for k, l, s in PARTS])
 
