@@ -146,6 +146,278 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Library:+3V3ADC"
+			(power global)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3ADC"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3ADC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3ADC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+3V3ADC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Library:+1V2"
+			(power global)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+1V2"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+1V2_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+1V2_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+1V2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Library:AD8370"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -25705,7 +25977,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+3V3ADC")
 		(at 20.32 224.79 0)
 		(unit 1)
 		(body_style 1)
@@ -26062,7 +26334,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 313.69 33.02 0)
 		(unit 1)
 		(body_style 1)
@@ -27375,7 +27647,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 402.59 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -31484,7 +31756,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 20.32 265.43 0)
 		(unit 1)
 		(body_style 1)
@@ -32998,7 +33270,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+3V3ADC")
 		(at 185.42 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -33999,7 +34271,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+3V3ADC")
 		(at 115.57 166.37 270)
 		(unit 1)
 		(body_style 1)
@@ -40127,7 +40399,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+3V3ADC")
 		(at 167.64 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -40947,7 +41219,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 321.31 68.58 0)
 		(unit 1)
 		(body_style 1)
@@ -41036,7 +41308,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "Library:+1V2")
 		(at 110.49 205.74 270)
 		(unit 1)
 		(body_style 1)
