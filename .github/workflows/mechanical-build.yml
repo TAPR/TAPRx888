@@ -17,15 +17,54 @@ name: mechanical-build
 
 on:
   workflow_call:
-
+    inputs:
+      revision:
+        description: "Release version to stamp in the viewer header (blank = none)"
+        required: false
+        type: string
+        default: ""
 jobs:
+  # Resolve board provenance once, OUTSIDE the KiCad container (that image is
+  # not guaranteed to ship git). board_githash.sh is the single source of truth
+  # -- dev-release stamps this same hash into the fab package, so the 3D viewer
+  # and the fab outputs cite one board commit.
+  provenance:
+    runs-on: ubuntu-latest
+    outputs:
+      githash: ${{ steps.p.outputs.githash }}
+      revision: ${{ steps.p.outputs.revision }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0          # git log over board history needs full depth
+      - id: p
+        run: |
+          set -euo pipefail
+          GH=$(bash scripts/board_githash.sh)
+          # Release version when called from dev-release; DEV for design / dev-*
+          # fit-check previews (the silk still carries a real board commit).
+          REV="${{ inputs.revision }}"; REV="${REV:-DEV}"
+          echo "githash=$GH"   >> "$GITHUB_OUTPUT"
+          echo "revision=$REV" >> "$GITHUB_OUTPUT"
+          echo "Board commit \`$GH\`, revision \`$REV\`." >> "$GITHUB_STEP_SUMMARY"
+
   boards-step:
+    needs: provenance
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/inti-cmnb/kicad10_auto:1.9.0-6_k10.0.4_d13.2
       options: --user root
     steps:
       - uses: actions/checkout@v6
+      - name: Stamp board provenance into the design before export
+        run: |
+          set -euxo pipefail
+          # Silk ${GIT_HASH} (.kicad_pro) + v${REVISION} (.kicad_pcb rev). Empty
+          # --sheets: skip the schematic sheets, which this 3D export never reads.
+          python3 scripts/inject_provenance.py \
+            --revision "${{ needs.provenance.outputs.revision }}" \
+            --git-hash "${{ needs.provenance.outputs.githash }}" \
+            --sheets
       - name: Export STEP + coloured GLB from each PCB
         run: |
           set -euxo pipefail
@@ -55,7 +94,7 @@ jobs:
           path: out/
 
   assemble:
-    needs: boards-step
+    needs: [provenance, boards-step]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -108,9 +147,10 @@ jobs:
             --gltf  /tmp/GLTFLoader.js \
             --orbit /tmp/OrbitControls.js \
             --room  /tmp/RoomEnvironment.js \
-            --rev "${GITHUB_SHA::7}" \
+            --rev "${{ needs.provenance.outputs.githash }}" \
             --branch "${GITHUB_REF_NAME}" \
             --repo-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}" \
+            --release-version "${{ inputs.revision }}" \
             --out out/TAPRX-888-mechanical-viewer.html
           ls -la out
       - uses: actions/upload-artifact@v6

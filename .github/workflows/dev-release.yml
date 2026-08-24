@@ -85,13 +85,24 @@ jobs:
           MECH=('mechanical/' '3d/' 'TAPR.kicad_wks'
                 'scripts/assemble_mechanical.py' 'scripts/assemble_glb.py'
                 'scripts/make_3d_viewer.py' 'scripts/build_endplates.sh')
-          # The v0.x snapshot is combined, so ANY of board/endplate/mechanical
-          # changing cuts or refreshes it.
-          TRIGGER=("${BOARD[@]}" "${MECH[@]}")
+          # Fab-pipeline scripts/config: not design files (they don't move the
+          # board or plate design commit), but they change what the released
+          # package stamps and exports, so a change must refresh the snapshot.
+          # main-release.yml and endplate-release.yml already key off these; dev
+          # matches them so a fab-script fix can't silently skip the pre-release.
+          FAB=('scripts/inject_provenance.py' 'scripts/build_release.sh'
+               'scripts/TAPRX-888.kibot.yaml' 'scripts/next_version.sh')
+          # The v0.x snapshot is combined, so ANY of board / endplate /
+          # mechanical / fab-pipeline changing cuts or refreshes it.
+          TRIGGER=("${BOARD[@]}" "${MECH[@]}" "${FAB[@]}")
 
           # Per-sub-package provenance: board stamped from the last board-design
           # commit, plates from the last end-plate-design commit.
-          githash=$(git log -1 --format=%h -- "${BOARD[@]}")
+          # Board provenance comes from the shared single-source script, so the
+          # release stamp and the 3D-viewer stamp (mechanical-build.yml) are the
+          # same hash by construction. BOARD above stays for change-detection;
+          # keep its board entries in sync with scripts/board_githash.sh.
+          githash=$(bash scripts/board_githash.sh)
           ep_githash=$(git log -1 --format=%h -- "${ENDPLATE[@]}")
 
           # All releases, newest-first: "<tag> <isPrerelease>". Feeds the shared
@@ -203,6 +214,8 @@ jobs:
     needs: prepare
     if: needs.prepare.outputs.build == 'true'
     uses: ./.github/workflows/mechanical-build.yml
+    with:
+      revision: ${{ needs.prepare.outputs.revision }}
 
   release:
     needs: [prepare, build, build-endplates, mechanical]
