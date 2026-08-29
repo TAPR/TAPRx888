@@ -181,6 +181,113 @@ def strip_matching_vias(t):
     return "".join(out), removed
 
 
+SMA_KEEPOUT_DIA_MM = 10.0  # copper-pour keepout diameter around big (SMA) holes
+SMA_HOLE_MIN_R     = 3.0   # only holes with radius >= this get a keepout (Ø7 SMA
+                           # qualifies, Ø3.4 M3 mounting holes do not)
+_SMA_TAG = '(name "sma-keepout")'
+
+
+def strip_sma_keepouts(t):
+    """Remove keepout zones this script generated (tagged 'sma-keepout'), so a
+    re-run replaces them instead of stacking."""
+    out, i, removed = [], 0, 0
+    while True:
+        j = t.find('\t(zone\n', i)
+        if j < 0:
+            out.append(t[i:]); break
+        depth, k = 0, j
+        while k < len(t):
+            if t[k] == '(':
+                depth += 1
+            elif t[k] == ')':
+                depth -= 1
+                if depth == 0:
+                    break
+            k += 1
+        end = k + 1 + (1 if k + 1 < len(t) and t[k + 1] == '\n' else 0)
+        if _SMA_TAG in t[j:k + 1]:
+            out.append(t[i:j]); removed += 1
+        else:
+            out.append(t[i:end])
+        i = end
+    return "".join(out), removed
+
+
+def sma_keepout_zone(cx, cy, dia):
+    """A circular copper-pour keepout (Rule Area) on F.Cu+B.Cu around a hole."""
+    r = dia / 2.0
+    n = max(24, int(2 * math.pi * r / 0.4))          # smooth circle polygon
+    pts = [(cx + r * math.cos(2 * math.pi * i / n),
+            cy + r * math.sin(2 * math.pi * i / n)) for i in range(n)]
+    xy = "\n".join("\t\t\t\t" + " ".join("(xy %.4f %.4f)" % p for p in pts[a:a + 4])
+                   for a in range(0, len(pts), 4))
+    layers = " ".join('"%s"' % l for l in LAYERS)
+    return (
+        '\t(zone\n'
+        '\t\t(layers %s)\n'
+        '\t\t(uuid "%s")\n'
+        '\t\t%s\n'
+        '\t\t(hatch edge 0.5)\n'
+        '\t\t(connect_pads\n\t\t\t(clearance 0)\n\t\t)\n'
+        '\t\t(min_thickness 0.25)\n'
+        '\t\t(keepout\n'
+        '\t\t\t(tracks allowed)\n\t\t\t(vias allowed)\n\t\t\t(pads allowed)\n'
+        '\t\t\t(copperpour not_allowed)\n\t\t\t(footprints allowed)\n\t\t)\n'
+        '\t\t(placement\n\t\t\t(enabled no)\n\t\t\t(sheetname "")\n\t\t)\n'
+        '\t\t(fill\n\t\t\t(thermal_gap 0.5)\n\t\t\t(thermal_bridge_width 0.5)\n'
+        '\t\t\t(island_removal_mode 0)\n\t\t)\n'
+        '\t\t(polygon\n\t\t\t(pts\n%s\n\t\t\t)\n\t\t)\n'
+        '\t)\n' % (layers, uuid.uuid4(), _SMA_TAG, xy))
+
+
+SCREW_MASK_DIA_MM = 7.0    # exposed-copper mask aperture Ø at M3 mounting holes,
+                           # so the screw/washer bites bare GND copper and bonds
+                           # the shield to the (grounded) enclosure. 0 = off.
+MOUNT_HOLE_MIN_R  = 1.5    # mounting-hole radius band is [MIN, SMA_HOLE_MIN_R):
+                           # catches M3 Ø3.4 (r1.7), skips STATUS Ø2.0 and SMA Ø7.
+
+
+def mask_aperture(cx, cy, dia, layer):
+    """A filled circle on a solder-mask layer = a mask OPENING (exposed copper)."""
+    r = dia / 2.0
+    return ('\t(gr_circle\n\t\t(center %.4f %.4f)\n\t\t(end %.4f %.4f)\n'
+            '\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n'
+            '\t\t(fill yes)\n\t\t(layer "%s")\n\t\t(uuid "%s")\n\t)\n'
+            % (cx, cy, cx + r, cy, layer, uuid.uuid4()))
+
+
+def strip_mask_apertures(t, centers):
+    """Remove filled F/B.Mask circles centered on any of `centers` (our screw
+    apertures), so a re-run replaces them. Position-matched so it never touches
+    an unrelated mask graphic."""
+    out, i, removed = [], 0, 0
+    while True:
+        j = t.find('\t(gr_circle\n', i)
+        if j < 0:
+            out.append(t[i:]); break
+        depth, k = 0, j
+        while k < len(t):
+            if t[k] == '(':
+                depth += 1
+            elif t[k] == ')':
+                depth -= 1
+                if depth == 0:
+                    break
+            k += 1
+        blk = t[j:k + 1]
+        end = k + 1 + (1 if k + 1 < len(t) and t[k + 1] == '\n' else 0)
+        m = re.search(r'\(center ([-\d.]+) ([-\d.]+)\)', blk)
+        onmask = re.search(r'\(layer "[FB]\.Mask"\)', blk) and '(fill yes)' in blk
+        hit = m and onmask and any(abs(float(m.group(1)) - cx) < 0.5 and
+                                   abs(float(m.group(2)) - cy) < 0.5 for cx, cy in centers)
+        if hit:
+            out.append(t[i:j]); removed += 1
+        else:
+            out.append(t[i:end])
+        i = end
+    return "".join(out), removed
+
+
 def via_sexpr(x, y, net):
     layers = " ".join('"%s"' % l for l in LAYERS)
     return ('\t(via\n\t\t(at %.4f %.4f)\n\t\t(size %s)\n\t\t(drill %s)\n'
@@ -228,6 +335,14 @@ def main():
     ap.add_argument('--net', default="",
                     help='net name for the vias AND fill zones (default "" = '
                          'netless). Use e.g. GND so the pour bonds to the ring.')
+    ap.add_argument('--sma-keepout', action='store_true',
+                    help='also emit Ø%.0f copper-pour keepout zones around holes '
+                         'with r>=%.1f (SMA holes)' % (SMA_KEEPOUT_DIA_MM,
+                                                       SMA_HOLE_MIN_R))
+    ap.add_argument('--screw-mask', action='store_true',
+                    help='open Ø%.0f exposed-copper mask apertures (F+B) at the M3 '
+                         'mounting holes to ground the shield to the enclosure'
+                         % SCREW_MASK_DIA_MM)
     a = ap.parse_args()
     t = open(a.pcb).read()
     removed = 0
@@ -238,17 +353,39 @@ def main():
     zoned = 0
     if a.net and not a.dry_run:
         t, zoned = set_zone_nets(t, a.net)
+    sma_txt, nkeep, rmk = "", 0, 0
+    if a.sma_keepout:
+        if not a.dry_run:
+            t, rmk = strip_sma_keepouts(t)
+        big = [(hx, hy) for hx, hy, hr in g['holes'] if hr >= SMA_HOLE_MIN_R]
+        nkeep = len(big)
+        sma_txt = "".join(sma_keepout_zone(hx, hy, SMA_KEEPOUT_DIA_MM) for hx, hy in big)
+    mask_txt, nmask, rmm = "", 0, 0
+    if a.screw_mask:
+        mounts = [(hx, hy) for hx, hy, hr in g['holes']
+                  if MOUNT_HOLE_MIN_R <= hr < SMA_HOLE_MIN_R]
+        if not a.dry_run:
+            t, rmm = strip_mask_apertures(t, mounts)
+        nmask = len(mounts)
+        mask_txt = "".join(mask_aperture(hx, hy, SCREW_MASK_DIA_MM, lyr)
+                           for hx, hy in mounts for lyr in ("F.Mask", "B.Mask"))
     print("outline %.2f x %.2f mm, corner R=%.2f, %d holes"
           % (g['maxx'] - g['minx'], g['maxy'] - g['miny'], g['R'], len(g['holes'])))
     print("removed %d ring via(s); placing %d (inset %.2f, pitch %.2f, net %r); "
           "netted %d fill zone(s)"
           % (removed, len(pts), INSET_MM, PITCH_MM, a.net, zoned))
+    if a.sma_keepout:
+        print("SMA keepout: removed %d, adding %d zone(s) of Ø%.1f"
+              % (rmk, nkeep, SMA_KEEPOUT_DIA_MM))
+    if a.screw_mask:
+        print("screw mask: removed %d, adding %d aperture(s) x2 faces (Ø%.1f)"
+              % (rmm, nmask, SCREW_MASK_DIA_MM))
     if a.dry_run:
         return
     inject = "".join(via_sexpr(x, y, a.net) for x, y in pts)
     cut = t.rstrip()
     assert cut.endswith(')'), "unexpected file tail"
-    new = cut[:-1] + inject + ")\n"
+    new = cut[:-1] + inject + sma_txt + mask_txt + ")\n"
     open(a.out or a.pcb, 'w').write(new)
     print("wrote", a.out or a.pcb)
 
