@@ -23,8 +23,10 @@ from centre) come from its end profile.
 [box]: https://jlcmc.com/product/b/U01/BR9272/aluminum-box-%28jlc%29-88*38*120mm-split
 
 Each plate is its own KiCad project (own `fp-lib-table`/`sym-lib-table`); the root
-board is untouched. The plates are **non-functional PCBs** — Edge.Cuts, connector
-cutouts, mounting holes, silk (labels + TAPR/HamSCI/TIS logos).
+board is untouched. The plates are **non-signal PCBs** — Edge.Cuts, connector
+cutouts, mounting holes, silk (labels + TAPR/HamSCI/TIS logos), plus a
+script-generated **GND shield pour + stitching-via ring** (see *Shield pour & GND
+stitching* below).
 
 ## Releases
 
@@ -64,3 +66,30 @@ parameters live on each board's `Cmts.User` layer; key values:
 
 Cutout X maps the real connector position via `plate-X = 44 + (board-X − 138)`; Y
 from the 7.9 mm PCB rail height above the floor.
+
+## Shield pour & GND stitching
+
+Each plate carries a **dual-layer copper pour** (F.Cu + B.Cu, the `shield` zone)
+tied together by a **perimeter ring of 0.3 / 0.6 mm through-vias** — a grounded
+EMI shield that also bonds the plate to the enclosure through the mounting screws.
+
+The plates have **no schematic** (they're generated, PCB-only), so there is no net
+list to draw a net from. Instead the pour and the via ring are put on a **`GND`
+net written straight into the board** by `scripts/stitch_perimeter.py` (name-based
+net, KiCad 10 `20260206` format). That shared net is what lets the pour flood
+**solidly onto the ring** instead of clearing around it; KiCad keeps the injected
+net across load and DRC is clean, so no stub schematic is needed.
+
+**The via ring is generated — do not hand-edit it.** To change it, retune the
+constants at the top of `scripts/stitch_perimeter.py` (`INSET_MM`, `PITCH_MM`,
+`HOLE_KEEPOUT_MM`, drill/pad) and re-run against the plate:
+
+```sh
+python3 scripts/stitch_perimeter.py mechanical/endplate-rear/endplate-rear.kicad_pcb --net GND
+```
+
+then open the board in KiCad, **refill zones (`B`)**, and DRC. The script is
+idempotent (it strips its own previous ring before placing), derives the outline
+and hole keepouts from the board's own Edge.Cuts, lays the ring **symmetric about
+both plate centrelines**, inset from the edge and stood off the mounting holes.
+Run it per plate (front takes the same command on its own `.kicad_pcb`).
