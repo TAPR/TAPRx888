@@ -8,8 +8,15 @@ inserts through-vias on F.Cu+B.Cu, netless (net "") -- a through via is
 copper on both layers, physically tying the two pours). Build-time design edit;
 run once, eyeball + DRC in KiCad, commit the board.
 
+With --cutout-stitch it also rings the perimeter of large *interior* cutouts
+(perimeter >= CUTOUT_MIN_PERIMETER_MM): circular cutouts (SMA holes) get a
+concentric ring just outside the hole, polygonal cutouts (the USB slot) get an
+outward-offset ring. Small cutouts (M3 mounting, status LED) fall below the
+threshold and are skipped.
+
 Usage:
-    stitch_perimeter.py PCB [--out PCB] [--dry-run]
+    stitch_perimeter.py PCB [--net GND] [--sma-keepout] [--screw-mask]
+                            [--cutout-stitch] [--out PCB] [--dry-run]
 Tunables are the constants below.
 """
 import argparse, math, re, sys, uuid
@@ -141,8 +148,11 @@ def resample(path, pitch):
     return out
 
 
-def keep(p, holes):
-    for hx, hy, hr in holes:
+def keep(p, holes, skip=None):
+    for h in holes:
+        if skip is not None and h == skip:
+            continue                                  # allow proximity to own cutout
+        hx, hy, hr = h
         if math.hypot(p[0] - hx, p[1] - hy) < hr + HOLE_KEEPOUT_MM + PAD_MM / 2:
             return False
     return True
@@ -181,7 +191,9 @@ def strip_matching_vias(t):
     return "".join(out), removed
 
 
-SMA_KEEPOUT_DIA_MM = 10.0  # copper-pour keepout diameter around big (SMA) holes
+SMA_KEEPOUT_DIA_MM = 10.5  # copper-pour keepout diameter around big (SMA) holes.
+                           # >= SMA washer Ø (~9.5) + margin, so the washer seats
+                           # on bare laminate, never on the pour.
 SMA_HOLE_MIN_R     = 3.0   # only holes with radius >= this get a keepout (Ø7 SMA
                            # qualifies, Ø3.4 M3 mounting holes do not)
 _SMA_TAG = '(name "sma-keepout")'
@@ -325,6 +337,158 @@ def set_zone_nets(t, net):
     return "".join(out), count
 
 
+CUTOUT_MIN_PERIMETER_MM = 15.0   # cutouts whose perimeter >= this get an inner
+                                 # stitching ring. Ø7 SMA (22.0) and the USB slot
+                                 # (~67 at the offset ring) qualify; Ø3.4 M3 (10.7)
+                                 # and Ø2 status (6.3) do not. Raise past 22 for a
+                                 # USB-only ring (excludes the SMAs).
+CUTOUT_KEEPOUT_GAP_MM = 0.75     # for a circular cutout that also has an SMA pour
+                                 # keepout, the ring is offset this far OUTSIDE the
+                                 # keepout edge (not the hole), so its vias sit in
+                                 # pour and clear the washer instead of landing in
+                                 # the no-pour zone.
+
+
+def _circumcenter(a, b, c):
+    ax, ay = a; bx, by = b; cx, cy = c
+    d = 2.0 * (ax * (by - cy) + bx * (cy - ay) + cx * (ay - by))
+    if abs(d) < 1e-9:
+        return None
+    ux = ((ax*ax+ay*ay)*(by-cy) + (bx*bx+by*by)*(cy-ay) + (cx*cx+cy*cy)*(ay-by)) / d
+    uy = ((ax*ax+ay*ay)*(cx-bx) + (bx*bx+by*by)*(ax-cx) + (cx*cx+cy*cy)*(bx-ax)) / d
+    return (ux, uy)
+
+
+def _arc_points(s, m, e):
+    """Tessellate a KiCad 3-point (start, mid, end) arc into an ordered list."""
+    c = _circumcenter(s, m, e)
+    if not c:
+        return [s, e]
+    r = math.hypot(s[0]-c[0], s[1]-c[1])
+    a0 = math.atan2(s[1]-c[1], s[0]-c[0])
+    a1 = math.atan2(e[1]-c[1], e[0]-c[0])
+    am = math.atan2(m[1]-c[1], m[0]-c[0])
+    tau = 2*math.pi
+    sweep = (a1 - a0) % tau                            # CCW sweep a0 -> a1
+    if ((am - a0) % tau) > sweep:                      # mid not on it -> go CW
+        sweep -= tau
+    n = max(2, int(abs(sweep) * r / ARC_TESS_MM))
+    return [(c[0]+r*math.cos(a0+sweep*i/n), c[1]+r*math.sin(a0+sweep*i/n))
+            for i in range(n+1)]
+
+
+def _close(a, b, tol=1e-3):
+    return math.hypot(a[0]-b[0], a[1]-b[1]) <= tol
+
+
+def edge_loops(t):
+    """Chain Edge.Cuts line/arc segments into closed loops (dense polylines)."""
+    segs = []
+    for b in _blocks(t, 'gr_line'):
+        if _layer(b) == 'Edge.Cuts':
+            segs.append([_xy(b, 'start'), _xy(b, 'end')])
+    for b in _blocks(t, 'gr_arc'):
+        if _layer(b) == 'Edge.Cuts':
+            segs.append(_arc_points(_xy(b, 'start'), _xy(b, 'mid'), _xy(b, 'end')))
+    used, loops = [False]*len(segs), []
+    for i in range(len(segs)):
+        if used[i]:
+            continue
+        used[i] = True
+        loop = list(segs[i])
+        advanced = True
+        while advanced:
+            advanced = False
+            for j in range(len(segs)):
+                if used[j]:
+                    continue
+                s0, s1 = segs[j][0], segs[j][-1]
+                if _close(loop[-1], s0):
+                    loop += segs[j][1:]
+                elif _close(loop[-1], s1):
+                    loop += segs[j][-2::-1]
+                else:
+                    continue
+                used[j] = True; advanced = True; break
+        if len(loop) > 2 and _close(loop[0], loop[-1]):
+            loops.append(loop[:-1])                    # drop duplicated closing pt
+    return loops
+
+
+def _perimeter(loop):
+    n = len(loop)
+    return sum(math.hypot(loop[(i+1) % n][0]-loop[i][0],
+                          loop[(i+1) % n][1]-loop[i][1]) for i in range(n))
+
+
+def _densify(loop, step):
+    """Insert points along each edge so straight runs offset by the full normal
+    distance (a sparse rectangle would otherwise drag its edges in at the corners)."""
+    out, n = [], len(loop)
+    for i in range(n):
+        a, b = loop[i], loop[(i+1) % n]
+        d = math.hypot(b[0]-a[0], b[1]-a[1])
+        k = max(1, int(d / step))
+        for j in range(k):
+            f = j / k
+            out.append((a[0]+(b[0]-a[0])*f, a[1]+(b[1]-a[1])*f))
+    return out
+
+
+def offset_outward(loop, dist):
+    """Push each vertex `dist` mm along its outward (away-from-centroid) normal."""
+    cx = sum(p[0] for p in loop) / len(loop)
+    cy = sum(p[1] for p in loop) / len(loop)
+    n, out = len(loop), []
+    for i in range(n):
+        a, b, c = loop[(i-1) % n], loop[i], loop[(i+1) % n]
+        nx, ny = -(c[1]-a[1]), (c[0]-a[0])            # normal = perp of tangent
+        L = math.hypot(nx, ny) or 1.0
+        nx, ny = nx/L, ny/L
+        if nx*(b[0]-cx) + ny*(b[1]-cy) < 0:           # orient away from centroid
+            nx, ny = -nx, -ny
+        out.append((b[0]+dist*nx, b[1]+dist*ny))
+    return out
+
+
+def cutout_ring_pts(t, g, sma_keepout=False):
+    """Stitch-via centers ringing every cutout with perimeter >= threshold:
+    circular cutouts (g['holes']) as concentric rings just outside the hole;
+    polygonal cutouts (assembled Edge.Cuts loops, minus the outer boundary) as
+    outward-offset rings. Same pitch as the perimeter ring. A circular cutout that
+    also carries an SMA pour keepout is ringed outside the KEEPOUT (so the vias
+    stay in pour and clear the washer), otherwise INSET outside the hole."""
+    pts = []
+    for h in g['holes']:                              # circular cutouts (SMA)
+        hx, hy, hr = h
+        if 2*math.pi*hr < CUTOUT_MIN_PERIMETER_MM:
+            continue
+        if sma_keepout and hr >= SMA_HOLE_MIN_R:
+            rr = SMA_KEEPOUT_DIA_MM / 2 + CUTOUT_KEEPOUT_GAP_MM   # clear the keepout
+        else:
+            rr = hr + INSET_MM
+        nn = max(4, round(2*math.pi*rr / PITCH_MM))
+        for i in range(nn):
+            ang = 2*math.pi*i/nn
+            p = (hx + rr*math.cos(ang), hy + rr*math.sin(ang))
+            if keep(p, g['holes'], skip=h):
+                pts.append(p)
+    loops = edge_loops(t)                             # polygonal cutouts (USB)
+    if loops:
+        def bbox_area(L):
+            xs = [p[0] for p in L]; ys = [p[1] for p in L]
+            return (max(xs)-min(xs)) * (max(ys)-min(ys))
+        outer = max(loops, key=bbox_area)
+        for L in loops:
+            if L is outer or _perimeter(L) < CUTOUT_MIN_PERIMETER_MM:
+                continue
+            ring = offset_outward(_densify(L, ARC_TESS_MM * 2), INSET_MM)
+            for p in resample(ring, PITCH_MM):
+                if keep(p, g['holes']):
+                    pts.append(p)
+    return pts
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('pcb')
@@ -343,6 +507,10 @@ def main():
                     help='open Ø%.0f exposed-copper mask apertures (F+B) at the M3 '
                          'mounting holes to ground the shield to the enclosure'
                          % SCREW_MASK_DIA_MM)
+    ap.add_argument('--cutout-stitch', action='store_true',
+                    help='also ring the perimeter of large interior cutouts '
+                         '(perimeter >= %.0f mm: USB slot + SMA holes; skips M3 / '
+                         'status)' % CUTOUT_MIN_PERIMETER_MM)
     a = ap.parse_args()
     t = open(a.pcb).read()
     removed = 0
@@ -350,6 +518,7 @@ def main():
         t, removed = strip_matching_vias(t)
     g = parse(t)
     pts = [p for p in resample(ring_path(g), PITCH_MM) if keep(p, g['holes'])]
+    cut_pts = cutout_ring_pts(t, g, a.sma_keepout) if a.cutout_stitch else []
     zoned = 0
     if a.net and not a.dry_run:
         t, zoned = set_zone_nets(t, a.net)
@@ -380,9 +549,12 @@ def main():
     if a.screw_mask:
         print("screw mask: removed %d, adding %d aperture(s) x2 faces (Ø%.1f)"
               % (rmm, nmask, SCREW_MASK_DIA_MM))
+    if a.cutout_stitch:
+        print("cutout stitch: %d via(s) ringing cutouts with perimeter >= %.0f mm"
+              % (len(cut_pts), CUTOUT_MIN_PERIMETER_MM))
     if a.dry_run:
         return
-    inject = "".join(via_sexpr(x, y, a.net) for x, y in pts)
+    inject = "".join(via_sexpr(x, y, a.net) for x, y in pts + cut_pts)
     cut = t.rstrip()
     assert cut.endswith(')'), "unexpected file tail"
     new = cut[:-1] + inject + sma_txt + mask_txt + ")\n"
