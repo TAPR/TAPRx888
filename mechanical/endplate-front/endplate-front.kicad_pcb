@@ -1617,15 +1617,30 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "FRONT PLATE (SMA). Enclosure end plate; F+B GND shield, chassis-grounded via M3 screws. No active parts.\nOutline 88x38 R4.5; M3 corner holes Ø3.4 @ +/-41,+/-14.21 (plate screws on, full face).\nSMA holes Ø7.0 at plate Y 9.40 (fit-checked vs the assembled STEP; plate Y from floor edge Y=0, +Y = up).\nSMA by plate X: J1=RF IN (17.0), J2=TIMESYNC IN (52.99), J4=EXT REF (70.8). J3 spare has no panel hole.\nShield: F+B GND pour, perimeter 0.3/0.6 via stitch, Ø10 pour keepout per SMA, Ø7 exposed-copper mask at each M3 (screw grounds to enclosure). Script-generated (scripts/stitch_perimeter.py) -- do not hand-edit.\nDimensions dialed in against the 3D fit-check; open in KiCad 10 to confirm."
-		(at 148.5 133.35 0)
+	(gr_text "DESIGN NOTES\n========================================\n\nOutline 88x38mm R4.5mm; M3 corner holes Ø3.4mm\nSMA holes Ø7.0mm, J1=RF IN, J2=TIMESYNC IN, J4=EXT REF. J3 spare has no panel hole.\nShield: F+B copper pour, perimeter 0.3/0.6mm via stitch, Ø10mm pour keepout per SMA, \n Ø7mm exposed-copper mask at each M3 (screw grounds to enclosure). \n Via/keepout/mask exposure was script-generated (scripts/stitch_perimeter.py)\n"
+		(at 20 37.5 0)
 		(layer "Cmts.User")
 		(uuid "00000000-0000-0000-0000-000000000069")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
 			)
+			(justify left)
+		)
+	)
+	(gr_text "FABRICATION SPECIFICATION\n========================================\nProject: TAPRX-888 Front End Plate\n\nGENERAL\n  Layers:             2\n  Material:           FR4, standard Tg\n  Finished Thickness: 1.6mm (~63 mil) +/-10%\n  Surface Finish:     ENIG\n  Solder Mask:        Blue, both sides\n  Silkscreen:         White, both sides\n  IPC Class:          2\n\nSTACKUP\n  F.Cu     1 oz  (0.035mm)\n  core     1.51mm  FR4 (Er 4.5)\n  B.Cu     1 oz  (0.035mm)\n  (1.6mm nominal, ENIG)\n\nCONTROLLED IMPEDANCE\n  None -- non-signal shield plate.\n\nMINIMUM FEATURES  (JLCPCB 2-layer, standard)\n  Track width:    0.15mm\n  Track spacing:  0.15mm\n  Via:            0.60mm dia / 0.30mm drill  (GND stitch ring)\n  Annular ring:   0.15mm\n  Hole-to-hole:   0.50mm (diff net) / 0.25mm (same net)\n  Min PTH drill:  0.30mm\n  Copper-to-edge: 0.50mm\n  Silk:           0.15mm min width, 2.0mm text\n\nVIAS\n  Through-hole only -- no blind/buried vias.\n  Via tenting: both sides (stitch vias covered by mask).\n\nNOTES\n  1. All dimensions in mm unless noted.\n  2. Non-signal shield end plate -- no assembly / BOM / CPL.\n  3. Mounting / SMA / USB holes are routed Edge.Cuts cutouts (not drilled)."
+		(at 20 155 0)
+		(layer "Cmts.User")
+		(uuid "6b447e8b-556e-451b-9924-d3dcf994c4b2")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
 		)
 	)
 	(via
