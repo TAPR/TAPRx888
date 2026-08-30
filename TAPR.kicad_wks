@@ -145,7 +145,7 @@
 		(name "")
 		(pos 73.5 3.8002)
 	)
-	(tbtext "Sheet: ${SHEETPATH}"
+	(tbtext "Sheet: ${SHEETNAME}"
 		(name "")
 		(pos 109 4.0002)
 	)
