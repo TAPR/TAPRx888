@@ -1618,7 +1618,7 @@
 		)
 	)
 	(gr_text "DESIGN NOTES\n========================================\n\nOutline 88x38mm R4.5mm; M3 corner holes Ø3.4mm\nSMA holes Ø7.0mm, J1=RF IN, J2=TIMESYNC IN, J4=EXT REF. J3 spare has no panel hole.\nShield: F+B copper pour, perimeter 0.3/0.6mm via stitch, Ø10mm pour keepout per SMA, \n Ø7mm exposed-copper mask at each M3 (screw grounds to enclosure). \n Via/keepout/mask exposure was script-generated (scripts/stitch_perimeter.py)\n"
-		(at 20 37.5 0)
+		(at 15 35 0)
 		(layer "Cmts.User")
 		(uuid "00000000-0000-0000-0000-000000000069")
 		(effects
@@ -1630,8 +1630,8 @@
 			(justify left)
 		)
 	)
-	(gr_text "FABRICATION SPECIFICATION\n========================================\nProject: TAPRX-888 Front End Plate\n\nGENERAL\n  Layers:             2\n  Material:           FR4, standard Tg\n  Finished Thickness: 1.6mm (~63 mil) +/-10%\n  Surface Finish:     ENIG\n  Solder Mask:        Blue, both sides\n  Silkscreen:         White, both sides\n  IPC Class:          2\n\nSTACKUP\n  F.Cu     1 oz  (0.035mm)\n  core     1.51mm  FR4 (Er 4.5)\n  B.Cu     1 oz  (0.035mm)\n  (1.6mm nominal, ENIG)\n\nCONTROLLED IMPEDANCE\n  None -- non-signal shield plate.\n\nMINIMUM FEATURES  (JLCPCB 2-layer, standard)\n  Track width:    0.15mm\n  Track spacing:  0.15mm\n  Via:            0.60mm dia / 0.30mm drill  (GND stitch ring)\n  Annular ring:   0.15mm\n  Hole-to-hole:   0.50mm (diff net) / 0.25mm (same net)\n  Min PTH drill:  0.30mm\n  Copper-to-edge: 0.50mm\n  Silk:           0.15mm min width, 2.0mm text\n\nVIAS\n  Through-hole only -- no blind/buried vias.\n  Via tenting: both sides (stitch vias covered by mask).\n\nNOTES\n  1. All dimensions in mm unless noted.\n  2. Non-signal shield end plate -- no assembly / BOM / CPL.\n  3. Mounting / SMA / USB holes are routed Edge.Cuts cutouts (not drilled)."
-		(at 20 155 0)
+	(gr_text "FABRICATION SPECIFICATION\n========================================\nProject: TAPRX-888 Front End Plate\n\nGENERAL\n  Layers:             2\n  Material:           FR4, standard Tg\n  Finished Thickness: 1.6mm (~63 mil) +/-10%\n  Surface Finish:     ENIG\n  Solder Mask:        Blue, both sides\n  Silkscreen:         White, both sides\n  IPC Class:          2\n\nSTACKUP\n  F.Cu     1 oz  (0.035mm)\n  core     1.51mm  FR4 (Er 4.5)\n  B.Cu     1 oz  (0.035mm)\n  (1.6mm nominal, ENIG)\n\nCONTROLLED IMPEDANCE\n  None -- non-signal shield plate.\n\nMINIMUM FEATURES  (JLCPCB 2-layer, standard)\n  Track width:    0.15mm\n  Track spacing:  0.15mm\n  Via:            0.60mm dia / 0.30mm drill  (GND stitch ring)\n  Annular ring:   0.15mm\n  Hole-to-hole:   0.50mm (diff net) / 0.25mm (same net)\n  Min PTH drill:  0.30mm\n  Copper-to-edge: 0.50mm\n  Silk:           0.15mm min width, 2.0mm min text height/width\n\nVIAS\n  Through-hole only -- no blind/buried vias.\n  Via tenting: both sides (stitch vias covered by mask).\n\nNOTES\n  1. All dimensions in mm unless noted.\n  2. Non-signal shield end plate -- no assembly / BOM / CPL.\n  3. Mounting / SMA holes are routed Edge.Cuts cutouts (not drilled)."
+		(at 15 150 0)
 		(layer "Cmts.User")
 		(uuid "6b447e8b-556e-451b-9924-d3dcf994c4b2")
 		(effects
