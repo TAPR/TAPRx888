@@ -404,25 +404,25 @@
 		(uuid "00000000-0000-0000-0000-000000000076")
 	)
 	(gr_text "USB 3.0"
-		(at 129.538 91.89 0)
+		(at 129.75 92 0)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000086")
 		(effects
 			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
+				(size 2 2)
+				(thickness 0.3)
 			)
 			(justify mirror)
 		)
 	)
 	(gr_text "STATUS"
-		(at 148.5 91.89 0)
+		(at 148.5 92 0)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000090")
 		(effects
 			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
+				(size 2 2)
+				(thickness 0.3)
 			)
 			(justify mirror)
 		)
