@@ -1,0 +1,75 @@
+# KiBot pipeline for the TAPRX-888 mechanical end plates -- fabrication drawing.
+#
+# The plates are PCB-only projects (no schematic, no components), released on the
+# independent endplates-vX.Y lane. This config generates ONLY the human-readable,
+# framed fabrication DRAWING via `pcb_print`: a single multi-page PDF with a
+# correct title block ("Sheet n of N"), the shared TAPR worksheet frame, and a
+# non-mirrored top page plus a mirrored bottom page.
+#
+# It REPLACES the old fab-drawing step in scripts/build_endplates.sh, which stitched
+# two independent `kicad-cli ... --mode-single` plots with pdfunite -- that stamped
+# every page "Sheet 1 of 1" and, because the bottom page was --mirror'd with the
+# User.Comments notes on it, printed the DESIGN NOTES / FAB SPEC text backwards.
+#
+# Gerbers + Excellon drill still come from kicad-cli in build_endplates.sh; only the
+# human-readable PDF moves here. Provenance (title-block rev + GIT_HASH) is injected
+# by scripts/inject_provenance.py BEFORE kibot runs -- this file only generates, it
+# never owns the version. The versioned filename is applied by the script (mv), so
+# the KiBot output name stays plain.
+#
+# The worksheet path arrives as ${TAPR_WKS} (absolute), exported by
+# build_endplates.sh, so the frame never depends on the plate project's locally
+# blankable page_layout_descr_file -- same guarantee the kicad-cli path had.
+#
+# Per-page identity: each page's `sheet` value feeds the worksheet's ${SHEETNAME}
+# (the "Sheet:" field), with %ll auto-expanding to the list of layers on that page.
+# This requires TAPR.kicad_wks to print ${SHEETNAME} in its Sheet field (it was
+# ${SHEETPATH}, empty for a PCB); that one-token worksheet edit is shared with the
+# board/schematic, where the flat 1-level hierarchy makes name == path anyway.
+#
+# Colour: the PCB linework is forced to black (per-layer color '#000000') for a
+# clean fab drawing, but the FRAME + title block are left at the theme default so
+# they render in KiCad's standard reddish worksheet colour -- matching the schematic
+# frames. That means NOT setting sheet_reference_color (leaving it empty keeps the
+# `_builtin_classic` worksheet colour). colored_pads/colored_vias are off so nothing
+# re-tints (there is no copper on these pages anyway). Scale is fixed 1:1 (real size)
+# -- autoscale (0) blew the 88x38 plate up to fill the sheet and into the title block.
+kibot:
+  version: 1
+
+outputs:
+  - name: fab_drawing
+    comment: 'Framed fabrication drawing (top + mirrored bottom)'
+    type: pcb_print
+    dir: '.'
+    options:
+      format: PDF
+      output: '%f-fab.pdf'                 # %f = board base name -> endplate-front-fab.pdf
+      sheet_reference_layout: '${TAPR_WKS}' # absolute; exported by build_endplates.sh
+      scaling: 1                            # 1:1 real size (0 = autofit, which oversized the plate)
+      colored_pads: false                   # no screen-style pad tinting
+      colored_vias: false                   # no screen-style via tinting
+      keep_temporal_files: false
+      pages:
+        # Page 1 -- top / front. The side-independent fab notes live here ONCE
+        # (User.Comments / User.Drawings), so they are never mirrored.
+        - sheet: 'Top'
+          layers:
+            - layer: Edge.Cuts
+              color: '#000000'
+            - layer: F.Silkscreen
+              color: '#1552A0'
+            - layer: User.Comments
+              color: '#1C7A3E'
+            - layer: User.Drawings
+              color: '#B24A00'
+        # Page 2 -- bottom / back, mirrored so B.Silkscreen reads correctly.
+        # No note layers here: they would mirror backwards and they are the same
+        # spec for both sides.
+        - sheet: 'Bottom (mirror)'
+          mirror: true
+          layers:
+            - layer: Edge.Cuts
+              color: '#000000'
+            - layer: B.Silkscreen
+              color: '#1552A0'
