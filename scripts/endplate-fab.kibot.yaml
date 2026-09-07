@@ -58,15 +58,18 @@ outputs:
         - sheet: 'Top'
           layers:
             - layer: F.Cu
-              color: '#C8823C55'     # GND pour + stitch rings -- light copper wash
+              color: '#B0906040'     # copper wash — moderate (~25%); tune this to make
+                                     #   the SMA keepouts / edge pullback read as white gaps
+            - layer: F.Mask
+              color: '#14507A70'     # soldermask — midrange (~44%)
             - layer: Edge.Cuts
-              color: '#000000'
+              color: '#000000'       # outline + cutouts — opaque
             - layer: F.Silkscreen
-              color: '#1552A0'
+              color: '#FFFFFFFF'     # silk — opaque, on top
             - layer: User.Comments
-              color: '#1C7A3E'
+              color: '#1C7A3EFF'     # notes — opaque
             - layer: User.Drawings
-              color: '#B24A00'
+              color: '#B24A00FF'     # dims — opaque
         # Page 2 -- bottom / back, mirrored so B.Silkscreen reads correctly.
         # No note layers here: they would mirror backwards and they are the same
         # spec for both sides.
@@ -74,8 +77,10 @@ outputs:
           mirror: true
           layers:
             - layer: B.Cu
-              color: '#C8823C55'     # GND pour + stitch rings -- light copper wash
+              color: '#B0906040'
+            - layer: B.Mask
+              color: '#14507A70'
             - layer: Edge.Cuts
               color: '#000000'
             - layer: B.Silkscreen
-              color: '#1552A0'
+              color: '#FFFFFFFF'
