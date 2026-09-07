@@ -31,8 +31,10 @@
 # clean fab drawing, but the FRAME + title block are left at the theme default so
 # they render in KiCad's standard reddish worksheet colour -- matching the schematic
 # frames. That means NOT setting sheet_reference_color (leaving it empty keeps the
-# `_builtin_classic` worksheet colour). colored_pads/colored_vias are off so nothing
-# re-tints (there is no copper on these pages anyway). Scale is fixed 1:1 (real size)
+# `_builtin_classic` worksheet colour). colored_pads/colored_vias are off so the
+# copper carries one flat colour. F.Cu/B.Cu are drawn FIRST on each page as a light
+# translucent copper wash (alpha), so the GND pour, stitch-via rings and keepout
+# voids are visible while the silk/notes/outline stay legible on top. Scale is 1:1
 # -- autoscale (0) blew the 88x38 plate up to fill the sheet and into the title block.
 kibot:
   version: 1
@@ -55,6 +57,8 @@ outputs:
         # (User.Comments / User.Drawings), so they are never mirrored.
         - sheet: 'Top'
           layers:
+            - layer: F.Cu
+              color: '#C8823C55'     # GND pour + stitch rings -- light copper wash
             - layer: Edge.Cuts
               color: '#000000'
             - layer: F.Silkscreen
@@ -69,6 +73,8 @@ outputs:
         - sheet: 'Bottom (mirror)'
           mirror: true
           layers:
+            - layer: B.Cu
+              color: '#C8823C55'     # GND pour + stitch rings -- light copper wash
             - layer: Edge.Cuts
               color: '#000000'
             - layer: B.Silkscreen
