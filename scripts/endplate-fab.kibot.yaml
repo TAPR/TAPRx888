@@ -52,6 +52,7 @@ outputs:
       colored_pads: false                   # no screen-style pad tinting
       colored_vias: false                   # no screen-style via tinting
       keep_temporal_files: false
+      drill: true
       pages:
         # Page 1 -- top / front. The side-independent fab notes live here ONCE
         # (User.Comments / User.Drawings), so they are never mirrored.
@@ -84,3 +85,12 @@ outputs:
               color: '#000000'
             - layer: B.Silkscreen
               color: '#FFFFFFFF'
+        # Page 3 -- Drill Map
+        - sheet: 'Drill map — %lp'
+          repeat_for_layer: User.Drawings
+          repeat_layers: drill_pairs
+          layers:
+            - layer: Edge.Cuts
+              color: '#000000'
+            - layer: User.Drawings
+              color: '#000000'
