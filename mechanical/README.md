@@ -23,8 +23,10 @@ from centre) come from its end profile.
 [box]: https://jlcmc.com/product/b/U01/BR9272/aluminum-box-%28jlc%29-88*38*120mm-split
 
 Each plate is its own KiCad project (own `fp-lib-table`/`sym-lib-table`); the root
-board is untouched. The plates are **non-functional PCBs** — Edge.Cuts, connector
-cutouts, mounting holes, silk (labels + TAPR/HamSCI/TIS logos).
+board is untouched. The plates are **non-signal PCBs** — Edge.Cuts, connector
+cutouts, mounting holes, silk (labels + TAPR/HamSCI/TIS logos), plus a
+script-generated **GND shield pour + stitching-via ring, grounded to the
+enclosure through the M3 screws** (see *Shield pour & GND stitching* below).
 
 ## Releases
 
@@ -64,3 +66,36 @@ parameters live on each board's `Cmts.User` layer; key values:
 
 Cutout X maps the real connector position via `plate-X = 44 + (board-X − 138)`; Y
 from the 7.9 mm PCB rail height above the floor.
+
+## Shield pour & GND stitching
+
+Each plate carries a **dual-layer GND copper pour** (F.Cu + B.Cu, the `shield`
+zone) tied together by a **perimeter ring of 0.3 / 0.6 mm through-vias**, and is
+**grounded to the aluminium enclosure through the M3 screws** — each mounting hole
+gets a Ø7 **exposed-copper mask aperture** on both faces so the screw/washer bites
+bare ENIG copper. The **front** plate additionally gets a **Ø10 copper-pour
+keepout** around each SMA. Together: an EMI shield bonded front↔back and to chassis.
+
+The plates have **no schematic** (they're generated, PCB-only), so there is no net
+list to draw a net from. Instead the pour and ring are put on a **`GND` net written
+straight into the board** by `scripts/stitch_perimeter.py` (name-based net, KiCad
+10 `20260206` format). That shared net is what lets the pour flood **solidly onto
+the ring** instead of clearing around it; KiCad keeps the injected net across load
+and DRC is clean, so no stub schematic is needed.
+
+**All of this copper is generated — do not hand-edit it.** Retune the constants at
+the top of `scripts/stitch_perimeter.py` (`INSET_MM`, `PITCH_MM`, `HOLE_KEEPOUT_MM`,
+`SMA_KEEPOUT_DIA_MM`, `SCREW_MASK_DIA_MM`, drill/pad) and re-run per plate:
+
+```sh
+# front (SMA keepouts + screw grounding)
+python3 scripts/stitch_perimeter.py mechanical/endplate-front/endplate-front.kicad_pcb --net GND --sma-keepout --screw-mask
+# rear (screw grounding; no SMAs)
+python3 scripts/stitch_perimeter.py mechanical/endplate-rear/endplate-rear.kicad_pcb  --net GND --screw-mask
+```
+
+then open in KiCad, **refill zones (`B`)**, and DRC. The script is idempotent — it
+strips its own previous ring / keepouts / mask apertures before placing — derives
+the outline and hole classes from the board's own Edge.Cuts, and lays the ring
+**symmetric about both plate centrelines**, inset from the edge and stood off the
+holes.
