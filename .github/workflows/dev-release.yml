@@ -84,7 +84,8 @@ jobs:
           # broader 'mechanical/' entry also covers them.
           MECH=('mechanical/' '3d/' 'TAPR.kicad_wks'
                 'scripts/assemble_mechanical.py' 'scripts/assemble_glb.py'
-                'scripts/make_3d_viewer.py' 'scripts/build_endplates.sh')
+                'scripts/make_3d_viewer.py' 'scripts/build_endplates.sh'
+                'scripts/endplate-fab-kibot.yaml')
           # Fab-pipeline scripts/config: not design files (they don't move the
           # board or plate design commit), but they change what the released
           # package stamps and exports, so a change must refresh the snapshot.
