@@ -31,8 +31,10 @@
 # clean fab drawing, but the FRAME + title block are left at the theme default so
 # they render in KiCad's standard reddish worksheet colour -- matching the schematic
 # frames. That means NOT setting sheet_reference_color (leaving it empty keeps the
-# `_builtin_classic` worksheet colour). colored_pads/colored_vias are off so nothing
-# re-tints (there is no copper on these pages anyway). Scale is fixed 1:1 (real size)
+# `_builtin_classic` worksheet colour). colored_pads/colored_vias are off so the
+# copper carries one flat colour. F.Cu/B.Cu are drawn FIRST on each page as a light
+# translucent copper wash (alpha), so the GND pour, stitch-via rings and keepout
+# voids are visible while the silk/notes/outline stay legible on top. Scale is 1:1
 # -- autoscale (0) blew the 88x38 plate up to fill the sheet and into the title block.
 kibot:
   version: 1
@@ -55,21 +57,30 @@ outputs:
         # (User.Comments / User.Drawings), so they are never mirrored.
         - sheet: 'Top'
           layers:
+            - layer: F.Cu
+              color: '#B0906040'     # copper wash — moderate (~25%); tune this to make
+                                     #   the SMA keepouts / edge pullback read as white gaps
+            - layer: F.Mask
+              color: '#14507A70'     # soldermask — midrange (~44%)
             - layer: Edge.Cuts
-              color: '#000000'
+              color: '#000000'       # outline + cutouts — opaque
             - layer: F.Silkscreen
-              color: '#1552A0'
+              color: '#FFFFFFFF'     # silk — opaque, on top
             - layer: User.Comments
-              color: '#1C7A3E'
+              color: '#1C7A3EFF'     # notes — opaque
             - layer: User.Drawings
-              color: '#B24A00'
+              color: '#B24A00FF'     # dims — opaque
         # Page 2 -- bottom / back, mirrored so B.Silkscreen reads correctly.
         # No note layers here: they would mirror backwards and they are the same
         # spec for both sides.
         - sheet: 'Bottom (mirror)'
           mirror: true
           layers:
+            - layer: B.Cu
+              color: '#B0906040'
+            - layer: B.Mask
+              color: '#14507A70'
             - layer: Edge.Cuts
               color: '#000000'
             - layer: B.Silkscreen
-              color: '#1552A0'
+              color: '#FFFFFFFF'
