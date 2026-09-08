@@ -1,8 +1,50 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-09-07T17:18:58 **
+** Created on 2026-09-08T02:51:50 **
 ** Report includes: Errors, Warnings **
 
-** Found 0 DRC violations **
+** Found 10 DRC violations **
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1470 mm)
+    Rule: board setup constraints silk; warning
+    @(136.3500 mm, 85.6000 mm): Segment of C35 on F.Silkscreen
+    @(135.6500 mm, 85.9000 mm): Segment of R6 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1489 mm)
+    Rule: board setup constraints silk; warning
+    @(114.6000 mm, 114.0000 mm): Segment of J8 on F.Silkscreen
+    @(117.0940 mm, 116.0000 mm): PCB text 'ENABLE
+SHELF' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1488 mm)
+    Rule: board setup constraints silk; warning
+    @(117.0940 mm, 116.0000 mm): PCB text 'ENABLE
+SHELF' on F.Silkscreen
+    @(113.1400 mm, 114.0000 mm): Segment of J8 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1470 mm)
+    Rule: board setup constraints silk; warning
+    @(116.4000 mm, 84.9000 mm): Segment of R24 on F.Silkscreen
+    @(117.1000 mm, 84.6000 mm): Segment of C42 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1470 mm)
+    Rule: board setup constraints silk; warning
+    @(148.6500 mm, 78.4000 mm): Segment of C43 on F.Silkscreen
+    @(149.3500 mm, 78.1000 mm): Segment of C41 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1470 mm)
+    Rule: board setup constraints silk; warning
+    @(165.3500 mm, 69.4000 mm): Segment of R17 on F.Silkscreen
+    @(165.6500 mm, 70.1000 mm): Segment of R16 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1470 mm)
+    Rule: board setup constraints silk; warning
+    @(166.8500 mm, 69.4000 mm): Segment of R16 on F.Silkscreen
+    @(167.1500 mm, 70.1000 mm): Segment of R15 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1470 mm)
+    Rule: board setup constraints silk; warning
+    @(150.1500 mm, 105.4000 mm): Segment of R57 on F.Silkscreen
+    @(150.8500 mm, 105.1000 mm): Segment of R56 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1362 mm)
+    Rule: board setup constraints silk; warning
+    @(142.5000 mm, 64.1000 mm): Segment of C33 on F.Silkscreen
+    @(143.5000 mm, 64.7500 mm): Reference field of C33
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1470 mm)
+    Rule: board setup constraints silk; warning
+    @(148.6500 mm, 96.8500 mm): Segment of R61 on F.Silkscreen
+    @(148.3500 mm, 96.1500 mm): Segment of C78 on F.Silkscreen
 
 ** Found 0 unconnected pads **
 
