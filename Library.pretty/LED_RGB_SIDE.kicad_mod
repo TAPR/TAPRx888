@@ -71,7 +71,7 @@
 		(center 1.5 0.9)
 		(end 1.65 0.9)
 		(stroke
-			(width 0.1)
+			(width 0.153)
 			(type solid)
 		)
 		(fill yes)

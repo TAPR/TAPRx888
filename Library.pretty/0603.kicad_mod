@@ -70,7 +70,7 @@
 		(start -0.3 -0.6)
 		(end 0.3 -0.6)
 		(stroke
-			(width 0.12)
+			(width 0.153)
 			(type solid)
 		)
 		(layer "F.SilkS")
@@ -80,7 +80,7 @@
 		(start -0.3 0.6)
 		(end 0.3 0.6)
 		(stroke
-			(width 0.12)
+			(width 0.153)
 			(type solid)
 		)
 		(layer "F.SilkS")
