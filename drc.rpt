@@ -1,8 +1,64 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-09-20T01:16:35 **
+** Created on 2026-09-20T17:46:52 **
 ** Report includes: Errors, Warnings **
 
-** Found 0 DRC violations **
+** Found 14 DRC violations **
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(164.7500 mm, 91.7500 mm): Track [/D2] on B.Cu, length 6.9000 mm
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(163.8520 mm, 90.3480 mm): Track [/D5] on B.Cu, length 4.3960 mm
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(165.0010 mm, 92.0990 mm): Track [/D1] on B.Cu, length 7.4272 mm
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(165.2520 mm, 92.3480 mm): Track [/D0] on B.Cu, length 8.5252 mm
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(164.1030 mm, 90.6970 mm): Track [/D4] on B.Cu, length 5.2480 mm
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(164.3540 mm, 91.6460 mm): Track [/D3] on B.Cu, length 6.7920 mm
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(158.8550 mm, 87.7000 mm): Track [/D10] on B.Cu, length 1.4779 mm
+    @(160.0000 mm, 87.7500 mm): PTH pad 1 [Net-(U11-GPIO18)] of TP11
+[shorting_items]: Items shorting two nets (nets Net-(U11-GPIO18) and /D10)
+    Local override; error
+    @(160.0000 mm, 87.7500 mm): PTH pad 1 [Net-(U11-GPIO18)] of TP11
+    @(158.8550 mm, 87.7000 mm): Track [/D10] on B.Cu, length 1.4779 mm
+[shorting_items]: Items shorting two nets (nets /D3 and Net-(U11-GPIO19))
+    Local override; error
+    @(164.3540 mm, 91.6460 mm): Track [/D3] on B.Cu, length 6.7920 mm
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+[shorting_items]: Items shorting two nets (nets Net-(U11-GPIO19) and /D4)
+    Local override; error
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+    @(164.1030 mm, 90.6970 mm): Track [/D4] on B.Cu, length 5.2480 mm
+[shorting_items]: Items shorting two nets (nets Net-(U11-GPIO19) and /D0)
+    Local override; error
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+    @(165.2520 mm, 92.3480 mm): Track [/D0] on B.Cu, length 8.5252 mm
+[shorting_items]: Items shorting two nets (nets /D1 and Net-(U11-GPIO19))
+    Local override; error
+    @(165.0010 mm, 92.0990 mm): Track [/D1] on B.Cu, length 7.4272 mm
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+[shorting_items]: Items shorting two nets (nets Net-(U11-GPIO19) and /D5)
+    Local override; error
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+    @(163.8520 mm, 90.3480 mm): Track [/D5] on B.Cu, length 4.3960 mm
+[shorting_items]: Items shorting two nets (nets Net-(U11-GPIO19) and /D2)
+    Local override; error
+    @(164.7500 mm, 87.2500 mm): PTH pad 1 [Net-(U11-GPIO19)] of TP12
+    @(164.7500 mm, 91.7500 mm): Track [/D2] on B.Cu, length 6.9000 mm
 
 ** Found 0 unconnected pads **
 
