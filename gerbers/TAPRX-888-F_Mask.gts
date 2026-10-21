@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,10.0.4-10.0.4~ubuntu25.10.1*%
-%TF.CreationDate,2026-10-21T02:14:48+00:00*%
+%TF.CreationDate,2026-10-21T02:59:04+00:00*%
 %TF.ProjectId,TAPRX-888,54415052-582d-4383-9838-2e6b69636164,DEV*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.4-10.0.4~ubuntu25.10.1) date 2026-10-21 02:14:48*
+G04 Created by KiCad (PCBNEW 10.0.4-10.0.4~ubuntu25.10.1) date 2026-10-21 02:59:04*
 %MOMM*%
 %LPD*%
 G01*
@@ -957,8 +957,9 @@ D17*
 %TO.C,TP3*%
 X140000000Y-128000000D03*
 %TD*%
+D25*
 %TO.C,TP11*%
-X160000000Y-87750000D03*
+X160000000Y-88100000D03*
 %TD*%
 D40*
 %TO.C,C33*%
@@ -1189,9 +1190,9 @@ D10*
 X165750000Y-127000000D03*
 X164250000Y-127000000D03*
 %TD*%
-D17*
+D25*
 %TO.C,TP12*%
-X164750000Y-87250000D03*
+X162200000Y-88100000D03*
 %TD*%
 D10*
 %TO.C,R24*%
