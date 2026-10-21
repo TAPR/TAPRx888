@@ -29941,7 +29941,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:TP"
+		(property "Footprint" "Library:TP-Tiny"
 			(at 275.59 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -38585,7 +38585,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:TP"
+		(property "Footprint" "Library:TP-Tiny"
 			(at 275.59 110.49 0)
 			(hide yes)
 			(show_name no)

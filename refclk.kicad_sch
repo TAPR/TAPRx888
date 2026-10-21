@@ -5624,7 +5624,7 @@
 		(uuid "e1408965-a5e5-469f-b3e1-ed2c2a236e06")
 	)
 	(junction
-		(at 63.5 31.75)
+		(at 60.96 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e96f0fa0-98aa-4f0c-929f-b51556f7bb29")
@@ -6509,7 +6509,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 31.75) (xy 63.5 33.02)
+			(xy 60.96 31.75) (xy 60.96 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6586,16 +6586,6 @@
 			(type default)
 		)
 		(uuid "6f9ee101-3631-4dfe-a82d-fe6a995289a4")
-	)
-	(wire
-		(pts
-			(xy 120.65 45.72) (xy 109.22 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fa780c5-b302-4156-89c6-f50d93a9b710")
 	)
 	(wire
 		(pts
@@ -7449,6 +7439,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 45.72) (xy 120.65 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9036c91-4d27-46bf-b9b0-646e6ad831bd")
+	)
+	(wire
+		(pts
 			(xy 248.92 138.43) (xy 248.92 130.81)
 		)
 		(stroke
@@ -7679,7 +7679,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 30.48) (xy 63.5 31.75)
+			(xy 60.96 30.48) (xy 60.96 31.75)
 		)
 		(stroke
 			(width 0)
@@ -7769,7 +7769,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 40.64) (xy 63.5 41.91)
+			(xy 60.96 40.64) (xy 60.96 41.91)
 		)
 		(stroke
 			(width 0)
@@ -7799,7 +7799,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 31.75) (xy 63.5 31.75)
+			(xy 27.94 31.75) (xy 60.96 31.75)
 		)
 		(stroke
 			(width 0)
@@ -8021,7 +8021,7 @@
 	)
 	(hierarchical_label "DISABLE_5351"
 		(shape input)
-		(at 30.48 31.75 180)
+		(at 27.94 31.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8142,7 +8142,8 @@
 	)
 	(symbol
 		(lib_id "Library:PMOS Si2343DS")
-		(at 107.95 39.37 90)
+		(at 107.95 39.37 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8150,7 +8151,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0321b64e-6cbe-4121-b0b3-b8f9296485a5")
 		(property "Reference" "Q1"
 			(at 107.95 30.48 90)
@@ -8173,7 +8173,7 @@
 			)
 		)
 		(property "Footprint" "Library:SOT-23"
-			(at 109.855 34.29 0)
+			(at 106.045 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8208,7 +8208,7 @@
 			)
 		)
 		(property "LCSC Part #" "C6903"
-			(at 104.14 34.29 0)
+			(at 111.76 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12343,7 +12343,7 @@
 	)
 	(symbol
 		(lib_id "Library:GND")
-		(at 63.5 41.91 0)
+		(at 60.96 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12354,7 +12354,7 @@
 		(fields_autoplaced yes)
 		(uuid "9727d13a-3057-4a9f-984f-5cf26aeaec1d")
 		(property "Reference" "#PWR0107"
-			(at 63.5 48.26 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12365,7 +12365,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 46.99 0)
+			(at 60.96 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12375,7 +12375,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 41.91 0)
+			(at 60.96 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12386,7 +12386,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 41.91 0)
+			(at 60.96 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12397,7 +12397,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 41.91 0)
+			(at 60.96 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12408,7 +12408,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 63.5 41.91 0)
+			(at 60.96 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14538,7 +14538,7 @@
 	)
 	(symbol
 		(lib_id "Library:R-10K-0603")
-		(at 63.5 36.83 0)
+		(at 60.96 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14548,7 +14548,7 @@
 		(dnp no)
 		(uuid "d3d30bd0-b363-40f8-8130-e5efe2d251f3")
 		(property "Reference" "R60"
-			(at 65.2272 35.6616 0)
+			(at 62.6872 35.6616 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14559,7 +14559,7 @@
 			)
 		)
 		(property "Value" "R-10K-0603"
-			(at 65.2272 37.973 0)
+			(at 62.6872 37.973 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14570,7 +14570,7 @@
 			)
 		)
 		(property "Footprint" "Library:PAD_0603"
-			(at 64.516 37.084 90)
+			(at 61.976 37.084 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14581,7 +14581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 36.83 0)
+			(at 60.96 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14592,7 +14592,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 36.83 0)
+			(at 60.96 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14603,7 +14603,7 @@
 			)
 		)
 		(property "LCSC Part #" "C25804"
-			(at 63.5 36.83 0)
+			(at 60.96 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14630,7 +14630,8 @@
 	)
 	(symbol
 		(lib_id "Library:PMOS Si2343DS")
-		(at 62.23 24.13 90)
+		(at 62.23 24.13 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14638,7 +14639,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d489f58a-a4c9-4917-88fd-854e80dc569b")
 		(property "Reference" "Q3"
 			(at 62.23 15.24 90)
@@ -14661,7 +14661,7 @@
 			)
 		)
 		(property "Footprint" "Library:SOT-23"
-			(at 64.135 19.05 0)
+			(at 60.325 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14696,7 +14696,7 @@
 			)
 		)
 		(property "LCSC Part #" "C6903"
-			(at 58.42 19.05 0)
+			(at 66.04 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
