@@ -1,8 +1,11 @@
 ** Drc report for TAPRX-888.kicad_pcb **
-** Created on 2026-10-21T02:59:01 **
+** Created on 2026-10-24T19:18:00 **
 ** Report includes: Errors, Warnings **
 
-** Found 0 DRC violations **
+** Found 1 DRC violations **
+[skew_out_of_range]: Skew between tracks out of range (rule 'USB2 diff pair skew' max skew 1.2500 mm; actual -2.5443 mm; target net length 25.7175 mm (from /USB-); actual 23.1732 mm)
+    Rule: USB2 diff pair skew; warning
+    @(158.5000 mm, 69.3260 mm): Track [/USB+] on F.Cu, length 0.2740 mm
 
 ** Found 0 unconnected pads **
 
