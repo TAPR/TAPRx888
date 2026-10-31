@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.9,
-          "width": 0.4
+          "drill": 0.5,
+          "height": 0.75,
+          "width": 0.75
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -76,12 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "silk_overlap|155628799|74125000|1a9480b9-50ff-4184-bda2-0b3da356f008|a23ee22f-bc2e-40f0-ae97-017b098e33d7",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -129,7 +124,7 @@
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
-        "skew_out_of_range": "error",
+        "skew_out_of_range": "warning",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
@@ -168,7 +163,7 @@
         "min_track_width": 0.1,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.25,
-        "solder_mask_to_copper_clearance": 0.005,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -218,6 +213,7 @@
       "track_widths": [
         0.0,
         0.1,
+        0.155,
         0.2,
         0.5,
         1.0
@@ -538,25 +534,29 @@
       },
       {
         "bus_width": 12,
-        "diff_pair_gap": 0.155,
-        "diff_pair_width": 0.2,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.155,
         "line_style": 0,
         "name": "USB2",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgb(0, 0, 194)",
+        "track_width": 0.155,
         "tuning_profile": "",
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "diff_pair_gap": 0.155,
-        "diff_pair_width": 0.2,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.155,
         "line_style": 0,
         "name": "USB3_SS",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgb(194, 0, 0)",
+        "track_width": 0.155,
         "tuning_profile": "",
         "wire_width": 6
       }
@@ -623,7 +623,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "out/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

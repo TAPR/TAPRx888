@@ -24,6 +24,21 @@
 # full JLC 6-layer spec. Where the .pro design-practice floor is STRICTER it
 # governs - those DRU lines are documentation and won't fire.
 
+#  Why ADVANCED tier (and why it is NOT avoidable) - set by U11 (EZ-USB FX3,
+#    121-ball 0.5 mm-pitch BGA): escaping it REQUIRES 0.15 mm via drills and
+#    0.05 mm annular rings, both below JLC standard tier. Only HDI microvias or
+#    a non-BGA FX3 package would change that. The 0.1 mm tracks (~726 segs) are
+#    fine-pitch ESCAPE, not lazy routing: ~644 on FX3 nets, ~30 on the LTC2208
+#    (U8) ADC data bus, ~41 GND woven through the BGA fanout; non-escape 0.1 mm
+#    is effectively nil - do NOT widen to chase the trace-width flag.
+#  JLC DFM pass (out.zip, 2026-09-19): every "danger" triaged to ACCEPT -
+#    trace-width / annular / clearance = advanced-tier design (above);
+#    silk-to-hole (~90, ~95% over the 557 GND-stitch + 122 fanout vias) =
+#    cosmetic over tented vias; soldermask bridge = inherent dense fine-pitch +
+#    JLC's own mask expansion (zeroing KiCad's global mask margin changed
+#    nothing); silk-to-pad = cosmetic silk clip (JLC clips silk off pads).
+#    No functional/blocking findings; silk width 0.153 mm raised 0 DFM errors.
+
 # .pro min_track_width 0.1mm is stricter and governs; this documents JLC's cap.
 (rule "JLC: min trace width 3.5mil"
 	(constraint track_width (min 0.0889mm)))

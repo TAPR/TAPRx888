@@ -70,7 +70,7 @@
 		(center -0.75 1.2)
 		(end -0.6 1.2)
 		(stroke
-			(width 0.1)
+			(width 0.153)
 			(type solid)
 		)
 		(fill yes)
